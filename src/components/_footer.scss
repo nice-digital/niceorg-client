@@ -15,6 +15,11 @@
     &:hover {
       text-decoration: underline;
     }
+
+    [class^=icon-],
+    [class*=" icon-"] {
+      margin: em(0 $spacing-small 0 0);
+    }
   }
 
   p {
