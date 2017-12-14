@@ -1,0 +1,34 @@
+// Specific type of panel from old bootstrap
+.panel {
+  padding: 0;
+
+  // Contextual panel alternatives
+  // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
+  &.panel-default { background: $colour-panel-default; }
+
+  &.panel-success {
+    .panel-heading {
+      background: #dff0d8;
+      color: #468847;
+    }
+  }
+
+  .panel-heading {
+    border-bottom: 1px solid $colour-border;
+    padding: em($spacing-medium $spacing-large);
+  }
+
+  .panel-title {
+    @include font-size(3);
+    margin: 0;
+  }
+
+  .panel-body {
+    @include clearfix;
+    padding: em($spacing-large);
+  }
+
+  .panel-footer {
+    padding: em(0 $spacing-large $spacing-large $spacing-large);
+  }
+}

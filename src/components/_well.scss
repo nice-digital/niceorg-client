@@ -1,0 +1,22 @@
+// Support for old NICE.Bootstrap 'well' component, originally from Twitter's bootstrap.
+// Essentially a panel, but without the option of a title or footer.
+// Used to visuallt group elements in a grey container.
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
+.well {
+  background: $colour-panel-default;
+  margin-bottom: em($spacing-medium);
+  min-height: em($spacing-large);
+  padding: em($spacing-large);
+
+  &.well-large {
+    padding: em($spacing-x-large);
+  }
+
+  &.well-small {
+    padding: em($spacing-medium);
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}

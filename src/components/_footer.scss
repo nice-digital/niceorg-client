@@ -1,0 +1,327 @@
+// sass-lint:disable-all
+
+.footer {
+  @include links-inverse;
+  @include font-size(-1);
+  background: #222;
+  color: $colour-text-inverse;
+  overflow: hidden;
+  padding: em($spacing-large 0 $spacing-medium);
+  position: relative;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    @include font-size(-1);
+  }
+
+  h3 {
+    @include font-size(3);
+    font-weight: normal;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // Large 'main' links
+  .main-nav-panel {
+    @include font-size(1);
+  }
+
+  // Copyright year, notice of rights etc
+  .legal-copyright {
+    @include font-size(-2);
+    margin: 0;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .fa {
+    // Some icons don't exist in NICE.Glyphs
+    // so we have to use font awesome instead
+    font-family: FontAwesome;
+  }
+
+  #get-involved {
+      background: #004650;
+  }
+
+  @include mq($from: md) {
+    #get-involved {
+      display: inline;
+      height: 1000px;
+      padding: em($spacing-large $spacing-medium);
+      position: absolute;
+      top: 0;
+      width: 1000px;
+    }
+  }
+}
+
+
+// Footer logo
+.footer-nicelogo {
+  @include font-size(5);
+
+  .logo {
+    &:before {
+      // NICE Logo icon
+      // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Glyphs.html#charset
+      content: "\e01a";
+    }
+  }
+
+  .logotext {
+    @include invisible;
+  }
+}
+
+
+/*
+
+footer.footer-wrapper-new {
+
+    .legal-copyright a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        margin-right: 10px;
+
+        &.fa {
+            font-family: FontAwesome;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    a:hover > i {
+        text-decoration: none;
+    }
+
+    .span3 {
+        padding: 20px;//@footerDefaultPadding;
+    }
+    /* Footer background color added: color change *
+    .footer {
+        overflow: hidden;
+        color: $colour-nice-white;
+        background-color: $colour-nice-black;
+    }
+
+    .footer-nicelogo {
+        margin-top: 0px;
+        width: 68px;
+        display: block;
+        overflow-x: hidden;
+
+        &:hover, &:hover > i {
+            text-decoration:underline;
+        }
+
+        .logo {
+            font-size: 31px;
+
+            .logotext {
+                display: none;
+            }
+        }
+    }
+    /* Get Involved Footer background colour change color change *
+    #get-involved {
+        height: 1000px;
+        width: 1000px;
+        position: absolute;
+        display: inline;
+        background-color: $colour-nice-teal;
+    }
+
+    #logo-mobile, #get-involved-panel-mobile {
+        display: none;
+    }
+
+    div.container > div.row {
+        position: relative;
+    }
+
+    .main-nav-panel > li {
+        font-size: 22px;
+        line-height: 22px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    #main-nav > .row > div {
+        margin-top: 5px;
+    }
+
+    #main-nav h3, #explore h3, #syndication h3, #get-involved h3 {
+        margin-bottom: 20px;//@footerDefaultPadding;
+        color: $colour-nice-white;
+        font-size: 20px;//@DefaultTitleFontSize;
+        font-weight:normal;
+    }
+
+    .main-nav-panel {
+        margin-top: 20px;//@footerDefaultPadding;
+        margin-bottom: 20px;//@footerDefaultPadding;
+    }
+
+    .line {
+        border-top: $colour-border solid 1px;
+        margin-bottom: -10px;
+        width: 71%;
+    }
+
+    .line-div {
+        margin-bottom: 35px;
+    }
+
+    div.icon {
+        float: left;
+
+        ul > li {
+            display: block;
+            line-height: 24px;
+            white-space: nowrap;
+        }
+    }
+
+    #social {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 320px) {
+
+    //@phoneLeftPadding: @footerDefaultPadding / 2;
+
+    footer.footer-wrapper-new {
+
+        .span3 {
+            padding-left: 20px;//@phoneLeftPadding;
+            padding-bottom: 0;
+        }
+        .span3:not(:first-child){
+            padding-top: 0;
+        }
+
+        color: $colour-nice-white;
+
+        div.container.hide-mobile {
+            margin-left: 0;
+        }
+
+        #explore {
+            padding-bottom: 8px;
+        }
+
+        #logo-mobile {
+            display: block;
+            font-size: 40px;
+        }
+
+
+        #explore-panel {
+            margin-top: 20px;
+        }
+
+        #get-involved {
+            height: 200px;
+            position: relative;
+            padding-top: 10px;
+            background-color: $colour-nice-teal;//@SecondaryMenuColour;
+
+
+        }
+
+        #syndication{
+            .row:last-child{
+                margin-bottom: 20px;//@footerDefaultPadding;
+            }
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        .legal-panel {
+            padding: 0;
+            padding-top: 20px;//@footerDefaultPadding;
+        }
+
+        .legal-copyright {
+            padding: 20px;//@footerDefaultPadding 0;
+            margin: 0;
+        }
+
+        #get-involved-panel{
+            margin-bottom: 0;
+            padding-bottom:30px;
+        }
+
+        #get-involved-panel-mobile {
+            display: block;
+        }
+
+        .no-left-margin {
+            margin-left: 0;
+        }
+        /* Get Involved colour change @media only screen and (max-width: 767px) *
+        #get-involved > div {
+            background-color: $colour-nice-teal; //@HighlightRefresh;
+            width:1000px;
+        }
+    }
+}
+
+// To partially override bootsrap styles for the footer
+@media (max-width:680px) {
+    footer.footer-wrapper-new {
+        .footer {
+            color: $colour-nice-white;
+
+            .nav-legal {
+                margin-bottom:0;
+                padding-top:10px;
+
+                 li {
+                    border-bottom: none;
+                    font-size: 20px;//@baseFontSize;
+
+                    a {
+                        padding: 0;
+                        line-height: 24px;
+
+                        &:hover {
+                            color: $colour-nice-white;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+
+
+            a {
+                color: $colour-nice-white;
+            }
+        }
+
+        .legal-copyright {
+            text-align: left;
+        }
+    }
+}
+*/

@@ -1,0 +1,16 @@
+// Old Bootstrap alert component
+.alert {
+  background: #fcf8e3;
+  border: 1px solid #fbeed5;
+  color: #c09853;
+  margin: em(0 0 $spacing-medium);
+  padding: em($spacing-small);
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .close {
+    // Todo
+  }
+}

@@ -1,0 +1,30 @@
+// Bootstrap breadcrumbs
+.breadcrumb {
+  list-style: none;
+  margin: em(0 0 $spacing-large);
+  padding: 0;
+
+  li {
+    padding-left: 0;
+    display: inline-block;
+  }
+
+  a {
+    color: $colour-nice-rich-black;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .divider {
+    color: #004650;
+    font-size: 80%;
+    margin: em(0 $spacing-x-small);
+
+    &:before {
+      content: '\003e';
+    }
+  }
+}

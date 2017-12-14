@@ -1,0 +1,9 @@
+// Groups breadcrumbs and main page heading
+.page-header {
+  background: $colour-panel-default;
+  padding: em($spacing-medium 0 $spacing-large);
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
