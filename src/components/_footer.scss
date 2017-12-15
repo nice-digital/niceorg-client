@@ -45,9 +45,9 @@
     @include font-size(-2);
     margin: 0;
 
-    a {
-      text-decoration: underline;
-    }
+    // a {
+    //   text-decoration: underline;
+    // }
   }
 
   .fa {
@@ -98,11 +98,14 @@
         margin-left:0;
         li{
             list-style: none;
-            float:left;
-            a{
-                border-left: 1px solid $colour-nice-white;
-                padding-left: em($spacing-small);
-                padding-right: em($spacing-small);
+            float:none;
+            @include mq($from: sm) {
+                float:left;
+                a{
+                    border-left: 1px solid $colour-nice-white;
+                    padding-left: em($spacing-small);
+                    padding-right: em($spacing-small);
+                }
             }
         }
         &>:first-child>a{
