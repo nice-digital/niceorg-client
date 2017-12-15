@@ -82,21 +82,6 @@
   }
 }
 
-// Container for
-//.legal-panel {
-
-  // Copyright year, notice of rights etc
-//  .legal-copyright {
-//    @include font-size(-2);
-//    margin: 0;
-
- //   a {
- //     text-decoration: underline;
-  //  }
- // }
-
-//}
-
 @include mq($from: sm) {
     .line {
         border-top: 1px solid $colour-nice-grey-1;
