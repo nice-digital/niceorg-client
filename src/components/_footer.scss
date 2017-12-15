@@ -57,10 +57,12 @@
   }
 
   #get-involved {
-      background: #004650;
+      background: $colour-nice-teal;
+      float:left;
+      width:100%;
   }
 
-  @include mq($from: md) {
+  @include mq($from: sm) {
     #get-involved {
       display: inline;
       height: 1000px;
@@ -88,6 +90,29 @@
   .logotext {
     @include invisible;
   }
+}
+
+.legal-panel{
+    @include font-size(-2);
+    .nav-legal{
+        margin-left:0;
+        li{
+            list-style: none;
+            float:left;
+            a{
+                border-left: 1px solid $colour-nice-white;
+                padding-left: em($spacing-small);
+                padding-right: em($spacing-small);
+            }
+        }
+        &>:first-child>a{
+            border-left:none;
+            padding-left: 0;
+        }
+    }
+    
+
+
 }
 
 
