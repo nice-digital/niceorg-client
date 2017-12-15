@@ -1,24 +1,33 @@
+// sass-lint:disable no-ids nesting-depth
+
 // TopHat overrides
 // Niceorg specific TopHat overrides e.g. full width search bar
-.nice-tophat .nice-search {
-  float: none;
-  margin: em($spacing-medium) auto;
-  width: 100%;
+body {
+  #nice-global {
+    min-height: 0;
 
-  input {
-    height: rem(50);
+    .nice-search {
+      float: none;
+      margin: em($spacing-medium) auto;
+      max-width: rem(1170px);
+      width: 100%;
 
-    &::placeholder {
-      color: $colour-nice-grey-1;
-      font-style: italic;
-      opacity: 1;
+      input {
+        height: rem(50);
+
+        &::placeholder {
+          color: $colour-nice-grey-1;
+          font-style: italic;
+          opacity: 1;
+        }
+      }
+
+      // Submit search btn
+      button {
+        cursor: pointer;
+        height: rem(50);
+        width: rem(50);
+      }
     }
-  }
-
-  // Submit search btn
-  button {
-    cursor: pointer;
-    height: rem(50);
-    width: rem(50);
   }
 }

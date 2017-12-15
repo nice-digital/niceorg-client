@@ -1,4 +1,7 @@
+// Various containers wrapping content from old Bootstrap.
+// The specific selectors are needed to override existing styles
 body >.layout,
-.restrict-width {
+.restrict-width,
+body .container {
   @extend %container;
 }

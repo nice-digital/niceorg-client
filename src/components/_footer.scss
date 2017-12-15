@@ -40,16 +40,6 @@
     @include font-size(1);
   }
 
-  // Copyright year, notice of rights etc
-  .legal-copyright {
-    @include font-size(-2);
-    margin: 0;
-
-    // a {
-    //   text-decoration: underline;
-    // }
-  }
-
   .fa {
     // Some icons don't exist in NICE.Glyphs
     // so we have to use font awesome instead
@@ -92,6 +82,21 @@
   }
 }
 
+// Container for
+//.legal-panel {
+
+  // Copyright year, notice of rights etc
+//  .legal-copyright {
+//    @include font-size(-2);
+//    margin: 0;
+
+ //   a {
+ //     text-decoration: underline;
+  //  }
+ // }
+
+//}
+
 @include mq($from: sm) {
     .line {
         border-top: 1px solid $colour-nice-grey-1;
@@ -118,6 +123,14 @@
         &>:first-child>a{
             border-left:none;
             padding-left: 0;
+        }
+    }
+     // Copyright year, notice of rights etc
+    .legal-copyright {
+        @include font-size(-2);
+        margin: 0;
+        a {
+            text-decoration: underline;
         }
     }
 }
