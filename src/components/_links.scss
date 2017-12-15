@@ -1,0 +1,10 @@
+// Key links used to use NICE.Glyphs but we prefer
+// a unicode 'greater than' to avoid use of an icon font
+.zone-content .key-link:before {
+  color: inherit;
+  content: get-glyph(greater-than);
+  font-weight: 900;
+  margin: em(0 $spacing-x-small 0 0);
+  text-decoration: none;
+  display: inline-block;
+}
