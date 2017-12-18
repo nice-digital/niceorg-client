@@ -1,6 +1,7 @@
 // sass-lint:disable-all
-$footer-main-width: 75%; 
+$footer-main-width: 75%;
 
+/// Footer component
 .footer {
   @include links-inverse;
   @include font-size(-1);
@@ -9,6 +10,11 @@ $footer-main-width: 75%;
   overflow: hidden;
   padding: em($spacing-large 0 $spacing-medium);
   position: relative;
+
+  // Remove unncessary line breaks from the CMS so we can control spacing
+  br {
+    display: none;
+  }
 
   a {
     text-decoration: none;
@@ -27,6 +33,10 @@ $footer-main-width: 75%;
     @include font-size(-1);
   }
 
+  ul {
+    margin: 0;
+  }
+
   h3 {
     @include font-size(3);
     font-weight: normal;
@@ -36,9 +46,10 @@ $footer-main-width: 75%;
     }
   }
 
-  // Large 'main' links
-  .main-nav-panel {
-    @include font-size(1);
+  // Old Less styling used empty div.
+  // We use a pseudo element on the "legal panel" instead to avoid extra markup.
+  .line-div {
+    display: none;
   }
 
   .fa {
@@ -46,320 +57,150 @@ $footer-main-width: 75%;
     // so we have to use font awesome instead
     font-family: FontAwesome;
   }
+}
 
-  #get-involved {
-      background: $colour-nice-teal;
-      float:left;
-      width:100%;
+
+/// Main navigation section with logo and large nav
+#main-nav {
+  margin-bottom: em($spacing-large);
+
+  // Large 'main' links
+  .main-nav-panel {
+    @include font-size(1);
+    margin-bottom: em($spacing-medium);
+  }
+
+  /// Footer logo
+  .footer-nicelogo {
+    @include font-size(6);
+    display: inline-block;
+    margin-bottom: em($spacing-small);
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      margin: 0;
+
+      &:before {
+        // NICE Logo icon
+        // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Glyphs.html#charset
+        content: "\e01a";
+      }
+    }
+
+    .logotext {
+      @include invisible;
+    }
+  }
+
+  @include mq($from: md) {
+    margin-bottom: 0;
+  }
+}
+
+
+/// Explore footer navigation i.e. services
+#explore {
+  margin-bottom: em($spacing-large);
+
+  @include mq($from: md) {
+    margin-bottom: 0;
+  }
+}
+
+
+/// Syndication footer section i.e. content re-use
+#syndication {
+  margin-bottom: em($spacing-large);
+
+  @include mq($from: md) {
+    margin-bottom: 0;
+  }
+}
+
+
+/// Get involved section in the footer
+#get-involved {
+  @include clearfix;
+  background: $colour-nice-teal;
+  clear: both;
+  margin: em($spacing-large) -2%; // Negative margin to 'jump outside' the container
+  padding: em($spacing-large) 2%;
+
+  #get-involved-panel {
+    margin: 0;
+  }
+
+  @include mq($from: md) {
+    display: inline;
+    height: 1000px;
+    margin: 0;
+    padding: em($spacing-large $spacing-medium);
+    position: absolute;
+    top: 0;
+    width: 1000px;
+  }
+}
+
+
+/// Legal panel in the footer, contains the nav and copyright statement
+.legal-panel {
+  @include font-size(-2);
+
+  // Legal navigation list with accessibility/FOI/terms etc
+  .nav-legal {
+    list-style: none;
+    margin: 0 0 em($spacing-large);
+  }
+
+   // Copyright year, notice of rights etc
+  .legal-copyright {
+      @include font-size(-2);
+      margin: 0;
+      clear: both;
+
+      a { text-decoration: underline; }
   }
 
   @include mq($from: sm) {
-    #get-involved {
-      display: inline;
-      height: 1000px;
-      padding: em($spacing-large $spacing-medium);
-      position: absolute;
-      top: 0;
-      width: 1000px;
-    }
-  }
-}
+    margin-top: em($spacing-x-large);
+    position: relative;
 
+    // Line divider between sections
+    .container {
+      padding-top: em($spacing-large);
+      position: relative;
 
-// Footer logo
-.footer-nicelogo {
-  @include font-size(5);
-
-  .logo {
-    &:before {
-      // NICE Logo icon
-      // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Glyphs.html#charset
-      content: "\e01a";
-    }
-  }
-
-  .logotext {
-    @include invisible;
-  }
-}
-
-@include mq($from: sm) {
-    .line {
-        border-top: 1px solid $colour-nice-grey-1;
-        width: calc(#{$footer-main-width} - #{$spacing-large / 16}em); 
-    }
-}
-
-.legal-panel{
-    @include font-size(-2);
-    width:$footer-main-width;
-    .nav-legal{
-        margin-left:0;
-        li{
-            list-style: none;
-            float:none;
-            @include mq($from: sm) {
-                float:left;
-                a{
-                    border-left: 1px solid $colour-nice-white;
-                    padding-left: em($spacing-small);
-                    padding-right: em($spacing-small);
-                }
-            }
-        }
-        &>:first-child>a{
-            border-left:none;
-            padding-left: 0;
-        }
-    }
-     // Copyright year, notice of rights etc
-    .legal-copyright {
-        @include font-size(-2);
-        margin: 0;
-        clear:both;
-        a {
-            text-decoration: underline;
-        }
-    }
-}
-
-
-/*
-
-footer.footer-wrapper-new {
-
-    .legal-copyright a:hover {
-        text-decoration: underline;
-    }
-
-    i {
-        margin-right: 10px;
-
-        &.fa {
-            font-family: FontAwesome;
-        }
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    a:hover > i {
-        text-decoration: none;
-    }
-
-    .span3 {
-        padding: 20px;//@footerDefaultPadding;
-    }
-    /* Footer background color added: color change *
-    .footer {
-        overflow: hidden;
-        color: $colour-nice-white;
-        background-color: $colour-nice-black;
-    }
-
-    .footer-nicelogo {
-        margin-top: 0px;
-        width: 68px;
-        display: block;
-        overflow-x: hidden;
-
-        &:hover, &:hover > i {
-            text-decoration:underline;
-        }
-
-        .logo {
-            font-size: 31px;
-
-            .logotext {
-                display: none;
-            }
-        }
-    }
-    /* Get Involved Footer background colour change color change *
-    #get-involved {
-        height: 1000px;
-        width: 1000px;
+      &:before {
+        background: $colour-nice-grey-1;
+        content: '';
+        height: 1px;
+        left: 0;
         position: absolute;
-        display: inline;
-        background-color: $colour-nice-teal;
+        top: 0;
+        width: 72.4680851%; // Magic percentage from grid
+      }
     }
 
-    #logo-mobile, #get-involved-panel-mobile {
-        display: none;
+    .nav-legal {
+      @include clearfix;
+      margin: em(0 0 $spacing-small);
+      margin-left: em(-$spacing-small); // To offset the first item padding
     }
 
-    div.container > div.row {
-        position: relative;
-    }
+    li {
+      border-left: 1px solid $colour-nice-white;
+      float: left;
 
-    .main-nav-panel > li {
-        font-size: 22px;
-        line-height: 22px;
-        margin-top: 14px;
-        margin-bottom: 14px;
-    }
+      &:first-child {
+        border-left:none;
+      }
 
-    #main-nav > .row > div {
-        margin-top: 5px;
+      a {
+        padding: em(0 $spacing-small);
+      }
     }
-
-    #main-nav h3, #explore h3, #syndication h3, #get-involved h3 {
-        margin-bottom: 20px;//@footerDefaultPadding;
-        color: $colour-nice-white;
-        font-size: 20px;//@DefaultTitleFontSize;
-        font-weight:normal;
-    }
-
-    .main-nav-panel {
-        margin-top: 20px;//@footerDefaultPadding;
-        margin-bottom: 20px;//@footerDefaultPadding;
-    }
-
-    .line {
-        border-top: $colour-border solid 1px;
-        margin-bottom: -10px;
-        width: 71%;
-    }
-
-    .line-div {
-        margin-bottom: 35px;
-    }
-
-    div.icon {
-        float: left;
-
-        ul > li {
-            display: block;
-            line-height: 24px;
-            white-space: nowrap;
-        }
-    }
-
-    #social {
-        white-space: nowrap;
-    }
+  }
 }
-
-@media (max-width: 320px) {
-
-    //@phoneLeftPadding: @footerDefaultPadding / 2;
-
-    footer.footer-wrapper-new {
-
-        .span3 {
-            padding-left: 20px;//@phoneLeftPadding;
-            padding-bottom: 0;
-        }
-        .span3:not(:first-child){
-            padding-top: 0;
-        }
-
-        color: $colour-nice-white;
-
-        div.container.hide-mobile {
-            margin-left: 0;
-        }
-
-        #explore {
-            padding-bottom: 8px;
-        }
-
-        #logo-mobile {
-            display: block;
-            font-size: 40px;
-        }
-
-
-        #explore-panel {
-            margin-top: 20px;
-        }
-
-        #get-involved {
-            height: 200px;
-            position: relative;
-            padding-top: 10px;
-            background-color: $colour-nice-teal;//@SecondaryMenuColour;
-
-
-        }
-
-        #syndication{
-            .row:last-child{
-                margin-bottom: 20px;//@footerDefaultPadding;
-            }
-        }
-
-        h3 {
-            font-weight: normal;
-        }
-
-        .legal-panel {
-            padding: 0;
-            padding-top: 20px;//@footerDefaultPadding;
-        }
-
-        .legal-copyright {
-            padding: 20px;//@footerDefaultPadding 0;
-            margin: 0;
-        }
-
-        #get-involved-panel{
-            margin-bottom: 0;
-            padding-bottom:30px;
-        }
-
-        #get-involved-panel-mobile {
-            display: block;
-        }
-
-        .no-left-margin {
-            margin-left: 0;
-        }
-        /* Get Involved colour change @media only screen and (max-width: 767px) *
-        #get-involved > div {
-            background-color: $colour-nice-teal; //@HighlightRefresh;
-            width:1000px;
-        }
-    }
-}
-
-// To partially override bootsrap styles for the footer
-@media (max-width:680px) {
-    footer.footer-wrapper-new {
-        .footer {
-            color: $colour-nice-white;
-
-            .nav-legal {
-                margin-bottom:0;
-                padding-top:10px;
-
-                 li {
-                    border-bottom: none;
-                    font-size: 20px;//@baseFontSize;
-
-                    a {
-                        padding: 0;
-                        line-height: 24px;
-
-                        &:hover {
-                            color: $colour-nice-white;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-
-
-
-            a {
-                color: $colour-nice-white;
-            }
-        }
-
-        .legal-copyright {
-            text-align: left;
-        }
-    }
-}
-*/
