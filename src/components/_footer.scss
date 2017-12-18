@@ -1,4 +1,5 @@
 // sass-lint:disable-all
+$footer-main-width: 75%; 
 
 .footer {
   @include links-inverse;
@@ -85,12 +86,13 @@
 @include mq($from: sm) {
     .line {
         border-top: 1px solid $colour-nice-grey-1;
-        width: calc(75% - #{$spacing-large / 16}em); //not sure about this at all..
+        width: calc(#{$footer-main-width} - #{$spacing-large / 16}em); 
     }
 }
 
 .legal-panel{
     @include font-size(-2);
+    width:$footer-main-width;
     .nav-legal{
         margin-left:0;
         li{
@@ -114,6 +116,7 @@
     .legal-copyright {
         @include font-size(-2);
         margin: 0;
+        clear:both;
         a {
             text-decoration: underline;
         }
