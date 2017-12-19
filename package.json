@@ -27,5 +27,8 @@
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-config": "^0.19.2",
     "pixrem": "^4.0.1"
+  },
+  "dependencies": {
+    "@nice-digital/icons": "^1.2.0"
   }
 }
