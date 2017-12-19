@@ -20,6 +20,11 @@
 
     &:hover {
       text-decoration: underline;
+
+      [class^=icon-],
+      [class*=" icon-"] {
+        text-decoration: none;
+      }
     }
 
     [class^=icon-],
@@ -49,12 +54,6 @@
   // We use a pseudo element on the "legal panel" instead to avoid extra markup.
   .line-div {
     display: none;
-  }
-
-  .fa {
-    // Some icons don't exist in NICE.Glyphs
-    // so we have to use font awesome instead
-    font-family: FontAwesome;
   }
 }
 

@@ -17,11 +17,11 @@
   }
 
   &.icon-youtube-play:before {
-    content: nice-icon(youtube-square);
+    content: nice-icon(youtube-play);
   }
 
   &.icon-linkedin-sign:before {
-    content: nice-icon(linkedin-square);
+    content: nice-icon(linkedin-sign);
   }
 }
 
@@ -29,4 +29,16 @@
 [class^=icon-nice],
 [class*=" icon-nice"] {
   @include icon-base;
+
+  &:before {
+    display: block;
+  }
 }
+
+// Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
+@each $icon, $code in $nice-icons {
+  .icon-nice-#{ $icon }:before {
+    content: nice-icon($icon);
+  }
+}
+
