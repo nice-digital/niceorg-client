@@ -1,0 +1,9 @@
+/// Used for featured news article on the new homepage
+.hero-unit {
+  @include links-inverse;
+  background: $colour-nice-cool-teal;
+  color: $colour-text-inverse;
+  margin-bottom: em($spacing-large);
+  padding: em($spacing-large);
+  // TODO
+}
