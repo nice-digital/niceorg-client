@@ -1,4 +1,6 @@
 /// Used for featured news article on the new homepage
+/// Adapted from an old NICE.Bootstrap component
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#typographic-headers
 .hero-unit {
   @include links-inverse;
   background: $colour-nice-cool-teal;
@@ -6,4 +8,8 @@
   margin-bottom: em($spacing-large);
   padding: em($spacing-large);
   // TODO
+
+  .hero-image {
+
+  }
 }
