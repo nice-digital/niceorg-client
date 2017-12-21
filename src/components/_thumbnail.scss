@@ -4,6 +4,7 @@
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#thumbnails
 .thumbnail {
 
+  // sass-lint:disable no-combinators
   > img {
     display: block;
     margin: auto;

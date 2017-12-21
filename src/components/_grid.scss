@@ -1,9 +1,11 @@
 // Copy of the old Bootstrap grid from v2
-.row, .row-fluid {
-  @include clearfix();
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#gridSystem
+.row,
+.row-fluid {
+  @include clearfix;
   width: 100%;
 
-  [class*="span"] {
+  [class*='span'] {
     box-sizing: border-box;
     display: block;
     float: left;
@@ -12,7 +14,7 @@
   }
 
   @include mq($from: sm) {
-    [class*="span"] {
+    [class*='span'] {
       float: left;
       margin-left: 2.12765957%;
       min-height: 40px;
@@ -38,7 +40,7 @@
   }
 
   @include mq($from: lg) {
-    [class*="span"] {
+    [class*='span'] {
       margin-left: 2.56410256%;
 
       &:first-child {

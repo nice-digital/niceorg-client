@@ -9,13 +9,14 @@
 /// Taken from NICE.Bootstrap
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media
 .media {
-  padding-bottom: em($spacing-medium);
   border-bottom: 1px solid $colour-border;
+  padding-bottom: em($spacing-medium);
 
   &.no-border {
     border: 0;
   }
 
+  // sass-lint:disable no-combinators
   > .pull-left {
     margin-right: em($spacing-medium);
   }

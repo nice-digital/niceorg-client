@@ -26,8 +26,8 @@
 }
 
 // Old icons from NICE-Glyphs are all prefixed with "nice-"
-[class^=icon-nice],
-[class*=" icon-nice"] {
+[class^='icon-nice'],
+[class*=' icon-nice'] {
   @include icon-base;
 
   &:before {
