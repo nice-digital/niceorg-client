@@ -1,0 +1,24 @@
+/// List of media items, taken from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media-list
+.media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+/// Media object - used for displaying news etc.
+/// Taken from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media
+.media {
+  padding-bottom: em($spacing-medium);
+  border-bottom: 1px solid $colour-border;
+
+  &.no-border {
+    border: 0;
+  }
+
+  > .pull-left {
+    margin-right: em($spacing-medium);
+  }
+
+  // TODO
+}

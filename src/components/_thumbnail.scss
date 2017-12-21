@@ -1,0 +1,19 @@
+/// Thumbnail component used for displaying news items in a grid
+/// e.g. https://www.nice.org.uk/news
+/// Adapted from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#thumbnails
+.thumbnail {
+
+  > img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .caption {
+    h3 {
+      @include font(3);
+      margin-top: rem($spacing-medium);
+    }
+  }
+}
