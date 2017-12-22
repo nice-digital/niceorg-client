@@ -2,7 +2,7 @@ var sasslint = require("./sasslint");
 
 module.exports = {
 	options: {
-		livereload: true
+		livereload: 35731
 	},
 	sass: {
 		files: sasslint.target.src,
