@@ -27,7 +27,7 @@
   position: relative;
 
   &:hover {
-    background: darken($colour-nice-cool-teal, 3%)
+    background: darken($colour-nice-cool-teal, 3%);
   }
 
   // Use pseudo element so we can click anywhere in the hero unit,
