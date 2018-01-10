@@ -1,4 +1,4 @@
-// sass-lint:disable no-ids nesting-depth
+// sass-lint:disable no-ids nesting-depth no-combinators
 
 // TopHat overrides
 // Niceorg specific TopHat overrides e.g. full width search bar
@@ -27,6 +27,60 @@ body {
         cursor: pointer;
         height: rem(50);
         width: rem(50);
+      }
+
+      .controls {
+        margin-right: 3.325rem; //this is the width of the magnifying glass button + (border width * 2). the border width is specified inside tophat's style blocks not here in sass.
+      }
+
+      .tt-dropdown-menu {
+        background-color: $colour-nice-white;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: -1px;
+        padding-bottom: 0;
+        padding-top: 0;
+        text-align: left;
+        z-index: 1;
+      }
+
+      .tt-hint,
+      .tt-dropdown-menu,
+      .tt-suggestion.tt-cursor,
+      .tt-suggestion+.tt-suggestion {
+        border-color: $colour-nice-grey-2;
+      }
+
+      .tt-suggestion {
+        padding: rem($spacing-small $spacing-medium);
+
+        &.tt-cursor {
+          background-color: $colour-nice-teal;
+          color: $colour-text-inverse;
+        }
+
+        .title {
+          font-weight: normal;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .type {
+          float: right;
+          font-style: italic;
+        }
+      }
+
+      .tt-hint,
+      .tt-input {
+        padding-left: rem($spacing-medium);
+      }
+
+      .tt-suggestion+.tt-suggestion {
+        border-top-style: solid;
+        border-top-width: 1px;
       }
     }
   }
