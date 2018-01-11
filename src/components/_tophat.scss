@@ -1,4 +1,4 @@
-// sass-lint:disable no-ids nesting-depth no-combinators
+// sass-lint:disable no-ids nesting-depth no-combinators no-important
 
 // TopHat overrides
 // Niceorg specific TopHat overrides e.g. full width search bar
@@ -84,7 +84,7 @@ body {
       }
 
       #search {
-        background-color: $colour-nice-white;
+        background-color: $colour-nice-white !important;
       }
     }
   }
