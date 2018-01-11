@@ -2,6 +2,12 @@
 .panel {
   padding: 0;
 
+  // sass-lint:disable no-combinators
+  > .panel {
+    // For nested panels
+    margin-top: 0;
+  }
+
   // Contextual panel alternatives
   // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
   &.panel-default { background: $colour-panel-default; }
