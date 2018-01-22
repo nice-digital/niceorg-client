@@ -1,9 +1,12 @@
-// Groups breadcrumbs and main page heading
+// Page header component overrides from the Design System.
+// Groups breadcrumbs and main page heading in niceorg.
 .page-header {
-  background: $colour-panel-default;
-  padding: em($spacing-medium 0 $spacing-large);
 
   h1 {
-    margin-bottom: 0;
+    margin: rem(0 0 $spacing-small 0);
+  }
+
+  .lead {
+    margin: rem(0 0 $spacing-small 0);
   }
 }
