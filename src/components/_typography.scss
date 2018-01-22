@@ -1,0 +1,5 @@
+// Remove the top margin for the first lead paragraph
+// on a page so it sits closer to the page header.
+.page-content .lead:first-child  {
+  margin-top: 0;
+}
