@@ -16,6 +16,11 @@
     padding: em($spacing-medium);
   }
 
+  // sass-lint:disable-block no-combinators
+  > :first-child {
+    margin-top: 0;
+  }
+
   h4 {
     margin-top: 0;
   }
