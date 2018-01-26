@@ -14,6 +14,7 @@ app.get("/setgtmdatalayer", function (req, res) {
 
 app.use("/fonts", express.static(path.join(__dirname, "./../node_modules/@nice-digital/icons/dist")));
 app.use("/css", express.static(path.join(__dirname, "../temp")));
+app.use("/js/nice-design-system", express.static(path.join(__dirname, "./../node_modules/@nice-digital/design-system/dist/javascripts")));
 app.use(express.static(path.join(__dirname, "./../pages")));
 
 app.listen(app.get("port"), function(){

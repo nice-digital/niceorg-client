@@ -1,7 +1,7 @@
 // Bootstrap breadcrumbs
 .breadcrumb {
   list-style: none;
-  margin: em(0 0 $spacing-large);
+  margin: em($spacing-small 0 $spacing-large);
   padding: 0;
 
   li {

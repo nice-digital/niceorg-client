@@ -10,6 +10,10 @@
   padding: em($spacing-large 0 $spacing-medium);
   position: relative;
 
+  @media print {
+    display: none;
+  }
+
   // Remove unncessary line breaks from the CMS so we can control spacing
   br {
     display: none;
