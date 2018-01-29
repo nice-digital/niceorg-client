@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@nice-digital/browserslist-config": "^1.0.0",
-    "@nice-digital/design-system": "^0.4.0",
+    "@nice-digital/design-system": "^0.4.1",
     "autoprefixer": "^7.2.4",
     "express": "^4.16.2",
     "grunt": "^1.0.1",
