@@ -25,18 +25,53 @@
     }
 
     // Magic percentages taken from old Bootstrap
-    .span1 { width: 6.38297872%; }
-    .span2 { width: 14.89361702%; }
-    .span3 { width: 23.40425532%; }
-    .span4 { width: 31.91489362%; }
-    .span5 { width: 40.42553191%; }
-    .span6 { width: 48.93617021%; }
-    .span7 { width: 57.44680851%; }
-    .span8 { width: 65.95744681%; }
-    .span9 { width: 74.46808511%; }
-    .span10 { width: 82.9787234%; }
-    .span11 { width: 91.4893617%; }
-    .span12 { width: 100%; }
+    .span1 {
+      width: 6.38297872%;
+    }
+
+    .span2 {
+      width: 14.89361702%;
+    }
+
+    .span3 {
+      width: 23.40425532%;
+    }
+
+    .span4 {
+      width: 31.91489362%;
+    }
+
+    .span5 {
+      width: 40.42553191%;
+    }
+
+    .span6 {
+      width: 48.93617021%;
+    }
+
+    .span7 {
+      width: 57.44680851%;
+    }
+
+    .span8 {
+      width: 65.95744681%;
+    }
+
+    .span9 {
+      width: 74.46808511%;
+    }
+
+    .span10 {
+      width: 82.9787234%;
+    }
+
+    .span11 {
+      width: 91.4893617%;
+    }
+
+    .span12 {
+      width: 100%;
+    }
   }
 
   @include mq($from: lg) {
@@ -49,17 +84,151 @@
     }
 
     // Magic percentages taken from old Bootstrap
-    .span1 { width: 5.98290598%; }
-    .span2 { width: 14.52991453%; }
-    .span3 { width: 23.07692308%; }
-    .span4 { width: 31.62393162%; }
-    .span5 { width: 40.17094017%; }
-    .span6 { width: 48.71794872%; }
-    .span7 { width: 57.26495726%; }
-    .span8 { width: 65.81196581%; }
-    .span9 { width: 74.35897436%; }
-    .span10 { width: 82.90598291%; }
-    .span11 { width: 91.45299145%; }
-    .span12 { width: 100%; }
+    .span1 {
+      width: 5.98290598%;
+    }
+
+    .span2 {
+      width: 14.52991453%;
+    }
+
+    .span3 {
+      width: 23.07692308%;
+    }
+
+    .span4 {
+      width: 31.62393162%;
+    }
+
+    .span5 {
+      width: 40.17094017%;
+    }
+
+    .span6 {
+      width: 48.71794872%;
+    }
+
+    .span7 {
+      width: 57.26495726%;
+    }
+
+    .span8 {
+      width: 65.81196581%;
+    }
+
+    .span9 {
+      width: 74.35897436%;
+    }
+
+    .span10 {
+      width: 82.90598291%;
+    }
+
+    .span11 {
+      width: 91.45299145%;
+    }
+
+    .span12 {
+      width: 100%;
+    }
   }
 }
+
+// other grid integration from NICE.bootstrap
+// sass-lint:disable no-combinators no-universal-selectors
+
+[class^='grid'],
+[class*=' grid'] {
+  background: red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+[class^='grid']:before,
+[class*=' grid']:before,
+[class^='grid']:after,
+[class*=' grid']:after {
+  content: '';
+  display: table;
+  line-height: 0;
+}
+
+[class^='grid']:after,
+[class*=' grid']:after {
+  clear: both;
+}
+
+[class^='grid'] > *,
+[class*='grid'] > * {
+  box-sizing: border-box;
+  float: left;
+  list-style: none;
+  margin: 0;
+  margin-right: 1.9%;
+  min-height: 1px;
+  padding: 0;
+}
+
+.grid3 {
+  @include mq($from: xs) {
+    & > *,
+    & > .over2,
+    & > .over-fill {
+      display: block;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    & > *:nth-child(2n+3) {
+      clear: none;
+    }
+  }
+  @include mq($from: sm) {
+    text-align: center;
+
+    & > * {
+      display: inline-block;
+      float: none;
+      text-align: left;
+      width: 47.6%;
+
+      // the fourth, and then every third one after that
+      &:nth-child(3n+4) {
+        clear: none;
+      }
+      // the third, then every second one after that
+      &:nth-child(2n+3) {
+        clear: left;
+      }
+    }
+
+    & > .over2,
+    & > .over-fill {
+      display: block;
+      margin-bottom: 3px;
+      width: 97.1%;
+    }
+  }
+  @include mq($from: md) {
+    & > * {
+      width: 31.333333%;
+
+      &:nth-child(3n+4) {
+        clear: left;
+      }
+    }
+
+    & > .over2 {
+      width: 64.666666%;
+    }
+  }
+}
+
+
+
+
+
+
+
