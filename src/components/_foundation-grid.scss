@@ -45,6 +45,7 @@
         clear: left;
       }
     }
+
     & > .over2 {
       width: 64.666666%;
     }
@@ -64,6 +65,7 @@
       &:nth-child(3n+4) {
         clear: none;
       }
+
       // the third, then every second one after that
       &:nth-child(2n+3) {
         clear: left;
