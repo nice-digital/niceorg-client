@@ -5,13 +5,13 @@
       margin: rem($spacing-small 0 $spacing-x-small 0);
       color: $colour-nice-dark-grey;
     }
-    small.muted {
+    small {
       display: block;
       @include font-size(-1);
       color: $colour-nice-dark-grey;
       margin: rem($spacing-x-small 0 $spacing-x-small 0);
     }
-    p.abstract {
+    .abstract {
       margin: rem($spacing-small 0 $spacing-x-small 0);
     }
   }
