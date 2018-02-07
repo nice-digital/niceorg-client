@@ -30,7 +30,6 @@
 
 .grid2 {
   @extend %grid-base-styling;
-
   @include mq($from: xs) {
     & > * {
       width: 48%;
@@ -39,22 +38,20 @@
       }
     }
   }
-
   @include mq($until: xs) {
     & > * {
       float: none;
       margin-right: 0;
-      width: 100%
+      width: 100%;
     }
     & > *:nth-child(2n + 3) {
-      clear: none
+      clear: none;
     }
   }
 }
 
 .grid3 {
   @extend %grid-base-styling;
-
   @include mq($from: sm) {
     & > * {
       width: 31.333333%;
@@ -68,7 +65,6 @@
       width: 64.666666%;
     }
   }
-
   @include mq($until: sm) {
     text-align: center;
 
@@ -94,7 +90,6 @@
       width: 97.1%;
     }
   }
-
   @include mq($until: xs) {
     & > *,
     & > .over2,
@@ -112,42 +107,40 @@
 
 .grid4 {
   @extend %grid-base-styling;
-
   @include mq($from: sm) {
     & > * {
-      width: 23%
+      width: 23%;
     }
 
     & > *:nth-child(4n+5) {
-      clear: left
+      clear: left;
     }
 
     & > .over2 {
-      width: 48%
+      width: 48%;
     }
 
     & > .over3 {
-      width: 73%
+      width: 73%;
     }
   }
-
   @include mq($until: sm) {
     text-align: center;
 
     & > * {
-      float: none;
-      text-align: left;
       display: inline-block;
+      float: none;
       margin: -2px -1px;
+      text-align: left;
       width: 47.6%;
     }
 
     & > *:nth-child(4n+5) {
-      clear: none
+      clear: none;
     }
 
     & > *:nth-child(3n+4) {
-      clear: left
+      clear: left;
     }
 
     & > .over2,
@@ -155,17 +148,16 @@
     & > .over-fill {
       display: block;
       margin-bottom: 3px;
-      width: 97.1%
+      width: 97.1%;
     }
   }
-
   @include mq($until: xs) {
     & > *:nth-child(3n+4) {
-      clear: none
+      clear: none;
     }
 
     & > *:nth-child(2n+3) {
-      clear: left
+      clear: left;
     }
 
     & > *,
@@ -174,43 +166,41 @@
     & > .over-fill {
       display: block;
       margin-right: 0;
-      width: 100%
+      width: 100%;
     }
   }
 }
 
 .grid5 {
   @extend %grid-base-styling;
-
   @include mq($from: sm) {
     & > * {
-      width: 18%
+      width: 18%;
     }
 
     & > .over2 {
-      width: 38%
+      width: 38%;
     }
 
     & > .over3 {
-      width: 58%
+      width: 58%;
     }
 
     & > .over4 {
-      width: 78%
+      width: 78%;
     }
   }
-
   @include mq($until: sm) {
     & * > {
-      float: none;
-      text-align: left;
       display: inline-block;
+      float: none;
       margin: -2px -1px;
+      text-align: left;
       width: 31.11158%;
     }
 
     & > .over2 {
-      width: 64.666666%
+      width: 64.666666%;
     }
 
     & > .over3,
@@ -218,10 +208,9 @@
     & > .over-fill {
       display: block;
       margin-bottom: 3px;
-      width: auto
+      width: auto;
     }
   }
-
   @include mq($until: xs) {
     & > *,
     & > .over2,
@@ -230,49 +219,47 @@
     & > .over-fill {
       display: block;
       margin: 0;
-      width: auto
+      width: auto;
     }
   }
 }
 
 .grid6 {
   @extend %grid-base-styling;
-
   @include mq($from: sm) {
     & > * {
-      width: 14.666666%
+      width: 14.666666%;
     }
 
     & > .over2 {
-      width: 31.11158%
+      width: 31.11158%;
     }
 
     & > .over3 {
-      width: 46.7%
+      width: 46.7%;
     }
 
     & > .over4 {
-      width: 64.666666%
+      width: 64.666666%;
     }
 
     & > .over5 {
-      width: 81.333333%
+      width: 81.333333%;
     }
   }
-
   @include mq($until: sm) {
     text-align: center;
 
     & > * {
-      float: none;
-      text-align: left;
       display: inline-block;
+      float: none;
       margin: -2px -1px;
-      width: 31.11158%
+      text-align: left;
+      width: 31.11158%;
     }
 
     & > .over2 {
-      width: 64.666666%
+      width: 64.666666%;
     }
 
     & > .over3,
@@ -281,19 +268,18 @@
     & > .over-fill {
       display: block;
       margin-bottom: 3px;
-      width: auto
+      width: auto;
     }
   }
-
   @include mq($until: xs) {
     & > *,
     & > .over2,
     & > .over3,
     & > .over4,
     & > .over5 {
-      display:block;
+      display: block;
       margin: 0;
-      width: auto
+      width: auto;
     }
   }
 }

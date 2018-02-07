@@ -1,16 +1,20 @@
+// Single blog items listed on news / blog page
+
 .blog-item {
   .text-block {
     p:first-child {
+      color: $colour-nice-dark-grey;
       @include font-size(-1);
       margin: rem($spacing-small 0 $spacing-x-small 0);
-      color: $colour-nice-dark-grey;
     }
+
     small {
+      color: $colour-nice-dark-grey;
       display: block;
       @include font-size(-1);
-      color: $colour-nice-dark-grey;
       margin: rem($spacing-x-small 0 $spacing-x-small 0);
     }
+
     .abstract {
       margin: rem($spacing-small 0 $spacing-x-small 0);
     }
