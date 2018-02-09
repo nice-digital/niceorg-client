@@ -1,0 +1,49 @@
+// Pager or pagination component.
+// Replacement for http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
+.pager {
+  margin: em($spacing-medium 0 $spacing-large);
+  text-align: center;
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline;
+
+    &.disabled {
+      span {
+        background: transparent;
+        color: #737373;
+      }
+    }
+
+    &.active {
+      span {
+        background: $colour-nice-teal;
+        color: $colour-text-inverse;
+      }
+    }
+  }
+
+  a,
+  span {
+    background: $colour-panel-default;
+    color: $colour-link;
+    display: inline-block;
+    padding: em($spacing-small $spacing-medium);
+    position: relative;
+    text-decoration: none;
+  }
+
+  a {
+    &:hover {
+      background: $colour-nice-grey-2;
+    }
+
+    &:active {
+      top: em($spacing-xx-small);
+    }
+  }
+
+}
