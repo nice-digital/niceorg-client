@@ -1,16 +1,15 @@
 .news-content {
   .blog-author {
+    @extend .font-weight-normal;
+    @include font-size(3);
     color: $colour-nice-dark-grey;
     display: block;
-    @include font-size(3);
-    @extend .font-weight-normal;
     margin-top: rem($spacing-small);
   }
+
   .date {
     color: $colour-nice-dark-grey;
     margin-bottom: rem($spacing-small);
     margin-top: 0;
   }
 }
-
-
