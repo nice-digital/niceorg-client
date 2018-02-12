@@ -60,4 +60,5 @@ typings/
 temp
 
 # Jetbrains IDE files
-.idea/
+.idea
+source-css

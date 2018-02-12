@@ -1,0 +1,30 @@
+// Single blog items listed on news / blog page
+
+.blog-item {
+  margin-bottom: em($spacing-medium) !important; // sass-lint:disable-line no-important
+
+  h4 {
+    @include font-size(h5);
+    margin-top: 0;
+  }
+
+  .text-block {
+
+    p:first-child {
+      color: $colour-nice-dark-grey;
+      @include font-size(-1);
+      margin: rem($spacing-small 0 $spacing-x-small 0);
+    }
+
+    small {
+      color: $colour-nice-dark-grey;
+      display: block;
+      @include font-size(-1);
+      margin: rem($spacing-x-small 0 $spacing-x-small 0);
+    }
+
+    .abstract {
+      margin: rem($spacing-small 0 $spacing-x-small 0);
+    }
+  }
+}
