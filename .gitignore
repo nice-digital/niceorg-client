@@ -58,3 +58,6 @@ typings/
 .env
 
 temp
+
+# Jetbrains IDE files
+.idea/
