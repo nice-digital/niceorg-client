@@ -6,4 +6,5 @@ $nice-font-base-path: '/fonts/';
 @import 'nice-design-system';
 
 // Components
-@import 'components/components';
+@import 'components/_components',
+'navigation/_navigation';
