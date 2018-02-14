@@ -1,9 +1,9 @@
 .news-content {
   .blog-author {
-    @extend .font-weight-normal;
-    @include font-size(3);
+    @include font-size(h5);
     color: $colour-nice-dark-grey;
     display: block;
+    font-weight: normal;
     margin-top: rem($spacing-small);
   }
 
