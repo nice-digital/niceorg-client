@@ -42,3 +42,22 @@
   }
 }
 
+// Custom icons that don't follow the normal conventions
+.icon-linkedin {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(linkedin);
+    display: block;
+  }
+}
+
+.icon-question-sign {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(question-circle);
+    display: block;
+  }
+}
+
