@@ -5,6 +5,7 @@ $nice-font-base-path: '/fonts/';
 
 @import 'nice-design-system';
 
-// Components
+// sass-lint:disable clean-import-paths
 @import 'components/_components',
+'layout/_layout',
 'navigation/_navigation';
