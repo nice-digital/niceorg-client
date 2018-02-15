@@ -1,0 +1,113 @@
+// Tabs navigation.
+// E.g. https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools
+// E.g. https://www.nice.org.uk/about/what-we-do/into-practice/education-learning-and-professional-development/case-scenarios
+// E.g. https://www.nice.org.uk/standards-and-indicators
+.nav-tabs {
+  @include clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 1px;
+
+  li {
+    float: left;
+
+    &.pull-right {
+      float: right;
+    }
+
+    &.active {
+      a {
+        background: $colour-panel-default;
+        border-left: 1px solid $colour-border;
+        border-right: 1px solid $colour-border;
+        color: $colour-text;
+        text-decoration: none;
+
+        &:before {
+          // The -1px is to over the grey border round the tab
+          background: $colour-icons;
+          content: '';
+          height: em($spacing-x-small);
+          left: -1px;
+          position: absolute;
+          right: -1px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    @include link-default;
+    background: 0;
+    border: 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: em($spacing-medium);
+    position: relative;
+
+    &:focus {
+      // Stop focus ring clipping
+      z-index: 1;
+    }
+
+    // Some sets of tabs have a 'help' .btn - but we don't want this styled as a button
+    &.btn {
+      text-decoration: underline !important; // sass-lint:disable-line no-important
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: none;
+        top: 0;
+      }
+    }
+
+    &.dropdown-toggle {
+      background: $colour-panel-default;
+      border: 1px solid $colour-border;
+      padding: em($spacing-small $spacing-medium);
+
+      .caret {
+        border-top-color: $colour-link;
+        margin-top: rem(-$spacing-x-small);
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    li {
+      float: none;
+    }
+
+    a {
+      clear: both;
+      display: block;
+      padding: rem($spacing-small);
+    }
+  }
+}
+
+
+// sass-lint:disable no-combinators
+.tab-content {
+  background: $colour-panel-default;
+  border: 1px solid $colour-border;
+  clear: both;
+  margin-bottom: rem($spacing-large);
+  padding: em($spacing-medium);
+
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
