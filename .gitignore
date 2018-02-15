@@ -41,5 +41,6 @@ typings/
 # dotenv environment variables file
 .env
 temp
-/.idea
-/source-css
+# Jetbrains IDE files
+.idea
+source-css

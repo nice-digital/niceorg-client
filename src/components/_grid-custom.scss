@@ -33,6 +33,7 @@
   @include mq($from: xs) {
     & > * {
       width: 48%;
+
       &:nth-child(2n + 3) {
         clear: left;
       }
@@ -44,6 +45,7 @@
       margin-right: 0;
       width: 100%;
     }
+
     & > *:nth-child(2n + 3) {
       clear: none;
     }
