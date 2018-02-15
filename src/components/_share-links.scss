@@ -1,0 +1,48 @@
+// Social media share links (ie addthis), using a dropdown internally.
+// Used at the top of blogs/news.
+// E.g. https://www.nice.org.uk/news/blog/having-a-nice-endorsement-ensures-patients-and-commissioners-trust-our-mental-health-services
+.share-links {
+
+  .nav-header {
+    @include font-size(h5);
+    padding: rem($spacing-small $spacing-medium);
+  }
+
+  .dropdown-menu {
+    margin-top: rem($spacing-small);
+    padding-bottom: rem($spacing-small);
+
+    &:before {
+      border-bottom: rem($spacing-small) solid $colour-border;
+      border-left: rem($spacing-small) solid transparent;
+      border-right: rem($spacing-small) solid transparent;
+      bottom: 100%;
+      content: '';
+      display: block;
+      height: 0;
+      position: absolute;
+      right: rem($spacing-small);
+      width: 0;
+    }
+
+    a {
+      color: $colour-text;
+      // Override default margin from addthis
+      margin: 0 !important; // sass-lint:disable-line no-important
+      padding: rem($spacing-x-small $spacing-medium);
+      text-decoration: none;
+
+      &:hover {
+        background: $colour-nice-teal;
+        color: $colour-link-inverse;
+      }
+    }
+  }
+
+  [class^='icon-'] {
+    display: inline-block;
+    min-width: rem($spacing-medium);
+    text-align: center;
+    vertical-align: baseline;
+  }
+}

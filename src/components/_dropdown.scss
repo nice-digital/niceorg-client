@@ -1,0 +1,55 @@
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-backdrop {
+  bottom: 0;
+  cursor: default;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+
+// Dropdown menu, used for:
+// - addthis share menu (e.g. https://www.nice.org.uk/news/blog/having-a-nice-endorsement-ensures-patients-and-commissioners-trust-our-mental-health-services)
+// - tabs (e.g. https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools)
+.dropdown-menu {
+  background: $colour-nice-white;
+  border: 1px solid $colour-border;
+  box-shadow: 0 rem($spacing-x-small) rem($spacing-small) rgba(0, 0, 0, .2);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin-top: rem($spacing-x-small);
+  min-width: rem($nice-breakpoint-xs / 2);
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+
+  // sass-lint:disable no-combinators
+  &.pull-right,
+  .pull-right > & {
+    left: auto;
+    right: 0;
+  }
+
+  .open & {
+    display: block;
+  }
+
+  li {
+    float: none;
+  }
+
+  a {
+    clear: both;
+    display: block;
+    font-weight: normal;
+    padding: rem($spacing-small);
+    white-space: nowrap;
+  }
+}

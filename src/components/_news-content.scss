@@ -12,4 +12,10 @@
     margin-bottom: rem($spacing-small);
     margin-top: 0;
   }
+
+  .news-header {
+    h1 {
+      clear: none;
+    }
+  }
 }

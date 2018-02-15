@@ -11,3 +11,16 @@
 .pull-right {
   float: right;
 }
+
+
+// CSS triangle, often used within dropdowns
+.caret {
+  border-left: rem($spacing-small) solid transparent;
+  border-right: rem($spacing-small) solid transparent;
+  border-top: rem($spacing-small) solid $colour-nice-white;
+  content: '';
+  display: inline-block;
+  height: 0;
+  vertical-align: top;
+  width: 0;
+}

@@ -1,11 +1,11 @@
-// Key links used to use NICE.Glyphs but we prefer
-// a unicode 'greater than' to avoid use of an icon font
+// Key links used to use NICE.Glyphs. Now use nice-icons instead
 // sass-lint:disable no-combinators
 .zone-content .key-link:before {
+  @include icon-base;
+  @include font-size(-2);
   color: inherit;
-  content: get-glyph(greater-than);
-  display: inline-block;
-  font-weight: 900;
-  margin: em(0 $spacing-x-small 0 0);
+  content: nice-icon(chevron-right);
+  font-weight: normal;
+  margin: em(0 $spacing-small 0 0);
   text-decoration: none;
 }
