@@ -17,6 +17,10 @@ app.use("/css", express.static(path.join(__dirname, "../temp")));
 app.use("/js/nice-design-system", express.static(path.join(__dirname, "./../node_modules/@nice-digital/design-system/dist/javascripts")));
 app.use(express.static(path.join(__dirname, "./../pages")));
 
+app.use(function (req, res, next) {
+	res.status(404).sendFile(path.join(__dirname, "./../pages/404.html"));
+})
+
 app.listen(app.get("port"), function(){
 	console.log("Express server listening on port " + app.get("port"));
 });
