@@ -1,0 +1,48 @@
+// sass-lint:disable class-name-format
+
+%sorting {
+  content: '\e021';
+  font-family: 'NICE.Glyphs';
+  font-variant: normal;
+  margin-right: 6px;
+  speak: none;
+  text-transform: none;
+}
+
+table {
+  .sorting {
+    &::before {
+      @extend %sorting;
+    }
+
+    &_asc {
+      &::before {
+        @extend %sorting;
+        content: '\e022';
+      }
+
+      &_disabled {
+        &::before {
+          @extend %sorting;
+          color: #999;
+          content: '\e022';
+        }
+      }
+    }
+
+    &_desc {
+      &::before {
+        @extend %sorting;
+        content: '\e023';
+      }
+
+      &_disabled {
+        &::before {
+          @extend %sorting;
+          color: #999;
+          content: '\e023';
+        }
+      }
+    }
+  }
+}
