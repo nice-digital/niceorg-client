@@ -24,9 +24,45 @@ Niceorg-client is a separate repository from the core niceorg codebase because:
 
 ## Usage
 
-TODO
+Niceorg-client is designed to be used within both niceorg and Guidance-Web:
+
+### Niceorg
+
+To use niceorg-client within niceorg, set the `StylesheetNICEDesignSystem` AppSetting in [Orchard.Web/Web.config](https://github.com/nhsevidence/niceorg/blob/master/src/Orchard.Web/Web.config) (or the Octo variable) to point to one of the [environments](#environments) listed below.
+
+E.g. to point locally, for develoment:
+
+```xml
+<add key="StylesheetNICEDesignSystem" value="http://localhost:8087/css/app.css" />
+```
+
+Or to point to the minified verison on the live CDN:
+
+```xml
+<add key="StylesheetNICEDesignSystem" value="//cdn.nice.org.uk/niceorg/css/app.min.css" />
+```
+
+### Guidance-Web
+
+To use niceorg-client within Guidance-Web, set the `NiceorgDesignSystemCSSURL` and `NiceorgDesignSystemJSURL` AppSetting in [Guidance.Web/appsettings.json](https://github.com/nhsevidence/guidance-web/blob/master/Guidance.Web/appsettings.json#L106-L107) to point to one of the [environments](#environments) listed below.
+
+E.g. to point locally, for develoment:
+
+```json
+"NiceorgDesignSystemCSSURL": "http://localhost:8087/css/app.css",
+"NiceorgDesignSystemJSURL": "http://localhost:8087/js/app.js"
+```
+
+or:
+
+```json
+"NiceorgDesignSystemCSSURL": "//cdn.nice.org.uk/niceorg/css/app.min.css",
+"NiceorgDesignSystemJSURL": "//cdn.nice.org.uk/niceorg/js/app.min.js"
+```
 
 ## Development
+
+To develop locally, you'll need Node 6+ and npm 5+ (TBC).
 
 1. `npm i`
 2. `npm start`
@@ -34,7 +70,10 @@ TODO
 
 ## Environments
 
-| Environment |  URL  |
-| ----------- | :---: |
-| Alpha CDN   | TODO  |
-| Live CDN    | TODO  |
+TODO: Add JS and minified URLs.
+
+| Environment   |  CSS URL  |
+| ------------- | :---: |
+| Localhost dev | http://localhost:8087/css/app.css  |
+| Alpha CDN     | https://alpha-cdn.nice.org.uk/niceorg/css/app.css  |
+| Live CDN      | https://cdn.nice.org.uk/niceorg/css/app.css  |
