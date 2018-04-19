@@ -3,10 +3,17 @@
 // Used to visuallt group elements in a grey container.
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
 .well {
+  @include clearfix;
   background: $colour-panel-default;
   margin-bottom: em($spacing-medium);
   min-height: em($spacing-large);
   padding: em($spacing-large);
+
+  // Support nested wells
+  .well,
+  .panel & {
+    background: $colour-nice-grey-2;
+  }
 
   &.well-large {
     padding: em($spacing-x-large);
