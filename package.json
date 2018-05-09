@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "grunt --color",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "grunt build --color"
   },
   "browserslist": [
     "extends @nice-digital/browserslist-config"
@@ -20,6 +21,7 @@
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-express-server": "^0.5.3",
     "grunt-postcss": "^0.9.0",
