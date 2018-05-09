@@ -17,8 +17,8 @@
 		<!--
 			<file src="temp\app.dev.js" target="app.dev.js"/>
 		-->
-		<file src="temp/app.css" target="app.css"/>
-		<file src="temp/app.min.css" target="app.min.css"/>
-		<file src="temp/app.css.map" target="app.css.map"/>
+		<file src="dist/app.css" target="app.css"/>
+		<file src="dist/app.min.css" target="app.min.css"/>
+		<file src="dist/app.css.map" target="app.css.map"/>
 	</files>
 </package>

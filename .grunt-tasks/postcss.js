@@ -8,5 +8,8 @@ module.exports = {
 	},
 	temp: {
 		src: "temp/*.css"
-	}
+	},
+	dist: {
+		src: "dist/*.css"
+	},
 };

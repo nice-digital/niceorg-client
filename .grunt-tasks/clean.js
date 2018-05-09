@@ -1,3 +1,4 @@
 module.exports = {
-	temp: ["temp"]
+	temp: ["temp"],
+	dist: ["dist"]
 };
