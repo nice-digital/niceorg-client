@@ -7,9 +7,9 @@ module.exports = {
 	sass: {
 		files: sasslint.target.src,
 		tasks: [
-			"sass",
-			"postcss",
-			"sasslint"
+			"sasslint",
+			"sass:temp",
+			"postcss:temp"
 		],
 		options: {
 			spawn: false
