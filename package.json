@@ -1,6 +1,6 @@
 {
   "name": "niceorg-client",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "description": "Client side assets nice.org.uk using the NICE Design System",
   "main": "index.js",
   "scripts": {
