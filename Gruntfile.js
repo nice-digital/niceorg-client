@@ -17,5 +17,5 @@ module.exports = grunt => {
 
 	r("default", ["clean", "copy:temp", "sasslint", "sass:temp", "postcss:temp", "watch"]);
 
-	r("dist", ["clean", "copy:dist", "sasslint", "sass:dist", "postcss:dist", "cssmin:dist"]);
+	r("dist", ["clean", "copy:dist", "sasslint", "sass:dist", "postcss:distMin", "postcss:dist", "cssmin"]);
 };
