@@ -13,6 +13,6 @@
         <tags>cdn nice design system niceorg-client javascript css</tags>
     </metadata>
     <files>
-		<file src="dist\*.css*" target="niceorg\css"/>
+		<file src="dist\css\" target="niceorg\css"/>
 	</files>
 </package>

@@ -11,12 +11,12 @@ module.exports = {
 	},
 	temp: {
 		files: {
-			"temp/app.css": "src/app.scss"
+			"temp/css/app.css": "src/app.scss"
 		}
 	},
 	dist: {
 		files: {
-			"dist/app.css": "src/app.scss"
+			"dist/css/app.css": "src/app.scss"
 		}
 	}
 };

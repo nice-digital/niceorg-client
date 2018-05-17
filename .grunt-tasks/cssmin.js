@@ -1,10 +1,10 @@
 module.exports = {
 	dist: {
 	    files: {
-	      "dist/app.min.css": ["dist/app.css"]
-			},
-			options: {
-				sourceMap: true
-			}
+	      "dist/css/app.min.css": ["dist/css/app.css"]
+		},
+		options: {
+			sourceMap: true
+		}
 	}
 };
