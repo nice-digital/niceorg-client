@@ -3,7 +3,8 @@
 > Implementation of the [NICE Design System](https://github.com/nhsevidence/nice-design-system) for www.nice.org.uk
 
 ## What is it?
-This repository houses the client code (CSS and JS) for the new niceorg front-end. *New* means pages implemented with the Design System from around April 2018 onwards as part of journey mapping, starting with the topic page.
+
+This repository houses the client code (CSS and JS) for the new niceorg front-end. *New* means pages implemented with the Design System from around May 2018 onwards as part of journey mapping, starting with the topic page.
 
 Niceorg-client augments the [NICE Design System](https://github.com/nhsevidence/nice-design-system) with nice.org-specific components, including styling of old [NICE.Bootstrap](https://github.com/nhsevidence/NICE.Bootstrap) components. We support using NICE.Bootstrap components with their existing markup as re-writing all the markup for the whole of niceorg and guidance would be a *massive* job. So instead, we style them using the Design System, so at least we get consistent foundations like typography, spacing and colour.
 
@@ -70,10 +71,10 @@ To develop locally, you'll need Node 6+ and npm 5+ (TBC).
 
 ## Environments
 
-TODO: Add JS and minified URLs.
+TODO: Add JS URLs
 
-| Environment   |  CSS URL  |
-| ------------- | :---: |
-| Localhost dev | http://localhost:8087/css/app.css  |
-| Alpha CDN     | https://alpha-cdn.nice.org.uk/niceorg/css/app.css  |
-| Live CDN      | https://cdn.nice.org.uk/niceorg/css/app.css  |
+| Environment   | Dev CSS | Min CSS |
+| ------------- | :------ | :------ |
+| Localhost dev | http://localhost:8087/css/app.css | n/a |
+| Alpha CDN     | https://alpha-cdn.nice.org.uk/niceorg/css/app.css | https://alpha-cdn.nice.org.uk/niceorg/css/app.min.css |
+| Live CDN      | https://cdn.nice.org.uk/niceorg/css/app.css | https://cdn.nice.org.uk/niceorg/css/app.min.css |

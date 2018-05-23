@@ -1,32 +1,47 @@
 {
-  "name": "niceorg-design-system",
-  "version": "1.0.0",
-  "description": "",
+  "name": "niceorg-client",
+  "version": "1.7.0",
+  "description": "Client side assets nice.org.uk using the NICE Design System",
   "main": "index.js",
   "scripts": {
     "start": "grunt --color",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "grunt dist --color"
+  },
+  "config": {
+    "//": "Banner is used for prepending to compiled JS and CSS",
+    "banner": "<%= name %>\nVersion <%= version %> | <%= date %>\n© Copyright NICE 2015-<%= year %>\nLicensed under MIT",
+    "bannerMin": "<%= name %> | v<%= version %> | <%= date %> | MIT license | Copyright NICE <%= year %>"
   },
   "browserslist": [
     "extends @nice-digital/browserslist-config"
   ],
   "author": "",
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=6.11.2",
+    "npm": ">=5.6.0"
+  },
   "devDependencies": {
     "@nice-digital/browserslist-config": "^1.0.0",
     "@nice-digital/design-system": "^0.4.3",
-    "autoprefixer": "^7.2.4",
-    "express": "^4.16.2",
-    "grunt": "^1.0.1",
+    "autoprefixer": "^8.5.0",
+    "express": "^4.16.3",
+    "grunt": "^1.0.2",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-express-server": "^0.5.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^2.1.0",
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-config": "^0.19.2",
-    "pixrem": "^4.0.1"
+    "node": "^8.11.2",
+    "pixrem": "^4.0.1",
+    "postcss-banner": "^3.0.0"
   },
   "dependencies": {
     "@nice-digital/icons": "^1.4.3"

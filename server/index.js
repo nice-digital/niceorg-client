@@ -12,8 +12,7 @@ app.get("/setgtmdatalayer", function (req, res) {
 	res.send("var dataLayer = [{\"uid\":null,\"persona\":null}]");
 });
 
-app.use("/fonts", express.static(path.join(__dirname, "./../node_modules/@nice-digital/icons/dist")));
-app.use("/css", express.static(path.join(__dirname, "../temp")));
+app.use("/css", express.static(path.join(__dirname, "../temp/css")));
 app.use("/js/nice-design-system", express.static(path.join(__dirname, "./../node_modules/@nice-digital/design-system/dist/javascripts")));
 app.use(express.static(path.join(__dirname, "./../pages")));
 
