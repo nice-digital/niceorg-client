@@ -6,10 +6,11 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 app.set("port", PORT);
 
-// Avoid 404 error in console
-app.get("/setgtmdatalayer", function (req, res) {
-	res.setHeader("Content-Type", "application/javascript");
-	res.send("var dataLayer = [{\"uid\":null,\"persona\":null}]");
+// Allow cross origin requests for font files
+app.use(function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	next();
 });
 
 app.use("/css", express.static(path.join(__dirname, "../temp/css")));
