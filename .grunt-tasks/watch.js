@@ -5,7 +5,7 @@ module.exports = {
 		livereload: 35731
 	},
 	sass: {
-		files: sasslint.target.src,
+		files: sasslint.target.src.concat("./node_modules/@nice-digital/design-system/src/**/*.scss"),
 		tasks: [
 			"sasslint",
 			"sass:temp",
