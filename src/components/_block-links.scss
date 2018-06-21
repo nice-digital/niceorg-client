@@ -45,6 +45,13 @@
 
   &__text {
     vertical-align: middle;
+
+    small {
+      color: $colour-text;
+      display: inline-block;
+      margin-left: rem($spacing-small);
+      text-decoration: none;
+    }
   }
 
   @include when-is('a') {
