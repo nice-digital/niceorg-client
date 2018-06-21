@@ -1,6 +1,7 @@
-/// Shows 4 links across a page as blocks. White background by default so
-/// designed to be used inside a panel.
-.block-links {
+/// Number links is a grid of links with a number and text.
+/// The number is larger font and the text small, with an optional small
+/// E.g. 32 New (in last 6 monts)
+.number-links {
   @include grid;
   list-style: none;
   margin-bottom: rem($spacing-medium);
@@ -9,7 +10,7 @@
 
   &__item {
     @include grid-item;
-    margin-bottom: rem($spacing-medium);
+    margin-bottom: rem($spacing-small);
     width: 100%;
   }
 
@@ -18,28 +19,22 @@
       width: 50%;
     }
   }
-
-  @include mq($from: lg) {
-    &__item {
-      width: 25%;
-    }
-  }
 }
 
-.block-link {
-  background: $colour-nice-white;
-  border-left: em($spacing-small) solid $colour-nice-white;
+.number-link {
   display: block;
-  padding: rem($spacing-medium);
+  padding: rem($spacing-x-small);
   text-decoration: none;
-  white-space: nowrap;
 
   &__number {
-    @include font-size(6);
+    @include font-size(3);
     color: $colour-icons;
+    display: inline-block;
     font-weight: bold;
     line-height: 1;
-    margin-right: rem($spacing-small);
+    margin-right: rem($spacing-x-small);
+    min-width: rem($spacing-large);
+    text-align: center;
     vertical-align: middle;
   }
 
@@ -57,10 +52,10 @@
   @include when-is('a') {
 
     &:hover {
-      border-color: $colour-icons;
+      background: $colour-nice-grey-2;
     }
 
-    .block-link__text {
+    .number-link__text {
       text-decoration: underline;
     }
   }

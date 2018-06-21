@@ -141,8 +141,8 @@
 
 <main class="container mt--e gtm-topic-page">
 
-	<div class="mb--e" data-no-inpagenav>
-		<section class="panel pv--d ph--d mb--d">
+	<div id="product-links" class="mb--e" data-no-inpagenav>
+		<section class="panel pv--d ph--d mb--d" aria-labelledby="guidance">
 			<h2 id="guidance">NICE guidance</h2>
 			<p>We use the best available evidence to develop recommendations that guide decisions in health, public and social care</p>
 
@@ -154,21 +154,21 @@
 					</a>
 				</li>
 				<li class="block-links__item">
-					<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;GuidanceStatus=Published" class="block-link">
+					<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;Status=Published" class="block-link">
 						<span class="block-link__number" aria-hidden="true">18</span>
-						<span class="block-link__text">Published</span>
+						<span class="block-link__text">Published <span class="visually-hidden">guidance</span></span>
 					</a>
 				</li>
 				<li class="block-links__item">
 					<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;Recent=NewInLast6Months" class="block-link">
 						<span class="block-link__number" aria-hidden="true">3</span>
-						<span class="block-link__text">New<small> (last 6 months)</small></span>
+						<span class="block-link__text">New<small> <span class="visually-hidden">guidance</span> (last 6 months)</small></span>
 					</a>
 				</li>
 				<li class="block-links__item">
 					<span class="block-link">
 						<span class="block-link__number" aria-hidden="true">0</span>
-						<span class="block-link__text">Updated<small> (last 6 months)</small></span>
+						<span class="block-link__text">Updated<small> <span class="visually-hidden">guidance</span> (last 6 months)</small></span>
 					</span>
 				</li>
 			</ul>
@@ -200,13 +200,13 @@
 			<h3 class="h4" id="guidance-in-development">Guidance being developed or updated</h3>
 
 			<ul class="list list--piped">
-				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;GuidanceStatus=InConsultation"><span class="visually-hidden">Guidance</span> In consultation</a></li>
-				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;GuidanceStatus=InDevelopment"><span class="visually-hidden">Guidance</span> In development</a></li>
-				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;GuidanceStatus=Proposed">Proposed <span class="visually-hidden">Guidance</span></a></li>
+				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;Status=InConsultation"><span class="visually-hidden">Guidance</span> In consultation</a></li>
+				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;Status=InDevelopment"><span class="visually-hidden">Guidance</span> In development</a></li>
+				<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Guidance&amp;Status=Proposed">Proposed <span class="visually-hidden">Guidance</span></a></li>
 			</ul>
 		</section>
 
-		<section class="panel pv--d ph--d mb--d">
+		<section class="panel pv--d ph--d mb--d" aria-labelledby="quality-standards">
 			<h2 id="quality-standards">Quality standards</h2>
 			<p>Set out the priority areas for quality improvement in health and social care.</p>
 			<p><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=QualityStandards">View all quality standards.</a></p>
@@ -214,11 +214,36 @@
 
 		<div class="grid">
 			<div data-g="12 md:7 lg:8">
-				<section class="panel pv--d ph--d mb--d mt--0">
+				<section class="panel pv--d ph--d mb--d mt--0" aria-labelledby="advice">
 					<h2 id="advice">Advice</h2>
 					<p>Critical assessment of evidence to help you make decisions. Advice, rather than formal NICE guidance.</p>
 
-					TODO
+					<ul class="number-links">
+						<li class="number-links__item">
+							<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Advice" class="number-link">
+								<span class="number-link__number" aria-hidden="true">32</span>
+								<span class="number-link__text">Advice products</span>
+							</a>
+						</li>
+						<li class="number-links__item">
+							<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Advice&amp;Status=Published" class="number-link">
+								<span class="number-link__number" aria-hidden="true">18</span>
+								<span class="number-link__text">Published <span class="visually-hidden">advice</span></span>
+							</a>
+						</li>
+						<li class="number-links__item">
+							<a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Advice&amp;Recent=NewInLast6Months" class="number-link">
+								<span class="number-link__number" aria-hidden="true">3</span>
+								<span class="number-link__text">New<small> <span class="visually-hidden">advice</span> (last 6 months)</small></span>
+							</a>
+						</li>
+						<li class="number-links__item">
+							<span class="number-link">
+								<span class="number-link__number" aria-hidden="true">0</span>
+								<span class="number-link__text">Updated<small> <span class="visually-hidden">advice</span> (last 6 months)</small></span>
+							</span>
+						</li>
+					</ul>
 
 					<h3 class="h4" id="advice-programmes">Advice by progamme</h3>
 					<ul class="grid">
@@ -239,13 +264,13 @@
 					<h3 class="h4" id="advice-in-development">Advice being developed</h3>
 
 					<ul class="list list--piped">
-						<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Advice&GuidanceStatus=InDevelopment"><span class="visually-hidden">Advice</span> In development</a></li>
+						<li><a href="http://localhost:59191/guidance/conditions-and-diseases/cancer/breast-cancer/products?ProductType=Advice&Status=InDevelopment"><span class="visually-hidden">Advice</span> In development</a></li>
 					</ul>
 
 				</section>
 			</div>
 			<div data-g="12 md:5 lg:4">
-				<section class="panel pv--d ph--d mb--d mt--0">
+				<section class="panel pv--d ph--d mb--d mt--0" aria-labelledby="pathways">
 					<h2 id="pathways">Pathways</h2>
 					<p>Interactive topic-based flowcharts that allow you to navigate our recommendations on any subject. <a href="https://www.nice.org.uk/About/What-we-do/Our-Programmes/About-NICE-Pathways">Find out more about NICE Pathways.</a></p>
 					<p>
