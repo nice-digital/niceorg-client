@@ -1,0 +1,67 @@
+/// Shows 4 links across a page as blocks. White background by default so
+/// designed to be used inside a panel.
+.block-links {
+  @include grid;
+  list-style: none;
+  margin-bottom: rem($spacing-medium);
+  margin-top: 0;
+  padding: 0;
+
+  &__item {
+    @include grid-item;
+    margin-bottom: rem($spacing-medium);
+    width: 100%;
+  }
+
+  @include mq($from: sm) {
+    &__item {
+      width: 50%;
+    }
+  }
+
+  @include mq($from: lg) {
+    &__item {
+      width: 25%;
+    }
+  }
+}
+
+.block-link {
+  background: $colour-nice-white;
+  border-left: em($spacing-small) solid $colour-nice-white;
+  display: block;
+  padding: rem($spacing-medium);
+  text-decoration: none;
+  white-space: nowrap;
+
+  &__number {
+    @include font-size(6);
+    color: $colour-icons;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: rem($spacing-small);
+    vertical-align: middle;
+  }
+
+  &__text {
+    vertical-align: middle;
+
+    small {
+      color: $colour-text;
+      display: inline-block;
+      margin-left: rem($spacing-small);
+      text-decoration: none;
+    }
+  }
+
+  @include when-is('a') {
+
+    &:hover {
+      border-color: $colour-icons;
+    }
+
+    .block-link__text {
+      text-decoration: underline;
+    }
+  }
+}
