@@ -1,0 +1,10 @@
+// NICE.Boostrap overrides for lists, see
+//
+
+// NICE Design System uses list--unstyled rather than just unstyled
+// sass-lint:disable no-qualifying-elements
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-left: 0;
+}

@@ -1,12 +1,13 @@
 @charset 'utf-8';
 
-// NICE overrides
+// NICE Design System overrides
 $nice-font-base-path: 'fonts/';
 
 @import 'nice-design-system';
 
 // sass-lint:disable clean-import-paths
-@import 'components/_components',
+@import 'nice.bootstrap/_bootstrap',
+'components/_components',
 'layout/_layout',
 'navigation/_navigation';
 
