@@ -1,12 +1,56 @@
 // Specific type of panel from old bootstrap
 .panel {
-  //padding: 0;
+
+  // Elements
 
   // sass-lint:disable no-combinators
   > .panel {
-    // For nested panels
     margin-top: 0;
   }
+
+  // Negative margins are to offset the default padding that panels have from the Design System
+  .panel-heading {
+    border-bottom: 1px solid $colour-border;
+    margin: rem((-$spacing-medium) (-$spacing-medium) 0 (-$spacing-medium));
+    padding: rem($spacing-small $spacing-medium);
+
+    h3 {
+      @include font-size(h4);
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-title {
+    @include font-size(3);
+    margin: 0;
+  }
+
+  .panel-body {
+    @include clearfix;
+    margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
+    padding: rem($spacing-medium);
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-footer {
+    padding: rem(0 $spacing-large $spacing-large $spacing-large);
+  }
+
+  // Modifiers
 
   // Contextual panel alternatives
   // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
@@ -17,24 +61,5 @@
       background: #dff0d8;
       color: #468847;
     }
-  }
-
-  .panel-heading {
-    border-bottom: 1px solid $colour-border;
-    padding: em($spacing-medium $spacing-large);
-  }
-
-  .panel-title {
-    @include font-size(3);
-    margin: 0;
-  }
-
-  .panel-body {
-    @include clearfix;
-    padding: em($spacing-large);
-  }
-
-  .panel-footer {
-    padding: em(0 $spacing-large $spacing-large $spacing-large);
   }
 }
