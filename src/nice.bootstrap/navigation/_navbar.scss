@@ -28,6 +28,10 @@
     float: left;
     margin: 0;
 
+    &.pull-right {
+      float: right;
+    }
+
     > li {
       width: 100%;
 
