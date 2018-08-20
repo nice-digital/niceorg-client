@@ -1,3 +1,11 @@
+// NICE.Bootstrap buttons for backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttons
+
+.btn.active {
+  background: $colour-nice-rich-black;
+  color: $colour-text-inverse;
+}
+
 .btn-primary {
   @extend .btn--cta; // sass-lint:disable-line placeholder-in-extend
 }
