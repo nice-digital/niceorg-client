@@ -61,3 +61,21 @@
   }
 }
 
+.icon-chevron-right {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(chevron-right);
+    display: block;
+  }
+}
+
+.icon-chevron-left {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(chevron-left);
+    display: block;
+  }
+}
+

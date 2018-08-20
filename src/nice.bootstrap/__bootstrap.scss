@@ -1,11 +1,16 @@
 // Backwards compatability for NICE.Boostrap styles, see http://nhsevidence.github.io/NICE.Bootstrap/
-@import 'alert',
+@import 'navigation/_navigation',
+'affix',
+'alert',
 'breadcrumbs',
 'dropdown',
+'grid',
+'layout',
 'lists',
 'media',
 'page-header',
 'pager',
+'pagination',
 'thumbnail',
 'utils',
 'well';

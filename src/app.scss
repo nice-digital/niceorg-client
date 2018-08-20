@@ -8,8 +8,7 @@ $nice-font-base-path: 'fonts/';
 // sass-lint:disable clean-import-paths
 @import 'nice.bootstrap/_bootstrap',
 'components/_components',
-'layout/_layout',
-'navigation/_navigation';
+'layout/_layout';
 
 // Page specific overrides
 // TODO: Remove this once the new topic landing page is live

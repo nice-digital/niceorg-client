@@ -1,25 +1,31 @@
-// NICE.Bootstrap pager (pagination) for backwards compatability
+// NICE.Bootstrap pager for backwards compatability
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
 .pager {
   margin: em($spacing-medium 0 $spacing-large);
   text-align: center;
 
+  // Elements
+
   ul {
     display: inline-block;
-    margin-left: 0;
+    margin: 0;
   }
 
   li {
     display: inline;
 
     &.disabled {
+      a,
       span {
-        background: transparent;
-        color: #737373;
+        background: $colour-nice-grey-3;
+        color: $colour-nice-grey-1;
+        cursor: text;
+        pointer-events: none;
       }
     }
 
     &.active {
+      a,
       span {
         background: $colour-nice-teal;
         color: $colour-text-inverse;
@@ -45,6 +51,28 @@
     &:active {
       top: em($spacing-xx-small);
     }
+  }
+
+  // Modifiers
+
+  &.pager-large {
+    @include font-size(1);
+  }
+
+  &.pager-small {
+    @include font-size(-1);
+  }
+
+  &.pager-mini {
+    @include font-size(-2);
+  }
+
+  .pager-centered {
+    text-align: center;
+  }
+
+  &.pager-right {
+    text-align: right;
   }
 
 }
