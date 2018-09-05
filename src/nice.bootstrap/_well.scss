@@ -7,7 +7,7 @@
   background: $colour-panel-default;
   margin-bottom: em($spacing-medium);
   min-height: em($spacing-large);
-  padding: em($spacing-large);
+  padding: em($spacing-medium);
 
   // Support nested wells
   .well,
@@ -16,16 +16,20 @@
   }
 
   &.well-large {
-    padding: em($spacing-x-large);
+    padding: em($spacing-large);
   }
 
   &.well-small {
-    padding: em($spacing-medium);
+    padding: em($spacing-small);
   }
 
   // sass-lint:disable-block no-combinators
   > :first-child {
     margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 
   h4 {

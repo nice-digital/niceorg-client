@@ -1,0 +1,8 @@
+/// Navigation header, taken from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html
+.nav-header {
+  @include font-size(1);
+  display: block;
+  font-weight: bold;
+  padding: rem($spacing-x-small $spacing-small);
+}

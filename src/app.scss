@@ -1,14 +1,14 @@
 @charset 'utf-8';
 
-// NICE overrides
+// NICE Design System overrides
 $nice-font-base-path: 'fonts/';
 
 @import 'nice-design-system';
 
 // sass-lint:disable clean-import-paths
-@import 'components/_components',
-'layout/_layout',
-'navigation/_navigation';
+@import 'nice.bootstrap/_bootstrap',
+'components/_components',
+'layout/_layout';
 
 // Page specific overrides
 // TODO: Remove this once the new topic landing page is live

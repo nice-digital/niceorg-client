@@ -1,0 +1,96 @@
+
+
+// sass-lint:disable no-combinators
+
+.layout {
+  @include clearfix;
+  display: block;
+  margin: auto;
+
+  body & {
+    margin-bottom: rem($spacing-large);
+    margin-top: rem($spacing-large);
+  }
+
+  > :first-child {
+    margin-left: 0;
+  }
+
+  > .content {
+    display: block;
+    float: left;
+    min-height: 1px;
+  }
+
+  > .content-primary {
+    width: 74.46808511%;
+  }
+
+  > .content-secondary,
+  > .content-tertiary {
+    width: 23.40425532%;
+  }
+
+  > .content-tertiary {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.layout-first-right {
+  > .content {
+    margin-left: 0;
+    margin-right: 2.12765957%;
+  }
+
+  > :first-child {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.layout-secondary-wide {
+  > .content-primary {
+    width: 65.95744681%;
+  }
+
+  > .content-secondary {
+    width: 31.91489362%;
+  }
+}
+
+.layout-secondary-narrow {
+  > .content-primary {
+    width: 82.9787234%;
+  }
+
+  > .content-secondary {
+    width: 14.89361702%;
+  }
+}
+
+.layout-has-tertiary {
+  position: relative;
+
+  > .content-primary {
+    margin-right: 25.53191489%;
+    width: 82.9787234%;
+  }
+
+  > .content-secondary {
+    width: 23.40425532%;
+  }
+
+  > .content-tertiary {
+    margin-right: 0;
+  }
+}
+
+.layout-fill > .layout,
+.layout.layout-fill,
+.layout-fill .container,
+.layout-fill .navbar .container {
+  margin-left: 2.12765957%;
+  margin-right: 2.12765957%;
+  max-width: 100%;
+}

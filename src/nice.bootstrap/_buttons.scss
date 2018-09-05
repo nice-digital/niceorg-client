@@ -1,0 +1,117 @@
+// NICE.Bootstrap buttons for backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttons
+
+.btn.active {
+  background: $colour-nice-rich-black;
+  color: $colour-text-inverse;
+}
+
+.btn-primary {
+  @extend .btn--cta; // sass-lint:disable-line placeholder-in-extend
+}
+
+.btn-info {
+  background: $colour-info-background;
+  border: 1px solid $colour-info;
+  color: $colour-info !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background: darken($colour-info-background, 5%);
+  }
+
+  &:focus {
+    background: $colour-info-background;
+  }
+}
+
+.btn-success {
+  background: $colour-success-background;
+  border: 1px solid $colour-success;
+  color: $colour-success !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background: darken($colour-success-background, 5%);
+  }
+
+  &:focus {
+    background: $colour-success-background;
+  }
+}
+
+.btn-warning {
+  background: $colour-caution-background;
+  border: 1px solid $colour-caution;
+  color: $colour-caution !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background: darken($colour-caution-background, 5%);
+  }
+
+  &:focus {
+    background: $colour-caution-background;
+  }
+}
+
+.btn-danger {
+  background: $colour-error-background;
+  border: 1px solid $colour-error;
+  color: $colour-error !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background: darken($colour-error-background, 5%);
+  }
+
+  &:focus {
+    background: $colour-error-background;
+  }
+}
+
+.btn-inverse {
+  @extend .btn--inverse; // sass-lint:disable-line placeholder-in-extend
+}
+
+.btn-off {
+  opacity: .5;
+}
+
+.btn-xl {
+  @include font-size(4);
+}
+
+.btn-large {
+  @include font-size(1);
+}
+
+.btn-small {
+  @include font-size(-1);
+}
+
+.btn-mini {
+  @include font-size(-2);
+}
+
+.btn-link {
+  @include link-default;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  text-decoration: underline !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background: inherit;
+  }
+
+  &:focus {
+    background: transparent;
+  }
+
+  &:active {
+    background: transparent;
+    top: 0;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

@@ -1,4 +1,7 @@
-// Bootstrap breadcrumbs
+// Old NICE.Bootstrap breadcrumbs for backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#breadcrumbs
+// Note: these are different markup to the new, Design System breadcrumbs,
+// see https://nhsevidence.github.io/nice-design-system/components/breadcrumbs/#usage
 .breadcrumb {
   list-style: none;
   margin: em($spacing-small 0 $spacing-large);

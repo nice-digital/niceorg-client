@@ -1,0 +1,38 @@
+// Old NICE.Bootstrap nav pills backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
+
+.nav-pills {
+  @include clearfix;
+
+  // Elements
+
+  // sass-lint:disable no-combinators
+  > li {
+    float: left;
+
+    > a {
+      color: $colour-text;
+      display: block;
+      margin: 0;
+      padding: rem($spacing-small $spacing-medium);
+      text-decoration: none;
+
+      &:hover {
+        background: $colour-nice-grey-3;
+      }
+    }
+
+    &.active > a {
+      background: $colour-nice-teal;
+      color: $colour-text-inverse;
+    }
+  }
+
+  // Modifiers
+
+  &.nav-stacked {
+    > li {
+      float: none;
+    }
+  }
+}

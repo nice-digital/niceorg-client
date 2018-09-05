@@ -13,3 +13,7 @@ body > .layout .layout.container {
   max-width: 100%;
   width: auto;
 }
+
+.container {
+  @include clearfix;
+}

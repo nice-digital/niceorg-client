@@ -1,0 +1,50 @@
+// Old NICE.Bootstrap nav list for backwards compatability
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
+.nav-list {
+  background: $colour-true-white;
+
+  // .nav-header {
+
+  // }
+
+  .divider {
+    background-color: $colour-border;
+    height: 1px;
+    margin: rem($spacing-small 0);
+    overflow: hidden;
+  }
+
+  a {
+    color: $colour-text;
+    text-decoration: none;
+
+    &:hover {
+      background: $colour-nice-grey-3;
+    }
+  }
+
+  // sass-lint:disable no-combinators
+  > li > a {
+    background: $colour-true-white;
+    display: block;
+    padding: rem($spacing-x-small $spacing-small);
+    position: relative;
+  }
+
+  .active > a {
+    background: $colour-nice-teal;
+    color: $colour-text-inverse;
+
+    &:after {
+      border: em($spacing-small) solid transparent;
+      border-left-color: $colour-nice-teal;
+      content: '';
+      height: 0;
+      left: 100%;
+      margin-top: - em($spacing-small);
+      position: absolute;
+      top: 50%;
+      width: 0;
+    }
+  }
+}
