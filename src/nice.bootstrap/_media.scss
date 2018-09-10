@@ -5,14 +5,9 @@
 .media {
   border-bottom: 1px solid $colour-border;
   list-style: none;
-  margin-bottom: rem($spacing-medium);
-  //overflow: hidden;
+  margin: 0;
+  padding: rem($spacing-small 0);
   position: relative;
-
-  &.noborder,
-  &.no-border {
-    border: 0 !important; // sass-lint:disable-line no-important
-  }
 
   // Use font-size 0 to get rid of &nbsp; characters
   .media-heading {
@@ -23,7 +18,7 @@
 
     a {
       @include font-size(0);
-      display: block;
+      display: inline-block;
       max-width: 66ch;
       text-decoration: none;
 
@@ -72,13 +67,28 @@
 
   &.media-resource {
     .panel-resources & {
-      padding: rem($spacing-medium);
+      margin-bottom: 0;
+      padding: rem($spacing-small $spacing-medium);
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
+  }
+
+  &.noborder,
+  &.no-border {
+    border: 0 !important; // sass-lint:disable-line no-important
   }
 
   .media-list & {
     border-bottom: 1px solid $colour-border;
     padding-bottom: rem($spacing-medium);
+  }
+
+  // Some media items are in a plain list so break out of the default margin
+  ul:not(.media-list) & {
+    margin-left: - rem($spacing-medium);
   }
 
   @include mq($from: sm) {
