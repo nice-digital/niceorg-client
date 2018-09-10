@@ -37,7 +37,7 @@
   .panel-body {
     @include clearfix;
     margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
-    padding: rem($spacing-medium);
+    padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
 
     > :first-child {
       margin-top: 0;
@@ -53,8 +53,9 @@
     padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
   }
 
+  .panel-heading + .panel-body,
   .panel-body + .panel-footer {
-    margin-top: rem($spacing-medium);
+    padding-top: rem($spacing-medium);
   }
 
   // Modifiers
@@ -109,6 +110,14 @@
       background: $colour-error-background;
       border-color: $colour-error;
       color: $colour-error;
+    }
+  }
+
+  &.panel-resources {
+    padding: 0;
+
+    >.panel-body {
+      padding: 0;
     }
   }
 }
