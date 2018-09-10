@@ -1,0 +1,13 @@
+.stats {
+  @include font-size(-1);
+  color: $colour-nice-dark-grey;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+
+  .media & {
+    margin-top: rem($spacing-x-small);
+    position: relative;
+    z-index: 1;
+  }
+}
