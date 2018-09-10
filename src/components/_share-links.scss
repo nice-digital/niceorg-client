@@ -8,6 +8,10 @@
     padding: rem($spacing-small $spacing-medium);
   }
 
+  .navbar-inner {
+    background: 0;
+  }
+
   .dropdown-menu {
     margin-top: rem($spacing-small);
     padding-bottom: rem($spacing-small);
