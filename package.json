@@ -44,6 +44,6 @@
     "postcss-banner": "^3.0.0"
   },
   "dependencies": {
-    "@nice-digital/icons": "^1.5.0"
+    "@nice-digital/icons": "^1.6.0"
   }
 }

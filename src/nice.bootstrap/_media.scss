@@ -39,6 +39,11 @@
     }
   }
 
+  // sass-lint:disable-block no-qualifying-elements
+  h4.media-heading {
+    @include font-size(h4);
+  }
+
   .media-body {
     margin-top: - rem($spacing-x-small);
     overflow: hidden;
@@ -57,7 +62,8 @@
   }
 
   // sass-lint:disable no-combinators
-  > .pull-left {
+  > .pull-left,
+  > .pull-right {
     display: block;
     float: none;
     margin-bottom: rem($spacing-medium);
@@ -92,10 +98,15 @@
   }
 
   @include mq($from: sm) {
-    // sass-lint:disable no-combinators
+    // sass-lint:disable-block no-combinators
     > .pull-left {
       float: left;
       margin-right: em($spacing-small);
+    }
+
+    > .pull-right {
+      float: right;
+      margin-left: em($spacing-small);
     }
   }
 }
