@@ -79,3 +79,21 @@
   }
 }
 
+.icon-play {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(play);
+    display: block;
+  }
+}
+
+.icon-volume-up {
+  @include icon-base;
+
+  &:before {
+    content: nice-icon(podcast);
+    display: block;
+  }
+}
+

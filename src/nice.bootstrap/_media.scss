@@ -1,9 +1,3 @@
-/// List of media items, taken from NICE.Bootstrap
-/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media-list
-.media-list {
-  list-style: none;
-  margin-left: 0;
-}
 
 /// Media object - used for displaying news etc.
 /// Taken from NICE.Bootstrap
@@ -11,27 +5,20 @@
 .media {
   border-bottom: 1px solid $colour-border;
   list-style: none;
-  padding: em($spacing-small 0);
+  margin: 0;
+  padding: rem($spacing-small 0);
   position: relative;
-
-  &.no-border {
-    border: 0;
-  }
-
-  // sass-lint:disable no-combinators
-  > .pull-left {
-    margin-right: em($spacing-medium);
-  }
 
   // Use font-size 0 to get rid of &nbsp; characters
   .media-heading {
     font-size: 0;
     margin: 0;
     max-width: 100%;
+    padding-top: 3px; // Make room for focus ring
 
     a {
       @include font-size(0);
-      display: block;
+      display: inline-block;
       max-width: 66ch;
       text-decoration: none;
 
@@ -52,18 +39,74 @@
     }
   }
 
-  .stats {
-    margin-top: rem($spacing-x-small);
+  // sass-lint:disable-block no-qualifying-elements
+  h4.media-heading {
+    @include font-size(h4);
+  }
+
+  .media-body {
+    margin-top: - rem($spacing-x-small);
+    overflow: hidden;
+    padding: 0 3px; // Make room for the focus ring
+
+    p {
+      margin: rem($spacing-x-small 0 0);
+    }
+  }
+
+  .media-date {
+    @include font-size(-1);
+    color: $colour-nice-dark-grey;
     position: relative;
     z-index: 1;
   }
-}
 
+  // sass-lint:disable no-combinators
+  > .pull-left,
+  > .pull-right {
+    display: block;
+    float: none;
+    margin-bottom: rem($spacing-medium);
+  }
 
-.stats {
-  @include font-size(-1);
-  color: $colour-nice-dark-grey;
-  display: inline-block;
-  font-weight: normal;
-  margin: 0;
+  // Modifiers
+
+  &.media-resource {
+    .panel-resources & {
+      margin-bottom: 0;
+      padding: rem($spacing-small $spacing-medium);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &.noborder,
+  &.no-border {
+    border: 0 !important; // sass-lint:disable-line no-important
+  }
+
+  .media-list & {
+    border-bottom: 1px solid $colour-border;
+    padding-bottom: rem($spacing-medium);
+  }
+
+  // Some media items are in a plain list so break out of the default margin
+  ul:not(.media-list) & {
+    margin-left: - rem($spacing-medium);
+  }
+
+  @include mq($from: sm) {
+    // sass-lint:disable-block no-combinators
+    > .pull-left {
+      float: left;
+      margin-right: em($spacing-small);
+    }
+
+    > .pull-right {
+      float: right;
+      margin-left: em($spacing-small);
+    }
+  }
 }

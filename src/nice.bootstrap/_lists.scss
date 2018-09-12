@@ -53,3 +53,25 @@ ol.alt {
     }
   }
 }
+
+ul.alt {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  // sass-lint:disable-block no-combinators
+  > li {
+    list-style: none;
+    margin-left: rem($spacing-medium);
+    min-height: rem($spacing-small);
+    position: relative;
+
+    &:before {
+      color: $colour-icons;
+      content: get-glyph(bullet);
+      font-size: 125%;
+      left: - rem($spacing-medium);
+      position: absolute;
+    }
+  }
+}
