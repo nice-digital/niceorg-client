@@ -46,7 +46,7 @@
   }
 
   h3 {
-    @include font-size(3);
+    @include font-size(h4);
     font-weight: normal;
 
     &:first-child {
@@ -74,8 +74,9 @@
 
   /// Footer logo
   .footer-nicelogo {
-    @include font-size(6);
+    @include font-size(5);
     display: inline-block;
+    line-height: 1;
     margin-bottom: em($spacing-small);
 
     &:hover {

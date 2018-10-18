@@ -2,7 +2,7 @@
 
 // Back to top link, only visible on mobile
 #toTop {
-  @include font-size(6);
+  @include font-size(4);
   -webkit-tap-highlight-color: rgba($colour-nice-teal, .5); // sass-lint:disable-line no-vendor-prefixes
   background-color: #fff;
   border: 1px solid $colour-border;
