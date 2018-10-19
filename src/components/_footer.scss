@@ -129,8 +129,8 @@
   @include clearfix;
   background: $colour-nice-teal;
   clear: both;
-  margin: em($spacing-large) -2%; // Negative margin to 'jump outside' the container
-  padding: em($spacing-large) 2%;
+  margin: rem($spacing-large) rem(- $spacing-large); // Negative margin to 'jump outside' the container
+  padding: rem($spacing-large);
 
   #get-involved-panel {
     margin: 0;
