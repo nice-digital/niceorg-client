@@ -1,0 +1,22 @@
+// Extension to the Design System hero component
+.hero {
+  // sass-lint:disable no-duplicate-properties
+  margin-bottom: rem($spacing-large);
+
+  // Hack to 'break out' of the container (layout) for hero components
+  // nested inside a container - restriction of Orchard's widgets/zones.
+  // Browser support for calc and vw is pretty much
+  //  a) supported by ~90% as of Oct 2018 and;
+  //  b) near identical in legacy browsers.
+  // Old versions of IE (8) will show the hero in the container width, rather
+  // than full page width
+  .layout &,
+  .container & {
+    left: calc(50%);
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    right: calc(50%);
+    width: 100vw;
+  }
+}
