@@ -9,9 +9,3 @@ $nice-font-base-path: 'fonts/';
 @import 'layout/_layout',
 'nice.bootstrap/_bootstrap',
 'components/_components';
-
-// Page specific overrides
-// TODO: Remove this once the new topic landing page is live
-[data-topic-beta='true'] {
-  display: none;
-}
