@@ -45,6 +45,10 @@
     margin: 0;
   }
 
+  .row {
+    display: block;
+  }
+
   h3 {
     @include font-size(h4);
     font-weight: normal;
