@@ -29,6 +29,10 @@
       width: 0;
     }
 
+    &.pull-left:before {
+      left: rem($spacing-small);
+    }
+
     a {
       color: $colour-text;
       // Override default margin from addthis

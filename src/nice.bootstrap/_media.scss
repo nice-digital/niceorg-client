@@ -3,9 +3,9 @@
 /// Taken from NICE.Bootstrap
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media
 .media {
-  border-bottom: 1px solid $colour-border;
   list-style: none;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
   padding: rem($spacing-small 0);
   position: relative;
 
@@ -20,7 +20,6 @@
       @include font-size(0);
       display: inline-block;
       max-width: 66ch;
-      text-decoration: none;
 
       &:hover {
         text-decoration: underline;
@@ -90,6 +89,7 @@
   .media-list & {
     border-bottom: 1px solid $colour-border;
     padding-bottom: rem($spacing-medium);
+    padding-top: rem($spacing-medium);
   }
 
   // Some media items are in a plain list so break out of the default margin
@@ -98,15 +98,19 @@
   }
 
   @include mq($from: sm) {
+    @include clearfix;
+
     // sass-lint:disable-block no-combinators
     > .pull-left {
       float: left;
-      margin-right: em($spacing-small);
+      margin-bottom: 0;
+      margin-right: em($spacing-medium);
     }
 
     > .pull-right {
       float: right;
-      margin-left: em($spacing-small);
+      margin-bottom: 0;
+      margin-left: em($spacing-medium);
     }
   }
 }

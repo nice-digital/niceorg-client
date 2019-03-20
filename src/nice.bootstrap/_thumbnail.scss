@@ -5,16 +5,28 @@
 .thumbnail {
 
   // sass-lint:disable no-combinators
-  > img {
+  > img, .img-container > img {
     display: block;
     margin: auto;
     max-width: 100%;
   }
 
+  .img-container {
+    min-height: 200px;
+  }
+
   .caption {
-    h3 {
-      @include font(3);
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include font(h6);
       margin-top: rem($spacing-medium);
+    }
+
+    > :last-child {
+      margin-bottom: 0;
     }
   }
 }

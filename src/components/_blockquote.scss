@@ -1,4 +1,9 @@
 // sass-lint:disable placeholder-in-extend
 blockquote {
   @extend .quote;
+  margin-top: 0;
+
+  p:first-child {
+    margin-top: 0;
+  }
 }
