@@ -3,6 +3,7 @@
 /// Adapted from NICE.Bootstrap
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#thumbnails
 .thumbnail {
+  position: relative;
 
   // sass-lint:disable no-combinators
   > img, .img-container > img {
@@ -28,5 +29,16 @@
     > :last-child {
       margin-bottom: 0;
     }
+  }
+
+  a:before {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
   }
 }
