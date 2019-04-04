@@ -4,9 +4,14 @@
 }
 
 .growbox.notshown {
-    display: none;
+    height: 0;;
 }
 
 .control-group {
     margin-bottom: em($spacing-small);
+}
+
+.growbox {
+    overflow: hidden;
+    margin-bottom: 20px;
 }
