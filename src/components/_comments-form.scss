@@ -1,0 +1,17 @@
+.comment-text {
+    width: 100%;
+    height: em($spacing-large);
+}
+
+.growbox.notshown {
+    height: 0;;
+}
+
+.control-group {
+    margin-bottom: em($spacing-small);
+}
+
+.growbox {
+    overflow: hidden;
+    margin-bottom: 20px;
+}

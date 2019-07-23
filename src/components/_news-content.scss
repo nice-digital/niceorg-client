@@ -18,4 +18,12 @@
       clear: none;
     }
   }
+
+  img {
+    padding-right: em($spacing-medium);
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
 }

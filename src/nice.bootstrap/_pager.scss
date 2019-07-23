@@ -12,7 +12,7 @@
   }
 
   li {
-    display: inline;
+    display: none;
 
     &.disabled {
       a,
@@ -31,6 +31,14 @@
         color: $colour-text-inverse;
       }
     }
+  }
+
+   li:first-child, 
+   li:last-child, 
+   li.active, 
+   li.next, 
+   li.previous {
+    display: inline;
   }
 
   a,
@@ -75,4 +83,9 @@
     text-align: right;
   }
 
+  @include mq($from: sm) { 
+    li {
+      display: inline; 
+    }
+  }
 }

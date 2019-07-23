@@ -3,6 +3,7 @@
 .row,
 .row-fluid {
   @include clearfix;
+  margin: 0;
   width: 100%;
 
   [class*='span'] {
@@ -163,5 +164,11 @@
     .offset2:first-child { margin-left: 17.09401709%; }
     .offset1 { margin-left: 11.11111111%; }
     .offset1:first-child { margin-left: 8.54700855%; }
+  }
+
+  @include mq($from: sm) {
+    @supports (display: flex) {
+      display: flex;
+    }
   }
 }

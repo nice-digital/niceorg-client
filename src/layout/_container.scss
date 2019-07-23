@@ -18,3 +18,12 @@ body > .layout .layout.container,
 .container {
   @include clearfix;
 }
+
+header.container {
+  margin: 0 auto em($spacing-large) auto;
+
+  .author {
+    clear: both;
+  }
+
+}
