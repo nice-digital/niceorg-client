@@ -1,17 +1,57 @@
-.comment-text {
+// Migrated from https://github.com/nhsevidence/niceorg/blob/master/src/Orchard.Web/Themes/NICE.Bootstrap/Styles/nice/NICE.comments.less
+// See example at https://www.nice.org.uk/news/blog/a-life-changing-operation
+
+.comment-count {
+  margin-top: rem($spacing-large);
+}
+
+// List of the comments
+.comments {
+  margin-bottom: rem($spacing-large);
+
+  // sass-lint:disable no-combinators
+  > li {
+    margin: rem(0 0 $spacing-medium);
+
+    &.last,
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// Individual comment
+.comment {
+  .comment-author-and-date {
+    .who {
+      font-weight: bold;
+    }
+  }
+
+  .text {
+    margin: 0;
+  }
+}
+
+// sass-lint:disable no-ids
+#comment-form-container {
+
+  .comment-text {
+    height: rem($spacing-x-large);
     width: 100%;
-    height: em($spacing-large);
-}
+  }
 
-.growbox.notshown {
-    height: 0;;
-}
+  .growbox,
+  .comment-text {
+    transition: height .3s;
+  }
 
-.control-group {
-    margin-bottom: em($spacing-small);
-}
-
-.growbox {
+  .growbox {
+    margin-bottom: rem($spacing-medium);
     overflow: hidden;
-    margin-bottom: 20px;
+
+    &.notshown {
+      height: 0;
+    }
+  }
 }

@@ -3,10 +3,12 @@
 /// Adapted from NICE.Bootstrap
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#thumbnails
 .thumbnail {
+  height: 100%;
   position: relative;
 
   // sass-lint:disable no-combinators
-  > img, .img-container > img {
+  > img,
+  .img-container > img {
     display: block;
     margin: auto;
     max-width: 100%;

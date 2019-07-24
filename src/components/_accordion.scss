@@ -21,14 +21,6 @@
     }
   }
 
-  .accordion-toggle {
-    &::after {
-      @include icon-base;
-      content: nice-icon('chevron-down');
-      float: right;
-    }
-  }
-
   .accordion-inner {
     padding: rem($spacing-medium) rem($spacing-large) rem($spacing-medium) rem($spacing-medium);
 
@@ -42,5 +34,22 @@
       }
     }
   }
+}
 
+.accordion-toggle {
+  @include font-size(h5);
+  display: block;
+  padding: rem($spacing-small);
+  text-decoration: none;
+
+  &:before {
+    // Sometimes accordion toggles can be key-links so avoid the extra chevron
+    display: none !important; // sass-lint:disable-line no-important
+  }
+
+  &:after {
+    @include icon-base;
+    content: nice-icon('chevron-down');
+    float: right;
+  }
 }

@@ -31,14 +31,14 @@
         color: $colour-text-inverse;
       }
     }
-  }
 
-   li:first-child, 
-   li:last-child, 
-   li.active, 
-   li.next, 
-   li.previous {
-    display: inline;
+    &:first-child,
+    &:last-child,
+    &.active,
+    &.next,
+    &.previous {
+      display: inline;
+    }
   }
 
   a,
@@ -83,9 +83,9 @@
     text-align: right;
   }
 
-  @include mq($from: sm) { 
+  @include mq($from: sm) {
     li {
-      display: inline; 
+      display: inline;
     }
   }
 }

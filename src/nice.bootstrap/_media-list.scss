@@ -3,4 +3,8 @@
 .media-list {
   list-style: none;
   margin-left: 0;
+
+  .panel-resources & {
+    margin: 0;
+  }
 }

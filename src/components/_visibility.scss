@@ -1,0 +1,92 @@
+// sass-lint:disable no-important
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible,
+.widget-invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visible-phone,
+.hidden-desktop,
+.hidden-tablet {
+  display: inherit !important;
+}
+
+.visible-desktop,
+.visible-tablet,
+.hidden-phone {
+  display: none !important;
+}
+
+@include mq($from: sm) {
+  .hidden-phone {
+    display: inherit !important;
+  }
+
+  .visible-phone {
+    display: none !important;
+  }
+}
+
+@include mq($from: md) {
+  .hidden-tablet {
+    display: none !important;
+  }
+
+  .visible-tablet {
+    display: inherit !important;
+  }
+}
+
+@include mq($from: lg) {
+  .hidden-desktop {
+    display: none !important;
+  }
+
+  .visible-desktop {
+    display: inherit !important;
+  }
+
+  .visible-tablet {
+    display: none !important;
+  }
+
+  .hidden-tablet {
+    display: inherit !important;
+  }
+}
+
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  .visible-print {
+    display: inherit !important;
+  }
+
+  .hidden-print {
+    display: none !important;
+  }
+}
+
+.hide-text {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-shadow: none;
+}

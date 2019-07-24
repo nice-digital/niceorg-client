@@ -1,6 +1,6 @@
 // Key links used to use NICE.Glyphs. Now use nice-icons instead
 // sass-lint:disable no-combinators
-.zone-content .key-link:before {
+.key-link:before {
   @include icon-base;
   @include font-size(-2);
   color: inherit;

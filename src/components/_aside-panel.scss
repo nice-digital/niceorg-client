@@ -1,0 +1,9 @@
+.aside-panel {
+  // sass-lint:disable no-combinators
+  > h2,
+  > h3 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
