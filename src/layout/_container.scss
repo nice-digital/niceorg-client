@@ -19,8 +19,9 @@ body > .layout .layout.container,
   @include clearfix;
 }
 
+// sass-lint:disable no-qualifying-elements
 header.container {
-  margin: 0 auto em($spacing-large) auto;
+  margin: 0 auto em($spacing-large);
 
   .author {
     clear: both;

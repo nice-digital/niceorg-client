@@ -5,6 +5,9 @@
 
   // sass-lint:disable no-combinators
   > .panel {
+    // There are weird situations in niceorg where people have
+    // nested a panel directly inside another panel
+    border: 0;
     margin-top: 0;
   }
 
@@ -36,6 +39,11 @@
 
   .panel-body {
     @include clearfix;
+  }
+
+  // Panels have a default padding, so if we have a heading and body we
+  // need to use a negative margin to break back out of the padding
+  .panel-heading + .panel-body {
     margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
     padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
 

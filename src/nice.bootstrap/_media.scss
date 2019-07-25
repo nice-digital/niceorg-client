@@ -65,7 +65,7 @@
     display: block;
     float: none;
     margin-bottom: rem($spacing-medium);
-    width:150px
+    width: 150px;
   }
 
   // Modifiers
@@ -90,6 +90,15 @@
     border-bottom: 1px solid $colour-border;
     padding-bottom: rem($spacing-medium);
     padding-top: rem($spacing-medium);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 
   // Some media items are in a plain list so break out of the default margin

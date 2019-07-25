@@ -167,8 +167,21 @@
   }
 
   @include mq($from: sm) {
+    // Using flex box for grid rows means we always have equal heights
+    // Which is useful for horizontal list of blocks
     @supports (display: flex) {
-      display: flex;
+      align-items: flex-start; // To stop images from stetching, see https://stackoverflow.com/a/44030846/486434
+      display: flex; // To force equal heights for grid items
+      flex-wrap: wrap; // To force non-span* items to wrap by default
+
+      [class*='span'] {
+        align-self: stretch;
+
+        // sass-lint:disable no-combinators
+        > img {
+          align-self: flex-start;
+        }
+      }
     }
   }
 }
