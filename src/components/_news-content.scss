@@ -20,6 +20,7 @@
   }
 
   img {
+    height: auto; // Some CMS images have inline height/width attributes
     padding-right: em($spacing-medium);
   }
 
