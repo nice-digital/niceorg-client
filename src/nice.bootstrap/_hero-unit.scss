@@ -6,6 +6,7 @@
   }
 
   h1,
+  h2,
   p {
     // sass-lint:disable no-duplicate-properties
     margin-left: $hero-image-width-percentage + 5%; // Fallback for non-calc
