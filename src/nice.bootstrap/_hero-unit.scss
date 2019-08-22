@@ -6,6 +6,7 @@
   }
 
   h1,
+  h2,
   p {
     // sass-lint:disable no-duplicate-properties
     margin-left: $hero-image-width-percentage + 5%; // Fallback for non-calc
@@ -51,7 +52,7 @@
     width: 16%;
   }
 
-  h1 {
+  h1,h2 {
     @include font-size(h3);
     max-width: 44ch;
   }
@@ -66,7 +67,7 @@
       float: left;
     }
 
-    h1 {
+    h1,h2 {
       clear: none;
       margin-top: 0;
     }
