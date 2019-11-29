@@ -1,7 +1,7 @@
 module.exports = {
 	target: {
 		src: [
-			"src/**/*.scss",
+			"src/**/*.scss"
 		]
 	},
 	options: {

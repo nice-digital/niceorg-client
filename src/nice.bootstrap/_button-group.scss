@@ -1,0 +1,41 @@
+// NICE.Bootstrap button groups for backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttonGroups
+.btn-group {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  // sass-lint:disable-block no-combinators
+  > .btn {
+    margin: 0;
+
+    + .btn {
+      margin-left: 1px;
+    }
+  }
+
+  &.btn-group-vertical {
+    > .btn {
+      display: block;
+      float: none;
+      max-width: 100%;
+
+      + .btn {
+        margin-left: 0;
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+.btn-toolbar {
+  font-size: 0;
+  margin: rem($spacing-medium);
+
+  // sass-lint:disable-block no-combinators
+  > .btn-group + .btn-group {
+    margin-left: rem($spacing-small);
+  }
+}

@@ -45,8 +45,12 @@
     margin: 0;
   }
 
-  h3 {
-    @include font-size(3);
+ .row {
+    display: block;
+  }
+
+  h2 {
+    @include font-size(h4);
     font-weight: normal;
 
     &:first-child {
@@ -74,8 +78,9 @@
 
   /// Footer logo
   .footer-nicelogo {
-    @include font-size(6);
+    @include font-size(5);
     display: inline-block;
+    line-height: 1;
     margin-bottom: em($spacing-small);
 
     &:hover {
@@ -128,8 +133,8 @@
   @include clearfix;
   background: $colour-nice-teal;
   clear: both;
-  margin: em($spacing-large) -2%; // Negative margin to 'jump outside' the container
-  padding: em($spacing-large) 2%;
+  margin: rem($spacing-large) rem(- $spacing-large); // Negative margin to 'jump outside' the container
+  padding: rem($spacing-large);
 
   #get-involved-panel {
     margin: 0;

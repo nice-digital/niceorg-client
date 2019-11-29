@@ -1,0 +1,71 @@
+/// Utility classes, adapted from NICE.Bootstrap
+
+/// Float an element left
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#helper-classes
+.pull-left {
+  float: left;
+}
+
+/// Float an element right
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#helper-classes
+.pull-right {
+  float: right;
+}
+
+// CSS triangle, often used within dropdowns
+.caret {
+  border-left: rem($spacing-small) solid transparent;
+  border-right: rem($spacing-small) solid transparent;
+  border-top: rem($spacing-small) solid $colour-nice-white;
+  content: '';
+  display: inline-block;
+  height: 0;
+  vertical-align: top;
+  width: 0;
+}
+
+// Generic close button, for alerts etc, see http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#alerts
+// sass-lint:disable no-qualifying-elements
+a.close,
+button.close,
+input.close {
+  @include font-size(3);
+  appearance: none;
+  background: 0;
+  border: 0;
+  color: $colour-nice-grey-1;
+  cursor: pointer;
+  float: right;
+  line-height: 1;
+  padding: 0;
+  text-decoration: none;
+
+  &:focus {
+    @include default-focus-style;
+  }
+
+  &:hover {
+    color: $colour-nice-dark-grey;
+  }
+}
+
+
+.muted {
+  color: $colour-text-subtle;
+}
+
+.text-warning {
+  color: $colour-caution;
+}
+
+.text-error {
+  color: $colour-error;
+}
+
+.text-info {
+  color: $colour-info;
+}
+
+.text-success {
+  color: $colour-success;
+}

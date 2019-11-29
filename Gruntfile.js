@@ -15,5 +15,7 @@ module.exports = grunt => {
 
 	var r = grunt.registerTask;
 
-	r("default", ["clean", "sasslint", "sass", "postcss", "watch"]);
+	r("default", ["clean", "copy:temp", "sasslint", "sass:temp", "postcss:temp", "watch"]);
+
+	r("dist", ["clean", "copy:dist", "sasslint", "sass:dist", "postcss:distMin", "postcss:dist", "cssmin"]);
 };

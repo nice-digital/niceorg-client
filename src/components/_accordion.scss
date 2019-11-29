@@ -1,0 +1,55 @@
+/// Accordion- used on NICE field team page
+/// Overrides
+/// See https://www.nice.org.uk/about/what-we-do/into-practice/nice-field-team for example
+// sass-lint:disable
+
+.accordion {
+
+  .accordion-group {
+    background: $colour-panel-default;
+    margin-bottom: rem($spacing-small);
+  }
+
+  .accordion-heading {
+    margin: 0;
+
+    a {
+      @include font-size(h5);
+      display: block;
+      padding: rem($spacing-small);
+      text-decoration: none;
+    }
+  }
+
+  .accordion-inner {
+    padding: rem($spacing-medium) rem($spacing-large) rem($spacing-medium) rem($spacing-medium);
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.accordion-toggle {
+  @include font-size(h5);
+  display: block;
+  padding: rem($spacing-small);
+  text-decoration: none;
+
+  &:before {
+    // Sometimes accordion toggles can be key-links so avoid the extra chevron
+    display: none !important; // sass-lint:disable-line no-important
+  }
+
+  &:after {
+    @include icon-base;
+    content: nice-icon('chevron-down');
+    float: right;
+  }
+}

@@ -18,4 +18,13 @@
       clear: none;
     }
   }
+
+  img {
+    height: auto; // Some CMS images have inline height/width attributes
+    padding-right: em($spacing-medium);
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
 }

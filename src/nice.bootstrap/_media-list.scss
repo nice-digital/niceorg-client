@@ -1,0 +1,10 @@
+/// List of media items, taken from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media-list
+.media-list {
+  list-style: none;
+  margin-left: 0;
+
+  .panel-resources & {
+    margin: 0;
+  }
+}

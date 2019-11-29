@@ -1,0 +1,45 @@
+// NICE.Bootstrap pager for backwards compatability
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#labels-badges
+.label,
+.badge {
+  @extend .tag; // sass-lint:disable-line placeholder-in-extend
+
+  &.label-success,
+  &.badge-success {
+    background: $colour-success-background;
+    border: 1px solid $colour-success;
+    color: $colour-success;
+  }
+
+  &.label-warning,
+  &.badge-warning {
+    background: $colour-caution-background;
+    border: 1px solid $colour-caution;
+    color: $colour-caution;
+  }
+
+  &.label-important,
+  &.badge-important {
+    background: $colour-error-background;
+    border: 1px solid $colour-error;
+    color: $colour-error;
+  }
+
+  &.label-info,
+  &.badge-info {
+    background: $colour-info-background;
+    border: 1px solid $colour-info;
+    color: $colour-info;
+  }
+
+  &.label-inverse,
+  &.badge-inverse {
+    background: $colour-nice-grey-3;
+    color: $colour-nice-dark-grey;
+  }
+}
+
+.badge {
+  padding-left: rem($spacing-small);
+  padding-right: rem($spacing-small);
+}

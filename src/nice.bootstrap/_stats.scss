@@ -1,0 +1,17 @@
+.stats {
+  @include font-size(-1);
+  color: $colour-nice-dark-grey;
+  display: block;
+  font-weight: normal;
+  margin: 0;
+
+  .data-size {
+    @include font-size(-1);
+    color: $colour-nice-dark-grey;
+  }
+
+  .media & {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -5,6 +5,7 @@
     width: $hero-image-width-percentage;
   }
 
+  h1,
   h2,
   p {
     // sass-lint:disable no-duplicate-properties
@@ -25,6 +26,7 @@
   overflow: hidden;
   padding: em($spacing-large);
   position: relative;
+  width: 100%;
 
   &:hover {
     background: darken($colour-nice-cool-teal, 3%);
@@ -47,12 +49,12 @@
   }
 
   .hero-image {
-    float: none;
-    width: 100%;
+    width: 16%;
   }
 
-  h2 {
+  h1,h2 {
     @include font-size(h3);
+    max-width: 44ch;
   }
 
   // sass-lint:disable no-combinators
@@ -65,7 +67,7 @@
       float: left;
     }
 
-    h2 {
+    h1,h2 {
       clear: none;
       margin-top: 0;
     }
@@ -74,7 +76,6 @@
   }
 
   @include mq($from: md) {
-    max-width: em($nice-breakpoint-md);
-    @include _hero-unit-width(25%);
+    @include _hero-unit-width(16%);
   }
 }

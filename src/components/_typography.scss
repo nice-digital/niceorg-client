@@ -4,3 +4,25 @@
 .page-content .lead:first-child  {
   margin-top: 0;
 }
+
+// NICE.Bootstrap abbreviation styles for backwards compatibility,
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#abbreviations
+abbr {
+  &[title],
+  &[data-original-title] {
+    cursor: help;
+  }
+
+  &.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+  }
+}
+
+// NICE.Bootstrap abbreviation styles for backwards compatibility,
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#addresses
+address {
+  display: block;
+  font-style: normal;
+  margin-bottom: rem($spacing-medium);
+}

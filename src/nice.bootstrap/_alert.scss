@@ -1,0 +1,51 @@
+// Old NICE.Bootstrap alert component for backwards compatibility
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#alerts
+.alert {
+  background: $colour-caution-background;
+  border: 1px solid $colour-caution;
+  color: $colour-caution;
+  margin: rem($spacing-medium 0);
+  padding: rem($spacing-small $spacing-large $spacing-small $spacing-small);
+
+  // Elements
+
+  .close {
+    position: relative;
+    right: - rem($spacing-medium);
+  }
+
+  h4 {
+    clear: none;
+    margin: 0;
+  }
+
+  // sass-lint:disable no-combinators
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  // Modifiers
+
+  &.alert-block {
+    padding: rem($spacing-medium $spacing-large $spacing-medium $spacing-medium);
+  }
+
+  &.alert-danger,
+  &.alert-error {
+    background-color: $colour-error-background;
+    border-color: $colour-error;
+    color: $colour-error;
+  }
+
+  &.alert-success {
+    background-color: $colour-success-background;
+    border-color: $colour-success;
+    color: $colour-success;
+  }
+
+  &.alert-info {
+    background-color: $colour-info-background;
+    border-color: $colour-info;
+    color: $colour-info;
+  }
+}

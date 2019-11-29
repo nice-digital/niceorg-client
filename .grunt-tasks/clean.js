@@ -1,3 +1,3 @@
 module.exports = {
-	temp: ["temp"]
+	clean: ["temp", "dist"]
 };

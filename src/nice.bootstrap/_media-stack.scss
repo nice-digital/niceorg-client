@@ -1,0 +1,73 @@
+.media-stack {
+  height: rem(120px);
+  position: relative;
+
+  .media-clip {
+    display: block;
+    height: rem(120px);
+  }
+
+  .media-object {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .media-icon {
+    @include font-size(4);
+    background: $colour-nice-dark-grey;
+    color: $colour-text-inverse;
+    left: 50%;
+    opacity: .7;
+    padding: rem($spacing-small $spacing-medium);
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    .media-icon {
+      background: $colour-nice-black;
+    }
+  }
+
+  // Modifiers
+
+  &.media-stack-2x {
+    height: rem(140px);
+
+    .media-clip {
+      height: rem(140px);
+    }
+
+    .media-icon {
+      @include font-size(4);
+    }
+  }
+
+  &.media-stack-3x {
+    height: rem(150px);
+
+    .media-clip {
+      height: rem(150px);
+    }
+
+    .media-icon {
+      @include font-size(5);
+    }
+  }
+
+  &.media-stack-4x,
+  &.media-stack-5x {
+    height: rem(160px);
+
+    .media-clip {
+      height: rem(160px);
+    }
+
+    .media-icon {
+      @include font-size(5);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+/// Navigation bar, taken from NICE.Bootstrap
+/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#navbar
+.navbar {
+  list-style: none;
+  margin-left: 0;
+  overflow: visible;
+
+  // sass-lint:disable no-combinators
+
+  // Elements
+
+  .container {
+    width: auto;
+  }
+
+  .brand {
+    @include font-size(4);
+    color: $colour-text;
+    display: block;
+    float: left;
+    font-weight: bolder;
+    padding: rem($spacing-small $spacing-medium);
+    text-decoration: none;
+  }
+
+  .nav {
+    display: block;
+    float: left;
+    margin: 0;
+
+    &.pull-right {
+      float: right;
+    }
+
+    > li {
+      width: 100%;
+
+      > a {
+        color: $colour-text;
+        display: block;
+        padding: rem($spacing-small $spacing-medium);
+        text-decoration: none;
+
+        &:hover {
+          background: $colour-nice-grey-2;
+        }
+      }
+
+      &.active {
+        > a {
+          background: $colour-nice-teal;
+          color: $colour-text-inverse;
+        }
+      }
+    }
+  }
+
+  .navbar-inner {
+    @include clearfix;
+    background: $colour-nice-grey-3;
+  }
+
+  &.navbar-inverse {
+    // sass-lint:disable-block nesting-depth
+
+    .nav {
+      > li {
+        > a {
+          color: $colour-text-inverse;
+
+          &:hover {
+            background: $colour-nice-teal-2;
+          }
+        }
+
+        &.active {
+          > a {
+            background: $colour-body;
+            color: $colour-text;
+          }
+        }
+      }
+    }
+
+    .navbar-inner {
+      background: $colour-nice-teal;
+    }
+  }
+
+  @include mq($from: md) {
+    .nav {
+      > li {
+        float: left;
+        width: auto;
+      }
+    }
+  }
+}

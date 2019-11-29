@@ -1,0 +1,77 @@
+// NICE.Boostrap overrides for lists
+// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#lists
+
+// NICE Design System uses list--unstyled rather than just unstyled
+// sass-lint:disable no-qualifying-elements
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.inline,
+ol.inline {
+  list-style: none;
+  margin-left: 0;
+
+  // sass-lint:disable-block no-combinators
+  > li {
+    display: inline-block;
+    padding-left: rem($spacing-small);
+    padding-right: rem($spacing-small);
+  }
+}
+
+ol.alt {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+
+  // sass-lint:disable-block no-combinators
+  > li {
+    list-style: none;
+    margin-bottom: rem($spacing-small);
+    margin-left: rem($spacing-large + $spacing-small);
+    min-height: rem($spacing-large);
+    position: relative;
+
+    &:before {
+      background: $colour-icons;
+      border-radius: 50%;
+      color: $colour-text-inverse;
+      content: counter(li);
+      counter-increment: li;
+      font-weight: bold;
+      height: em($spacing-large);
+      left: - em($spacing-large + $spacing-small);
+      line-height: em($spacing-large);
+      margin-top: - em($spacing-x-small);
+      position: absolute;
+      text-align: center;
+      text-indent: 0;
+      width: em($spacing-large);
+    }
+  }
+}
+
+ul.alt {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  // sass-lint:disable-block no-combinators
+  > li {
+    list-style: none;
+    margin-left: rem($spacing-medium);
+    min-height: rem($spacing-small);
+    position: relative;
+
+    &:before {
+      color: $colour-icons;
+      content: get-glyph(bullet);
+      font-size: 125%;
+      left: - rem($spacing-medium);
+      position: absolute;
+    }
+  }
+}

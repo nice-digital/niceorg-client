@@ -1,0 +1,54 @@
+// Bootstrap's embed responsive component from https://getbootstrap.com/docs/4.0/utilities/embed/.
+// Ported from https://github.com/nhsevidence/niceorg/blob/master/src/Orchard.Web/Themes/NICE.Bootstrap/Styles/nice/temporary-bootstrap-fixes.less#L552-L588
+
+.embed-responsive {
+  display: block;
+  height: 0;
+  margin-bottom: em($spacing-large);
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &.embed-responsive-21by9 {
+    padding-bottom: percentage(9 / 21);
+  }
+
+  &.embed-responsive-16by9 {
+    padding-bottom: percentage(9 / 16);
+  }
+
+  &.embed-responsive-4by3 {
+    padding-bottom: 75%;
+  }
+
+  &.embed-responsive-1by1 {
+    padding-bottom: 100%;
+  }
+
+  &.wrap {
+    float: left;
+    margin-right: em($spacing-medium);
+  }
+
+  //styles copied from bootstrap 3 then put inside a media query.
+  @include mq($from: sm) {
+    &.wrap {
+      float: none;
+      margin-right: initial;
+    }
+  }
+}

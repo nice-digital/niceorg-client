@@ -3,18 +3,44 @@
 /// Adapted from NICE.Bootstrap
 /// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#thumbnails
 .thumbnail {
+  height: 100%;
+  position: relative;
 
   // sass-lint:disable no-combinators
-  > img {
+  > img,
+  .img-container > img {
     display: block;
     margin: auto;
     max-width: 100%;
   }
 
+  .img-container {
+    min-height: 200px;
+  }
+
   .caption {
-    h3 {
-      @include font(3);
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include font(h6);
       margin-top: rem($spacing-medium);
     }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a:before {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
   }
 }

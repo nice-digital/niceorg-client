@@ -1,0 +1,90 @@
+// 'Corporate' within a page-header
+.navbar-corporate {
+  margin: em($spacing-medium 0 0);
+
+  // 'Explore' button for toggling the nav on mobile
+  .navbar-toggle {
+    @include font-size(1);
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    &:after {
+      @include nice-icon(minus);
+      display: inline-block;
+      line-height: 0;
+      margin: rem(0 0 0 $spacing-small);
+      vertical-align: middle;
+    }
+
+    &.collapsed:after {
+      @include nice-icon(plus);
+    }
+  }
+
+  // List of nav elements
+  .nav {
+    //background: $colour-panel-default;
+    border-bottom: 1px solid $colour-border;
+    float: none;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: em($spacing-x-small);
+    position: relative;
+
+    &.collapse {
+      border-bottom: 0;
+      height: 0;
+
+      &.in {
+        border-bottom: 1px solid $colour-border;
+      }
+    }
+
+    li {
+      &:first-child { margin-top: em($spacing-medium); }
+      &:last-child { margin-bottom: em($spacing-medium); }
+    }
+
+    a {
+      @include font-size(1);
+      display: block;
+      padding: rem($spacing-x-small 0);
+      position: relative;
+      text-decoration: none;
+
+      &:focus {
+        z-index: 1;
+      }
+    }
+  }
+
+  @include mq($from: xs) {
+    .navbar-toggle {
+      min-width: 50%;
+    }
+  }
+
+  @include mq($from: sm) {
+    .navbar-toggle { display: none; }
+
+    .nav {
+      // Important to override style set on the element via JS
+      border-bottom: 1px solid $colour-border !important; // sass-lint:disable-line no-important
+      height: auto !important; // sass-lint:disable-line no-important
+
+      li {
+        float: left;
+        width: percentage(1 / 3);
+
+        &:first-child { margin-top: 0; }
+
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+  }
+
+}

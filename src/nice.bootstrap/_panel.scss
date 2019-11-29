@@ -1,0 +1,131 @@
+// Specific type of panel from old bootstrap
+.panel {
+
+  // Elements
+
+  // sass-lint:disable no-combinators
+  > .panel {
+    // There are weird situations in niceorg where people have
+    // nested a panel directly inside another panel
+    border: 0;
+    margin-top: 0;
+  }
+
+  // Negative margins are to offset the default padding that panels have from the Design System
+  .panel-heading {
+    @include font-size(h5);
+    border-bottom: 1px solid $colour-border;
+    margin: rem((-$spacing-medium) (-$spacing-medium) 0 (-$spacing-medium));
+    padding: rem($spacing-small $spacing-medium);
+
+    // sass-lint:disable no-universal-selectors
+    > * {
+      @include font-size(h5);
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-title {
+    @include font-size(h5);
+    margin: 0;
+  }
+
+  .panel-body {
+    @include clearfix;
+  }
+
+  // Panels have a default padding, so if we have a heading and body we
+  // need to use a negative margin to break back out of the padding
+  .panel-heading + .panel-body {
+    margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
+    padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel-footer {
+    margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
+    padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
+  }
+
+  .panel-heading + .panel-body,
+  .panel-body + .panel-footer {
+    padding-top: rem($spacing-medium);
+  }
+
+  // Modifiers
+
+  // Contextual panel alternatives
+  // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
+  &.panel-default { background: $colour-panel-default; }
+
+  &.panel-outline {
+    background: $colour-nice-white;
+    border: 1px solid $colour-border;
+  }
+
+  &.panel-success {
+    background: $colour-nice-white;
+    border: 1px solid $colour-success;
+
+    .panel-heading {
+      background: $colour-success-background;
+      border-color: $colour-success;
+      color: $colour-success;
+    }
+  }
+
+  &.panel-info {
+    background: $colour-nice-white;
+    border: 1px solid $colour-info;
+
+    .panel-heading {
+      background: $colour-info-background;
+      border-color: $colour-info;
+      color: $colour-info;
+    }
+  }
+
+  &.panel-warning {
+    background: $colour-nice-white;
+    border: 1px solid $colour-caution;
+
+    .panel-heading {
+      background: $colour-caution-background;
+      border-color: $colour-caution;
+      color: $colour-caution;
+    }
+  }
+
+  &.panel-danger {
+    background: $colour-nice-white;
+    border: 1px solid $colour-error;
+
+    .panel-heading {
+      background: $colour-error-background;
+      border-color: $colour-error;
+      color: $colour-error;
+    }
+  }
+
+  &.panel-resources {
+    padding: 0;
+
+    >.panel-body {
+      padding: 0;
+    }
+  }
+}

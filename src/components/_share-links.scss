@@ -8,6 +8,10 @@
     padding: rem($spacing-small $spacing-medium);
   }
 
+  .navbar-inner {
+    background: 0;
+  }
+
   .dropdown-menu {
     margin-top: rem($spacing-small);
     padding-bottom: rem($spacing-small);
@@ -23,6 +27,10 @@
       position: absolute;
       right: rem($spacing-small);
       width: 0;
+    }
+
+    &.pull-left:before {
+      left: rem($spacing-small);
     }
 
     a {
