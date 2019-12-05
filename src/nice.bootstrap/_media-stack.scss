@@ -14,12 +14,12 @@
   }
 
   .media-icon {
-    @include font-size(4);
-    background: $colour-nice-dark-grey;
-    color: $colour-text-inverse;
+    @include nds-font-size(4);
+    background: $nds-colour-nice-dark-grey;
+    color: $nds-colour-text-inverse;
     left: 50%;
     opacity: .7;
-    padding: rem($spacing-small $spacing-medium);
+    padding: rem($nds-spacing-small $nds-spacing-medium);
     position: absolute;
     text-decoration: none;
     top: 50%;
@@ -28,7 +28,7 @@
 
   &:hover {
     .media-icon {
-      background: $colour-nice-black;
+      background: $nds-colour-nice-black;
     }
   }
 
@@ -42,7 +42,7 @@
     }
 
     .media-icon {
-      @include font-size(4);
+      @include nds-font-size(4);
     }
   }
 
@@ -54,7 +54,7 @@
     }
 
     .media-icon {
-      @include font-size(5);
+      @include nds-font-size(5);
     }
   }
 
@@ -67,7 +67,7 @@
     }
 
     .media-icon {
-      @include font-size(5);
+      @include nds-font-size(5);
     }
   }
 }

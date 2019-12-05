@@ -2,7 +2,7 @@
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
 
 .nav-pills {
-  @include clearfix;
+  @include nds-clearfix;
 
   // Elements
 
@@ -11,20 +11,20 @@
     float: left;
 
     > a {
-      color: $colour-text;
+      color: $nds-colour-text;
       display: block;
       margin: 0;
-      padding: rem($spacing-small $spacing-medium);
+      padding: rem($nds-spacing-small $nds-spacing-medium);
       text-decoration: none;
 
       &:hover {
-        background: $colour-nice-grey-3;
+        background: $nds-colour-nice-grey-3;
       }
     }
 
     &.active > a {
-      background: $colour-nice-teal;
-      color: $colour-text-inverse;
+      background: $nds-colour-nice-teal;
+      color: $nds-colour-text-inverse;
     }
   }
 

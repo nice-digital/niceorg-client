@@ -24,8 +24,8 @@
     h4,
     h5,
     h6 {
-      @include font(h6);
-      margin-top: rem($spacing-medium);
+      @include nds-font(h6);
+      margin-top: rem($nds-spacing-medium);
     }
 
     > :last-child {

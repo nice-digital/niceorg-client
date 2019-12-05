@@ -1,7 +1,7 @@
 // NICE.Bootstrap pager for backwards compatability
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
 .pager {
-  margin: em($spacing-medium 0 $spacing-large);
+  margin: em($nds-spacing-medium 0 $nds-spacing-large);
   text-align: center;
 
   // Elements
@@ -17,8 +17,8 @@
     &.disabled {
       a,
       span {
-        background: $colour-nice-grey-3;
-        color: $colour-nice-grey-1;
+        background: $nds-colour-nice-grey-3;
+        color: $nds-colour-nice-grey-1;
         cursor: text;
         pointer-events: none;
       }
@@ -27,8 +27,8 @@
     &.active {
       a,
       span {
-        background: $colour-nice-teal;
-        color: $colour-text-inverse;
+        background: $nds-colour-nice-teal;
+        color: $nds-colour-text-inverse;
       }
     }
 
@@ -43,36 +43,36 @@
 
   a,
   span {
-    background: $colour-panel-default;
-    color: $colour-link;
+    background: $nds-colour-panel-default-background;
+    color: $nds-colour-link;
     display: inline-block;
-    padding: em($spacing-small $spacing-medium);
+    padding: em($nds-spacing-small $nds-spacing-medium);
     position: relative;
     text-decoration: none;
   }
 
   a {
     &:hover {
-      background: $colour-nice-grey-2;
+      background: $nds-colour-nice-grey-2;
     }
 
     &:active {
-      top: em($spacing-xx-small);
+      top: em($nds-spacing-xx-small);
     }
   }
 
   // Modifiers
 
   &.pager-large {
-    @include font-size(1);
+    @include nds-font-size(1);
   }
 
   &.pager-small {
-    @include font-size(-1);
+    @include nds-font-size(-1);
   }
 
   &.pager-mini {
-    @include font-size(-2);
+    @include nds-font-size(-2);
   }
 
   .pager-centered {

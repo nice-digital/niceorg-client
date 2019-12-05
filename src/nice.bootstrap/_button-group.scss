@@ -2,7 +2,7 @@
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttonGroups
 .btn-group {
   display: inline-block;
-  font-size: 0;
+  nds-font-size: 0;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -31,11 +31,11 @@
 }
 
 .btn-toolbar {
-  font-size: 0;
-  margin: rem($spacing-medium);
+  nds-font-size: 0;
+  margin: rem($nds-spacing-medium);
 
   // sass-lint:disable-block no-combinators
   > .btn-group + .btn-group {
-    margin-left: rem($spacing-small);
+    margin-left: rem($nds-spacing-small);
   }
 }

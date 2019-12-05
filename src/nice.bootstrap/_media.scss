@@ -6,18 +6,18 @@
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: rem($spacing-small 0);
+  padding: rem($nds-spacing-small 0);
   position: relative;
 
-  // Use font-size 0 to get rid of &nbsp; characters
+  // Use nds-font-size 0 to get rid of &nbsp; characters
   .media-heading {
-    font-size: 0;
+    nds-font-size: 0;
     margin: 0;
     max-width: 100%;
     padding-top: 3px; // Make room for focus ring
 
     a {
-      @include font-size(0);
+      @include nds-font-size(0);
       display: inline-block;
       max-width: 66ch;
 
@@ -40,7 +40,7 @@
 
   // sass-lint:disable-block no-qualifying-elements
   h4.media-heading {
-    @include font-size(h4);
+    @include nds-font-size(h4);
   }
 
   .media-body {
@@ -48,13 +48,13 @@
     padding: 0 3px; // Make room for the focus ring
 
     p {
-      margin: rem($spacing-x-small 0 0);
+      margin: rem($nds-spacing-x-small 0 0);
     }
   }
 
   .media-date {
-    @include font-size(-1);
-    color: $colour-nice-dark-grey;
+    @include nds-font-size(-1);
+    color: $nds-colour-nice-dark-grey;
     position: relative;
     z-index: 1;
   }
@@ -64,7 +64,7 @@
   > .pull-right {
     display: block;
     float: none;
-    margin-bottom: rem($spacing-medium);
+    margin-bottom: rem($nds-spacing-medium);
     width: 150px;
   }
 
@@ -73,7 +73,7 @@
   &.media-resource {
     .panel-resources & {
       margin-bottom: 0;
-      padding: rem($spacing-small $spacing-medium);
+      padding: rem($nds-spacing-small $nds-spacing-medium);
 
       &:last-child {
         border-bottom: 0;
@@ -87,9 +87,9 @@
   }
 
   .media-list & {
-    border-bottom: 1px solid $colour-border;
-    padding-bottom: rem($spacing-medium);
-    padding-top: rem($spacing-medium);
+    border-bottom: 1px solid $nds-colour-border;
+    padding-bottom: rem($nds-spacing-medium);
+    padding-top: rem($nds-spacing-medium);
 
     &:first-child {
       padding-top: 0;
@@ -103,23 +103,23 @@
 
   // Some media items are in a plain list so break out of the default margin
   ul:not(.media-list) & {
-    margin-left: - rem($spacing-medium);
+    margin-left: - rem($nds-spacing-medium);
   }
 
   @include mq($from: sm) {
-    @include clearfix;
+    @include nds-clearfix;
 
     // sass-lint:disable-block no-combinators
     > .pull-left {
       float: left;
       margin-bottom: 0;
-      margin-right: em($spacing-medium);
+      margin-right: em($nds-spacing-medium);
     }
 
     > .pull-right {
       float: right;
       margin-bottom: 0;
-      margin-left: em($spacing-medium);
+      margin-left: em($nds-spacing-medium);
     }
   }
 }

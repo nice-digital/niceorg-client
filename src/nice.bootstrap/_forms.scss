@@ -7,7 +7,7 @@ fieldset {
 }
 
 legend {
-  @include font(h4);
+  @include nds-font(h4);
   border: 0;
   display: block;
   font-weight: bold;
@@ -18,12 +18,12 @@ legend {
 // Control groups
 
 .control-group {
-  margin-bottom: rem($spacing-medium);
+  margin-bottom: rem($nds-spacing-medium);
 }
 
 .control-label {
   display: block;
-  margin: rem(0 0 $spacing-x-small);
+  margin: rem(0 0 $nds-spacing-x-small);
 }
 
 // Inputs
@@ -57,14 +57,14 @@ select,
 textarea,
 input:not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']), // 'Text' inputs
 .uneditable-input {
-  background-color: $colour-true-white;
-  border: rem($spacing-xx-small) solid $colour-border;
-  color: $colour-text;
+  background-color: $nds-colour-true-white;
+  border: rem($nds-spacing-xx-small) solid $nds-colour-border;
+  color: $nds-colour-text;
   display: inline-block;
-  font-size: inherit;
+  nds-font-size: inherit;
   margin: 0;
   max-width: 66ch;
-  padding: rem($spacing-small);
+  padding: rem($nds-spacing-small);
   transition: border linear .2s;
   vertical-align: middle;
   width: 100%;
@@ -74,16 +74,16 @@ input,
 textarea,
 select {
   &:focus {
-    @include default-focus-style;
+    @include nds-default-focus-style;
 
     &:invalid {
-      border-color: $colour-error;
-      outline-color: $colour-error;
+      border-color: $nds-colour-error;
+      outline-color: $nds-colour-error;
     }
   }
 
   &::placeholder {
-    color: $colour-nice-dark-grey;
+    color: $nds-colour-nice-dark-grey;
   }
 }
 
@@ -91,12 +91,12 @@ select {
 
 .field-validation-error,
 .alert-required {
-  color: $colour-error;
+  color: $nds-colour-error;
 }
 
 // Help/hints
 
 .help-block,
 .help-inline {
-  color: $colour-nice-grey-3;
+  color: $nds-colour-nice-grey-3;
 }

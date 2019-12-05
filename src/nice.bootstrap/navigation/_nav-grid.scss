@@ -5,7 +5,7 @@
 /// Note: this is used at the top of find guidance page or the guidance 'pills'.
 /// See components/_guidance-pills.scss
 .nav-grid3 {
-  @include clearfix;
+  @include nds-clearfix;
   list-style: none;
   margin: 0;
 

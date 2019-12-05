@@ -11,7 +11,7 @@ body {
 
       .nice-search {
         float: none;
-        margin: em($spacing-medium) auto;
+        margin: em($nds-spacing-medium) auto;
         max-width: rem(1170px);
         width: 100%;
 
@@ -19,7 +19,7 @@ body {
           height: rem(50);
 
           &::placeholder {
-            color: $colour-nice-grey-1;
+            color: $nds-colour-nice-grey-1;
             font-style: italic;
             opacity: 1;
           }
@@ -37,7 +37,7 @@ body {
         }
 
         .tt-dropdown-menu {
-          background-color: $colour-nice-white;
+          background-color: $nds-colour-nice-white;
           border-style: solid;
           border-width: 1px;
           margin-top: -1px;
@@ -51,15 +51,15 @@ body {
         .tt-dropdown-menu,
         .tt-suggestion.tt-cursor,
         .tt-suggestion+.tt-suggestion {
-          border-color: $colour-nice-grey-2;
+          border-color: $nds-colour-nice-grey-2;
         }
 
         .tt-suggestion {
-          padding: rem($spacing-small $spacing-medium);
+          padding: rem($nds-spacing-small $nds-spacing-medium);
 
           &.tt-cursor {
-            background-color: $colour-nice-teal;
-            color: $colour-text-inverse;
+            background-color: $nds-colour-nice-teal;
+            color: $nds-colour-text-inverse;
           }
 
           .title {
@@ -78,7 +78,7 @@ body {
 
         .tt-hint,
         .tt-input {
-          padding-left: rem($spacing-medium);
+          padding-left: rem($nds-spacing-medium);
         }
 
         .tt-suggestion+.tt-suggestion {
@@ -87,7 +87,7 @@ body {
         }
 
         #search {
-          background-color: $colour-nice-white !important;
+          background-color: $nds-colour-nice-white !important;
         }
       }
     }

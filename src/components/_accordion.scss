@@ -6,23 +6,23 @@
 .accordion {
 
   .accordion-group {
-    background: $colour-panel-default;
-    margin-bottom: rem($spacing-small);
+    background: $nds-colour-panel-default-background;
+    margin-bottom: rem($nds-spacing-small);
   }
 
   .accordion-heading {
     margin: 0;
 
     a {
-      @include font-size(h5);
+      @include nds-font-size(h5);
       display: block;
-      padding: rem($spacing-small);
+      padding: rem($nds-spacing-small);
       text-decoration: none;
     }
   }
 
   .accordion-inner {
-    padding: rem($spacing-medium) rem($spacing-large) rem($spacing-medium) rem($spacing-medium);
+    padding: rem($nds-spacing-medium) rem($nds-spacing-large) rem($nds-spacing-medium) rem($nds-spacing-medium);
 
     p {
       &:first-child {
@@ -37,9 +37,9 @@
 }
 
 .accordion-toggle {
-  @include font-size(h5);
+  @include nds-font-size(h5);
   display: block;
-  padding: rem($spacing-small);
+  padding: rem($nds-spacing-small);
   text-decoration: none;
 
   &:before {
@@ -48,8 +48,7 @@
   }
 
   &:after {
-    @include icon-base;
-    content: nice-icon('chevron-down');
+    @include nice-icon(chevron-down);
     float: right;
   }
 }

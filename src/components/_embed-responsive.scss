@@ -4,7 +4,7 @@
 .embed-responsive {
   display: block;
   height: 0;
-  margin-bottom: em($spacing-large);
+  margin-bottom: em($nds-spacing-large);
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -41,7 +41,7 @@
 
   &.wrap {
     float: left;
-    margin-right: em($spacing-medium);
+    margin-right: em($nds-spacing-medium);
   }
 
   //styles copied from bootstrap 3 then put inside a media query.

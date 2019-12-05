@@ -6,94 +6,62 @@
 //
 // See https://github.com/nhsevidence/nice-icons
 .fa {
-  @include icon-base;
-
-  &.icon-android:before {
-    content: nice-icon(android);
+  &.icon-android {
+    @include nice-icon(android);
   }
 
-  &.icon-apple:before {
-    content: nice-icon(apple);
+  &.icon-apple {
+    @include nice-icon(apple);
   }
 
-  &.icon-youtube-play:before {
-    content: nice-icon(youtube-play);
+  &.icon-youtube-play {
+    @include nice-icon(youtube-play);
   }
 
-  &.icon-linkedin-sign:before {
-    content: nice-icon(linkedin-sign);
+  &.icon-linkedin-sign {
+    @include nice-icon(linkedin-sign);
   }
 }
 
 // Old icons from NICE-Glyphs are all prefixed with "nice-"
-[class^='icon-nice'],
-[class*=' icon-nice'] {
-  @include icon-base;
+// [class^='icon-nice'],
+// [class*=' icon-nice'] {
+//   @include icon-base;
 
-  &:before {
-    display: block;
-  }
-}
+//   &:before {
+//     display: block;
+//   }
+// }
 
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
-@each $icon, $code in $nice-icons {
-  .icon-nice-#{ $icon }:before {
-    content: nice-icon($icon);
-  }
-}
+// @each $icon, $code in $nice-icons {
+//   .icon-nice-#{ $icon }:before {
+//     content: nice-icon($icon);
+//   }
+// }
 
 // Custom icons that don't follow the normal conventions
 .icon-linkedin {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(linkedin);
-    display: block;
-  }
+  @include nice-icon(linkedin);
 }
 
 .icon-question-sign {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(question-circle);
-    display: block;
-  }
+  @include nice-icon(question-circle);
 }
 
 .icon-chevron-right {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(chevron-right);
-    display: block;
-  }
+  @include nice-icon(chevron-right);
 }
 
 .icon-chevron-left {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(chevron-left);
-    display: block;
-  }
+  @include nice-icon(chevron-left);
 }
 
 .icon-play {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(play);
-    display: block;
-  }
+  @include nice-icon(play);
 }
 
 .icon-volume-up {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(podcast);
-    display: block;
-  }
+  @include nice-icon(podcast);
 }
 

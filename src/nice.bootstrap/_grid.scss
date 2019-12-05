@@ -2,7 +2,7 @@
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#gridSystem
 .row,
 .row-fluid {
-  @include clearfix;
+  @include nds-clearfix;
   margin: 0;
   width: 100%;
 

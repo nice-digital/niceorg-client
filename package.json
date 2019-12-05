@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@nice-digital/browserslist-config": "^1.0.0",
-    "@nice-digital/design-system": "^0.5.9",
+    "@nice-digital/design-system": "1.0.16-alpha.0",
     "autoprefixer": "^8.5.0",
     "express": "^4.16.3",
     "grunt": "^1.0.3",
@@ -38,12 +38,12 @@
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.1.0",
     "grunt-sass-lint": "^0.2.4",
+    "grunt-sass-tilde-importer": "^1.0.2",
     "load-grunt-config": "^1.0.1",
-    "node": "^8.11.2",
     "pixrem": "^4.0.1",
     "postcss-banner": "^3.0.0"
   },
   "dependencies": {
-    "@nice-digital/icons": "^1.6.0"
+    "@nice-digital/icons": "^2.1.1"
   }
 }

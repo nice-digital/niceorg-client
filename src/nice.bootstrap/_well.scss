@@ -3,25 +3,25 @@
 // Used to visuallt group elements in a grey container.
 // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
 .well {
-  @include clearfix;
-  background: $colour-panel-default;
-  border: 1px solid $colour-panel-default-border; // To match panels
-  margin: em($spacing-medium 0);
-  min-height: em($spacing-large);
-  padding: em($spacing-medium);
+  @include nds-clearfix;
+  background: $nds-colour-panel-default-background;
+  border: 1px solid $nds-colour-panel-default-border; // To match panels
+  margin: em($nds-spacing-medium 0);
+  min-height: em($nds-spacing-large);
+  padding: em($nds-spacing-medium);
 
   // Support nested wells
   .well,
   .panel & {
-    background: $colour-nice-grey-2;
+    background: $nds-colour-nice-grey-2;
   }
 
   &.well-large {
-    padding: em($spacing-large);
+    padding: em($nds-spacing-large);
   }
 
   &.well-small {
-    padding: em($spacing-small);
+    padding: em($nds-spacing-small);
   }
 
   // sass-lint:disable-block no-combinators

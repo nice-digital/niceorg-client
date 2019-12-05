@@ -1,15 +1,15 @@
 .news-content {
   .blog-author {
-    @include font-size(h5);
-    color: $colour-nice-dark-grey;
+    @include nds-font-size(h5);
+    color: $nds-colour-nice-dark-grey;
     display: block;
     font-weight: normal;
-    margin-top: rem($spacing-small);
+    margin-top: rem($nds-spacing-small);
   }
 
   .date {
-    color: $colour-nice-dark-grey;
-    margin-bottom: rem($spacing-small);
+    color: $nds-colour-nice-dark-grey;
+    margin-bottom: rem($nds-spacing-small);
     margin-top: 0;
   }
 
@@ -21,7 +21,7 @@
 
   img {
     height: auto; // Some CMS images have inline height/width attributes
-    padding-right: em($spacing-medium);
+    padding-right: em($nds-spacing-medium);
   }
 
   p:first-child {

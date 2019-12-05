@@ -4,8 +4,8 @@
 .share-links {
 
   .nav-header {
-    @include font-size(h5);
-    padding: rem($spacing-small $spacing-medium);
+    @include nds-font-size(h5);
+    padding: rem($nds-spacing-small $nds-spacing-medium);
   }
 
   .navbar-inner {
@@ -13,43 +13,43 @@
   }
 
   .dropdown-menu {
-    margin-top: rem($spacing-small);
-    padding-bottom: rem($spacing-small);
+    margin-top: rem($nds-spacing-small);
+    padding-bottom: rem($nds-spacing-small);
 
     &:before {
-      border-bottom: rem($spacing-small) solid $colour-border;
-      border-left: rem($spacing-small) solid transparent;
-      border-right: rem($spacing-small) solid transparent;
+      border-bottom: rem($nds-spacing-small) solid $nds-colour-border;
+      border-left: rem($nds-spacing-small) solid transparent;
+      border-right: rem($nds-spacing-small) solid transparent;
       bottom: 100%;
       content: '';
       display: block;
       height: 0;
       position: absolute;
-      right: rem($spacing-small);
+      right: rem($nds-spacing-small);
       width: 0;
     }
 
     &.pull-left:before {
-      left: rem($spacing-small);
+      left: rem($nds-spacing-small);
     }
 
     a {
-      color: $colour-text;
+      color: $nds-colour-text;
       // Override default margin from addthis
       margin: 0 !important; // sass-lint:disable-line no-important
-      padding: rem($spacing-x-small $spacing-medium);
+      padding: rem($nds-spacing-x-small $nds-spacing-medium);
       text-decoration: none;
 
       &:hover {
-        background: $colour-nice-teal;
-        color: $colour-link-inverse;
+        background: $nds-colour-nice-teal;
+        color: $nds-colour-link-inverse;
       }
     }
   }
 
   [class^='icon-'] {
     display: inline-block;
-    min-width: rem($spacing-medium);
+    min-width: rem($nds-spacing-medium);
     text-align: center;
     vertical-align: baseline;
   }

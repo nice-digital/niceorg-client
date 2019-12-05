@@ -2,16 +2,16 @@
 // See example at https://www.nice.org.uk/news/blog/a-life-changing-operation
 
 .comment-count {
-  margin-top: rem($spacing-large);
+  margin-top: rem($nds-spacing-large);
 }
 
 // List of the comments
 .comments {
-  margin-bottom: rem($spacing-large);
+  margin-bottom: rem($nds-spacing-large);
 
   // sass-lint:disable no-combinators
   > li {
-    margin: rem(0 0 $spacing-medium);
+    margin: rem(0 0 $nds-spacing-medium);
 
     &.last,
     &:last-child {
@@ -37,7 +37,7 @@
 #comment-form-container {
 
   .comment-text {
-    height: rem($spacing-x-large);
+    height: rem($nds-spacing-x-large);
     width: 100%;
   }
 
@@ -47,7 +47,7 @@
   }
 
   .growbox {
-    margin-bottom: rem($spacing-medium);
+    margin-bottom: rem($nds-spacing-medium);
     overflow: hidden;
 
     &.notshown {

@@ -2,12 +2,12 @@
 
 /// Footer component
 .footer {
-  @include links-inverse;
-  @include font-size(-1);
+  @include nds-links-inverse;
+  @include nds-font-size(-1);
   background: #222;
-  color: $colour-text-inverse;
+  color: $nds-colour-text-inverse;
   overflow: hidden;
-  padding: em($spacing-large 0 $spacing-medium);
+  padding: em($nds-spacing-large 0 $nds-spacing-medium);
   position: relative;
 
   @media print {
@@ -33,12 +33,12 @@
 
     [class^=icon-],
     [class*=" icon-"] {
-      margin: em(0 $spacing-small 0 0);
+      margin: em(0 $nds-spacing-small 0 0);
     }
   }
 
   p {
-    @include font-size(-1);
+    @include nds-font-size(-1);
   }
 
   ul {
@@ -50,7 +50,7 @@
   }
 
   h2 {
-    @include font-size(h4);
+    @include nds-font-size(h4);
     font-weight: normal;
 
     &:first-child {
@@ -68,20 +68,20 @@
 
 /// Main navigation section with logo and large nav
 #main-nav {
-  margin-bottom: em($spacing-large);
+  margin-bottom: em($nds-spacing-large);
 
   // Large 'main' links
   .main-nav-panel {
-    @include font-size(1);
-    margin-bottom: em($spacing-medium);
+    @include nds-font-size(1);
+    margin-bottom: em($nds-spacing-medium);
   }
 
   /// Footer logo
   .footer-nicelogo {
-    @include font-size(5);
+    @include nds-font-size(5);
     display: inline-block;
     line-height: 1;
-    margin-bottom: em($spacing-small);
+    margin-bottom: em($nds-spacing-small);
 
     &:hover {
       text-decoration: none;
@@ -98,7 +98,7 @@
     }
 
     .logotext {
-      @include invisible;
+      @include nds-invisible;
     }
   }
 
@@ -110,7 +110,7 @@
 
 /// Explore footer navigation i.e. services
 #explore {
-  margin-bottom: em($spacing-large);
+  margin-bottom: em($nds-spacing-large);
 
   @include mq($from: md) {
     margin-bottom: 0;
@@ -120,7 +120,7 @@
 
 /// Syndication footer section i.e. content re-use
 #syndication {
-  margin-bottom: em($spacing-large);
+  margin-bottom: em($nds-spacing-large);
 
   @include mq($from: md) {
     margin-bottom: 0;
@@ -130,11 +130,11 @@
 
 /// Get involved section in the footer
 #get-involved {
-  @include clearfix;
-  background: $colour-nice-teal;
+  @include nds-clearfix;
+  background: $nds-colour-nice-teal;
   clear: both;
-  margin: rem($spacing-large) rem(- $spacing-large); // Negative margin to 'jump outside' the container
-  padding: rem($spacing-large);
+  margin: rem($nds-spacing-large) rem(- $nds-spacing-large); // Negative margin to 'jump outside' the container
+  padding: rem($nds-spacing-large);
 
   #get-involved-panel {
     margin: 0;
@@ -144,7 +144,7 @@
     display: inline;
     height: 1000px;
     margin: 0;
-    padding: em($spacing-large);
+    padding: em($nds-spacing-large);
     position: absolute;
     top: 0;
     width: 1000px;
@@ -154,17 +154,17 @@
 
 /// Legal panel in the footer, contains the nav and copyright statement
 .legal-panel {
-  @include font-size(-2);
+  @include nds-font-size(-2);
 
   // Legal navigation list with accessibility/FOI/terms etc
   .nav-legal {
     list-style: none;
-    margin: 0 0 em($spacing-large);
+    margin: 0 0 em($nds-spacing-large);
   }
 
    // Copyright year, notice of rights etc
   .legal-copyright {
-      @include font-size(-2);
+      @include nds-font-size(-2);
       margin: 0;
       clear: both;
 
@@ -172,16 +172,16 @@
   }
 
   @include mq($from: sm) {
-    margin-top: em($spacing-x-large);
+    margin-top: em($nds-spacing-x-large);
     position: relative;
 
     // Line divider between sections
     .container {
-      padding-top: em($spacing-large);
+      padding-top: em($nds-spacing-large);
       position: relative;
 
       &:before {
-        background: $colour-nice-grey-1;
+        background: $nds-colour-nice-grey-1;
         content: '';
         height: 1px;
         left: 0;
@@ -192,13 +192,13 @@
     }
 
     .nav-legal {
-      @include clearfix;
-      margin: em(0 0 $spacing-small);
-      margin-left: em(-$spacing-small); // To offset the first item padding
+      @include nds-clearfix;
+      margin: em(0 0 $nds-spacing-small);
+      margin-left: em(-$nds-spacing-small); // To offset the first item padding
     }
 
     li {
-      border-left: 1px solid $colour-nice-white;
+      border-left: 1px solid $nds-colour-nice-white;
       float: left;
 
       &:first-child {
@@ -206,7 +206,7 @@
       }
 
       a {
-        padding: em(0 $spacing-small);
+        padding: em(0 $nds-spacing-small);
       }
     }
   }

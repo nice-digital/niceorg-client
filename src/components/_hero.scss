@@ -1,7 +1,7 @@
 // Extension to the Design System hero component
 .hero {
   // sass-lint:disable no-duplicate-properties
-  margin-bottom: rem($spacing-large);
+  margin-bottom: rem($nds-spacing-large);
 
   // Hack to 'break out' of the container (layout) for hero components
   // nested inside a container - restriction of Orchard's widgets/zones.
