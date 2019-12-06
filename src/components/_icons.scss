@@ -6,62 +6,52 @@
 //
 // See https://github.com/nhsevidence/nice-icons
 .fa {
-  &.icon-android {
+  &.icon-android:before {
     @include nice-icon(android);
   }
 
-  &.icon-apple {
+  &.icon-apple:before {
     @include nice-icon(apple);
   }
 
-  &.icon-youtube-play {
+  &.icon-youtube-play:before {
     @include nice-icon(youtube-play);
   }
 
-  &.icon-linkedin-sign {
+  &.icon-linkedin-sign:before {
     @include nice-icon(linkedin-sign);
   }
 }
 
-// Old icons from NICE-Glyphs are all prefixed with "nice-"
-// [class^='icon-nice'],
-// [class*=' icon-nice'] {
-//   @include icon-base;
-
-//   &:before {
-//     display: block;
-//   }
-// }
-
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
-// @each $icon, $code in $nice-icons {
-//   .icon-nice-#{ $icon }:before {
-//     content: nice-icon($icon);
-//   }
-// }
+@each $icon, $code in $nice-icons {
+  .icon-nice-#{ $icon }:before {
+    @include nice-icon($icon);
+  }
+}
 
 // Custom icons that don't follow the normal conventions
-.icon-linkedin {
+.icon-linkedin:before {
   @include nice-icon(linkedin);
 }
 
-.icon-question-sign {
+.icon-question-sign:before {
   @include nice-icon(question-circle);
 }
 
-.icon-chevron-right {
+.icon-chevron-right:before {
   @include nice-icon(chevron-right);
 }
 
-.icon-chevron-left {
+.icon-chevron-left:before {
   @include nice-icon(chevron-left);
 }
 
-.icon-play {
+.icon-play:before {
   @include nice-icon(play);
 }
 
-.icon-volume-up {
+.icon-volume-up:before {
   @include nice-icon(podcast);
 }
 
