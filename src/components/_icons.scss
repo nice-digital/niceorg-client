@@ -6,52 +6,50 @@
 //
 // See https://github.com/nhsevidence/nice-icons
 .fa {
+  @include nice-icons-base;
+
   &.icon-android:before {
-    @include nice-icon(android);
+    content: nice-icon(android);
   }
 
   &.icon-apple:before {
-    @include nice-icon(apple);
+    content: nice-icon(apple);
   }
 
   &.icon-youtube-play:before {
-    @include nice-icon(youtube-play);
+    content: nice-icon(youtube-play);
   }
 
   &.icon-linkedin-sign:before {
-    @include nice-icon(linkedin-sign);
+    content: nice-icon(linkedin-sign);
+  }
+}
+
+// Old icons from NICE-Glyphs are all prefixed with "nice-"
+[class*='icon-nice'],
+[class*='icon-']
+ {
+  @include nice-icons-base;
+  &:before {
+    display: block;
   }
 }
 
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
 @each $icon, $code in $nice-icons {
-  .icon-nice-#{ $icon }:before {
-    @include nice-icon($icon);
+  .icon-nice-#{ $icon }:before,
+  .icon-#{ $icon }:before
+   {
+    content: nice-icon($icon);
   }
 }
 
-// Custom icons that don't follow the normal conventions
-.icon-linkedin:before {
-  @include nice-icon(linkedin);
-}
-
+// Custom icons that don't follow the normal conventions and may or may not still be used / needed
 .icon-question-sign:before {
-  @include nice-icon(question-circle);
-}
-
-.icon-chevron-right:before {
-  @include nice-icon(chevron-right);
-}
-
-.icon-chevron-left:before {
-  @include nice-icon(chevron-left);
-}
-
-.icon-play:before {
-  @include nice-icon(play);
+  content: nice-icon(question-circle);
 }
 
 .icon-volume-up:before {
-  @include nice-icon(podcast);
+  content: nice-icon(podcast);
 }
 
