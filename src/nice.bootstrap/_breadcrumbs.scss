@@ -6,6 +6,7 @@
   list-style: none;
   margin: em($nds-spacing-small 0 $nds-spacing-large);
   padding: 0;
+  @include nds-hide-print;
 
   li {
     display: inline-block;
