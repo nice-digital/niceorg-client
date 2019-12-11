@@ -68,7 +68,7 @@ ul.alt {
 
     &:before {
       color: $nds-colour-icons;
-      content: get-glyph(bullet);
+      content: nds-get-glyph(bullet);
       font-size: 125%;
       left: - rem($nds-spacing-medium);
       position: absolute;

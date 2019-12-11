@@ -31,7 +31,7 @@
     margin: em(0 $nds-spacing-x-small);
 
     &:before {
-      content: get-glyph(greater-than);
+      content: nds-get-glyph(greater-than);
     }
   }
 }
