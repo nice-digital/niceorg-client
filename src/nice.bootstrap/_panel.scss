@@ -1,7 +1,12 @@
 // Specific type of panel from old bootstrap
 .panel {
-
   // Elements
+
+  @media print {
+    page-break-before: always;
+  }
+
+  margin: em($nds-spacing-medium 0 $nds-spacing-large);
 
   // sass-lint:disable no-combinators
   > .panel {
