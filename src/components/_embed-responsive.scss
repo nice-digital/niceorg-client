@@ -52,3 +52,10 @@
     }
   }
 }
+
+// Embedded infograms share max width with paragraphs
+@media print {
+  .infogram-embed {
+    max-width: 66ch;
+  }
+}

@@ -3,6 +3,7 @@
 
 .nav-pills {
   @include nds-clearfix;
+  @include nds-hide-print;
 
   // Elements
 

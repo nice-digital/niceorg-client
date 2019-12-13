@@ -9,6 +9,7 @@
   margin: em($nds-spacing-medium 0);
   min-height: em($nds-spacing-large);
   padding: em($nds-spacing-medium);
+  page-break-inside: avoid;
 
   // Support nested wells
   .well,
