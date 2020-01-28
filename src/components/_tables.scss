@@ -1,8 +1,7 @@
 // sass-lint:disable class-name-format
 
 %sorting-base {
-  @include icon-base;
-  margin-right: rem($spacing-small);
+  margin-right: rem($nds-spacing-small);
 }
 
 table {
@@ -22,7 +21,7 @@ table {
         &::before {
           @extend %sorting-base;
           @include nice-icon('sorting-asc');
-          color: $colour-nice-grey-1;
+          color: $nds-colour-nice-grey-1;
         }
       }
     }
@@ -37,7 +36,7 @@ table {
         &::before {
           @extend %sorting-base;
           @include nice-icon('sorting-desc');
-          color: $colour-nice-grey-1;
+          color: $nds-colour-nice-grey-1;
         }
       }
     }
