@@ -1,0 +1,45 @@
+// sass-lint:disable class-name-format
+
+%sorting-base {
+  @include icon-base;
+  margin-right: rem($spacing-small);
+}
+
+table {
+  .sorting {
+    &::before {
+      @extend %sorting-base;
+      @include nice-icon('sorting');
+    }
+
+    &_asc {
+      &::before {
+        @extend %sorting-base;
+        @include nice-icon('sorting-asc');
+      }
+
+      &_disabled {
+        &::before {
+          @extend %sorting-base;
+          @include nice-icon('sorting-asc');
+          color: $colour-nice-grey-1;
+        }
+      }
+    }
+
+    &_desc {
+      &::before {
+        @extend %sorting-base;
+        @include nice-icon('sorting-desc');
+      }
+
+      &_disabled {
+        &::before {
+          @extend %sorting-base;
+          @include nice-icon('sorting-desc');
+          color: $colour-nice-grey-1;
+        }
+      }
+    }
+  }
+}
