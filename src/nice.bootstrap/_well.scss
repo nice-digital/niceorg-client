@@ -1,7 +1,7 @@
 // Support for old NICE.Bootstrap 'well' component, originally from Twitter's bootstrap.
 // Essentially a panel, but without the option of a title or footer.
 // Used to visuallt group elements in a grey container.
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
 .well {
   @include nds-clearfix;
   background: $nds-colour-panel-default-background;
