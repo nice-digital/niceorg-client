@@ -1,9 +1,8 @@
 // Specific type of panel from old bootstrap
 .panel {
   // Elements
-
   @media print {
-    page-break-before: always;
+    page-break-inside: avoid;
   }
 
   margin: em($nds-spacing-medium 0 $nds-spacing-large);
