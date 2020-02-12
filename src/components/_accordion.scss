@@ -52,3 +52,14 @@
     float: right;
   }
 }
+
+.accordion-body {
+  &.collapse {
+    @media (prefers-reduced-motion: reduce) {
+      transition-timing-function: step-start; // BS seems to rely on a transition to happen to trigger the close state so transition: none; won't cut it
+    }
+    &:not(.in) > * {
+      display: none;
+    }
+  }
+}
