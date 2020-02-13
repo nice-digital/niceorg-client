@@ -24,6 +24,10 @@ Niceorg-client is a separate repository from the core niceorg codebase because:
 - [Grunt](https://gruntjs.com/) as a task runner
 - [Webpack](https://webpack.js.org/) for JS module bundling
 
+## Development
+
+We recommend using vscode as the IDE when developing with the NICE Design System. We have a set of [recommended extensions](.vscode/extensions.json) you should install to make development easier. You should be prompted to install these when opening the folder in vscode.
+
 ## Usage
 
 Niceorg-client is designed to be used within both niceorg and Guidance-Web:
