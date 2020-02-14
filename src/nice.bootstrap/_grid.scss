@@ -1,8 +1,8 @@
 // Copy of the old Bootstrap grid from v2
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#gridSystem
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#gridSystem
 .row,
 .row-fluid {
-  @include clearfix;
+  @include nds-clearfix;
   margin: 0;
   width: 100%;
 

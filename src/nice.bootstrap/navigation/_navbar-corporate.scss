@@ -1,10 +1,10 @@
 // 'Corporate' within a page-header
 .navbar-corporate {
-  margin: em($spacing-medium 0 0);
+  margin: em($nds-spacing-medium 0 0);
 
   // 'Explore' button for toggling the nav on mobile
   .navbar-toggle {
-    @include font-size(1);
+    @include nds-font-size(1);
     display: block;
     margin: 0;
     position: relative;
@@ -15,7 +15,7 @@
       @include nice-icon(minus);
       display: inline-block;
       line-height: 0;
-      margin: rem(0 0 0 $spacing-small);
+      margin: rem(0 0 0 $nds-spacing-small);
       vertical-align: middle;
     }
 
@@ -26,13 +26,13 @@
 
   // List of nav elements
   .nav {
-    //background: $colour-panel-default;
-    border-bottom: 1px solid $colour-border;
+    //background: $nds-colour-panel-default-background;
+    border-bottom: 1px solid $nds-colour-border;
     float: none;
     height: auto;
     list-style: none;
     margin: 0;
-    padding: em($spacing-x-small);
+    padding: em($nds-spacing-x-small);
     position: relative;
 
     &.collapse {
@@ -40,19 +40,19 @@
       height: 0;
 
       &.in {
-        border-bottom: 1px solid $colour-border;
+        border-bottom: 1px solid $nds-colour-border;
       }
     }
 
     li {
-      &:first-child { margin-top: em($spacing-medium); }
-      &:last-child { margin-bottom: em($spacing-medium); }
+      &:first-child { margin-top: em($nds-spacing-medium); }
+      &:last-child { margin-bottom: em($nds-spacing-medium); }
     }
 
     a {
-      @include font-size(1);
+      @include nds-font-size(1);
       display: block;
-      padding: rem($spacing-x-small 0);
+      padding: rem($nds-spacing-x-small 0);
       position: relative;
       text-decoration: none;
 
@@ -73,7 +73,7 @@
 
     .nav {
       // Important to override style set on the element via JS
-      border-bottom: 1px solid $colour-border !important; // sass-lint:disable-line no-important
+      border-bottom: 1px solid $nds-colour-border !important; // sass-lint:disable-line no-important
       height: auto !important; // sass-lint:disable-line no-important
 
       li {

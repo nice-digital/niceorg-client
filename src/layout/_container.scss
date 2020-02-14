@@ -4,7 +4,7 @@
 body > .layout,
 .restrict-width,
 body .container {
-  @extend %container;
+  @include nds-container;
 }
 
 // Some pages (e.g. http://localhost:8087/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools/)
@@ -16,12 +16,12 @@ body > .layout .layout.container,
 }
 
 .container {
-  @include clearfix;
+  @include nds-clearfix;
 }
 
 // sass-lint:disable no-qualifying-elements
 header.container {
-  margin: 0 auto em($spacing-large);
+  margin: 0 auto em($nds-spacing-large);
 
   .author {
     clear: both;

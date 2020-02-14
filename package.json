@@ -19,16 +19,11 @@
   "author": "",
   "license": "MIT",
   "private": true,
-  "engines": {
-    "node": ">=6.11.2",
-    "npm": ">=5.6.0"
-  },
   "devDependencies": {
     "@nice-digital/browserslist-config": "^1.0.0",
-    "@nice-digital/design-system": "^0.5.9",
     "autoprefixer": "^8.5.0",
     "express": "^4.16.3",
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -38,12 +33,12 @@
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.1.0",
     "grunt-sass-lint": "^0.2.4",
-    "load-grunt-config": "^1.0.1",
-    "node": "^8.11.2",
+    "grunt-sass-tilde-importer": "^1.0.2",
+    "load-grunt-config": "^3.0.1",
     "pixrem": "^4.0.1",
     "postcss-banner": "^3.0.0"
   },
   "dependencies": {
-    "@nice-digital/icons": "^1.6.0"
+    "@nice-digital/design-system": "1.0.21-alpha.0"
   }
 }

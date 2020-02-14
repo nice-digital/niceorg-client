@@ -1,23 +1,23 @@
 // NICE.Bootstrap pager for backwards compatability
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
 .pagination {
-  @include clearfix;
+  @include nds-clearfix;
   list-style: none;
-  margin: em($spacing-medium 0 $spacing-large);
+  margin: em($nds-spacing-medium 0 $nds-spacing-large);
   text-align: center;
 
   li {
     display: inline;
 
     a {
-      background: $colour-nice-dark-grey;
-      color: $colour-text-inverse;
+      background: $nds-colour-nice-dark-grey;
+      color: $nds-colour-text-inverse;
       display: inline-block;
-      padding: rem($spacing-small $spacing-medium);
+      padding: rem($nds-spacing-small $nds-spacing-medium);
       text-decoration: none;
 
       &:hover {
-        background: $colour-nice-rich-black;
+        background: $nds-colour-nice-rich-black;
       }
     }
   }
@@ -38,8 +38,8 @@
 
   .disabled {
     a {
-      background: $colour-nice-grey-3;
-      color: $colour-nice-grey-1;
+      background: $nds-colour-nice-grey-3;
+      color: $nds-colour-nice-grey-1;
       cursor: text;
       pointer-events: none;
     }

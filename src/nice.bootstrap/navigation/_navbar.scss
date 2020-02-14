@@ -1,5 +1,5 @@
 /// Navigation bar, taken from NICE.Bootstrap
-/// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Navigation.html#navbar
+/// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navbar
 .navbar {
   list-style: none;
   margin-left: 0;
@@ -14,12 +14,12 @@
   }
 
   .brand {
-    @include font-size(4);
-    color: $colour-text;
+    @include nds-font-size(4);
+    color: $nds-colour-text;
     display: block;
     float: left;
     font-weight: bolder;
-    padding: rem($spacing-small $spacing-medium);
+    padding: rem($nds-spacing-small $nds-spacing-medium);
     text-decoration: none;
   }
 
@@ -36,28 +36,28 @@
       width: 100%;
 
       > a {
-        color: $colour-text;
+        color: $nds-colour-text;
         display: block;
-        padding: rem($spacing-small $spacing-medium);
+        padding: rem($nds-spacing-small $nds-spacing-medium);
         text-decoration: none;
 
         &:hover {
-          background: $colour-nice-grey-2;
+          background: $nds-colour-nice-grey-2;
         }
       }
 
       &.active {
         > a {
-          background: $colour-nice-teal;
-          color: $colour-text-inverse;
+          background: $nds-colour-nice-teal;
+          color: $nds-colour-text-inverse;
         }
       }
     }
   }
 
   .navbar-inner {
-    @include clearfix;
-    background: $colour-nice-grey-3;
+    @include nds-clearfix;
+    background: $nds-colour-nice-grey-3;
   }
 
   &.navbar-inverse {
@@ -66,24 +66,24 @@
     .nav {
       > li {
         > a {
-          color: $colour-text-inverse;
+          color: $nds-colour-text-inverse;
 
           &:hover {
-            background: $colour-nice-teal-2;
+            background: $nds-colour-nice-teal-2;
           }
         }
 
         &.active {
           > a {
-            background: $colour-body;
-            color: $colour-text;
+            background: $nds-colour-body;
+            color: $nds-colour-text;
           }
         }
       }
     }
 
     .navbar-inner {
-      background: $colour-nice-teal;
+      background: $nds-colour-nice-teal;
     }
   }
 

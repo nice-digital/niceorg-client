@@ -1,5 +1,5 @@
 // NICE.Bootstrap button groups for backwards compatability
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttonGroups
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.FormElements.html#buttonGroups
 .btn-group {
   display: inline-block;
   font-size: 0;
@@ -32,10 +32,10 @@
 
 .btn-toolbar {
   font-size: 0;
-  margin: rem($spacing-medium);
+  margin: rem($nds-spacing-medium);
 
   // sass-lint:disable-block no-combinators
   > .btn-group + .btn-group {
-    margin-left: rem($spacing-small);
+    margin-left: rem($nds-spacing-small);
   }
 }

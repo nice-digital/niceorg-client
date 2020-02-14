@@ -6,7 +6,7 @@
 }
 
 // NICE.Bootstrap abbreviation styles for backwards compatibility,
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#abbreviations
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#abbreviations
 abbr {
   &[title],
   &[data-original-title] {
@@ -20,9 +20,9 @@ abbr {
 }
 
 // NICE.Bootstrap abbreviation styles for backwards compatibility,
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#addresses
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#addresses
 address {
   display: block;
   font-style: normal;
-  margin-bottom: rem($spacing-medium);
+  margin-bottom: rem($nds-spacing-medium);
 }

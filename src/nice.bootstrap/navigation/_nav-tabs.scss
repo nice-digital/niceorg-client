@@ -1,9 +1,8 @@
 // Tabs navigation.
 // E.g. https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools
-// E.g. https://www.nice.org.uk/about/what-we-do/into-practice/education-learning-and-professional-development/case-scenarios
 // E.g. https://www.nice.org.uk/standards-and-indicators
 .nav-tabs {
-  @include clearfix;
+  @include nds-clearfix;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -19,17 +18,17 @@
 
     &.active {
       a {
-        background: $colour-panel-default;
-        border-left: 1px solid $colour-border;
-        border-right: 1px solid $colour-border;
-        color: $colour-text;
+        background: $nds-colour-panel-default-background;
+        border-left: 1px solid $nds-colour-border;
+        border-right: 1px solid $nds-colour-border;
+        color: $nds-colour-text;
         text-decoration: none;
 
         &:before {
           // The -1px is to over the grey border round the tab
-          background: $colour-icons;
+          background: $nds-colour-icons;
           content: '';
-          height: em($spacing-x-small);
+          height: em($nds-spacing-x-small);
           left: -1px;
           position: absolute;
           right: -1px;
@@ -40,7 +39,7 @@
   }
 
   a {
-    @include link-default;
+    @include nds-link-default;
     background: 0;
     border: 0;
     border-left: 1px solid transparent;
@@ -48,7 +47,7 @@
     cursor: pointer;
     display: block;
     margin: 0;
-    padding: em($spacing-medium);
+    padding: em($nds-spacing-medium);
     position: relative;
 
     &:focus {
@@ -69,13 +68,13 @@
     }
 
     &.dropdown-toggle {
-      background: $colour-panel-default;
-      border: 1px solid $colour-border;
-      padding: em($spacing-small $spacing-medium);
+      background: $nds-colour-panel-default-background;
+      border: 1px solid $nds-colour-border;
+      padding: em($nds-spacing-small $nds-spacing-medium);
 
       .caret {
-        border-top-color: $colour-link;
-        margin-top: rem(-$spacing-x-small);
+        border-top-color: $nds-colour-link;
+        margin-top: rem(-$nds-spacing-x-small);
         vertical-align: middle;
       }
     }
@@ -89,7 +88,7 @@
     a {
       clear: both;
       display: block;
-      padding: rem($spacing-small);
+      padding: rem($nds-spacing-small);
     }
   }
 }
@@ -97,11 +96,11 @@
 
 // sass-lint:disable no-combinators
 .tab-content {
-  background: $colour-panel-default;
-  border: 1px solid $colour-border;
+  background: $nds-colour-panel-default-background;
+  border: 1px solid $nds-colour-border;
   clear: both;
-  margin-bottom: rem($spacing-large);
-  padding: em($spacing-medium);
+  margin-bottom: rem($nds-spacing-large);
+  padding: em($nds-spacing-medium);
 
   > .tab-pane {
     display: none;

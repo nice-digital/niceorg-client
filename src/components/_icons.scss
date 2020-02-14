@@ -4,9 +4,9 @@
 // Below we map the FontAwesome icons to the corresponding
 // icon in NICE Icons.
 //
-// See https://github.com/nhsevidence/nice-icons
+// See https://github.com/nice-digital/nice-icons
 .fa {
-  @include icon-base;
+  @include nice-icons-base;
 
   &.icon-android:before {
     content: nice-icon(android);
@@ -26,10 +26,10 @@
 }
 
 // Old icons from NICE-Glyphs are all prefixed with "nice-"
-[class^='icon-nice'],
-[class*=' icon-nice'] {
-  @include icon-base;
-
+[class*='icon-nice'],
+[class*='icon-']
+ {
+  @include nice-icons-base;
   &:before {
     display: block;
   }
@@ -37,63 +37,19 @@
 
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
 @each $icon, $code in $nice-icons {
-  .icon-nice-#{ $icon }:before {
+  .icon-nice-#{ $icon }:before,
+  .icon-#{ $icon }:before
+   {
     content: nice-icon($icon);
   }
 }
 
-// Custom icons that don't follow the normal conventions
-.icon-linkedin {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(linkedin);
-    display: block;
-  }
+// Custom icons that don't follow the normal conventions and may or may not still be used / needed
+.icon-question-sign:before {
+  content: nice-icon(question-circle);
 }
 
-.icon-question-sign {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(question-circle);
-    display: block;
-  }
-}
-
-.icon-chevron-right {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(chevron-right);
-    display: block;
-  }
-}
-
-.icon-chevron-left {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(chevron-left);
-    display: block;
-  }
-}
-
-.icon-play {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(play);
-    display: block;
-  }
-}
-
-.icon-volume-up {
-  @include icon-base;
-
-  &:before {
-    content: nice-icon(podcast);
-    display: block;
-  }
+.icon-volume-up:before {
+  content: nice-icon(podcast);
 }
 

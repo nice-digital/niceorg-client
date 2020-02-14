@@ -14,6 +14,7 @@ app.use(function(req, res, next) {
 });
 
 app.use("/css", express.static(path.join(__dirname, "../temp/css")));
+app.use("/fonts", express.static(path.join(__dirname, "./../node_modules/@nice-digital/icons/dist")));
 app.use("/js/nice-design-system", express.static(path.join(__dirname, "./../node_modules/@nice-digital/design-system/dist/javascripts")));
 app.use(express.static(path.join(__dirname, "./../pages")));
 

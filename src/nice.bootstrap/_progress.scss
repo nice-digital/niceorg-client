@@ -1,6 +1,6 @@
 @keyframes progress-bar-stripes {
   from {
-    background-position: rem($spacing-medium) 0;
+    background-position: rem($nds-spacing-medium) 0;
   }
 
   to {
@@ -9,17 +9,17 @@
 }
 
 // NICE.Bootstrap progress for backwards compatability
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.BasicElements.html#progress
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#progress
 .progress {
-  height: rem($spacing-medium);
-  margin: rem(0 0 $spacing-medium);
+  height: rem($nds-spacing-medium);
+  margin: rem(0 0 $nds-spacing-medium);
   overflow: hidden;
 
   // Elements
 
 
   .bar {
-    background: $colour-icons;
+    background: $nds-colour-icons;
     float: left;
     height: 100%;
     transition: width .6s ease;
@@ -29,22 +29,22 @@
 
   &.progress-info .bar,
   .bar-info {
-    background: $colour-info;
+    background: $nds-colour-info;
   }
 
   &.progress-success .bar,
   .bar-success {
-    background: $colour-success;
+    background: $nds-colour-success;
   }
 
   &.progress-warning .bar,
   .bar-warning {
-    background: $colour-caution-background;
+    background: $nds-colour-caution-background;
   }
 
   &.progress-danger .bar,
   .bar-danger {
-    background: $colour-error-background;
+    background: $nds-colour-error-background;
   }
 
   // Modifiers
@@ -52,7 +52,7 @@
   &.progress-striped {
     .bar {
       background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-      background-size: rem($spacing-medium $spacing-medium);
+      background-size: rem($nds-spacing-medium $nds-spacing-medium);
     }
   }
 

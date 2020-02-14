@@ -3,12 +3,12 @@
 // sass-lint:disable no-combinators
 
 .layout {
-  @include clearfix;
+  @include nds-clearfix;
   display: block;
   margin: auto;
 
   body & {
-    margin-bottom: rem($spacing-large);
+    margin-bottom: rem($nds-spacing-large);
   }
 
   // Some Orchard pages have nested layouts so we don't want double margins
@@ -22,7 +22,7 @@
   }
 
   > .content-primary {
-    margin-bottom: rem($spacing-large);
+    margin-bottom: rem($nds-spacing-large);
   }
 
   > .content {

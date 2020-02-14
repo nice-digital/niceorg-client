@@ -1,9 +1,9 @@
 // NICE.Bootstrap buttons for backwards compatability
-// See http://nhsevidence.github.io/NICE.Bootstrap/Guide.FormElements.html#buttons
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.FormElements.html#buttons
 
 .btn.active {
-  background: $colour-nice-rich-black;
-  color: $colour-text-inverse;
+  background: $nds-colour-nice-rich-black;
+  color: $nds-colour-text-inverse;
 }
 
 .btn-primary {
@@ -11,58 +11,58 @@
 }
 
 .btn-info {
-  background: $colour-info-background;
-  border: 1px solid $colour-info;
-  color: $colour-info !important; // sass-lint:disable-line no-important
+  background: $nds-colour-info-background;
+  border: 1px solid $nds-colour-info;
+  color: $nds-colour-info !important; // sass-lint:disable-line no-important
 
   &:hover {
-    background: darken($colour-info-background, 5%);
+    background: darken($nds-colour-info-background, 5%);
   }
 
   &:focus {
-    background: $colour-info-background;
+    background: $nds-colour-info-background;
   }
 }
 
 .btn-success {
-  background: $colour-success-background;
-  border: 1px solid $colour-success;
-  color: $colour-success !important; // sass-lint:disable-line no-important
+  background: $nds-colour-success-background;
+  border: 1px solid $nds-colour-success;
+  color: $nds-colour-success !important; // sass-lint:disable-line no-important
 
   &:hover {
-    background: darken($colour-success-background, 5%);
+    background: darken($nds-colour-success-background, 5%);
   }
 
   &:focus {
-    background: $colour-success-background;
+    background: $nds-colour-success-background;
   }
 }
 
 .btn-warning {
-  background: $colour-caution-background;
-  border: 1px solid $colour-caution;
-  color: $colour-caution !important; // sass-lint:disable-line no-important
+  background: $nds-colour-caution-background;
+  border: 1px solid $nds-colour-caution;
+  color: $nds-colour-caution !important; // sass-lint:disable-line no-important
 
   &:hover {
-    background: darken($colour-caution-background, 5%);
+    background: darken($nds-colour-caution-background, 5%);
   }
 
   &:focus {
-    background: $colour-caution-background;
+    background: $nds-colour-caution-background;
   }
 }
 
 .btn-danger {
-  background: $colour-error-background;
-  border: 1px solid $colour-error;
-  color: $colour-error !important; // sass-lint:disable-line no-important
+  background: $nds-colour-error-background;
+  border: 1px solid $nds-colour-error;
+  color: $nds-colour-error !important; // sass-lint:disable-line no-important
 
   &:hover {
-    background: darken($colour-error-background, 5%);
+    background: darken($nds-colour-error-background, 5%);
   }
 
   &:focus {
-    background: $colour-error-background;
+    background: $nds-colour-error-background;
   }
 }
 
@@ -75,23 +75,23 @@
 }
 
 .btn-xl {
-  @include font-size(4);
+  @include nds-font-size(4);
 }
 
 .btn-large {
-  @include font-size(1);
+  @include nds-font-size(1);
 }
 
 .btn-small {
-  @include font-size(-1);
+  @include nds-font-size(-1);
 }
 
 .btn-mini {
-  @include font-size(-2);
+  @include nds-font-size(-2);
 }
 
 .btn-link {
-  @include link-default;
+  @include nds-link-default;
   background: transparent;
   border: 0;
   padding: 0;

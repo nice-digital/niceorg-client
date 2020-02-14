@@ -1,7 +1,11 @@
 // Specific type of panel from old bootstrap
 .panel {
-
   // Elements
+  @media print {
+    page-break-inside: avoid;
+  }
+
+  margin: em($nds-spacing-medium 0 $nds-spacing-large);
 
   // sass-lint:disable no-combinators
   > .panel {
@@ -13,14 +17,14 @@
 
   // Negative margins are to offset the default padding that panels have from the Design System
   .panel-heading {
-    @include font-size(h5);
-    border-bottom: 1px solid $colour-border;
-    margin: rem((-$spacing-medium) (-$spacing-medium) 0 (-$spacing-medium));
-    padding: rem($spacing-small $spacing-medium);
+    @include nds-font-size(h5);
+    border-bottom: 1px solid $nds-colour-border;
+    margin: rem((-$nds-spacing-medium) (-$nds-spacing-medium) 0 (-$nds-spacing-medium));
+    padding: rem($nds-spacing-small $nds-spacing-medium);
 
     // sass-lint:disable no-universal-selectors
     > * {
-      @include font-size(h5);
+      @include nds-font-size(h5);
     }
 
     > :first-child {
@@ -33,19 +37,19 @@
   }
 
   .panel-title {
-    @include font-size(h5);
+    @include nds-font-size(h5);
     margin: 0;
   }
 
   .panel-body {
-    @include clearfix;
+    @include nds-clearfix;
   }
 
   // Panels have a default padding, so if we have a heading and body we
   // need to use a negative margin to break back out of the padding
   .panel-heading + .panel-body {
-    margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
-    padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
+    margin: rem(0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium));
+    padding: rem(0 $nds-spacing-medium $nds-spacing-medium $nds-spacing-medium);
 
     > :first-child {
       margin-top: 0;
@@ -57,67 +61,67 @@
   }
 
   .panel-footer {
-    margin: rem(0 (-$spacing-medium) (-$spacing-medium) (-$spacing-medium));
-    padding: rem(0 $spacing-medium $spacing-medium $spacing-medium);
+    margin: rem(0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium));
+    padding: rem(0 $nds-spacing-medium $nds-spacing-medium $nds-spacing-medium);
   }
 
   .panel-heading + .panel-body,
   .panel-body + .panel-footer {
-    padding-top: rem($spacing-medium);
+    padding-top: rem($nds-spacing-medium);
   }
 
   // Modifiers
 
   // Contextual panel alternatives
-  // See http://nhsevidence.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
-  &.panel-default { background: $colour-panel-default; }
+  // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
+  &.panel-default { background: $nds-colour-panel-default-background; }
 
   &.panel-outline {
-    background: $colour-nice-white;
-    border: 1px solid $colour-border;
+    background: $nds-colour-nice-white;
+    border: 1px solid $nds-colour-border;
   }
 
   &.panel-success {
-    background: $colour-nice-white;
-    border: 1px solid $colour-success;
+    background: $nds-colour-nice-white;
+    border: 1px solid $nds-colour-success;
 
     .panel-heading {
-      background: $colour-success-background;
-      border-color: $colour-success;
-      color: $colour-success;
+      background: $nds-colour-success-background;
+      border-color: $nds-colour-success;
+      color: $nds-colour-success;
     }
   }
 
   &.panel-info {
-    background: $colour-nice-white;
-    border: 1px solid $colour-info;
+    background: $nds-colour-nice-white;
+    border: 1px solid $nds-colour-info;
 
     .panel-heading {
-      background: $colour-info-background;
-      border-color: $colour-info;
-      color: $colour-info;
+      background: $nds-colour-info-background;
+      border-color: $nds-colour-info;
+      color: $nds-colour-info;
     }
   }
 
   &.panel-warning {
-    background: $colour-nice-white;
-    border: 1px solid $colour-caution;
+    background: $nds-colour-nice-white;
+    border: 1px solid $nds-colour-caution;
 
     .panel-heading {
-      background: $colour-caution-background;
-      border-color: $colour-caution;
-      color: $colour-caution;
+      background: $nds-colour-caution-background;
+      border-color: $nds-colour-caution;
+      color: $nds-colour-caution;
     }
   }
 
   &.panel-danger {
-    background: $colour-nice-white;
-    border: 1px solid $colour-error;
+    background: $nds-colour-nice-white;
+    border: 1px solid $nds-colour-error;
 
     .panel-heading {
-      background: $colour-error-background;
-      border-color: $colour-error;
-      color: $colour-error;
+      background: $nds-colour-error-background;
+      border-color: $nds-colour-error;
+      color: $nds-colour-error;
     }
   }
 
