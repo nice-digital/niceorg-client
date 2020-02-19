@@ -10,7 +10,7 @@ Niceorg-client augments the [NICE Design System](https://github.com/nice-digital
 
 This also has the benefit that comms and content teams can continue to use the existing markup they know to produce pages. But allows them to gradually start using the new Design System components.
 
-Niceorg-client is a separate repository from the core niceorg codebase because:
+niceorg-client is a separate repository from the core niceorg codebase because:
 
 - it allows front-end developers to work on it in an IDE (or OS) of their choice, without Visual Studio
 - the CSS and JS is referenced by both [niceorg](https://github.com/nice-digital/niceorg) and [Guidance-Web](https://github.com/nice-digital/guidance-web) so makes sense to live on its own
