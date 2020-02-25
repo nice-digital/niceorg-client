@@ -36,4 +36,9 @@
     @include nds-p;
     margin-top: rem($nds-spacing-large);
   }
+  .media-body {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
 }
