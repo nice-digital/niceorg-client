@@ -1,10 +1,15 @@
 /// Timeline
-/// See https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice/express-scientific-advice
-/// See https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice
-/// See https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice/eunethta-multi-hta-advice
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/process/mta-timeline
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/technology-appraisal-guidance/process/sta-timeline
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/process/sta-timeline-pre-april-2018
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/interventional-procedures-guidance/timeline
+/// See https://www.nice.org.uk/standards-and-indicators/timeline-developing-quality-standards
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/charging/timelines-hst
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-medical-technologies-evaluation-programme/process-timeline
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-diagnostics-guidance/process-timeline
+/// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/charging/timelines-ta
 
 // Defines styles for < md viewports, and for when a single column timeline is required (e.g. here - https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice)
-
 @mixin flat-style-timeline {
   &:before {
     left: 40px;
@@ -82,10 +87,11 @@
 }
 
 .timeline-panel {
+  box-shadow: none !important;
   background: $nds-colour-nice-white;
   width: 42%;
   float: left;
-  border: 1px solid #d4d4d4;
+  border: 1px solid $nds-colour-nice-grey-2;
   border-radius: 2px;
   padding: rem(20px);
   position: relative;
@@ -95,8 +101,8 @@
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
+    border-left: 15px solid $nds-colour-nice-grey-2;
+    border-right: 0 solid $nds-colour-nice-grey-2;
     border-bottom: 15px solid transparent;
     content: '';
   }
@@ -106,8 +112,8 @@
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
+    border-left: 14px solid $nds-colour-nice-white;
+    border-right: 0 solid $nds-colour-nice-white;
     border-bottom: 14px solid transparent;
     content: '';
   }
@@ -127,26 +133,26 @@
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color: $nds-colour-nice-grey-1;
   z-index: 100;
   border-radius: 50%;
   small {
     @include nds-font-size(p);
   }
   &.primary {
-    background-color: #2e6da4 !important;
+    background-color: $nds-colour-info !important;
   }
   &.success {
-    background-color: #3f903f !important;
+    background-color: $nds-colour-success !important;
   }
   &.warning {
-    background-color: #f0ad4e !important;
+    background-color: $nds-colour-caution !important;
   }
   &.danger {
-    background-color: #d9534f !important;
+    background-color: $nds-colour-error !important;
   }
   &.info {
-    background-color: #5bc0de !important;
+    background-color: $nds-colour-info !important;
   }
 }
 
