@@ -4,11 +4,11 @@
 // sass-lint:disable
 
 .nav-glossary {
-  @include nds-clearfix;
   display: flex;
   flex-wrap: wrap;
   & > li {
-    margin: 0 1% 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
     width: 23%;
     &.active > a {
       background-color: $nds-colour-nice-teal;
