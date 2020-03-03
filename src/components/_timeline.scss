@@ -12,7 +12,7 @@
 // Defines styles for < md viewports, and for when a single column timeline is required (e.g. here - https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice)
 @mixin flat-style-timeline {
   &:before {
-    left: 40px;
+    left: 40px !important; // required to override the margin below for desktop
   }
   .timeline-panel {
     width: calc(100% - 130px);
