@@ -23,7 +23,7 @@
     "@nice-digital/browserslist-config": "^1.0.0",
     "autoprefixer": "^8.5.0",
     "express": "^4.16.3",
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -39,6 +39,6 @@
     "postcss-banner": "^3.0.0"
   },
   "dependencies": {
-    "@nice-digital/design-system": "1.0.21-alpha.0"
+    "@nice-digital/design-system": "1.0.25-alpha.0"
   }
 }
