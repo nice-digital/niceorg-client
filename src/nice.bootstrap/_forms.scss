@@ -4,6 +4,9 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+  &.well {
+    padding-top: rem($nds-spacing-medium) !important;
+  }
 }
 
 legend {
@@ -19,6 +22,13 @@ legend {
 
 .control-group {
   margin-bottom: rem($nds-spacing-medium);
+  .controls {
+    br {
+      content: '';
+      display: block;
+      margin-bottom: rem($nds-spacing-medium);
+    }
+  }
 }
 
 .control-label {
@@ -55,19 +65,27 @@ legend {
 // sass-lint:disable no-qualifying-elements
 select,
 textarea,
-input:not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']), // 'Text' inputs
+input:not([type='reset']):not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']), // 'Text' inputs
 .uneditable-input {
   background-color: $nds-colour-true-white;
   border: rem($nds-spacing-xx-small) solid $nds-colour-border;
   color: $nds-colour-text;
   display: inline-block;
   font-size: inherit;
-  margin: 0;
+  margin: 0 0 1rem;
   max-width: 66ch;
   padding: rem($nds-spacing-small);
-  transition: border linear .2s;
+  transition: border linear 0.2s;
   vertical-align: middle;
   width: 100%;
+  &::placeholder {
+    color: $nds-colour-nice-grey-1;
+  }
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: rem($nds-spacing-small);
 }
 
 input,
@@ -85,6 +103,23 @@ select {
   &::placeholder {
     color: $nds-colour-nice-dark-grey;
   }
+
+  .warning & {
+    color: $nds-colour-caution;
+    border-color: $nds-colour-caution !important;
+  }
+  .error & {
+    color: $nds-colour-error;
+    border-color: $nds-colour-error !important;
+  }
+  .info & {
+    color: $nds-colour-info;
+    border-color: $nds-colour-info !important;
+  }
+  .success & {
+    color: $nds-colour-success;
+    border-color: $nds-colour-success !important;
+  }
 }
 
 // Validation
@@ -97,6 +132,45 @@ select {
 // Help/hints
 
 .help-block,
-.help-inline {
-  color: $nds-colour-nice-grey-3;
+.help-inline,
+label {
+  color: $nds-colour-nice-dark-grey;
+  display: block;
+  .warning & {
+    color: $nds-colour-caution;
+  }
+  .error & {
+    color: $nds-colour-error;
+  }
+  .info & {
+    color: $nds-colour-info;
+  }
+  .success & {
+    color: $nds-colour-success;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  &.checkbox {
+    padding-left: 0;
+  }
+}
+
+.checkbox {
+  &.inline {
+    display: inline-block;
+    margin-right: rem($nds-spacing-large);
+  }
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #fafafb;
 }

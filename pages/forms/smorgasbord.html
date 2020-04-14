@@ -1,0 +1,4190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FoRmS of NiCE</title>
+		<link
+			href="//fonts.googleapis.com/css?family=Lato:200normal,200italic,300normal,300italic,400normal,400italic,700normal,700italic,900normal,900italic"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="/css/app.css" rel="stylesheet" type="text/css" />
+		<style>
+			.formwrapper {
+				background: white;
+				padding: 1rem;
+			}
+			.stickynav {
+				position: fixed;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<main class="grid">
+			<ul class="stickynav" data-g="2">
+				<li><a href="#leave-feedback">Leave Feedback</a></li>
+				<li>
+					<a href="#register-as-a-stakeholder">Register as a stakeholder</a>
+				</li>
+				<li>
+					<a href="#office-for-market-access-contact-form"
+						>Office for Market Access contact form</a
+					>
+				</li>
+				<li>
+					<a href="#gp-reference-panel-signup"
+						>GP Reference panel signup (Mailchimp)</a
+					>
+				</li>
+				<li>
+					<a href="#submit-local-practice-example"
+						>Submit local practice example</a
+					>
+				</li>
+				<li><a href="#open-content-licence">Open content licence</a></li>
+				<li>
+					<a href="#uptake-data-filter">Uptake data filter</a>
+				</li>
+				<li>
+					<a href="#baseline-assessment-tools">Baseline assessment tools</a>
+				</li>
+			</ul>
+
+			<div data-g="9 push:3">
+				<h1>Forms of NICE</h1>
+				<h2 id="leave-feedback">
+					<a href="https://www.nice.org.uk/leave-feedback">Leave Feedback</a>
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="/oforms/Home/SubmitForm"
+						data-validation="plugin"
+						id="leave-feedback"
+						method="post"
+						novalidate="novalidate"
+					>
+						<input
+							id="oforms_name"
+							name="oforms.name"
+							type="hidden"
+							value="leave-feedback"
+						/><input
+							id="ReturnUrl"
+							name="ReturnUrl"
+							type="hidden"
+							value="/leave-feedback"
+						/>
+						<div id="errorMsg" class="text-error" style="display: none;">
+							<p>
+								Please complete all the required fields before submitting the
+								form.
+							</p>
+						</div>
+						<style>
+							.table thead th {
+								vertical-align: top;
+							}
+
+							div.error {
+								display: block !important;
+							}
+						</style>
+
+						<div class="row">
+							<div class="span8">
+								<p class="lead">
+									Thank you for taking a look at our website, we’d like to hear
+									your views. <br />
+								</p>
+
+								<p>
+									This form is only for website feedback, for all other
+									enquiries please
+									<a href="/get-involved/contact-us"> contact us </a>
+								</p>
+
+								<fieldset>
+									<div class="panel panel-default">
+										<div class="panel panel-body">
+											<div class="control-group">
+												<label
+													id="lblpage-title"
+													class="control-label"
+													for="page-title"
+												>
+													What website content have you visited? (please include
+													the website link/url)
+												</label>
+
+												<div class="controls">
+													<input
+														type="text"
+														required="required"
+														class="input-xxlarge"
+														name="page-title"
+														id="page-title"
+														maxlength="2000"
+													/>
+													<div style="height: 1em;">&nbsp;</div>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lbloverall-comments"
+													class="control-label"
+													for="overall-comments"
+												>
+													Your feedback
+												</label>
+												<div class="controls">
+													<textarea
+														required="required"
+														rows="8"
+														class="textarea input-xxlarge"
+														id="overall-comments"
+														name="overall-comments"
+														maxlength="2000"
+														spellcheck="false"
+													>
+													</textarea>
+												</div>
+											</div>
+
+											<p>
+												Sometimes it's useful for us to get more information
+												about your feedback. If you're happy for us to contact
+												you, leave your name and email address below.
+											</p>
+
+											<div class="control-group">
+												<label id="lblName" class="control-label" for="Name"
+													>Name</label
+												>
+												<div class="controls">
+													<input
+														name="Name"
+														class="input-xlarge"
+														id="Name"
+														type="text"
+														maxlength="255"
+													/>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblEmailAddress"
+													class="control-label"
+													for="EmailAddress"
+													>Email</label
+												>
+												<div class="controls">
+													<input
+														id="EmailAddress"
+														class="input-xlarge"
+														name="EmailAddress"
+														type="email"
+														maxlength="255"
+													/>
+												</div>
+											</div>
+
+											<input
+												class="btn btn-large"
+												type="submit"
+												value="Submit"
+											/>
+
+											<div style="height: 1em;">&nbsp;</div>
+
+											<hr />
+
+											<p>
+												We'll use the information you provide to monitor how our
+												websites are performing and to see if there are ways we
+												can improve them.
+											</p>
+
+											<p>
+												If you've provided your contact details we may contact
+												you for further information about your feedback.
+											</p>
+
+											<p>
+												For more information about how we use your data view our
+												<a href="https://www.nice.org.uk/privacy-notice">
+													privacy notice.
+												</a>
+											</p>
+
+											<input
+												name="plsnobots"
+												type="text"
+												class="plsnobots"
+											/><input
+												type="text"
+												id="leaveblank"
+												name="leaveblank"
+												class="hidden"
+											/>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="span4">
+								<div class="panel panel-default">
+									<div class="panel panel-body">
+										<h3>Help us improve</h3>
+
+										<p>
+											Take part in research to help us develop better products.
+										</p>
+
+										<p>You can influence:</p>
+
+										<ul>
+											<li>how we display our guidance</li>
+											<li>changes to our websites and apps</li>
+											<li>our understanding of what our users need.</li>
+										</ul>
+
+										<p>
+											<a
+												href=" https://www.nice.org.uk/get-involved/help-us-improve"
+											>
+												Find out more
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<script type="text/javascript">
+							//<![CDATA[
+
+							function loadExtScript(src, test, callback) {
+								var s = document.createElement("script");
+								s.src = src;
+								document.body.appendChild(s);
+
+								var callbackTimer = setInterval(function () {
+									var call = false;
+									try {
+										call = test.call();
+									} catch (e) {}
+
+									if (call) {
+										clearInterval(callbackTimer);
+										callback.call();
+									}
+								}, 100);
+							}
+
+							(function () {
+								var tId = setInterval(function () {
+									if (document.readyState == "complete") onComplete();
+								}, 11);
+								function onComplete() {
+									clearInterval(tId);
+
+									var location = "/media/default/Get-involved/Forms/";
+
+									if (typeof jQuery === "undefined") {
+										var altjquery = "//code.jquery.com/jquery-1.10.2.min.js";
+
+										loadExtScript("altquery", function () {});
+									}
+
+									loadExtScript(location + "prevent-spam.js", function () {});
+								}
+							})();
+
+							//]]>
+						</script>
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="OByA8EneBiSofOTBBvGTzuByHas4Qq5MVJfb2SsMb9pkdH8FyLbIGIiYYt3gCE1TnBeNJKPKr_39IUNYAqWLAnUnTXc1"
+						/>
+					</form>
+				</div>
+				<h2 id="register-as-a-stakeholder">
+					<a
+						href="https://www.nice.org.uk/get-involved/stakeholder-registration/register"
+						>Register as a stakeholder</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="/get-involved/stakeholder-registration/register"
+						method="post"
+						novalidate="novalidate"
+					>
+						<div id="stakeholderform" class="for-required">
+							<div class="row">
+								<div class="span9">
+									<ul class="breadcrumb breadcrumb-steps steps3">
+										<li class="active">
+											<span class="counter">1.</span> Confirm organisation
+											<span class="divider"></span>
+										</li>
+										<li>
+											<span class="counter">2.</span> Select project(s)
+											<span class="divider"></span>
+										</li>
+										<li>
+											<span class="counter">3.</span> Send registration form
+										</li>
+									</ul>
+								</div>
+								<div class="span3 breadcrumb-steps">
+									<button
+										data-formvalmessageclass="formErrorMessage"
+										type="submit"
+										class="btn pull-right"
+										name="Submit.ContinueToProject"
+										value="Submit.ContinueToProject"
+									>
+										Continue <i class="icon-nice-next icon-white"></i>
+									</button>
+								</div>
+							</div>
+							<div id="confirm-organisation" class="form-horizontal">
+								<div class="row error formErrorMessage" style="display: none;">
+									<div class="span12">
+										<p class="field-validation-error">
+											Please complete all the required
+											<span aria-hidden="true">(*)</span> fields before
+											progressing with the registration.
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="span7">
+										<fieldset>
+											<legend class="hidden">Organisation identity</legend>
+											<div class="control-group">
+												<label class="control-label" for="Organisation"
+													>Organisation / company name:<span
+														class="alertRed"
+														aria-hidden="true"
+													>
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="Organisation"
+														maxlength="255"
+														name="Organisation"
+														required="required"
+														title="Organisation / company name is a required field"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationUrl"
+													>Organisation website:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationUrl"
+														maxlength="255"
+														name="OrganisationUrl"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+										</fieldset>
+
+										<fieldset>
+											<legend class="hidden">Tobacco Industry</legend>
+											<fieldset>
+												<legend class="control-label legend-unstyled">
+													Is your organisation part of the tobacco
+													industry:<span class="alertRed" aria-hidden="true">
+														*
+													</span>
+												</legend>
+												<div class="control-group">
+													<div class="controls">
+														<label class="radio inline">
+															<input
+																aria-required="true"
+																data-tobaccoassociate="TobaccoAssociateOrganisationSelected"
+																data-tobaccoradio="TobaccoOrganisationSelected"
+																data-tobaccoselect="OrganisationRepresentsList"
+																id="TobaccoOrganisationSelected"
+																name="TobaccoOrganisationSelected"
+																required="required"
+																title="Is your organisation part of the tobacco industry is a required field"
+																type="radio"
+																value="True"
+															/>
+															Yes
+														</label>
+														<label class="radio inline">
+															<input
+																aria-required="true"
+																data-tobaccoassociate="TobaccoAssociateOrganisationSelected"
+																data-tobaccoradio="TobaccoOrganisationSelected"
+																data-tobaccoselect="OrganisationRepresentsList"
+																id="TobaccoOrganisationSelected"
+																name="TobaccoOrganisationSelected"
+																required="required"
+																title="Is your organisation part of the tobacco industry is a required field"
+																type="radio"
+																value="False"
+															/>
+															No
+														</label>
+														<span class="help-block"></span>
+														<input
+															data-tobaccocompany="True"
+															id="TobaccoOrganisationRepresentsName"
+															name="TobaccoOrganisationRepresentsName"
+															type="hidden"
+															value="Manufacturers and commercial industries (tobacco industry)"
+														/>
+														<input
+															data-tobaccotarget="True"
+															id="OrganisationRepresents"
+															name="OrganisationRepresents"
+															type="hidden"
+															value=""
+														/>
+													</div>
+												</div>
+											</fieldset>
+
+											<fieldset>
+												<legend class="hidden">
+													Organisation affilliates and funding
+												</legend>
+												<div
+													class="control-group"
+													id="tobaccoAssociate"
+													style="display: none;"
+												>
+													<p class="control-label">
+														Does your organisation have any past or current,
+														direct or indirect links with - or funding from -
+														the tobacco industry:<span
+															class="alertRed"
+															aria-hidden="true"
+														>
+															*
+														</span>
+													</p>
+													<div class="controls">
+														<label class="radio inline">
+															<input
+																id="TobaccoAssociateOrganisationSelected"
+																name="TobaccoAssociateOrganisationSelected"
+																type="radio"
+																value="True"
+															/>
+															Yes
+														</label>
+														<label class="radio inline">
+															<input
+																id="TobaccoAssociateOrganisationSelected"
+																name="TobaccoAssociateOrganisationSelected"
+																type="radio"
+																value="False"
+															/>
+															No
+														</label>
+														<span class="help-block"></span>
+													</div>
+												</div>
+												<div
+													class="control-group"
+													id="orgListPanel"
+													style="display: none;"
+												>
+													<label
+														class="control-label"
+														for="OrganisationRepresentsList"
+														>Your organisation represents:<span
+															class="alertRed"
+															aria-hidden="true"
+														>
+															*
+														</span></label
+													>
+													<div class="controls">
+														<select
+															class="form-control"
+															data-tobaccoradio="TobaccoOrganisationSelected"
+															data-tobaccoselect="OrganisationRepresentsList"
+															id="OrganisationRepresentsList"
+															name="OrganisationRepresentsSelected"
+															title="Your organisation represents is a required field."
+														>
+															<option value="">(please choose)</option>
+															<option
+																>Government departments and national statutory
+																agencies</option
+															>
+															<option>Local Healthwatch organisations</option>
+															<option
+																>Manufacturers and commercial industries</option
+															>
+															<option
+																>National organisations for people using
+																services, carers and the public</option
+															>
+															<option
+																>National organisations representing
+																practitioners</option
+															>
+															<option
+																>Organisations that fund or carry out
+																research</option
+															>
+															<option
+																>Overseas agencies with a remit covering
+																England</option
+															>
+															<option
+																>Private, voluntary sector, not-for-profit
+																providers and other independent
+																providers</option
+															>
+															<option
+																>Public sector providers and
+																commissioners</option
+															>
+														</select>
+														<span class="help-block"></span>
+													</div>
+												</div>
+											</fieldset>
+										</fieldset>
+										<fieldset>
+											<legend class="hidden">
+												Organisation adddress details:
+											</legend>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationAddress1"
+													>Organisation Address line 1:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationAddress1"
+														maxlength="255"
+														name="OrganisationAddress1"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationAddress2"
+													>Address line 2:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationAddress2"
+														maxlength="255"
+														name="OrganisationAddress2"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationAddress3"
+													>Address line 3:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationAddress3"
+														maxlength="255"
+														name="OrganisationAddress3"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationCounty"
+													>County:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationCounty"
+														maxlength="100"
+														name="OrganisationCounty"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationPostCode"
+													>Postcode:</label
+												>
+												<div class="controls">
+													<input
+														id="OrganisationPostCode"
+														maxlength="50"
+														name="OrganisationPostCode"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="OrganisationCountry"
+													>Country:</label
+												>
+												<div class="controls">
+													<select
+														id="OrganisationCountry"
+														name="OrganisationCountry"
+														required="required"
+														><option>England</option>
+														<option>Europe</option>
+														<option>N. Ireland</option>
+														<option>Other</option>
+														<option>Scotland</option>
+														<option>United States</option>
+														<option>Wales</option>
+													</select>
+													<span class="help-block"></span>
+												</div>
+											</div>
+										</fieldset>
+
+										<fieldset>
+											<legend class="hidden">Personal details:</legend>
+											<div class="control-group">
+												<label class="control-label" for="Title"
+													>Title:<span class="alertRed" aria-hidden="true">
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="Title"
+														maxlength="100"
+														name="Title"
+														required="required"
+														title="Title is a required field"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="FirstName"
+													>First name:<span class="alertRed" aria-hidden="true">
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="FirstName"
+														maxlength="100"
+														name="FirstName"
+														required="required"
+														title="First name is a required field"
+														type="text"
+														value="Warren"
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="LastName"
+													>Last name:<span class="alertRed" aria-hidden="true">
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="LastName"
+														maxlength="100"
+														name="LastName"
+														required="required"
+														title="Last name is a required field"
+														type="text"
+														value="Keith"
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="ContactNumber"
+													>Contact number:<span
+														class="alertRed"
+														aria-hidden="true"
+													>
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="ContactNumber"
+														maxlength="50"
+														name="ContactNumber"
+														required="required"
+														title="Contact number is a required field"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="JobTitle"
+													>Job title:<span class="alertRed" aria-hidden="true">
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="JobTitle"
+														maxlength="100"
+														name="JobTitle"
+														required="required"
+														title="Job title is a required field"
+														type="text"
+														value=""
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="EmailAddress"
+													>Email address:<span
+														class="alertRed"
+														aria-hidden="true"
+													>
+														*
+													</span></label
+												>
+												<div class="controls">
+													<input
+														aria-required="true"
+														id="EmailAddress"
+														maxlength="255"
+														name="EmailAddress"
+														required="required"
+														title=""
+														type="email"
+														value="warren.keith@nice.org.uk"
+													/>
+													<span class="help-block"></span>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div
+										class="panel panel-danger span5"
+										style="margin-top: 20px;"
+									>
+										<div class="panel-body">
+											<p>
+												Make sure you are familiar with who can register as a
+												NICE stakeholder organisation before you continue.
+											</p>
+											<p>
+												<a
+													href="https://www.nice.org.uk/get-involved/register-as-a-stakeholder/who-can-register-as-a-stakeholder"
+													class="btn btn-warning"
+													><i class="fa fa-info-circle"></i>Who can register as
+													a stakeholder</a
+												>
+											</p>
+											<p>
+												You will be notified whether your organisation fits with
+												the definition for being a stakeholder for the
+												project(s) you select on this form.
+											</p>
+										</div>
+									</div>
+									<div
+										class="panel panel-danger span5"
+										style="margin-top: 20px;"
+									>
+										<div class="panel-body">
+											<h4>Respondents</h4>
+											<p>
+												As a party to the World Health Organisation’s Framework
+												Convention on Tobacco Control, the United Kingdom has an
+												obligation to protect the development of public health
+												policy from the commercial and vested interests of the
+												tobacco industry. Tobacco industry organisations (for
+												example, tobacco companies, those who speak for them or
+												are funded by them) registering to participate in the
+												NICE guideline process will automatically be registered
+												as
+												<a
+													href="/get-involved/stakeholder-registration/tobacco-industry-organisations"
+													>respondents</a
+												>
+												in the process.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="row">
+									<div class="span12">
+										<div class="control-group">
+											<p class="control-label high-label">
+												Confidentiality agreement:
+											</p>
+											<div class="controls">
+												<p id="ConfidentialityAgreement">
+													As part of the Institute’s pre-publication process,
+													information may be disclosed to stakeholders which is
+													confidential (Confidential Information). To register
+													your organisation as a stakeholder you must read and
+													agree to the
+													<a
+														target="_blank"
+														href="/get-involved/stakeholder-registration/confidentiality-agreement"
+														>confidentiality agreement</a
+													>, on behalf of your stakeholder organisation.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row error formErrorMessage" style="display: none;">
+									<div class="span12">
+										<p class="field-validation-error">
+											Please complete all the required
+											<span aria-hidden="true">(*)</span> fields before
+											progressing with the registration.
+										</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="span12">
+										<div class="control-group">
+											<div class="controls">
+												<div class="well privacy-statement">
+													<h3>Your privacy</h3>
+													<p>
+														The information that you provide on this form will
+														be used to contact you about the projects you sign
+														up to in the following pages.
+													</p>
+													<label class="checkbox">
+														<input
+															class="control--checkbox privacy-checkbox"
+															id="RecieveNiceUpdates"
+															name="RecieveNiceUpdates"
+															type="checkbox"
+															value="true"
+														/><input
+															name="RecieveNiceUpdates"
+															type="hidden"
+															value="false"
+														/>
+														<strong>Please tick this box </strong> if you would
+														like to receive information about future NICE
+														projects.
+													</label>
+													<p>
+														For more information about how we process your
+														personal data please see our
+														<a href="/privacy-notice"><u>privacy notice.</u></a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="span12">
+										<button
+											data-formvalmessageclass="formErrorMessage"
+											type="submit"
+											class="btn pull-right"
+											name="Submit.ContinueToProject"
+											value="Submit.ContinueToProject"
+										>
+											Continue <i class="icon-nice-next icon-white"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<input
+								id="CustomFormContentId"
+								name="CustomFormContentId"
+								type="hidden"
+								value="10330"
+							/>
+							<input id="ReturnURL" name="ReturnURL" type="hidden" value="" />
+							<input id="ProductId" name="ProductId" type="hidden" value="" />
+							<input id="TermId" name="TermId" type="hidden" value="" />
+							<input
+								id="ProjectsHaveBeenSelected"
+								name="ProjectsHaveBeenSelected"
+								type="hidden"
+								value="False"
+							/>
+							<input
+								id="AgreedToConditions"
+								name="AgreedToConditions"
+								type="hidden"
+								value="False"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Government departments and national statutory agencies"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Local Healthwatch organisations"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Manufacturers and commercial industries"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="National organisations for people using services, carers and the public"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="National organisations representing practitioners"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Organisations that fund or carry out research"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Overseas agencies with a remit covering England"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Private, voluntary sector, not-for-profit providers and other independent providers"
+							/>
+							<input
+								type="hidden"
+								name="OrganisationRepresentsList"
+								value="Public sector providers and commissioners"
+							/>
+							<input type="hidden" name="CountriesList" value="England" />
+							<input type="hidden" name="CountriesList" value="Europe" />
+							<input type="hidden" name="CountriesList" value="N. Ireland" />
+							<input type="hidden" name="CountriesList" value="Other" />
+							<input type="hidden" name="CountriesList" value="Scotland" />
+							<input type="hidden" name="CountriesList" value="United States" />
+							<input type="hidden" name="CountriesList" value="Wales" />
+							<input
+								id="ProjectFilter"
+								name="ProjectFilter"
+								type="hidden"
+								value=""
+							/>
+							<input
+								id="ProjectFilterOnlyConsultations"
+								name="ProjectFilterOnlyConsultations"
+								type="hidden"
+								value="False"
+							/>
+							<input
+								id="TopPanelEditableBodyHTML"
+								name="TopPanelEditableBodyHTML"
+								type="hidden"
+								value='<div class="panel panel-danger span5" style="margin-top: 20px;">
+<div class="panel-body">
+<p>Make sure you are familiar with who can register as a NICE stakeholder organisation before you continue.</p>
+<p><a href="https://www.nice.org.uk/get-involved/register-as-a-stakeholder/who-can-register-as-a-stakeholder" class="btn btn-warning"><i class="fa fa-info-circle"></i>Who can register as a stakeholder</a></p>
+<p>You will be notified whether your organisation fits with the definition for being a stakeholder for the project(s) you select on this form.</p>
+</div>
+</div>'
+							/>
+							<input
+								id="BottomPanelEditableBodyHTML"
+								name="BottomPanelEditableBodyHTML"
+								type="hidden"
+								value='<div class="panel panel-danger span5" style="margin-top: 20px;">
+<div class="panel-body">
+<h4>Respondents</h4>
+<p>As a party to the World Health Organisation&amp;rsquo;s Framework Convention on Tobacco Control, the United Kingdom has an obligation to protect the development of public health policy from the commercial and vested interests of the tobacco industry. Tobacco industry organisations (for example, tobacco companies, those who speak for them or are funded by them) registering to participate in the NICE guideline process will automatically be registered as <a href="/get-involved/stakeholder-registration/tobacco-industry-organisations">respondents</a> in the process.</p>
+</div>
+</div>'
+							/>
+						</div>
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="A59yLz7gl6RMP4tGzfxGHrcLSBHNQV8Jbb-2zAcDu2IjODMYXDlSBLRDd9-PLbCROUTkL_xA0nA8PbEuVledx5rvD485pR7uHua1NsLFNXEic1bRRlTaUNCtqSSwl9Tx_0b3zw2"
+						/>
+					</form>
+				</div>
+				<h2 id="office-for-market-access-contact-form">
+					Office for Market Access contact form
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="/oforms/Home/SubmitFormRecaptcha"
+						data-validation="plugin"
+						id="OMA-Form"
+						method="post"
+						novalidate="novalidate"
+					>
+						<input
+							id="oforms_name"
+							name="oforms.name"
+							type="hidden"
+							value="OMA-Form"
+						/><input
+							id="ReturnUrl"
+							name="ReturnUrl"
+							type="hidden"
+							value="/oma-form"
+						/>
+						<div id="errorMsg" class="text-error" style="display: none;">
+							<p>
+								Please complete all the required fields before submitting the
+								form.
+							</p>
+						</div>
+						<div class="row">
+							<div class="form-horizontal">
+								<div class="span8">
+									<p class="lead">Tell us about your enquiry:</p>
+
+									<fieldset>
+										<div class="panel panel-default">
+											<div class="panel panel-body">
+												<p>Required fields are marked with *</p>
+												<h2>Your details</h2>
+
+												<div style="height: 1em;">&nbsp;</div>
+
+												<div class="control-group">
+													<label
+														id="lblCompanyName"
+														class="control-label"
+														for="CompanyName"
+														>Company name*</label
+													>
+													<div class="controls">
+														<input
+															class="input-xlarge"
+															name="CompanyName"
+															id="CompanyName"
+															type="text"
+															maxlength="255"
+														/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label class="control-label" for="Title">
+														Title *
+													</label>
+													<div class="controls">
+														<select
+															name="Title"
+															id="Title"
+															class="select"
+															personal="true"
+															label="Title:"
+															field="UserTitle"
+															data-show-value="other"
+															data-show-id="TitleOther"
+															data-show-controlid="TitleOther"
+															data-show-required="true"
+														>
+															<option value=""
+																>-- Please select below --</option
+															>
+															<option value="prof">Prof</option>
+															<option value="dr">Dr</option>
+															<option value="mr">Mr</option>
+															<option value="mrs">Mrs</option>
+															<option value="miss">Miss</option>
+															<option value="ms">Ms</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label id="lblName" class="control-label" for="Name"
+														>Contact name *
+													</label>
+													<div class="controls">
+														<input
+															class="input-xlarge"
+															name="Name"
+															id="Name"
+															type="text"
+															maxlength="255"
+														/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label
+														id="lblContactNumber"
+														class="control-label"
+														for="ContactNumber"
+														>Contact number *
+													</label>
+													<div class="controls">
+														<input
+															id="ContactNumber"
+															name="ContactNumber"
+															type="tel"
+															maxlength="255"
+														/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label
+														id="lblEmailAddress"
+														class="control-label"
+														for="EmailAddress"
+														>Email address *
+													</label>
+													<div class="controls">
+														<input
+															class="input-xlarge"
+															id="EmailAddres"
+															name="EmailAddress"
+															type="email"
+															maxlength="255"
+															required="required"
+														/>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label class="control-label" for="Organisation"
+														>Type of organisation *
+													</label>
+													<div class="controls">
+														<select
+															name="Organisation"
+															id="Organisation"
+															class="select"
+															personal="true"
+															label="Title:"
+															field="UserTitle"
+															data-show-value="other"
+															data-show-id="TitleOther"
+															data-show-controlid="TitleOther"
+															data-show-required="true"
+														>
+															<option value="">Select</option>
+															<option value="pharmaceutical-company"
+																>Pharmaceutical company</option
+															>
+															<option value="biotechnology-company"
+																>Biotechnology company</option
+															>
+															<option value="academic-institution"
+																>Academic institution</option
+															>
+															<option value="consultancy">Consultancy</option>
+															<option value="investor">Investor</option>
+															<option value="MedicalDeviceCompany"
+																>Medical device company</option
+															>
+															<option value="organisation-other"
+																>Other (specify)</option
+															>
+														</select>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label
+														id="lblOtherSpecify"
+														class="control-label"
+														for="OtherSpecify"
+														>If other please specify
+													</label>
+													<div class="controls">
+														<textarea
+															cols="60"
+															id='OtherSpecify"'
+															rows="1"
+															class="textarea input-xlarge"
+															name="OtherSpecify"
+															maxlength="1000"
+														>
+														</textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel panel-body">
+												<h2>Your enquiry</h2>
+
+												<div class="control-group">
+													<label class="control-label" for="Technology">
+														Which type of technology does your enquiry relate
+														to? *
+													</label>
+													<div class="controls">
+														<select
+															name="Technology"
+															id="Technology"
+															class="select"
+															personal="true"
+															label="Title:"
+															field="UserTitle"
+															data-show-value="other"
+															data-show-id="TitleOther"
+															data-show-controlid="TitleOther"
+															data-show-required="true"
+														>
+															<option value="">Select</option>
+															<option value="chemical-drug"
+																>Chemical drug</option
+															>
+															<option value="biological-drug"
+																>Biological drug</option
+															>
+															<option value="advanced-therapy-medicinal-product"
+																>Advanced therapy medicinal product</option
+															>
+															<option value="nanomedicine">Nanomedicine</option>
+															<option value="medical-device"
+																>Medical device</option
+															>
+															<option value="diagnostic">Diagnostic</option>
+															<option
+																value="borderline-product-or-drug-device-combination"
+																>Borderline product or drug device
+																combination</option
+															>
+															<option value="other-general"
+																>Other (general question)</option
+															>
+														</select>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label
+														id="lblTechnologyOther"
+														class="control-label"
+														for="SpecificQuestion"
+														>Please explain your enquiry
+													</label>
+													<div class="controls">
+														<textarea
+															cols="60"
+															id="SpecificQuestion"
+															rows="3"
+															class="textarea input-xxlarge"
+															name="SpecificQuestion"
+															maxlength="1000"
+														></textarea>
+													</div>
+												</div>
+
+												<div class="control-group">
+													<label
+														id="lblBriefDescription"
+														class="control-label"
+														for="BriefDescription"
+													>
+														Please give a brief description of the product(s)
+														(including any relevant regulatory timings) *
+														<br /><small>(max 200 words)</small></label
+													>
+													<div class="controls">
+														<textarea
+															cols="60"
+															id="BriefDescription"
+															rows="3"
+															class="textarea input-xxlarge"
+															name="BriefDescription"
+															maxlength="1000"
+														></textarea>
+													</div>
+												</div>
+
+												<label class="control-label" for="recaptcha">
+													Please tick the box below
+													<abbr title="required">*</abbr>
+												</label>
+
+												<script
+													async="async"
+													src="https://www.google.com/recaptcha/api.js?hl=en-GB"
+													type="text/javascript"
+												></script>
+												<div
+													class="g-recaptcha"
+													data-callback="recaptchaValid"
+													data-expired-callback="recaptchExpired"
+													data-sitekey="6LcPYycTAAAAALxnol7ItcIc9CJ1j3Quc-c7k9Ki"
+												>
+													<div style="width: 304px; height: 78px;">
+														<div>
+															<iframe
+																src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPYycTAAAAALxnol7ItcIc9CJ1j3Quc-c7k9Ki&amp;co=aHR0cHM6Ly93d3cubmljZS5vcmcudWs6NDQz&amp;hl=en-GB&amp;v=OOKISvkNnVD_m_9dreR_1S0n&amp;size=normal&amp;cb=6yutoa61g06o"
+																width="304"
+																height="78"
+																role="presentation"
+																name="a-bwpyqzdcx8r4"
+																frameborder="0"
+																scrolling="no"
+																sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+															></iframe>
+														</div>
+														<textarea
+															id="g-recaptcha-response"
+															name="g-recaptcha-response"
+															class="g-recaptcha-response"
+															style="
+																width: 250px;
+																height: 40px;
+																border: 1px solid rgb(193, 193, 193);
+																margin: 10px 25px;
+																padding: 0px;
+																resize: none;
+																display: none;
+															"
+														></textarea>
+													</div>
+													<iframe style="display: none;"></iframe>
+												</div>
+
+												<div style="height: 5em;">&nbsp;</div>
+
+												<p>
+													We'll use the information you provide on this form to
+													understand how we can help you and to contact you
+													about your enquiry.
+												</p>
+
+												<p>
+													For more information about how we use your data view
+													our
+													<a href="https://www.nice.org.uk/privacy-notice">
+														privacy notice.
+													</a>
+												</p>
+
+												<div style="height: 1em;">&nbsp;</div>
+
+												<div class="controls" style="margin-left: 0px;">
+													<input
+														class="btn-inverse btn-large"
+														type="submit"
+														value="Submit"
+													/>
+												</div>
+
+												<input
+													type="text"
+													id="leaveblank"
+													name="leaveblank"
+													class="hidden"
+												/>
+
+												<input
+													name="plsnobots"
+													type="text"
+													class="plsnobots"
+												/><input type="hidden" id="referrer" name="referrer" />
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+
+							<div class="span4">
+								<div style="height: 3em;">&nbsp;</div>
+
+								<div class="panel panel-default">
+									<div class="panel panel-body">
+										<h3>How it works</h3>
+										<ol>
+											<li>Complete our short form.</li>
+											<li>
+												We'll look&nbsp;into your enquiry and contact you to
+												discuss further.
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr />
+
+						<p class="">
+							For general enquiries about NICE
+							<a href="https://www.nice.org.uk/get-involved/contact-us"
+								>contact us by phone or email.</a
+							>
+							For speaker requests,
+							<a href="https://www.nice.org.uk/news/events"
+								>complete this form.</a
+							>
+						</p>
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="Z3EmN8n4Ui8eH3wgw8L5MQqCNetoxHjdDlCNcIgej1HvGnhok3CpK8DJj2FrHqVqB91deGZj_zxoFe9Aw8cn3EACfayMRgiGtyQxzGnMRbOvkOGWxa5vzL4QfcOsALWpdNRuXA2"
+						/>
+					</form>
+				</div>
+				<h2 id="gp-reference-panel-signup">
+					<a
+						href="https://www.nice.org.uk/about/nice-communities/general-practice/reference-panel#form"
+						>GP Reference Panel signup</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="//nice.us8.list-manage.com/subscribe/post?u=7864f766b10b8edd18f19aa56&amp;id=6b16536944"
+						method="post"
+						id="mc-embedded-subscribe-form"
+						name="mc-embedded-subscribe-form"
+						class="validate"
+						target="_blank"
+						novalidate="novalidate"
+					>
+						<div id="mc_embed_signup_scroll">
+							<div class="indicates-required">
+								<p><span class="asterisk">*</span> indicates required</p>
+							</div>
+							<div>
+								<h3>Your details</h3>
+								<div class="row">
+									<div class="span6">
+										<div class="mc-field-group">
+											<label for="mce-EMAIL"
+												>Email address <span class="asterisk">*</span>
+											</label>
+											<input
+												type="email"
+												value=""
+												name="EMAIL"
+												class="required email mce_inline_error"
+												id="mce-EMAIL"
+												aria-required="true"
+												aria-invalid="true"
+											/>
+											<div for="mce-EMAIL" class="mce_inline_error">
+												This field is required.
+											</div>
+										</div>
+										<div class="mc-field-group">
+											<label for="mce-FNAME"
+												>First name <span class="asterisk">*</span>
+											</label>
+											<input
+												type="text"
+												value=""
+												name="FNAME"
+												class="required mce_inline_error"
+												id="mce-FNAME"
+												aria-required="true"
+												aria-invalid="true"
+											/>
+											<div for="mce-FNAME" class="mce_inline_error">
+												This field is required.
+											</div>
+										</div>
+										<div class="mc-field-group">
+											<label for="mce-LNAME"
+												>Last name <span class="asterisk">*</span>
+											</label>
+											<input
+												type="text"
+												value=""
+												name="LNAME"
+												class="required mce_inline_error"
+												id="mce-LNAME"
+												aria-required="true"
+												aria-invalid="true"
+											/>
+											<div for="mce-LNAME" class="mce_inline_error">
+												This field is required.
+											</div>
+										</div>
+										<div class="mc-field-group">
+											<label for="mce-MMERGE5"
+												>GMC registration number <span class="asterisk">*</span>
+											</label>
+											<input
+												type="text"
+												value=""
+												name="MMERGE5"
+												class="required mce_inline_error"
+												id="mce-MMERGE5"
+												aria-required="true"
+												aria-invalid="true"
+											/>
+											<div for="mce-MMERGE5" class="mce_inline_error">
+												This field is required.
+											</div>
+										</div>
+									</div>
+									<div class="span6">
+										<div class="mc-field-group input-group">
+											<p>
+												Which of the following best describes your role?
+												<span class="asterisk">*</span>
+											</p>
+											<div class="row">
+												<div class="span1">
+													<p>
+														<input
+															type="radio"
+															value="salaried GP"
+															name="MMERGE4"
+															id="mce-MMERGE4-0"
+														/>
+													</p>
+												</div>
+												<div class="span6">
+													<label for="mce-MMERGE4-0">Salaried GP</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="span1">
+													<p>
+														<input
+															type="radio"
+															value="sessional GP"
+															name="MMERGE4"
+															id="mce-MMERGE4-1"
+														/>
+													</p>
+												</div>
+												<div class="span6">
+													<label for="mce-MMERGE4-1">Sessional GP</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="span1">
+													<p>
+														<input
+															type="radio"
+															value="GP partner"
+															name="MMERGE4"
+															id="mce-MMERGE4-2"
+														/>
+													</p>
+												</div>
+												<div class="span6">
+													<label for="mce-MMERGE4-2">GP partner</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="span1">
+													<p>
+														<input
+															type="radio"
+															value="GP registrar"
+															name="MMERGE4"
+															id="mce-MMERGE4-3"
+														/>
+													</p>
+												</div>
+												<div class="span6">
+													<label for="mce-MMERGE4-3">GP registrar</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<h3>Practice address</h3>
+								<p>Sessional GPs - please enter your home address.</p>
+								<small>
+									Address information helps us to make sure the panel is
+									nationally representative. We don't share your details with
+									anybody else.
+								</small>
+								<p>&nbsp;</p>
+								<div class="mc-address-group">
+									<div class="mc-field-group">
+										<label for="mce-MMERGE3-addr1"
+											>Address line 1 <span class="asterisk">*</span>
+										</label>
+										<input
+											type="text"
+											value=""
+											maxlength="70"
+											name="MMERGE3[addr1]"
+											id="mce-MMERGE3-addr1"
+											class="required"
+											aria-required="true"
+										/>
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-MMERGE3-addr2">Address line 2</label>
+										<input
+											type="text"
+											value=""
+											maxlength="70"
+											name="MMERGE3[addr2]"
+											id="mce-MMERGE3-addr2"
+										/>
+									</div>
+									<div class="mc-field-group size1of2">
+										<label for="mce-MMERGE3-city">City</label>
+										<input
+											type="text"
+											value=""
+											maxlength="40"
+											name="MMERGE3[city]"
+											id="mce-MMERGE3-city"
+											class="required"
+											aria-required="true"
+										/>
+									</div>
+									<div class="mc-field-group size1of2">
+										<label for="mce-MMERGE3-state">County</label>
+										<input
+											type="text"
+											value=""
+											maxlength="20"
+											name="MMERGE3[state]"
+											id="mce-MMERGE3-state"
+											class="required"
+											aria-required="true"
+										/>
+									</div>
+									<div class="mc-field-group size1of2">
+										<label for="mce-MMERGE3-zip">Postcode</label>
+										<input
+											type="text"
+											value=""
+											maxlength="10"
+											name="MMERGE3[zip]"
+											id="mce-MMERGE3-zip"
+											class="required"
+											aria-required="true"
+										/>
+									</div>
+									<div class="mc-field-group size1of2">
+										<label for="mce-MMERGE3-country">Country</label
+										><select
+											name="MMERGE3[country]"
+											id="mce-MMERGE3-country"
+											class="required"
+											aria-required="true"
+										>
+											<option value="164">USA</option>
+											<option value="286">Aaland Islands</option>
+											<option value="274">Afghanistan</option>
+											<option value="2">Albania</option>
+											<option value="3">Algeria</option>
+											<option value="178">American Samoa</option>
+											<option value="4">Andorra</option>
+											<option value="5">Angola</option>
+											<option value="176">Anguilla</option>
+											<option value="175">Antigua And Barbuda</option>
+											<option value="6">Argentina</option>
+											<option value="7">Armenia</option>
+											<option value="179">Aruba</option>
+											<option value="8">Australia</option>
+											<option value="9">Austria</option>
+											<option value="10">Azerbaijan</option>
+											<option value="11">Bahamas</option>
+											<option value="12">Bahrain</option>
+											<option value="13">Bangladesh</option>
+											<option value="14">Barbados</option>
+											<option value="15">Belarus</option>
+											<option value="16">Belgium</option>
+											<option value="17">Belize</option>
+											<option value="18">Benin</option>
+											<option value="19">Bermuda</option>
+											<option value="20">Bhutan</option>
+											<option value="21">Bolivia</option>
+											<option value="22">Bosnia and Herzegovina</option>
+											<option value="23">Botswana</option>
+											<option value="181">Bouvet Island</option>
+											<option value="24">Brazil</option>
+											<option value="180">Brunei Darussalam</option>
+											<option value="25">Bulgaria</option>
+											<option value="26">Burkina Faso</option>
+											<option value="27">Burundi</option>
+											<option value="28">Cambodia</option>
+											<option value="29">Cameroon</option>
+											<option value="30">Canada</option>
+											<option value="31">Cape Verde</option>
+											<option value="32">Cayman Islands</option>
+											<option value="33">Central African Republic</option>
+											<option value="34">Chad</option>
+											<option value="35">Chile</option>
+											<option value="36">China</option>
+											<option value="185">Christmas Island</option>
+											<option value="37">Colombia</option>
+											<option value="204">Comoros</option>
+											<option value="38">Congo</option>
+											<option value="183">Cook Islands</option>
+											<option value="268">Costa Rica</option>
+											<option value="275">Cote D'Ivoire</option>
+											<option value="40">Croatia</option>
+											<option value="276">Cuba</option>
+											<option value="298">Curacao</option>
+											<option value="41">Cyprus</option>
+											<option value="42">Czech Republic</option>
+											<option value="318"
+												>Democratic Republic of the Congo</option
+											>
+											<option value="43">Denmark</option>
+											<option value="44">Djibouti</option>
+											<option value="289">Dominica</option>
+											<option value="187">Dominican Republic</option>
+											<option value="45">Ecuador</option>
+											<option value="46">Egypt</option>
+											<option value="47">El Salvador</option>
+											<option value="48">Equatorial Guinea</option>
+											<option value="49">Eritrea</option>
+											<option value="50">Estonia</option>
+											<option value="51">Ethiopia</option>
+											<option value="189">Falkland Islands</option>
+											<option value="191">Faroe Islands</option>
+											<option value="52">Fiji</option>
+											<option value="53">Finland</option>
+											<option value="54">France</option>
+											<option value="193">French Guiana</option>
+											<option value="277">French Polynesia</option>
+											<option value="56">Gabon</option>
+											<option value="57">Gambia</option>
+											<option value="58">Georgia</option>
+											<option value="59">Germany</option>
+											<option value="60">Ghana</option>
+											<option value="194">Gibraltar</option>
+											<option value="61">Greece</option>
+											<option value="195">Greenland</option>
+											<option value="192">Grenada</option>
+											<option value="196">Guadeloupe</option>
+											<option value="62">Guam</option>
+											<option value="198">Guatemala</option>
+											<option value="270">Guernsey</option>
+											<option value="63">Guinea</option>
+											<option value="65">Guyana</option>
+											<option value="200">Haiti</option>
+											<option value="66">Honduras</option>
+											<option value="67">Hong Kong</option>
+											<option value="68">Hungary</option>
+											<option value="69">Iceland</option>
+											<option value="70">India</option>
+											<option value="71">Indonesia</option>
+											<option value="278">Iran</option>
+											<option value="279">Iraq</option>
+											<option value="74">Ireland</option>
+											<option value="322">Isle of Man</option>
+											<option value="75">Israel</option>
+											<option value="76">Italy</option>
+											<option value="202">Jamaica</option>
+											<option value="78">Japan</option>
+											<option value="288">Jersey (Channel Islands)</option>
+											<option value="79">Jordan</option>
+											<option value="80">Kazakhstan</option>
+											<option value="81">Kenya</option>
+											<option value="203">Kiribati</option>
+											<option value="82">Kuwait</option>
+											<option value="83">Kyrgyzstan</option>
+											<option value="84"
+												>Lao People's Democratic Republic</option
+											>
+											<option value="85">Latvia</option>
+											<option value="86">Lebanon</option>
+											<option value="87">Lesotho</option>
+											<option value="88">Liberia</option>
+											<option value="281">Libya</option>
+											<option value="90">Liechtenstein</option>
+											<option value="91">Lithuania</option>
+											<option value="92">Luxembourg</option>
+											<option value="208">Macau</option>
+											<option value="93">Macedonia</option>
+											<option value="94">Madagascar</option>
+											<option value="95">Malawi</option>
+											<option value="96">Malaysia</option>
+											<option value="97">Maldives</option>
+											<option value="98">Mali</option>
+											<option value="99">Malta</option>
+											<option value="207">Marshall Islands</option>
+											<option value="210">Martinique</option>
+											<option value="100">Mauritania</option>
+											<option value="212">Mauritius</option>
+											<option value="241">Mayotte</option>
+											<option value="101">Mexico</option>
+											<option value="102">Moldova, Republic of</option>
+											<option value="103">Monaco</option>
+											<option value="104">Mongolia</option>
+											<option value="290">Montenegro</option>
+											<option value="294">Montserrat</option>
+											<option value="105">Morocco</option>
+											<option value="106">Mozambique</option>
+											<option value="242">Myanmar</option>
+											<option value="107">Namibia</option>
+											<option value="108">Nepal</option>
+											<option value="109">Netherlands</option>
+											<option value="110">Netherlands Antilles</option>
+											<option value="213">New Caledonia</option>
+											<option value="111">New Zealand</option>
+											<option value="112">Nicaragua</option>
+											<option value="113">Niger</option>
+											<option value="114">Nigeria</option>
+											<option value="217">Niue</option>
+											<option value="214">Norfolk Island</option>
+											<option value="272">North Korea</option>
+											<option value="116">Norway</option>
+											<option value="117">Oman</option>
+											<option value="118">Pakistan</option>
+											<option value="222">Palau</option>
+											<option value="282">Palestine</option>
+											<option value="119">Panama</option>
+											<option value="219">Papua New Guinea</option>
+											<option value="120">Paraguay</option>
+											<option value="121">Peru</option>
+											<option value="122">Philippines</option>
+											<option value="221">Pitcairn</option>
+											<option value="123">Poland</option>
+											<option value="124">Portugal</option>
+											<option value="126">Qatar</option>
+											<option value="315">Republic of Kosovo</option>
+											<option value="127">Reunion</option>
+											<option value="128">Romania</option>
+											<option value="129">Russia</option>
+											<option value="130">Rwanda</option>
+											<option value="205">Saint Kitts and Nevis</option>
+											<option value="206">Saint Lucia</option>
+											<option value="237"
+												>Saint Vincent and the Grenadines</option
+											>
+											<option value="132">Samoa (Independent)</option>
+											<option value="227">San Marino</option>
+											<option value="255">Sao Tome and Principe</option>
+											<option value="133">Saudi Arabia</option>
+											<option value="134">Senegal</option>
+											<option value="266">Serbia</option>
+											<option value="135">Seychelles</option>
+											<option value="136">Sierra Leone</option>
+											<option value="137">Singapore</option>
+											<option value="302">Sint Maarten</option>
+											<option value="138">Slovakia</option>
+											<option value="139">Slovenia</option>
+											<option value="223">Solomon Islands</option>
+											<option value="140">Somalia</option>
+											<option value="141">South Africa</option>
+											<option value="257"
+												>South Georgia and the South Sandwich Islands</option
+											>
+											<option value="142">South Korea</option>
+											<option value="311">South Sudan</option>
+											<option value="143">Spain</option>
+											<option value="144">Sri Lanka</option>
+											<option value="293">Sudan</option>
+											<option value="146">Suriname</option>
+											<option value="225"
+												>Svalbard and Jan Mayen Islands</option
+											>
+											<option value="147">Swaziland</option>
+											<option value="148">Sweden</option>
+											<option value="149">Switzerland</option>
+											<option value="285">Syria</option>
+											<option value="152">Taiwan</option>
+											<option value="260">Tajikistan</option>
+											<option value="153">Tanzania</option>
+											<option value="154">Thailand</option>
+											<option value="233">Timor-Leste</option>
+											<option value="155">Togo</option>
+											<option value="232">Tonga</option>
+											<option value="234">Trinidad and Tobago</option>
+											<option value="156">Tunisia</option>
+											<option value="157">Turkey</option>
+											<option value="158">Turkmenistan</option>
+											<option value="287">Turks &amp; Caicos Islands</option>
+											<option value="159">Uganda</option>
+											<option value="161">Ukraine</option>
+											<option value="162">United Arab Emirates</option>
+											<option value="262" selected="selected"
+												>United Kingdom</option
+											>
+											<option value="163">Uruguay</option>
+											<option value="165">Uzbekistan</option>
+											<option value="239">Vanuatu</option>
+											<option value="166">Vatican City State (Holy See)</option>
+											<option value="167">Venezuela</option>
+											<option value="168">Vietnam</option>
+											<option value="169">Virgin Islands (British)</option>
+											<option value="238">Virgin Islands (U.S.)</option>
+											<option value="188">Western Sahara</option>
+											<option value="170">Yemen</option>
+											<option value="173">Zambia</option>
+											<option value="174">Zimbabwe</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div id="mce-responses" class="clear">
+								<div
+									class="response"
+									id="mce-error-response"
+									style="display: none;"
+								></div>
+								<div
+									class="response"
+									id="mce-success-response"
+									style="display: none;"
+								></div>
+							</div>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div
+								style="position: absolute; left: -5000px;"
+								aria-hidden="true"
+							>
+								<input
+									type="text"
+									name="b_7864f766b10b8edd18f19aa56_6b16536944"
+									value=""
+									tabindex="-1"
+								/>
+							</div>
+							<div class="clear">
+								<input
+									type="submit"
+									value="Subscribe"
+									name="subscribe"
+									id="mc-embedded-subscribe"
+									class="button"
+									style="
+										background-color: #11779b;
+										color: white;
+										padding: 6px 8px 6px 8px;
+									"
+								/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<h2 id="submit-local-practice-example">
+					<a
+						href="https://www.nice.org.uk/about/what-we-do/submit-local-practice-example"
+						>Submit local practice example</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="/oforms/Home/SubmitForm"
+						data-validation="plugin"
+						enctype="multipart/form-data"
+						id="SubmitASharedLearningExample"
+						method="post"
+						novalidate="novalidate"
+					>
+						<input
+							id="oforms_name"
+							name="oforms.name"
+							type="hidden"
+							value="SubmitASharedLearningExample"
+						/><input
+							id="ReturnUrl"
+							name="ReturnUrl"
+							type="hidden"
+							value="/about/what-we-do/submit-local-practice-example"
+						/><input
+							id="UploadFileTypes"
+							name="UploadFileTypes"
+							type="hidden"
+							value="doc, docx, zip"
+						/>
+						<div id="errorMsg" class="text-error" style="display: none;">
+							<p>
+								Please complete all the required fields before submitting the
+								form.
+							</p>
+						</div>
+						<style>
+							.table thead th {
+								vertical-align: top;
+							}
+
+							fieldset h3 {
+								color: #4a4a4a;
+								font-size: 1em;
+								font-weight: normal;
+							}
+
+							.well {
+								padding-top: 0 !important;
+								padding-bottom: 20px !important;
+							}
+
+							.btn:disabled {
+								cursor: not-allowed;
+							}
+
+							.control-label.wts {
+								float: none;
+								width: 100%;
+							}
+
+							.btn-file {
+								position: relative;
+								overflow: hidden;
+							}
+
+							.file-group-btn {
+								display: inline-block;
+							}
+
+							.file-group input[type="text"] {
+								width: 200px;
+							}
+
+							.btn-file input[type="file"] {
+								position: absolute;
+								top: 0;
+								right: 0;
+								min-width: 100%;
+								min-height: 100%;
+								font-size: 100px;
+								text-align: right;
+								filter: alpha(opacity=0);
+								opacity: 0;
+								outline: none;
+								background: white;
+								cursor: inherit;
+								display: block;
+							}
+						</style>
+						<div class="form-horizontal">
+							<p class="lead">Submit a case study to:</p>
+							<ul class="alt">
+								<li>gain recognition for your work</li>
+								<li>showcase your achievements</li>
+								<li>support colleagues looking to learn and improve</li>
+								<li>
+									have a chance to get shortlisted for the annual&nbsp;<a
+										href="https://www.nice.org.uk/about/what-we-do/into-practice/local-practice-case-studies/shared-learning-awards"
+										>NICE Shared Learning Awards</a
+									>
+								</li>
+							</ul>
+							<p>
+								When you submit an example, we'll work with you to make this
+								publicly available on our website.
+							</p>
+							<p>
+								If you’d like to share your project with us, but aren’t sure
+								where to start, take a look at our tips below:
+							</p>
+							<p>
+								<a
+									href="https://www.nice.org.uk/Media/Default/sharedlearning/tips-for-completing-submission-form.pdf"
+									><i class="icon-nice-download"></i>&nbsp;Tips for completing
+									the submission form</a
+								>
+								<small class="text-error">&nbsp;Word 100 KB </small>
+							</p>
+
+							<h2>Your details</h2>
+							<span class="help-block">
+								We need your name and email address to contact you if we have
+								any queries about your example.
+							</span>
+							<fieldset class="well well-large">
+								<legend class="hide">Name and contact details</legend>
+
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="Name"
+										title="mandatory field"
+										>* Name:</label
+									>
+									<div class="controls">
+										<input
+											name="Name"
+											type="text"
+											class="text"
+											maxlength="50"
+											id="Name"
+											value=""
+											personal="true"
+											label="Your name"
+											field="UserName"
+										/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="JobTitle"
+										title="mandatory field"
+										>* Job title:</label
+									>
+									<div class="controls">
+										<input
+											name="JobTitle"
+											type="text"
+											class="text"
+											maxlength="100"
+											id="JobTitle"
+											value=""
+											personal="true"
+											label="Your job title"
+											field="UserJobTitle"
+										/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="OrganisationName"
+										title="mandatory field"
+										>* Organisation name:</label
+									>
+									<div class="controls">
+										<input
+											name="OrganisationName"
+											type="text"
+											class="text"
+											maxlength="100"
+											id="OrganisationName"
+											value=""
+											personal="true"
+											label="Name of your organisation"
+											field="UserOrganisation"
+										/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label
+										class="control-label"
+										="emailaddress"
+										=""
+										title="mandatory field"
+										>* Email address:</label
+									>
+									<div class="controls">
+										<input
+											name="EmailAddress"
+											type="text"
+											class="text input-xlarge"
+											maxlength="150"
+											id="EmailAddress"
+											value=""
+											personal="true"
+											label="Your email address"
+											field="UserEmail"
+										/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="SHARegion"
+										title="mandatory field"
+										>* Region:</label
+									>
+									<div class="controls">
+										<select
+											name="SHARegion"
+											id="SHARegion"
+											class="select"
+											personal="true"
+											label="Region"
+											field="UserSHA"
+											data-show-value="other"
+											data-show-id="regionOther"
+											data-show-controlid="SHARegionOther"
+											data-show-required="true"
+										>
+											<option value="">-- Please select below --</option>
+											<option value="wales">Wales</option>
+											<option value="scot">Scotland</option>
+											<option value="ni">Northern Ireland</option>
+											<option value="nwha">North West</option>
+											<option value="neha">North East</option>
+											<option value="yhha">Yorkshire and the Humber</option>
+											<option value="emha">East Midlands</option>
+											<option value="wmha">West Midlands</option>
+											<option value="eeha">East of England</option>
+											<option value="swha">South West</option>
+											<option value="scha">South Central</option>
+											<option value="secha">South East Coast</option>
+											<option value="lha">London</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div
+									class="control-group"
+									style="display: none;"
+									id="regionOther"
+								>
+									<label
+										class="control-label"
+										for="SHARegionOther"
+										title="mandatory field"
+										>* Other Region:</label
+									>
+									<div class="controls">
+										<input
+											type="text"
+											class="text"
+											maxlength="256"
+											id="SHARegionOther"
+											name="SHARegionOther"
+										/>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="OrganisationType"
+										title="mandatory field"
+										>* Type of organisation:</label
+									>
+									<div class="controls">
+										<select
+											name="OrganisationType"
+											id="OrganisationType"
+											class="select"
+											personal="true"
+											label="Type of organisation"
+											field="UserOrgType"
+											data-show-value="other"
+											data-show-id="typeOther"
+											data-show-controlid="OrganisationTypeOther"
+											data-show-required="true"
+										>
+											<option value="">-- Please select below --</option>
+											<option value="generalprac">General practice</option>
+											<option value="ccg">Clinical Commissioning Group</option>
+											<option value="socialcare">Social care provider</option>
+											<option value="acute">Acute trust</option>
+											<option value="mental"
+												>Mental health partnership trust</option
+											>
+											<option value="foundation">Foundation trust</option>
+											<option value="ambulance">Ambulance trust</option>
+											<option value="locgov">Local government</option>
+											<option value="nhs">National or regional NHS</option>
+											<option value="notprofit">Not-for-profit</option>
+											<option value="patient">Patient organisation</option>
+											<option value="academic">Academic</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div
+									class="control-group"
+									style="display: none;"
+									id="typeOther"
+								>
+									<label
+										class="control-label"
+										for="OrganisationTypeOther"
+										title="mandatory field"
+										>* Other type of organisation:</label
+									>
+									<div class="controls">
+										<input
+											type="text"
+											class="text"
+											maxlength="256"
+											id="OrganisationTypeOther"
+											name="OrganisationTypeOther"
+										/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="Sector">Sector:</label>
+									<div class="controls">
+										<select
+											name="Sector"
+											id="Sector"
+											class="select"
+											personal="true"
+											label="Sector"
+											field="UserOrgSector"
+											data-show-value="other"
+											data-show-id="sectorOther"
+											data-show-controlid="OtherSector"
+										>
+											<option value=" ">-- Please select below --</option>
+											<option value="primary">Primary care</option>
+											<option value="secondary">Secondary care</option>
+											<option value="tertiary">Tertiary care</option>
+											<option value="education">Education</option>
+											<option value="voluntary">Voluntary</option>
+											<option value="social">Social care</option>
+											<option value="commissioning">Commissioning</option>
+											<option value="publichealth">Public health</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div
+									class="control-group"
+									style="display: none;"
+									id="sectorOther"
+								>
+									<label class="control-label" for="OtherSector"
+										>Other sector:</label
+									>
+									<div class="controls">
+										<input
+											type="text"
+											class="text"
+											maxlength="256"
+											id="OtherSector"
+											name="OtherSector"
+										/>
+									</div>
+								</div>
+								<div class="control-group">
+									Where did you hear about the Shared Learning
+									Database/Awards?<br />
+									<label
+										class="control-label"
+										for="HowYouHeardAboutSharedLearning"
+										title=""
+										>&nbsp;</label
+									>
+									<div class="controls">
+										<select
+											name="HowYouHeardAboutSharedLearning"
+											id="HowYouHeardAboutSharedLearning"
+											class="select"
+											personal="true"
+											label="Where did you hear about the Shared Learning Database/Awards?"
+											field="UserHowHeard"
+											data-show-value="other"
+											data-show-id="sharedOther"
+											data-show-controlid="HowYouHeardAboutSharedLearningOther"
+										>
+											<option value=" ">-- Please select below --</option>
+											<option value="fieldteam">NICE Field Team</option>
+											<option value="website">NICE website</option>
+											<option value="publicity"
+												>NICE Conference publicity</option
+											>
+											<option value="conference">NICE Conference</option>
+											<option value="other">Other (please specify)</option>
+										</select>
+									</div>
+								</div>
+								<div
+									class="control-group"
+									style="display: none;"
+									id="sharedOther"
+								>
+									<label
+										class="control-label"
+										for="HowYouHeardAboutSharedLearningOther"
+										>Other:</label
+									>
+									<div class="controls">
+										<input
+											type="text"
+											class="text"
+											maxlength="256"
+											id="HowYouHeardAboutSharedLearningOther"
+											name="HowYouHeardAboutSharedLearningOther"
+										/>
+									</div>
+								</div>
+							</fieldset>
+
+							<h2 class="highlight">About your shared learning example</h2>
+							<span class="help-block">
+								To help us to understand the context of your example we need to
+								know more about it.
+							</span>
+
+							<fieldset class="well well-large">
+								<legend class="hide">Title of example</legend>
+								<h3>
+									Title of example
+									<span style="font-weight: normal;"
+										>(avoid generic titles like 'implementing NICE
+										guidance')</span
+									>
+								</h3>
+
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="TitleOfSubmission"
+										title="mandatory field"
+										>* Title:</label
+									>
+									<div class="controls">
+										<input
+											name="TitleOfSubmission"
+											type="text"
+											class="text input-xxlarge"
+											id="TitleOfSubmission"
+											value=""
+											field="Title"
+											personal="false"
+											label="Title of submission"
+											maxlength="256"
+										/>
+									</div>
+								</div>
+
+								<h3>
+									Description:
+									<span style="font-weight: normal;"
+										>Please briefly describe the project. The description should
+										make reference to how the relevant NICE guidance/Quality
+										Standard relates to your work, together with any particular
+										recommendations or quality statements within them that have
+										been implemented.</span
+									>
+								</h3>
+								<div class="control-group">
+									<label
+										class="control-label"
+										for="DescriptionOfSubmission"
+										title="mandatory field"
+										>* Description:</label
+									>
+									<div class="controls">
+										<textarea
+											name="DescriptionOfSubmission"
+											class="textarea input-xxlarge"
+											maxlength="1000"
+											id="DescriptionOfSubmission"
+											label="Submission description"
+											field="Description"
+										></textarea>
+										<span class="hint help-inline">[Max. 1000 characters]</span>
+									</div>
+								</div>
+
+								<div
+									id="implementationWarning"
+									style="color: red; font-weight: bold; display: none;"
+								>
+									Warning: NICE can only accept submissions on the
+									implementation of NICE guidance
+								</div>
+
+								<h3>
+									Does the example relate to the general implementation of all
+									NICE guidance?
+								</h3>
+								<div class="control-group">
+									<div class="controls">
+										<label
+											class="radio inline"
+											for="DoesSubmissionRelateToGeneralImplementation_0"
+										>
+											<input
+												id="DoesSubmissionRelateToGeneralImplementation_0"
+												type="radio"
+												name="DoesSubmissionRelateToGeneralImplementation"
+												value="true"
+											/>
+											Yes
+										</label>
+										<label
+											class="radio inline"
+											for="DoesSubmissionRelateToGeneralImplementation_1"
+										>
+											<input
+												id="DoesSubmissionRelateToGeneralImplementation_1"
+												type="radio"
+												name="DoesSubmissionRelateToGeneralImplementation"
+												value="false"
+											/>
+											No
+										</label>
+									</div>
+								</div>
+
+								<h3>
+									Does the example relate to the implementation of a specific
+									piece of NICE guidance?
+								</h3>
+								<div class="control-group">
+									<div class="controls">
+										<label
+											class="radio inline"
+											for="DoesSubmissionRelateToSpecificImplementation_0"
+										>
+											<input
+												id="DoesSubmissionRelateToSpecificImplementation_0"
+												type="radio"
+												name="DoesSubmissionRelateToSpecificImplementation"
+												value="true"
+											/>
+											Yes
+										</label>
+										<label
+											class="radio inline"
+											for="DoesSubmissionRelateToSpecificImplementation_1"
+										>
+											<input
+												id="DoesSubmissionRelateToSpecificImplementation_1"
+												type="radio"
+												name="DoesSubmissionRelateToSpecificImplementation"
+												value="false"
+											/>
+											No
+										</label>
+									</div>
+								</div>
+
+								<a name="guidancefinder"></a>
+
+								<div id="Guidance">
+									<h3>Specific NICE guidance:</h3>
+									<div id="UpdatePanel1">
+										<div class="control-group">
+											<label for="GuidanceRefNumber"
+												>Please give the reference number of the NICE
+												guidance:</label
+											>
+											<div class="controls">
+												<p id="guidanceinput1" class="guidanceinput">
+													<input
+														autocomplete="off"
+														style="text-transform: uppercase;"
+														class="text small GuidanceID"
+														id="GuidanceRefNumber1"
+														name="GuidanceRefNumber1"
+														type="text"
+														value=""
+													/>
+													<span class="hint help-inline">(e.g. CG80)</span>
+												</p>
+												<p
+													id="guidanceinput2"
+													class="guidanceinput"
+													style="display: none;"
+												>
+													<input
+														autocomplete="off"
+														style="text-transform: uppercase;"
+														class="text small GuidanceID"
+														id="GuidanceRefNumber2"
+														name="GuidanceRefNumber2"
+														type="text"
+														value=""
+													/>
+													<span class="hint help-inline">(e.g. CG80)</span>
+												</p>
+												<p
+													id="guidanceinput3"
+													class="guidanceinput"
+													style="display: none;"
+												>
+													<input
+														autocomplete="off"
+														style="text-transform: uppercase;"
+														class="text small GuidanceID"
+														id="GuidanceRefNumber3"
+														name="GuidanceRefNumber3"
+														type="text"
+														value=""
+													/>
+													<span class="hint help-inline">(e.g. CG80)</span>
+												</p>
+												<p
+													id="guidanceinput4"
+													class="guidanceinput"
+													style="display: none;"
+												>
+													<input
+														autocomplete="off"
+														style="text-transform: uppercase;"
+														class="text small GuidanceID"
+														id="GuidanceRefNumber4"
+														name="GuidanceRefNumber4"
+														type="text"
+														value=""
+													/>
+													<span class="hint help-inline">(e.g. CG80)</span>
+												</p>
+												<p
+													id="guidanceinput5"
+													class="guidanceinput"
+													style="display: none;"
+												>
+													<input
+														autocomplete="off"
+														style="text-transform: uppercase;"
+														class="text small GuidanceID"
+														id="GuidanceRefNumber5"
+														name="GuidanceRefNumber5"
+														type="text"
+														value=""
+													/>
+													<span class="hint help-inline">(e.g. CG80)</span>
+												</p>
+											</div>
+										</div>
+										<div class="control-group">
+											<div class="controls">
+												<input
+													type="button"
+													name="add-guidance-ref"
+													value="Add another guidance reference"
+													class="btn addanotherguidanceproduct"
+													data-guidanceinputid="guidanceinput"
+													data-guidanceinputmaximum="5"
+												/>
+												<p>
+													<a href="/guidance" target="_blank"
+														>Click here to browse through the lists of
+														guidance</a
+													>
+													to find the reference number. (The link will open in a
+													new window.)
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>
+										<label class="control-label">Financial sponsorship:</label>
+									</h3>
+									<div class="controls">
+										Provide brief details of any funding received. For example
+										funding from a pharmaceutical or medical technology company
+										to help deliver a particular part of your project.<br />
+										<textarea
+											name="IndustrySponsoredDetails"
+											class="textarea input-xxlarge"
+											id="IndustrySponsoredDetails"
+											field="SponsorDetails"
+											label="Sponsor Details"
+										></textarea>
+										<span class="hint help-inline">[Max. 250 characters]</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<h2 class="highlight">Your example</h2>
+							<fieldset class="well well-large">
+								<legend class="hide">About your example</legend>
+
+								<div class="control-group">
+									<h3>
+										<label
+											class="control-label"
+											for="AimsAndObjectives"
+											title="mandatory field"
+											>* Aims and objectives:</label
+										>
+									</h3>
+									<div class="controls">
+										What were you trying to achieve? How do the aims and
+										objectives relate to NICE guidance / Quality Standards?<br />
+										<textarea
+											class="textarea input-xxlarge"
+											name="AimsAndObjectives"
+											maxlength="2500"
+											rows="5"
+											cols="60"
+											id="AimsAndObjectives"
+											label="Submission summary"
+											field="Summary"
+										></textarea>
+										<span class="hint help-inline">[Max. 2500 characters]</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>
+										<label
+											class="control-label"
+											for="Context"
+											title="mandatory field"
+											>* Reasons for implementing your project:</label
+										>
+									</h3>
+									<div class="controls">
+										What was happening before the project started and why was
+										the change needed? Have you carried out a baseline
+										assessment? What opportunities for improving efficiency,
+										saving costs or increasing productivity did you identify?
+										How did you involve patients/stakeholders? What is the
+										size/catchment area of your organisation and any relevant
+										local population demographics?<br />
+										<textarea
+											class="textarea input-xxlarge"
+											maxlength="2500"
+											name="Context"
+											rows="5"
+											cols="60"
+											id="Context"
+											label="Submission starting point"
+											field="Context"
+										></textarea>
+										<span class="hint help-inline">[Max. 2500 characters]</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>
+										<label
+											class="control-label"
+											for="Methods"
+											title="mandatory field"
+											>* How did you implement the project:</label
+										>
+									</h3>
+									<div class="controls">
+										What steps did you use to put NICE guidance into practice?
+										What problems did you face and how did you design your
+										approach to overcome these? (for example - access to
+										resources, gaining buy-in from stakeholders). If your
+										project incurred costs please elaborate on how much and what
+										the source of funding was. <br />
+										<textarea
+											class="textarea input-xxlarge"
+											maxlength="2500"
+											name="Methods"
+											rows="5"
+											cols="60"
+											id="Methods"
+											label="Submission results"
+											field="Results"
+										></textarea>
+										<span class="hint help-inline">[Max. 2500 characters]</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>
+										<label
+											class="control-label"
+											for="ResultsAndEvaluation"
+											title="mandatory field"
+											>* Key findings:</label
+										>
+									</h3>
+									<div class="controls">
+										Did your project meet the initial aims and objectives? What
+										were the main results? These can either be short or longer
+										term results (Please illustrate results quantitatively and
+										qualitatively where you are able to). What cost savings and
+										increases in efficiency and productivity did your work make?
+										Did it prevent illness or unnecessary treatment /
+										admissions? What did it mean for staff, patients and/or
+										service users?<br />
+										<textarea
+											class="textarea input-xxlarge"
+											maxlength="2500"
+											name="ResultsAndEvaluation"
+											rows="5"
+											cols="60"
+											id="ResultsAndEvaluation"
+											label="Submission results and evaluation"
+											field="MonitorEvaluate"
+										></textarea>
+										<span class="hint help-inline">[Max. 2500 characters]</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>
+										<label
+											class="control-label"
+											for="KeyLearningPoints"
+											title="mandatory field"
+											>* Key learning points:</label
+										>
+									</h3>
+									<div class="controls">
+										What is your key learning? If you did it again, how would
+										you do it differently? What pointers would you give to help
+										someone from another organisation facing similar challenges?
+										What might be successful and what should they avoid?<br />
+										<textarea
+											class="textarea input-xxlarge"
+											maxlength="2000"
+											name="KeyLearningPoints"
+											rows="5"
+											cols="60"
+											id="KeyLearningPoints"
+											label="Submission key learning points"
+											field="LearningPoints"
+										></textarea>
+										<span class="hint help-inline">[Max. 2000 characters]</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<h3>Attach supporting material</h3>
+									<div class="controls">
+										Where possible please collate all supporting material into
+										one MS Word file not exceeding 2 Mb. If you need to submit
+										multiple files please email them to
+										<a href="mailto:sharedlearning@nice.org.uk"
+											>the Shared learning coordinator</a
+										>
+										. Your example may be edited by NICE prior to publication.
+									</div>
+								</div>
+
+								<p></p>
+								<div class="controls">
+									<div class="file-group">
+										<label class="file-group-btn">
+											<span class="btn btn-primary">
+												Choose file...<input
+													type="file"
+													name="FileUpload1"
+													style="display: none;"
+												/>
+											</span>
+										</label>
+										<input type="text" name="FileUpload1Text" readonly="" />
+									</div>
+									<span class="help-block"> </span>
+								</div>
+								<p></p>
+							</fieldset>
+
+							<h2 class="highlight">Thank you</h2>
+
+							<fieldset class="well well-large">
+								<div class="control-group">
+									<p>
+										<br />
+										Thank you for your example. We will use the information you
+										provide on this form to contact you about your example. For
+										more information about how we use your data view our
+										<a href="/privacy-notice">privacy notice</a>.
+									</p>
+								</div>
+
+								<div class="control-group">
+									<label
+										class="control-label wts"
+										for="WillingToShareContactDetails"
+										title="mandatory field"
+										>Are you willing to share your details alongside the
+										example, so that other users can contact you?</label
+									>
+									<div class="">
+										<label
+											for="WillingToShareContactDetails_0"
+											class="radio inline"
+										>
+											<input
+												id="WillingToShareContactDetails_0"
+												type="radio"
+												name="WillingToShareContactDetails"
+												value="true"
+											/>
+											Yes
+										</label>
+										<label
+											for="WillingToShareContactDetails_1"
+											class="radio inline"
+										>
+											<input
+												id="WillingToShareContactDetails_1"
+												type="radio"
+												name="WillingToShareContactDetails"
+												value="false"
+											/>
+											No
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<div class="">
+										<label for="AgreePublishContent" class="checkbox inline">
+											<input
+												id="AgreePublishContent"
+												type="checkbox"
+												name="AgreePublishContent"
+												value="false"
+											/>
+										</label>
+
+										Do you agree that we can publish the content of your shared
+										learning example to our website?
+									</div>
+								</div>
+
+								<div>
+									<input
+										type="submit"
+										name="SubmitButton"
+										value="Submit"
+										id="SubmitButton"
+										class="btn"
+										disabled="disabled"
+									/>
+									<input name="plsnobots" type="text" class="plsnobots" /><input
+										type="reset"
+										value="Cancel"
+										id="cancelButton"
+										class="btn"
+										data-confirm="Are you sure you want to clear all form fields?"
+									/>
+								</div>
+							</fieldset>
+						</div>
+						<script
+							src="/Modules/NICE.Guidance/scripts/GuidanceLookUp.js"
+							type="text/javascript"
+						></script>
+						<script
+							src="/Modules/NICE.GuidanceProduct/scripts/SharedLearningExampleOForm.js"
+							type="text/javascript"
+						></script>
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="K4sHvb96G-KNMrUegj_mdGzcAkanaGJ3F1w0hZPujjo-lNm-oLSrED63UaRWuooAQtV49mlqkC4H72-qnlCzlFlo3_66NCwGDlXRaEep8GDWIc7dIwj9bEfLX1Jv0C_JONHf0A2"
+						/>
+					</form>
+				</div>
+				<h2 id="open-content-licence">
+					<a
+						href="https://www.nice.org.uk/re-using-our-content/uk-open-content-licence"
+						>Open content licence</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<form
+						action="/oforms/Home/SubmitFormRecaptcha"
+						data-validation="plugin"
+						id="uk-open-content-licence"
+						method="post"
+						novalidate="novalidate"
+					>
+						<input
+							id="oforms_name"
+							name="oforms.name"
+							type="hidden"
+							value="uk-open-content-licence"
+						/><input
+							id="ReturnUrl"
+							name="ReturnUrl"
+							type="hidden"
+							value="/re-using-our-content/uk-open-content-licence"
+						/>
+						<div id="errorMsg" class="text-error" style="display: none;">
+							<p>
+								Please complete all the required fields before submitting the
+								form.
+							</p>
+						</div>
+						<div class="row">
+							<div class="span8">
+								<p class="lead">
+									This licence allows individuals, commercial organisations and
+									non-commercial organisations to reuse NICE content free of
+									charge in their publications, products and systems. It applies
+									to requests to use our content in a UK setting only.
+								</p>
+								<p>
+									<strong> Note </strong> - If you plan to use our content in an
+									international setting, you must submit the
+									<a
+										href="https://www.nice.org.uk/Media/Default/About/Reusing-our-content/Open-content-licence/International-use-of-NICE-content-form.docx"
+									>
+										International use of NICE content form.
+									</a>
+								</p>
+
+								<h2>Using our content in the UK</h2>
+
+								<p>
+									The NICE UK Open Content Licence is a self-assessment
+									exercise:
+								</p>
+
+								<ol id="instructions" class="alt">
+									<li>
+										<a href="#licence"> Read the licence below carefully </a>
+										before using our content and adhere to its terms and
+										conditions.
+									</li>
+
+									<li>
+										Please fill in the
+										<a href="#form"> 'Use of NICE content' </a> form below
+										telling us how you intend to use our content.
+									</li>
+								</ol>
+
+								<fieldset>
+									<div class="panel panel-default">
+										<div class="panel panel-body">
+											<h2 id="form">Use of NICE content</h2>
+
+											<p>* = mandatory field</p>
+
+											<h3>Your details</h3>
+
+											<div class="row">
+												<div class="span6">
+													<div class="control-group">
+														<label
+															id="lblName"
+															class="control-label"
+															for="Name"
+														>
+															Name <abbr title="required">*</abbr>
+														</label>
+														<div class="controls">
+															<input
+																name="Name"
+																id="Name"
+																type="text"
+																maxlength="255"
+																required="required"
+															/>
+														</div>
+													</div>
+												</div>
+
+												<div class="span6">
+													<div class="control-group">
+														<label
+															id="lblRole"
+															class="control-label"
+															for="Role"
+														>
+															Your role
+														</label>
+														<div class="controls">
+															<input
+																name="Role"
+																id="Role"
+																type="text"
+																maxlength="255"
+															/>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblEmailAddress"
+													class="control-label"
+													for="EmailAddress"
+												>
+													Email <abbr title="required">*</abbr>
+												</label>
+												<div class="controls">
+													<input
+														style="width: 45%;"
+														id="EmailAddress"
+														name="EmailAddress"
+														type="email"
+														maxlength="255"
+														required="required"
+													/>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblOrganisation"
+													class="control-label"
+													for="Organisation"
+												>
+													Organisation <abbr title="required">*</abbr>
+												</label>
+												<div class="controls">
+													<input
+														style="width: 45%;"
+														name="Organisation"
+														id="Organisation"
+														type="text"
+														maxlength="255"
+														required="required"
+													/>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblNatureofOrg"
+													class="control-label"
+													for="NatureofOrg"
+												>
+													Is your organisation commericial or not-for-profit?
+												</label>
+												<div class="controls">
+													<select
+														style="width: 50%;"
+														name="NatureofOrg"
+														id="NatureofOrg"
+														class="select NatureofOrg"
+														personal="true"
+													>
+														<option value="" disabled="" selected=""
+															>Please select below</option
+														>
+														<option value=" Commercial/for profit organisation">
+															Commercial/for profit organisation
+														</option>
+														<option
+															value="Non-commercial/not-for-profit organisation"
+														>
+															Non-commercial/not-for-profit organisation
+														</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblTypeofOrg"
+													class="control-label"
+													for="TypeofOrg"
+												>
+													Type of organisation or individual
+													<abbr title="required">*</abbr>
+												</label>
+												<div class="controls">
+													<select
+														style="width: 50%;"
+														name="TypeofOrg"
+														id="TypeofOrg"
+														class="select TypeofOrg"
+														personal="true"
+														label="Use of content"
+														required="required"
+														field="other"
+														data-show-value="other"
+														data-show-id="OtherTypeofOrg"
+														data-show-controlid="TypeofOrgOther"
+													>
+														<option value="" disabled="" selected=""
+															>Please select below
+														</option>
+														<option value="NHS organisation">
+															NHS organisation
+														</option>
+														<option value="Private sector medical organisation"
+															>Private sector medical organisation</option
+														>
+														<option value="Local authority">
+															Local authority
+														</option>
+														<option value="Charity"> Charity </option>
+														<option value="Government agency">
+															Government agency</option
+														>
+														<option value="Public research institute">
+															Public research institute
+														</option>
+														<option
+															value="Royal College/professional medical organisation"
+														>
+															Royal College/professional medical
+															organisation</option
+														>
+														<option
+															value="Pharmaceutical/medical products company"
+														>
+															Pharmaceutical/medical products company
+														</option>
+														<option value="Medical communications company ">
+															Medical communications company
+														</option>
+														<option value="Decision support tool supplier">
+															Decision support tool supplier
+														</option>
+														<option value="App supplier"> App supplier </option>
+														<option value="Training organisation">
+															Training organisation
+														</option>
+														<option value="Publisher (Books) ">
+															Publisher (Books)
+														</option>
+														<option value="Publisher (Journals)"
+															>Publisher (Journals)
+														</option>
+														<option value="Academic dissertation/thesis"
+															>Academic dissertation/thesis
+														</option>
+														<option value="Academic course"
+															>Academic course
+														</option>
+														<option value="other"> Other </option>
+													</select>
+												</div>
+											</div>
+
+											<div
+												class="control-group"
+												style="display: none;"
+												id="OtherTypeofOrg"
+											>
+												<label class="control-label" for="TypeofOrgOther">
+													Other organisation (please specify):
+												</label>
+												<div class="controls">
+													<input
+														type="text"
+														class="text"
+														maxlength="256"
+														id="TypeofOrgOther"
+														name="TypeofOrgOther"
+													/>
+												</div>
+											</div>
+
+											<h3>Content</h3>
+
+											<div class="control-group">
+												<label
+													id="lblcontent"
+													class="control-label"
+													for="content"
+												>
+													Detail the NICE content you want to use (include URLs)
+													<abbr title="required">*</abbr>
+												</label>
+												<div class="controls">
+													<textarea
+														cols="60"
+														id="content"
+														rows="3"
+														class="textarea input-xlarge"
+														name="content"
+														maxlength="1000"
+														required="required"
+														style="
+															margin: 0px 0px 12px;
+															height: 60px;
+															width: 604px;
+														"
+													></textarea>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label
+													id="lblUseofContent"
+													class="control-label"
+													for="UseofContent"
+												>
+													How are you going to use the content?
+													<abbr title="required">*</abbr>
+												</label>
+
+												<div class="controls">
+													<select
+														style="width: 60%;"
+														name="UseofContent"
+														id="UseofContent"
+														class="select UseofContent"
+														personal="true"
+														label="Use of content"
+														required="required"
+														field="other"
+														data-show-value="other"
+														data-show-id="OtherUseofContent"
+														data-show-controlid="UseofContentOther"
+													>
+														<option value="" disabled="" selected="">
+															Please select below
+														</option>
+														<option value="Book/textbook">
+															Book/textbook
+														</option>
+														<option value="Journal"> Journal </option>
+														<option
+															value="Hospital/local authority/charity information materials"
+														>
+															Hospital/local authority/charity information
+															materials
+														</option>
+														<option value="Dissertation/thesis "
+															>Dissertation/thesis
+														</option>
+														<option value="Government/institutional report"
+															>Government/institutional report
+														</option>
+														<option value="Course pack">Course pack </option>
+														<option value="Training/CPD materials"
+															>Training/CPD materials
+														</option>
+														<option value="Reuse in an app "
+															>Reuse in an app
+														</option>
+														<option value="Decision support tool"
+															>Decision support tool
+														</option>
+														<option value="Host in an institutional repository"
+															>Host in an institutional repository
+														</option>
+														<option value="Post on an intranet"
+															>Post on an intranet
+														</option>
+														<option value="Post on a website"
+															>Post on a website
+														</option>
+														<option
+															value="Promotional materials/pamphlet/brochure"
+															>Promotional materials/pamphlet/brochure
+														</option>
+														<option value="Slide set ">Slide set </option>
+														<option value="Poster ">Poster </option>
+														<option value="Conference materials"
+															>Conference materials
+														</option>
+														<option value="CD-ROM/DVD/or other storage medi"
+															>CD-ROM/DVD/or other storage media
+														</option>
+														<option value="Reuse as a full text reprint/e-print"
+															>Reuse as a full text reprint/e-print
+														</option>
+														<option value="Include in an email">
+															Include in an email
+														</option>
+														<option value="other">Other </option>
+													</select>
+												</div>
+											</div>
+
+											<div
+												class="control-group"
+												style="display: none;"
+												id="OtherUseofContent"
+											>
+												<label class="control-label" for="UseofContentOther">
+													Other use of content (please specify):
+												</label>
+												<div class="controls">
+													<input
+														type="textarea input-xlarge"
+														class="text"
+														maxlength="256"
+														id="UseofContentOther"
+														name="UseofContentOther"
+														style="height: 60px; width: 604px;"
+													/>
+												</div>
+											</div>
+											<label class="control-label" for="recaptcha">
+												Please tick the box below
+												<abbr title="required">*</abbr>
+											</label>
+											<script
+												async="async"
+												src="https://www.google.com/recaptcha/api.js?hl=en-GB"
+												type="text/javascript"
+											></script>
+											<div
+												class="g-recaptcha"
+												data-callback="recaptchaValid"
+												data-expired-callback="recaptchExpired"
+												data-sitekey="6LcPYycTAAAAALxnol7ItcIc9CJ1j3Quc-c7k9Ki"
+											>
+												<div style="width: 304px; height: 78px;">
+													<div>
+														<iframe
+															src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcPYycTAAAAALxnol7ItcIc9CJ1j3Quc-c7k9Ki&amp;co=aHR0cHM6Ly93d3cubmljZS5vcmcudWs6NDQz&amp;hl=en-GB&amp;v=OOKISvkNnVD_m_9dreR_1S0n&amp;size=normal&amp;cb=mj2qksphsi7i"
+															width="304"
+															height="78"
+															role="presentation"
+															name="a-n9righp0ngtl"
+															frameborder="0"
+															scrolling="no"
+															sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+														></iframe>
+													</div>
+													<textarea
+														id="g-recaptcha-response"
+														name="g-recaptcha-response"
+														class="g-recaptcha-response"
+														style="
+															width: 250px;
+															height: 40px;
+															border: 1px solid rgb(193, 193, 193);
+															margin: 10px 25px;
+															padding: 0px;
+															resize: none;
+															display: none;
+														"
+													></textarea>
+												</div>
+												<iframe style="display: none;"></iframe>
+											</div>
+											<p>&nbsp;</p>
+
+											<hr />
+
+											<p>
+												The information you provide will be used to help NICE
+												monitor how third parties reuse our content in the
+												United Kingdom and will support compliance with the NICE
+												UK Open Content Licence.
+											</p>
+
+											<p>
+												For more information on how we manage your data, view
+												our
+												<a href="https://www.nice.org.uk/privacy-notice">
+													privacy policy.
+												</a>
+											</p>
+
+											<h4>Content services</h4>
+
+											<p>
+												NICE offers a range of services that may support your
+												use of our content. Please tick the box if you would
+												like to learn more about these services.
+											</p>
+											<label class="checkbox" for="content-services">
+												<input
+													type="checkbox"
+													id="content-services"
+													name="content-services"
+													value="accepted"
+												/>
+												I would like to receive information about NICE's content
+												services.
+											</label>
+
+											<hr />
+
+											<div class="controls" style="margin-left: 0px;">
+												<input
+													class="btn-inverse btn-large"
+													type="submit"
+													value="Submit"
+												/>
+											</div>
+
+											<input
+												type="text"
+												id="leaveblank"
+												name="leaveblank"
+												class="hidden"
+											/>
+											<input
+												name="plsnobots"
+												type="text"
+												class="plsnobots"
+											/><input type="hidden" id="referrer" name="referrer" />
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="span4">
+								<div class="panel panel-default">
+									<div class="panel panel-heading">
+										<h3>Content assurance service</h3>
+									</div>
+									<div class="panel panel-body">
+										<p>
+											Our experts can review the use of NICE content in your
+											products or services.
+										</p>
+										<p>Our services include:</p>
+										<ul>
+											<li>
+												checking your use of our content for accuracy and
+												context
+											</li>
+											<li>editorial services</li>
+											<li>feedback on your use of our content</li>
+											<li>fast turnaround</li>
+											<li>approval of artwork.</li>
+										</ul>
+
+										<p>
+											<a href="/reusing-our-content/content-assurance-service">
+												Find out more
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="span8">
+								<div class="panel panel-default">
+									<div class="panel panel-body">
+										<h2 id="licence">NICE UK Open Content licence</h2>
+										<p>
+											Read the licence carefully before using our content and
+											adhere to its terms and conditions.
+										</p>
+
+										<p>
+											Download: &nbsp;
+											<a
+												href="https://www.nice.org.uk/Media/Default/About/Reusing-our-content/Open-content-licence/NICE-UK-Open-Content-Licence-.pdf"
+											>
+												<i class="icon-nice-download"></i>&nbsp; &nbsp; NICE
+												Open Content Licence
+											</a>
+											<span> <small> &nbsp;(PDF)</small></span>
+										</p>
+
+										<ol>
+											<li>
+												You are encouraged to use the information that is
+												available under this licence freely and flexibly, with
+												only a few conditions.
+											</li>
+
+											<h3>Using information under this licence</h3>
+
+											<li>
+												Using the copyright material expressly made available
+												under this licence (the 'information') indicates you
+												accept its terms and conditions.<br /><br />
+											</li>
+											<li>
+												NICE grants you a UK-only, royalty-free, perpetual,
+												non-exclusive licence to use the information subject to
+												the conditions below.<br /><br />
+											</li>
+											<li>
+												This licence does not affect your freedom under fair
+												dealing or fair use or any other copyright or database
+												right exceptions and limitations.<br /><br />
+											</li>
+											<!-- 5 -->
+											<li>
+												Under the terms of this licence you may:
+												<ul>
+													<li>
+														edit, copy, publish, distribute and transmit the
+														information, in part or in full, save for content
+														covered in clause 6;
+													</li>
+													<li>
+														translate the information
+														<a href="#definitions"> (see ‘definitions’); </a>
+													</li>
+													<li>
+														exploit the information commercially and
+														non-commercially – for example, by combining it with
+														other information, or by including it in your own
+														product or application.<br /><br />
+													</li>
+												</ul>
+											</li>
+											<!-- 6 -->
+											<li>
+												Under the terms of this licence you are not permitted
+												to:
+												<ul>
+													<li>
+														amend or adapt the wording or structure of any
+														published individual NICE guidance recommendations,
+														quality statements or substantial algorithms. These
+														should be reproduced as originally published by NICE
+														<a href="#definitions"> (see ‘definitions’) </a
+														>;<br /><br />
+													</li>
+													<li>
+														display the information next to any advertising or
+														promotional text(s) or use the information in or on
+														websites, or alongside services that feature content
+														(in any form) in any of the categories set out in
+														Schedule A.<br /><br />
+													</li>
+												</ul>
+											</li>
+											<!-- 7 -->
+											<li>
+												Under the terms of this licence you must:
+												<ul>
+													<li>
+														acknowledge the source of the information in the
+														‘product’ (including if the content is not visible
+														but used to underpin a product in part or in full)
+														in which it is used by including an attribution
+														statement and a disclaimer. (A product means any
+														route by which you distribute the information, such
+														as a publication, article or application). Where
+														possible, the statement should link to both this
+														licence and the NICE source material. The form of
+														words we require is:<br /><br />
+
+														<p>
+															'© NICE [YEAR] TITLE. Available from
+															www.nice.org.uk/guidance/ngXX All rights reserved.
+															Subject to
+															<a
+																href="https://www.nice.org.uk/terms-and-conditions#notice-of-rights"
+																>Notice of rights </a
+															><br />
+														</p>
+														<p>
+															NICE guidance is prepared for the National Health
+															Service in England. All NICE guidance is subject
+															to regular review and may be updated or withdrawn.
+															NICE accepts no responsibility for the use of its
+															content in this product/publication.’<br /><br />
+														</p>
+													</li>
+												</ul>
+											</li>
+
+											<!-- 8 --><br />
+											<li>
+												If your article, publication, product or app is to have
+												longevity, you must make it clear that the information
+												provided by NICE was accurate at the time your product
+												was issued.<br /><br />
+											</li>
+											<!-- 9 -->
+											<li>
+												Please note that copyright in the original NICE
+												publication(s) covered by this licence is not
+												transferable and rests with NICE.<br /><br />
+											</li>
+											<!--10-->
+											<li>
+												You will own the copyright in the
+												format/layout/typographical arrangement of the
+												information in your own product to the extent that it
+												differs from that of NICE content.<br /><br />
+											</li>
+											<!-- 11 -->
+											<li>
+												The conditions of this licence are important and if you
+												fail to comply with them the rights granted to you under
+												this licence, or any similar licence granted by NICE,
+												will end automatically.
+											</li>
+
+											<h3>Exemptions</h3>
+
+											<!--12-->
+											<li>
+												This licence does not cover:
+												<ul>
+													<li>
+														Personal data in the information
+														<a href="#definitions"> (see definitions); </a>
+													</li>
+													<li>
+														Information that has not been accessed by way of
+														publication or disclosure under information access
+														legislation (including the Freedom of Information
+														Acts for the UK and Scotland) or with the consent of
+														NICE.
+													</li>
+													<li>
+														Current and former NICE logos; the former National
+														Prescribing Centre logo; the Health Development
+														Agency logo; and other partners' logos.
+													</li>
+													<li>
+														Content that is made available as part of a
+														consultation process and is subject to amendment
+														before formal publication by NICE.
+													</li>
+													<li>
+														Content that is made available through the NICE
+														Scientific Advice programme.
+													</li>
+													<li>
+														Third-party rights that NICE is not authorised to
+														licence – it is incumbent on you to seek permission
+														to use any identified third-party copyright content
+														in the NICE information covered by this licence. For
+														the avoidance of doubt, this covers all Clinical
+														Knowledge Summaries, the British National Formulary
+														and its derivative outputs, the ‘full’ versions of
+														NICE clinical guidelines commissioned from National
+														Collaborating Centres, and economic models
+														underpinning guidance development work.
+													</li>
+													<li>
+														Other intellectual property rights, including
+														patents, trademarks, and design rights.
+													</li>
+												</ul>
+											</li>
+
+											<h3>Non-endorsement</h3>
+
+											<li>
+												Granting you this licence does not confer an approval or
+												endorsement of your article / publication / product /
+												app or any accompanying marketing materials. You must
+												not give any such implication that NICE endorses either
+												you or your product.
+											</li>
+
+											<br />
+
+											<h3>Excluded organisations and content categories</h3>
+
+											<li>
+												Schedule A lists those organisations and content
+												categories excluded from using NICE content under this
+												licence.
+											</li>
+
+											<h3>No warranty</h3>
+
+											<li>
+												The information is licensed 'as is' and NICE excludes
+												all representations, warranties, obligations and
+												liabilities in relation to the information to the
+												maximum extent permitted by law.<br /><br />
+											</li>
+											<li>
+												NICE is not liable for any errors or omissions in the
+												information and shall not be liable for any loss, injury
+												or damage of any kind caused by its use.<br /><br />
+											</li>
+											<li>
+												NICE does not guarantee the continued supply of the
+												information.<br /><br />
+											</li>
+											<li>
+												NICE gives no warranty that the NICE content under this
+												licence is fit for your intended purpose.
+											</li>
+
+											<h3>Governing Law</h3>
+
+											<li>
+												This licence is subject to English law and the English
+												courts have exclusive jurisdiction.
+											</li>
+
+											<h3 id="definitions">Definitions</h3>
+
+											<!--20-->
+											<li>
+												In this licence, the terms below have the following
+												meanings:
+												<ul>
+													<li>
+														'Amend’ means to change the words or structure of
+														specific content which is prohibited for certain
+														types of NICE content listed in clause 6 of this
+														licence.
+													</li>
+													<li>
+														'Information' means information protected by
+														copyright or by database right (for example,
+														literary and artistic works, content, data and
+														source code) offered for use under the terms of this
+														licence.
+													</li>
+													<li>
+														‘NICE’ is the current National Institute for Health
+														and Care Excellence or its 2 predecessor
+														organisations – the National Institute for Health
+														and Clinical Excellence and the National Institute
+														for Clinical Excellence.
+													</li>
+													<li>
+														‘Personal data’ is defined in Article 2 of European
+														Data Protection Directive by reference to whether
+														information relates to an identified or identifiable
+														individual.
+													</li>
+													<li>
+														'Translate’ means either translating content into
+														another language or electronically repurposing it
+														for use in the UK only.
+													</li>
+													<li>
+														'Use' means doing any act which is restricted by
+														copyright or database right, whether in the original
+														medium or in any other medium, and includes without
+														limitation distributing, copying, adapting (subject
+														to the caveat in clause 5), modifying as may be
+														technically necessary to use it in a different mode
+														or format.
+													</li>
+													<li>
+														'You', 'you' and 'your' means the natural or legal
+														person, or body of persons corporate or incorporate,
+														acquiring rights in the information (whether the
+														information is obtained directly from NICE or
+														otherwise) under this licence.
+													</li>
+												</ul>
+											</li>
+
+											<h3>Further information</h3>
+
+											<li>
+												For further information about this licence please
+												contact:<br /><br />
+												<ul class="unstyled">
+													<li>
+														National Institute for Health and Care Excellence
+													</li>
+													<li>Level 1A, City Tower</li>
+													<li>Piccadilly Plaza</li>
+													<li>Manchester</li>
+													<li>M1 4BT</li>
+													<li>
+														Telephone: &nbsp;<a href="tel:+03003230140"
+															>+44 (0)300 323 0140</a
+														>
+													</li>
+													<li>
+														Email: &nbsp;<a
+															href="mailto:reuseofcontent@nice.org.uk"
+															>reuseofcontent@nice.org.uk</a
+														>
+													</li>
+												</ul>
+											</li>
+										</ol>
+
+										<h3>
+											Schedule A: Content categories and organisations not
+											covered by this licence
+										</h3>
+
+										<ol style="list-style-type: lower-alpha;">
+											<li>
+												Political,<span>
+													that is, lobby groups, pressure groups and political
+													parties</span
+												>
+											</li>
+											<li>Religious<span> bodies</span></li>
+											<li>
+												<span
+													>Content promoting any tobacco products or any other
+													goods bearing tobacco applicant brand</span
+												>
+											</li>
+											<li>
+												<span>Content promoting betting and gambling</span>
+											</li>
+											<li>
+												<span
+													>Content promoting adult services including escort
+													agencies and premium rate telephone numbers for adult
+													chat services</span
+												>
+											</li>
+											<li>
+												<span
+													>Content promoting weapons, weapon manufacturers and
+													gun clubs</span
+												>
+											</li>
+											<li>
+												<span
+													>Content promoting, encouraging or facilitating
+													violence</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that is libellous, misleading, pornographic,
+													defamatory, or that contains illegal, infringing, or
+													otherwise actionable content under UK law</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that incites hatred whether based on race,
+													religion, gender, sexuality or otherwise, or promote
+													encourage or facilitate anti-social behaviour</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that promotes, encourages or facilitates
+													terrorism or other activities that risk UK national
+													security</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that discriminates against any specific
+													social group or otherwise exploits vulnerable sections
+													of society</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that contains exaggerated, misleading or
+													false claims</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that exploits the credulity, lack of
+													knowledge or inexperience of consumers</span
+												>
+											</li>
+											<li>
+												<span
+													>Content that might cause offence or harm or may
+													otherwise bring NICE into disrepute
+													<strong>and</strong></span
+												>
+											</li>
+											<li>
+												Content categories otherwise notified to you by NICE.
+											</li>
+										</ol>
+
+										<p><a href="#instructions"> Back to top </a></p>
+
+										<!-- close span8 -->
+									</div>
+								</div>
+							</div>
+
+							<div class="span4"></div>
+						</div>
+
+						<script type="text/javascript">
+							//<![CDATA[
+							function loadExtScript(src, test, callback) {
+								var s = document.createElement("script");
+								s.src = src;
+								document.body.appendChild(s);
+
+								var callbackTimer = setInterval(function () {
+									var call = false;
+									try {
+										call = test.call();
+									} catch (e) {}
+
+									if (call) {
+										clearInterval(callbackTimer);
+										callback.call();
+									}
+								}, 100);
+							}
+
+							(function () {
+								var tId = setInterval(function () {
+									if (document.readyState == "complete") onComplete();
+								}, 11);
+								function onComplete() {
+									clearInterval(tId);
+
+									var location = "/media/default/Get-involved/Forms/";
+
+									if (typeof jQuery === "undefined") {
+										var altjquery = "//code.jquery.com/jquery-1.10.2.min.js";
+
+										loadExtScript("altquery", function () {});
+									}
+
+									loadExtScript(location + "prevent-spam.js", function () {});
+								}
+							})();
+
+							$(function () {
+								if (!("autofocus" in document.createElement("input"))) {
+									$("[autofocus]").focus();
+								}
+							});
+							//]]>
+						</script>
+						<input
+							name="__RequestVerificationToken"
+							type="hidden"
+							value="ctJ7ixQblvvnkzpWpYbOvDWY0kOTvWDTl3BqWmauuuFMj1ZZK8vJ_gV6VI-AlpliIP04xoNQT9D2a0Ytr3A5WYAk24S_CkNU_a2jxOjCs_FbDFN4WIHwHsg0Rjn8dkCYakDanw2"
+						/>
+					</form>
+				</div>
+				<h2 id="uptake-data-filter">
+					<a
+						href="https://www.nice.org.uk/about/what-we-do/into-practice/measuring-the-uptake-of-nice-guidance/uptake-data"
+						>Uptake data filter</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<form method="get">
+						<input type="hidden" name="pa" value="1" />
+						<input type="hidden" name="orderBy" value="ProductCode" />
+						<input type="hidden" name="reversesort" />
+						<fieldset>
+							<legend class="visually-hidden">Filtering options</legend>
+							<div class="filter-horizontal">
+								<div class="row-fluid">
+									<div class="span4">
+										<div class="form-group">
+											<label for="ref">Reference</label>
+											<input
+												type="text"
+												class="form-control"
+												id="ref"
+												name="productRef"
+												placeholder="e.g. XX888"
+												value=""
+											/>
+										</div>
+									</div>
+									<div class="span4">
+										<div class="form-group">
+											<label for="titlesearch">Title</label>
+											<input
+												type="text"
+												class="form-control"
+												id="titlesearch"
+												name="title"
+												placeholder="e.g. Diabetes"
+												value=""
+											/>
+										</div>
+									</div>
+									<div class="span4">
+										<div class="form-group">
+											<label for="date">Date</label>
+											<input
+												type="text"
+												class="form-control"
+												id="date"
+												name="date"
+												placeholder="MM/YYYY"
+												value=""
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+
+						<div class="row-fluid">
+							<div class="span12">
+								<div class="">
+									<button class="btn">Apply Filters</button>
+									<button
+										class="btn"
+										onclick="date.value = ''; titlesearch.value = ''; ref.value = '';"
+									>
+										Clear filters
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<h2 id="baseline-assessment-tools">
+					<a
+						href="https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools"
+						>Baseline assessment tools filter</a
+					>
+				</h2>
+				<div class="formwrapper">
+					<div class="form-inline">
+						<div class="pull-left">
+							<label>Search guidance title:</label>
+							<input
+								placeholder="Search…"
+								type="search"
+								data-bind="value: query, valueUpdate: ['keyup','search'], event: { keyup: doSearch }"
+								id="inputSearch"
+								autocomplete="off"
+							/>
+							&nbsp;
+							<button
+								data-bind="click: clearFilters"
+								class="btn btn-mini"
+								style="margin-left: 0px; display: none;"
+								id="btn-reset"
+							>
+								Clear
+							</button>
+							&nbsp;<label>Order by</label>&nbsp;<select
+								data-bind="value: selectedOrder"
+								id="order-by"
+							>
+								<option>Title</option>
+								<option>Date</option>
+								<option>Reference</option>
+							</select>
+						</div>
+						<button
+							data-bind="click: removePaging, visible: sortitems().pageSize() < 1000"
+							class="btn btn-info pull-right"
+							style="margin-left: 10px; display: none;"
+						>
+							List all
+						</button>
+						<button
+							data-bind="click: addPaging, visible: sortitems().pageSize() >= 1000"
+							class="btn btn-info pull-right"
+							style=""
+						>
+							List 10
+						</button>
+						<div class="pagination pull-right" style="margin-top: 0;">
+							<span
+								data-bind="visible: sortitems().pageSize() < 1000"
+								style="display: none;"
+							>
+								<span data-bind="text: sortitems().currentPage">1</span> of
+								<span data-bind="text: sortitems().pageCount">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
