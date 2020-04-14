@@ -5,13 +5,15 @@
   border: 1px solid $nds-colour-caution;
   color: $nds-colour-caution;
   margin: rem($nds-spacing-medium 0);
-  padding: rem($nds-spacing-small $nds-spacing-large $nds-spacing-small $nds-spacing-small);
+  padding: rem(
+    $nds-spacing-small $nds-spacing-large $nds-spacing-small $nds-spacing-small
+  );
 
   // Elements
 
   .close {
     position: relative;
-    right: - rem($nds-spacing-medium);
+    right: -rem($nds-spacing-medium);
   }
 
   h4 {
@@ -24,10 +26,17 @@
     margin-bottom: 0;
   }
 
+  > :first-child {
+    margin-top: 0;
+  }
+
   // Modifiers
 
   &.alert-block {
-    padding: rem($nds-spacing-medium $nds-spacing-large $nds-spacing-medium $nds-spacing-medium);
+    padding: rem(
+      $nds-spacing-medium $nds-spacing-large $nds-spacing-medium
+        $nds-spacing-medium
+    );
   }
 
   &.alert-danger,
