@@ -39,6 +39,6 @@
     "postcss-banner": "^3.0.0"
   },
   "dependencies": {
-    "@nice-digital/design-system": "1.0.25-alpha.0"
+    "@nice-digital/design-system": "1.0.26-alpha.0"
   }
 }
