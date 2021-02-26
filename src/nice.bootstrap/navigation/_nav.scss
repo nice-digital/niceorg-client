@@ -1,6 +1,7 @@
 .nav {
   list-style: none;
   margin: rem(0 0 $nds-spacing-medium);
+  max-width: 100%; // To override the 66ch max-width on lists
 
   // sass-lint:disable no-combinators
   > .disabled > a {

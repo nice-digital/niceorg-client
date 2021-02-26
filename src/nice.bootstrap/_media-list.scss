@@ -3,6 +3,7 @@
 .media-list {
   list-style: none;
   margin-left: 0;
+  max-width: 100%; // To override the 66ch max-width on lists
 
   .panel-resources & {
     margin: 0;

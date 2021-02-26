@@ -4,6 +4,7 @@
 %grid-base-styling {
   list-style: none;
   margin: 0;
+  max-width: 100%; // To override the 66ch max-width on lists
   padding: 0;
   width: auto;
 
