@@ -1,7 +1,3 @@
-
-
-// sass-lint:disable no-combinators
-
 .layout {
   @include nds-clearfix;
   display: block;
@@ -62,7 +58,6 @@
 }
 
 @include mq($from: md) {
-
   .layout-secondary-wide {
     > .content-primary {
       width: 65.95744681%;

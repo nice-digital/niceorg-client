@@ -1,6 +1,6 @@
 // Private mixin to set the width of the image and calculated
 // width of the text elements
-@mixin _hero-unit-width($hero-image-width-percentage) {
+@mixin hero-unit-width($hero-image-width-percentage) {
   .hero-image {
     width: $hero-image-width-percentage;
   }
@@ -8,9 +8,10 @@
   h1,
   h2,
   p {
-    // sass-lint:disable no-duplicate-properties
     margin-left: $hero-image-width-percentage + 5%; // Fallback for non-calc
-    margin-left: calc(#{$hero-image-width-percentage} + #{rem($nds-spacing-large)});
+    margin-left: calc(
+      #{$hero-image-width-percentage} + #{rem($nds-spacing-large)}
+    );
   }
 }
 
@@ -52,30 +53,31 @@
     width: 16%;
   }
 
-  h1,h2 {
+  h1,
+  h2 {
     @include nds-font-size(h3);
     max-width: 44ch;
   }
 
-  // sass-lint:disable no-combinators
   > :last-child {
     margin-bottom: 0;
   }
 
   @include mq($from: sm) {
+    @include hero-unit-width(33%);
+
     .hero-image {
       float: left;
     }
 
-    h1,h2 {
+    h1,
+    h2 {
       clear: none;
       margin-top: 0;
     }
-
-    @include _hero-unit-width(33%);
   }
 
   @include mq($from: md) {
-    @include _hero-unit-width(16%);
+    @include hero-unit-width(16%);
   }
 }

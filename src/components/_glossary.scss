@@ -1,20 +1,22 @@
 /// Glossary - used on glossary page
 /// Overrides
 /// See https://www.nice.org.uk/glossary for example
-// sass-lint:disable
 
 .nav-glossary {
   display: flex;
   flex-wrap: wrap;
-  & > li {
+
+  > li {
     margin-bottom: 2%;
     margin-right: 2%;
     width: 23%;
+
     &.active > a {
       background-color: $nds-colour-nice-teal;
       color: $nds-colour-nice-white;
     }
-    & > a {
+
+    > a {
       @include nds-font-size(4);
       background-color: $nds-colour-nice-grey-3;
       color: $nds-colour-nice-black;
@@ -23,6 +25,7 @@
       line-height: 1.5em;
       text-align: center;
       text-decoration: none;
+
       &:hover {
         background-color: $nds-colour-nice-teal;
         color: $nds-colour-nice-white;
@@ -36,6 +39,7 @@
     @include nds-p;
     margin-top: rem($nds-spacing-large);
   }
+
   .media-body {
     p {
       margin-bottom: 1rem;

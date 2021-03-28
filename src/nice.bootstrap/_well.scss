@@ -25,7 +25,6 @@
     padding: em($nds-spacing-small);
   }
 
-  // sass-lint:disable-block no-combinators
   > :first-child {
     margin-top: 0;
   }

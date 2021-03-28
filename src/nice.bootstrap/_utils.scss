@@ -25,7 +25,6 @@
 }
 
 // Generic close button, for alerts etc, see http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#alerts
-// sass-lint:disable no-qualifying-elements
 a.close,
 button.close,
 input.close {
@@ -48,7 +47,6 @@ input.close {
     color: $nds-colour-nice-dark-grey;
   }
 }
-
 
 .muted {
   color: $nds-colour-text-subtle;

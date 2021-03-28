@@ -1,7 +1,6 @@
 // Helper classes for controlling printing page breaks
 
 @media print {
-
   // This is a temporary fix to enable content within the grid to honour page-break rules
   // Look to remove when the grid uses flex / grid
   [data-g] {
@@ -9,11 +8,10 @@
   }
 
   .print-page-break-before {
-      page-break-before: always;
+    page-break-before: always;
   }
 
   .print-page-break-after {
-      page-break-after: always;
+    page-break-after: always;
   }
-
 }

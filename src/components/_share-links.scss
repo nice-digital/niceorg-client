@@ -2,7 +2,6 @@
 // Used at the top of blogs/news.
 // E.g. https://www.nice.org.uk/news/blog/having-a-nice-endorsement-ensures-patients-and-commissioners-trust-our-mental-health-services
 .share-links {
-
   .nav-header {
     @include nds-font-size(h5);
     padding: rem($nds-spacing-small $nds-spacing-medium);
@@ -36,7 +35,7 @@
     a {
       color: $nds-colour-text;
       // Override default margin from addthis
-      margin: 0 !important; // sass-lint:disable-line no-important
+      margin: 0 !important;
       padding: rem($nds-spacing-x-small $nds-spacing-medium);
       text-decoration: none;
 

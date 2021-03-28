@@ -2,7 +2,6 @@
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#lists
 
 // NICE Design System uses list--unstyled rather than just unstyled
-// sass-lint:disable no-qualifying-elements
 ul.unstyled,
 ol.unstyled {
   list-style: none;
@@ -14,7 +13,6 @@ ol.inline {
   list-style: none;
   margin-left: 0;
 
-  // sass-lint:disable-block no-combinators
   > li {
     display: inline-block;
     padding-left: rem($nds-spacing-small);
@@ -27,7 +25,6 @@ ol.alt {
   margin-left: 0;
   padding-left: 0;
 
-  // sass-lint:disable-block no-combinators
   > li {
     list-style: none;
     margin-bottom: rem($nds-spacing-small);
@@ -43,9 +40,9 @@ ol.alt {
       counter-increment: li;
       font-weight: bold;
       height: em($nds-spacing-large);
-      left: - em($nds-spacing-large + $nds-spacing-small);
+      left: -em($nds-spacing-large + $nds-spacing-small);
       line-height: em($nds-spacing-large);
-      margin-top: - em($nds-spacing-x-small);
+      margin-top: -em($nds-spacing-x-small);
       position: absolute;
       text-align: center;
       text-indent: 0;
@@ -59,7 +56,6 @@ ul.alt {
   margin-left: 0;
   padding-left: 0;
 
-  // sass-lint:disable-block no-combinators
   > li {
     list-style: none;
     margin-left: rem($nds-spacing-medium);
@@ -70,7 +66,7 @@ ul.alt {
       color: $nds-colour-icons;
       content: nds-get-glyph(bullet);
       font-size: 125%;
-      left: - rem($nds-spacing-medium);
+      left: -rem($nds-spacing-medium);
       position: absolute;
     }
   }

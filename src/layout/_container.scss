@@ -1,6 +1,5 @@
 // Various containers wrapping content from old Bootstrap.
 // The specific selectors are needed to override existing styles
-// sass-lint:disable no-combinators
 body > .layout,
 .restrict-width,
 body .container {
@@ -19,12 +18,10 @@ body > .layout .layout.container,
   @include nds-clearfix;
 }
 
-// sass-lint:disable no-qualifying-elements
 header.container {
   margin: 0 auto em($nds-spacing-large);
 
   .author {
     clear: both;
   }
-
 }

@@ -4,6 +4,7 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+
   &.well {
     padding-top: rem($nds-spacing-medium) !important;
   }
@@ -22,6 +23,7 @@ legend {
 
 .control-group {
   margin-bottom: rem($nds-spacing-medium);
+
   .controls {
     br {
       content: '';
@@ -62,7 +64,6 @@ legend {
   width: 530px;
 }
 
-// sass-lint:disable no-qualifying-elements
 select,
 textarea,
 input:not([type='reset']):not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']):not(#global-nav-header > *), // 'Text' inputs
@@ -78,6 +79,7 @@ input:not([type='reset']):not([type='submit']):not([type='file']):not([type='che
   transition: border linear 0.2s;
   vertical-align: middle;
   width: 100%;
+
   &::placeholder {
     color: $nds-colour-nice-grey-1;
   }
@@ -105,20 +107,23 @@ select {
   }
 
   .warning & {
-    color: $nds-colour-caution;
     border-color: $nds-colour-caution !important;
+    color: $nds-colour-caution;
   }
+
   .error & {
-    color: $nds-colour-error;
     border-color: $nds-colour-error !important;
+    color: $nds-colour-error;
   }
+
   .info & {
-    color: $nds-colour-info;
     border-color: $nds-colour-info !important;
+    color: $nds-colour-info;
   }
+
   .success & {
-    color: $nds-colour-success;
     border-color: $nds-colour-success !important;
+    color: $nds-colour-success;
   }
 }
 
@@ -136,15 +141,19 @@ select {
 label {
   color: $nds-colour-nice-dark-grey;
   display: block;
+
   .warning & {
     color: $nds-colour-caution;
   }
+
   .error & {
     color: $nds-colour-error;
   }
+
   .info & {
     color: $nds-colour-info;
   }
+
   .success & {
     color: $nds-colour-success;
   }
@@ -153,6 +162,7 @@ label {
 label {
   display: block;
   font-weight: bold;
+
   &.checkbox {
     padding-left: 0;
   }
@@ -171,6 +181,6 @@ textarea[disabled],
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  cursor: not-allowed;
   background-color: #fafafb;
+  cursor: not-allowed;
 }

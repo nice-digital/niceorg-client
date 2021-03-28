@@ -2,7 +2,7 @@
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#labels-badges
 .label,
 .badge {
-  @extend .tag; // sass-lint:disable-line placeholder-in-extend
+  @extend .tag;
 
   &.label-success,
   &.badge-success {

@@ -5,10 +5,6 @@
   margin-left: 0;
   overflow: visible;
 
-  // sass-lint:disable no-combinators
-
-  // Elements
-
   .container {
     width: auto;
   }
@@ -61,8 +57,7 @@
   }
 
   &.navbar-inverse {
-    // sass-lint:disable-block nesting-depth
-
+    // stylelint-disable max-nesting-depth
     .nav {
       > li {
         > a {

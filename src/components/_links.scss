@@ -1,5 +1,4 @@
 // Key links used to use NICE.Glyphs. Now use nice-icons instead
-// sass-lint:disable no-combinators
 .key-link:before {
   @include nice-icon(chevron-right);
   @include nds-font-size(-2);

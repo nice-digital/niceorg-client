@@ -1,42 +1,53 @@
 .table {
-  width: 100%;
   border-collapse: collapse;
+  width: 100%;
+
   th {
     vertical-align: bottom;
   }
+
   td {
     vertical-align: top;
   }
+
   td,
   th {
-    text-align: left;
     padding: rem($nds-spacing-small);
+    text-align: left;
+
     p {
       margin-top: 0;
     }
   }
+
   tr {
     &.success {
       background: $nds-colour-success-background;
     }
+
     &.error {
       background: $nds-colour-error-background;
     }
+
     &.warning {
       background: $nds-colour-caution-background;
     }
+
     &.info {
       background: $nds-colour-info-background;
     }
   }
+
   &-bordered {
     border: 1px solid $nds-colour-border;
     border-collapse: collapse;
+
     th,
     td {
       border: 1px solid $nds-colour-border;
     }
   }
+
   &-striped {
     tbody {
       tr:nth-child(odd) > td {
@@ -44,6 +55,7 @@
       }
     }
   }
+
   &-hover {
     tbody {
       tr:hover > td {
@@ -51,8 +63,10 @@
       }
     }
   }
+
   &-condensed {
     @include nds-font-size(-1);
+
     td,
     th {
       padding: rem($nds-spacing-x-small);

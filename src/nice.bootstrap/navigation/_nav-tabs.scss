@@ -57,7 +57,7 @@
 
     // Some sets of tabs have a 'help' .btn - but we don't want this styled as a button
     &.btn {
-      text-decoration: underline !important; // sass-lint:disable-line no-important
+      text-decoration: underline !important;
 
       &:hover,
       &:active,
@@ -93,8 +93,6 @@
   }
 }
 
-
-// sass-lint:disable no-combinators
 .tab-content {
   background: $nds-colour-panel-default-background;
   border: 1px solid $nds-colour-border;

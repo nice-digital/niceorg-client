@@ -27,9 +27,9 @@
 
 // Old icons from NICE-Glyphs are all prefixed with "nice-"
 [class*='icon-nice'],
-[class*='icon-']
- {
+[class*='icon-'] {
   @include nice-icons-base;
+
   &:before {
     display: block;
   }
@@ -38,8 +38,7 @@
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
 @each $icon, $code in $nice-icons {
   .icon-nice-#{ $icon }:before,
-  .icon-#{ $icon }:before
-   {
+  .icon-#{ $icon }:before {
     content: nice-icon($icon);
   }
 }
@@ -52,4 +51,3 @@
 .icon-volume-up:before {
   content: nice-icon(podcast);
 }
-

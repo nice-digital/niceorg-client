@@ -1,10 +1,7 @@
-// sass-lint:disable no-ids
-
 // Back to top link, only visible on mobile
 #toTop {
   @include nds-hide-print;
   @include nds-font-size(4);
-  -webkit-tap-highlight-color: rgba($nds-colour-nice-teal, .5); // sass-lint:disable-line no-vendor-prefixes
   background-color: #fff;
   border: 1px solid $nds-colour-border;
   border-radius: 0 0 999px 999px;
@@ -18,6 +15,7 @@
   margin: 0;
   padding: em(0 $nds-spacing-small $nds-spacing-x-small $nds-spacing-small);
   position: fixed;
+  -webkit-tap-highlight-color: rgba($nds-colour-nice-teal, 0.5);
   text-align: center;
   top: 0;
   transform: translate(-50%, 0);
@@ -30,6 +28,6 @@
   }
 
   @include mq($from: md) {
-    display: none !important; // sass-lint:disable-line no-important
+    display: none !important;
   }
 }

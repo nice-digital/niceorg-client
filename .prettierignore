@@ -5,6 +5,7 @@ Gruntfile.js
 public
 .cache
 *.md
-
+*.html
+dist
 
 temp/

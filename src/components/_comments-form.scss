@@ -9,7 +9,6 @@
 .comments {
   margin-bottom: rem($nds-spacing-large);
 
-  // sass-lint:disable no-combinators
   > li {
     margin: rem(0 0 $nds-spacing-medium);
 
@@ -33,9 +32,7 @@
   }
 }
 
-// sass-lint:disable no-ids
 #comment-form-container {
-
   .comment-text {
     height: rem($nds-spacing-x-large);
     width: 100%;
@@ -43,7 +40,7 @@
 
   .growbox,
   .comment-text {
-    transition: height .3s;
+    transition: height 0.3s;
   }
 
   .growbox {

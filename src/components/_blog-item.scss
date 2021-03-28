@@ -1,7 +1,7 @@
 // Single blog items listed on news / blog page
 
 .blog-item {
-  margin-bottom: em($nds-spacing-medium) !important; // sass-lint:disable-line no-important
+  margin-bottom: em($nds-spacing-medium) !important;
 
   h4 {
     @include nds-font-size(h5);
@@ -9,17 +9,16 @@
   }
 
   .text-block {
-
     p:first-child {
-      color: $nds-colour-nice-dark-grey;
       @include nds-font-size(-1);
+      color: $nds-colour-nice-dark-grey;
       margin: rem($nds-spacing-small 0 $nds-spacing-x-small 0);
     }
 
     small {
+      @include nds-font-size(-1);
       color: $nds-colour-nice-dark-grey;
       display: block;
-      @include nds-font-size(-1);
       margin: rem($nds-spacing-x-small 0 $nds-spacing-x-small 0);
     }
 

@@ -7,7 +7,6 @@
 
   margin: em($nds-spacing-medium 0 $nds-spacing-large);
 
-  // sass-lint:disable no-combinators
   > .panel {
     // There are weird situations in niceorg where people have
     // nested a panel directly inside another panel
@@ -19,10 +18,11 @@
   .panel-heading {
     @include nds-font-size(h5);
     border-bottom: 1px solid $nds-colour-border;
-    margin: rem((-$nds-spacing-medium) (-$nds-spacing-medium) 0 (-$nds-spacing-medium));
+    margin: rem(
+      (-$nds-spacing-medium) (-$nds-spacing-medium) 0 (-$nds-spacing-medium)
+    );
     padding: rem($nds-spacing-small $nds-spacing-medium);
 
-    // sass-lint:disable no-universal-selectors
     > * {
       @include nds-font-size(h5);
     }
@@ -48,7 +48,9 @@
   // Panels have a default padding, so if we have a heading and body we
   // need to use a negative margin to break back out of the padding
   .panel-heading + .panel-body {
-    margin: rem(0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium));
+    margin: rem(
+      0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium)
+    );
     padding: rem(0 $nds-spacing-medium $nds-spacing-medium $nds-spacing-medium);
 
     > :first-child {
@@ -61,7 +63,9 @@
   }
 
   .panel-footer {
-    margin: rem(0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium));
+    margin: rem(
+      0 (-$nds-spacing-medium) (-$nds-spacing-medium) (-$nds-spacing-medium)
+    );
     padding: rem(0 $nds-spacing-medium $nds-spacing-medium $nds-spacing-medium);
   }
 
@@ -74,7 +78,9 @@
 
   // Contextual panel alternatives
   // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
-  &.panel-default { background: $nds-colour-panel-default-background; }
+  &.panel-default {
+    background: $nds-colour-panel-default-background;
+  }
 
   &.panel-outline {
     background: $nds-colour-nice-white;
@@ -128,7 +134,7 @@
   &.panel-resources {
     padding: 0;
 
-    >.panel-body {
+    > .panel-body {
       padding: 0;
     }
   }

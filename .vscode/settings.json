@@ -1,8 +1,19 @@
 {
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"editor.rulers": [80, 120],
+	"files.eol": "\n",
 	"workbench.colorCustomizations": {
-    "activityBar.foreground": "#fff",
+		"activityBar.foreground": "#fff",
 		"activityBar.background": "#636e8f",
 		"titleBar.activeBackground": "#636e8f",
 		"titleBar.activeForeground": "#fff"
-	}
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"sasslint.enable": false
 }

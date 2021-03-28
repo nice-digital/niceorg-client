@@ -68,11 +68,17 @@ or:
 
 ## Development
 
-To develop locally, you'll need Node 6+ and npm 5+ (TBC).
+To develop locally, make sure you have [Node 10.13.0+](https://nodejs.org/en/download/).
 
-1. `npm i`
-2. `npm start`
-3. http://localhost:8087/
+Run `node -v` in a terminal to log the currently Node version. If it's less than 10.13 then [download and install the latest LTS (Long Term Support) version of Node](https://nodejs.org/en/download/) or use nvm (Node Version Manager) to install it (`nvm install 10.13.0 && nvm use 10.13.0` in a terminal). 
+
+> Note: our supported version of Node is dictated by [webpack's supported Node version](https://webpack.js.org/concepts/#environment).
+
+Once Node is installed 
+
+1. Run `npm i` in a terminal to install dependencies
+2. Run `npm start` to run the project
+3. Open http://localhost:8087/ in a browser.
 
 ### Bookmarklets
 

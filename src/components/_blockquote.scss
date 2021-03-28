@@ -1,4 +1,4 @@
-// sass-lint:disable placeholder-in-extend
+// stylelint-disable scss/at-extend-no-missing-placeholder
 blockquote {
   @extend .quote;
   margin-top: 0;
@@ -8,12 +8,10 @@ blockquote {
   }
 
   small {
-    display:block;
+    display: block;
   }
 
   @media print {
     border: none none none inherit !important; // keep the left border for blockquote styling
   }
-
-
 }

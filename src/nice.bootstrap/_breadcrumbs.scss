@@ -3,10 +3,10 @@
 // Note: these are different markup to the new, Design System breadcrumbs,
 // see https://nice-digital.github.io/nice-design-system/components/breadcrumbs/#usage
 .breadcrumb {
+  @include nds-hide-print;
   list-style: none;
   margin: em($nds-spacing-small 0 $nds-spacing-large);
   padding: 0;
-  @include nds-hide-print;
 
   li {
     display: inline-block;

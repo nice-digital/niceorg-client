@@ -7,13 +7,13 @@
 }
 
 .btn-primary {
-  @extend .btn--cta; // sass-lint:disable-line placeholder-in-extend
+  @extend .btn--cta;
 }
 
 .btn-info {
   background: $nds-colour-info-background;
   border: 1px solid $nds-colour-info;
-  color: $nds-colour-info !important; // sass-lint:disable-line no-important
+  color: $nds-colour-info !important;
 
   &:hover {
     background: darken($nds-colour-info-background, 5%);
@@ -27,7 +27,7 @@
 .btn-success {
   background: $nds-colour-success-background;
   border: 1px solid $nds-colour-success;
-  color: $nds-colour-success !important; // sass-lint:disable-line no-important
+  color: $nds-colour-success !important;
 
   &:hover {
     background: darken($nds-colour-success-background, 5%);
@@ -41,7 +41,7 @@
 .btn-warning {
   background: $nds-colour-caution-background;
   border: 1px solid $nds-colour-caution;
-  color: $nds-colour-caution !important; // sass-lint:disable-line no-important
+  color: $nds-colour-caution !important;
 
   &:hover {
     background: darken($nds-colour-caution-background, 5%);
@@ -55,7 +55,7 @@
 .btn-danger {
   background: $nds-colour-error-background;
   border: 1px solid $nds-colour-error;
-  color: $nds-colour-error !important; // sass-lint:disable-line no-important
+  color: $nds-colour-error !important;
 
   &:hover {
     background: darken($nds-colour-error-background, 5%);
@@ -67,11 +67,11 @@
 }
 
 .btn-inverse {
-  @extend .btn--inverse; // sass-lint:disable-line placeholder-in-extend
+  @extend .btn--inverse;
 }
 
 .btn-off {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .btn-xl {
@@ -95,7 +95,7 @@
   background: transparent;
   border: 0;
   padding: 0;
-  text-decoration: underline !important; // sass-lint:disable-line no-important
+  text-decoration: underline !important;
 
   &:hover {
     background: inherit;
