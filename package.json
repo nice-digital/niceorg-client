@@ -24,10 +24,10 @@
   "devDependencies": {
     "@babel/core": "^7.13.13",
     "@babel/eslint-parser": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.15",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
     "@nice-digital/browserslist-config": "^2.0.0",
-    "@nice-digital/nds-jquery": "^1.2.1",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "cheerio": "^1.0.0-rc.6",
@@ -59,7 +59,8 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "@nice-digital/design-system": "^1.2.3",
+    "@babel/runtime": "^7.13.10",
+    "@nice-digital/design-system": "^1.2.6-alpha.2",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
