@@ -39,7 +39,7 @@ To use niceorg-client within niceorg, set the `StylesheetNICEDesignSystem` AppSe
 E.g. to point locally, for develoment:
 
 ```xml
-<add key="StylesheetNICEDesignSystem" value="http://localhost:8087/css/app.css" />
+<add key="StylesheetNICEDesignSystem" value="http://localhost:8087/app.css" />
 ```
 
 Or to point to the minified verison on the live CDN:
@@ -55,8 +55,8 @@ To use niceorg-client within Guidance-Web, set the `NiceorgDesignSystemCSSURL` a
 E.g. to point locally, for develoment:
 
 ```json
-"NiceorgDesignSystemCSSURL": "http://localhost:8087/css/app.css",
-"NiceorgDesignSystemJSURL": "http://localhost:8087/js/app.js"
+"NiceorgDesignSystemCSSURL": "http://localhost:8087/app.css",
+"NiceorgDesignSystemJSURL": "http://localhost:8087/app.js"
 ```
 
 or:
@@ -85,13 +85,13 @@ Once Node is installed
 To test the local version of niceorg-client against the [NICE.Bootstrap guide](http://nice-digital.github.io/NICE.Bootstrap/index.html), create a bookmarklet with the following link:
 
 ```
-javascript:$('link[href*="NICE.bootstrap.css"]').replaceWith('<link href="http://localhost:8087/css/app.css" rel="stylesheet" type="text/css" />')
+javascript:$('link[href*="NICE.bootstrap.css"]').replaceWith('<link href="http://localhost:8087/app.css" rel="stylesheet" type="text/css" />')
 ```
 
 And to test the local version of niceorg-client against www.nice.org, use the following bookmarklet:
 
 ```
-javascript:$('link[href*="NICE.bootstrap.updated.brand.css"]').remove(),$('link[href*="fontawesome.css"]').remove(),$('link[href*="NICE.glyphs.css"]').remove(),$('link[href*="NICE.base"]').remove(),$("head").append('<link href="http://localhost:8087/css/app.css" rel="stylesheet" type="text/css" />')
+javascript:$('link[href*="NICE.bootstrap.updated.brand.css"]').remove(),$('link[href*="fontawesome.css"]').remove(),$('link[href*="NICE.glyphs.css"]').remove(),$('link[href*="NICE.base"]').remove(),$("head").append('<link href="http://localhost:8087/app.css" rel="stylesheet" type="text/css" />')
 ```
 
 > Note: we can't actually create bookmarklets here because GitHub strips them from markdown.

@@ -1,8 +1,0 @@
-@charset 'utf-8';
-
-// NICE Design System overrides
-$nice-icons-base-path: '../node_modules/@nice-digital/icons/dist/';
-
-@import 'nice-design-system';
-
-@import 'layout/_layout', 'nice.bootstrap/_bootstrap', 'components/_components';
