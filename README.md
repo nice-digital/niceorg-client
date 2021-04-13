@@ -76,7 +76,7 @@ Run `node -v` in a terminal to log the currently Node version. If it's less than
 
 Once Node is installed 
 
-1. Run `npm i` in a terminal to install dependencies
+1. Run `npm ci` in a terminal to install dependencies
 2. Run `npm start` to run the project
 3. Open http://localhost:8087/ in a browser.
 

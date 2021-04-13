@@ -53,9 +53,11 @@ const prepareResponse = (body) => {
 	$(`link[href="https://cdn.nice.org.uk/niceorg/css/app.min.css"]`).remove();
 
 	// Add in our new, local CSS
-	$("head").append(`<link href="/app.css" rel="stylesheet" type="text/css" />`);
+	$("head").append(
+		`<link href="/niceorg/css/app.css" rel="stylesheet" type="text/css" />`
+	);
 	// ...and our new, local JS
-	$("body").append(`<script src="/app.js" async></script>`);
+	$("body").append(`<script src="/niceorg/js/app.js" async></script>`);
 
 	return $.html();
 };

@@ -1,5 +1,27 @@
 import $ from "jquery";
 
+export const moduleMappings = {
+	"[data-in-page-nav]": "in-page-nav",
+	"[data-tabs]": "tabs"
+};
+
+export const loadModulesAsync = async (element) => {
+	// TODO: Polyfill object.entries
+	for (let [selector, fileName] of Object.entries(moduleMappings)) {
+		const elements = element.querySelectorAll(selector);
+		for (let i = 0; i < elements.length; i++) {
+			// Webpack magic comments, see https://webpack.js.org/api/module-methods/#magic-comments
+			const { default: render } = await import(
+				/* webpackInclude: /\.js$/ */
+				/* webpackExclude: /utils/ */
+				/* webpackChunkName: "[request]" */
+				`./nds-component-adapters/${fileName}`
+			);
+			render(elements[i]);
+		}
+	}
+};
+
 /**
  * Converts a set of prefixed data attributes into a props/options object
  * @example
