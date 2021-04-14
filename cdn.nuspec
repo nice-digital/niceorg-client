@@ -2,17 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>NICE.NiceorgClient.CDN</id>
-        <version>1.0.0</version>
+        <version>2.0.0</version>
         <title>Niceorg Client CDN</title>
-        <authors>NICE Digital Services,Dylan Riley,Ian Routledge</authors>
-        <owners>nhsevidence</owners>
-        <projectUrl>https://github.com/nhsevidence/niceorg-client</projectUrl>
-        <iconUrl>https://cdn.nice.org.uk/V3/Content/nice/favicon-120.png</iconUrl>
+        <authors>NICE Digital Services,Ian Routledge</authors>
+        <owners>nice-digital</owners>
+        <projectUrl>https://github.com/nice-digital/niceorg-client</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>CDN Package for niceorg's client side assets, using the NICE Design System. Includes minified and development versions of the build plus the sourcemap</description>
         <tags>cdn nice design system niceorg-client javascript css</tags>
     </metadata>
     <files>
-		<file src="dist\css\" target="niceorg\css"/>
+		<file src="dist\" target="niceorg"/>
+		<!-- Deprecated, minified CSS URL for backwards compat -->
+		<file src="dist\css\app.css" target="niceorg/css/app.min.css"/>
 	</files>
 </package>
