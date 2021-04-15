@@ -7,14 +7,18 @@ import { getPropsFromDataAttributes } from "../utils";
 const render = (element) => {
 	const props = getPropsFromDataAttributes(element, "tabs");
 
-	//e.g. element.querySelectorAll(".tab-pane");
+	const tabs = Array.prototype.map.call(element.children, (tab) => ({
+		title: tab.getAttribute("data-tab-title"),
+		body: tab.innerHTML
+	}));
 
-	// Convert DOM into React elements
-
-	element.innerHTML = "";
 	ReactDOM.render(
-		<Tabs>
-			<Tab {...props}>TODO</Tab>
+		<Tabs {...props}>
+			{tabs.map((tab) => (
+				<Tab key={tab.title} title={tab.title}>
+					{tab.body}
+				</Tab>
+			))}
 		</Tabs>,
 		element
 	);

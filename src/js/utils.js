@@ -6,7 +6,6 @@ export const moduleMappings = {
 };
 
 export const loadModulesAsync = async (element) => {
-	// TODO: Polyfill object.entries
 	for (let [selector, fileName] of Object.entries(moduleMappings)) {
 		const elements = element.querySelectorAll(selector);
 		for (let i = 0; i < elements.length; i++) {

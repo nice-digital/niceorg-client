@@ -1,8 +1,10 @@
-// Allow loading the async chunks from different base URLs e.g. CDN
-// See https://webpack.js.org/guides/public-path/#on-the-fly
-// eslint-disable-next-line no-undef
+// Allow loading the async chunks from different base URLs e.g. CDN, but transformed via Octopus Deploy,
+// using the #{} syntax for injecting variables.
+// See https://webpack.js.org/guides/public-path/#on-the-fly for the __webpack_public_path__ 'free' variable
 __webpack_public_path__ =
-	window.niceorgClientBaseUrl || "https://cdn.nice.org.uk/niceorg/";
+	"#{JavaScriptBaseUrl}".indexOf("#") === 0
+		? "http://localhost:8087/niceorg/"
+		: "#{JavaScriptBaseUrl}";
 
 import "../scss/app.scss";
 
