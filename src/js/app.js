@@ -2,7 +2,7 @@
 // using the #{} syntax for injecting variables.
 // See https://webpack.js.org/guides/public-path/#on-the-fly for the __webpack_public_path__ 'free' variable
 __webpack_public_path__ =
-	"#{JavaScriptBaseUrl}".indexOf("#") === 0
+	"#{JavaScriptBaseUrl}"[0] === "#"
 		? "http://localhost:8087/niceorg/"
 		: "#{JavaScriptBaseUrl}";
 
