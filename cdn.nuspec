@@ -12,7 +12,7 @@
         <tags>cdn nice design system niceorg-client javascript css</tags>
     </metadata>
     <files>
-		<file src="dist\" target="niceorg"/>
+		<file src="dist\" target="niceorg" exclude="**/*.html"/>
 		<!-- Deprecated, minified CSS URL for backwards compat -->
 		<file src="dist\css\app.css" target="niceorg/css/app.min.css"/>
 	</files>

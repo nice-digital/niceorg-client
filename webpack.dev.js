@@ -2,6 +2,9 @@ const { merge } = require("webpack-merge"),
 	HtmlWebpackPlugin = require("html-webpack-plugin"),
 	path = require("path");
 
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+	.BundleAnalyzerPlugin;
+
 const common = require("./webpack.common.js");
 
 const { nocProxyMiddlewareFactory } = require("./server/noc-proxy-middleware");
@@ -13,6 +16,7 @@ module.exports = (env) => {
 		mode: "development",
 		devtool: "inline-source-map",
 		plugins: [
+			new BundleAnalyzerPlugin(),
 			new HtmlWebpackPlugin({
 				filename: "playground.html",
 				template: "server/playground.ejs",
