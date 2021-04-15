@@ -104,7 +104,7 @@ E.g. to point to the local dev server:
 "NiceorgDesignSystemJSURL": "http://localhost:8087/niceorg/js/app.js"
 ```
 
-or to point to the live CDN:
+or, to point to the live CDN:
 
 ```json
 "NiceorgDesignSystemCSSURL": "//cdn.nice.org.uk/niceorg/css/app.css",
