@@ -1,0 +1,33 @@
+// Back to top link, only visible on mobile
+#toTop {
+  @include nds-hide-print;
+  @include nds-font-size(4);
+  background-color: #fff;
+  border: 1px solid $nds-colour-border;
+  border-radius: 0 0 999px 999px;
+  border-width: 0 1px 1px;
+  color: $nds-colour-icons;
+  cursor: pointer;
+  display: none;
+  height: auto;
+  left: 50%;
+  line-height: 0;
+  margin: 0;
+  padding: em(0 $nds-spacing-small $nds-spacing-x-small $nds-spacing-small);
+  position: fixed;
+  -webkit-tap-highlight-color: rgba($nds-colour-nice-teal, 0.5);
+  text-align: center;
+  top: 0;
+  transform: translate(-50%, 0);
+  vertical-align: middle;
+  width: auto;
+  z-index: 3;
+
+  &.show {
+    display: block;
+  }
+
+  @include mq($from: md) {
+    display: none !important;
+  }
+}

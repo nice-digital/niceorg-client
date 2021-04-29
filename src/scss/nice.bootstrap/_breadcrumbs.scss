@@ -1,0 +1,37 @@
+// Old NICE.Bootstrap breadcrumbs for backwards compatability
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#breadcrumbs
+// Note: these are different markup to the new, Design System breadcrumbs,
+// see https://nice-digital.github.io/nice-design-system/components/breadcrumbs/#usage
+.breadcrumb {
+  @include nds-hide-print;
+  list-style: none;
+  margin: em($nds-spacing-small 0 $nds-spacing-large);
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  a {
+    color: $nds-colour-nice-rich-black;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  // Divider used to use NICE.Glyphs but we prefer
+  // a "greater than" symbol rather than a web font
+  .divider {
+    color: #004650;
+    font-family: font-family(sans);
+    font-size: 80%;
+    margin: em(0 $nds-spacing-x-small);
+
+    &:before {
+      content: nds-get-glyph(greater-than);
+    }
+  }
+}

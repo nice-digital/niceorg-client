@@ -1,0 +1,33 @@
+{
+	"extends": "stylelint-config-sass-guidelines",
+	"plugins": ["stylelint-prettier"],
+	"rules": {
+		"prettier/prettier": true,
+		"indentation": null,
+		"function-parentheses-space-inside": "never-single-line",
+		"scss/at-import-no-partial-leading-underscore": null,
+		"scss/at-extend-no-missing-placeholder": [true, { "severity": "warning" }],
+		"max-nesting-depth": 4,
+		"selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+		"selector-max-compound-selectors": null,
+		"selector-max-id": 1,
+		"selector-no-qualifying-type": null,
+		"selector-pseudo-element-colon-notation": null,
+		"order/order": [
+			"dollar-variables",
+			"custom-properties",
+			{
+				"type": "at-rule",
+				"name": "include",
+				"hasBlock": false
+			},
+			"declarations",
+			"rules",
+			{
+				"type": "at-rule",
+				"name": "include",
+				"hasBlock": true
+			}
+		]
+	}
+}

@@ -1,0 +1,186 @@
+// Fieldsets/legends
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  &.well {
+    padding-top: rem($nds-spacing-medium) !important;
+  }
+}
+
+legend {
+  @include nds-font(h4);
+  border: 0;
+  display: block;
+  font-weight: bold;
+  padding: 0;
+  width: 100%;
+}
+
+// Control groups
+
+.control-group {
+  margin-bottom: rem($nds-spacing-medium);
+
+  .controls {
+    br {
+      content: '';
+      display: block;
+      margin-bottom: rem($nds-spacing-medium);
+    }
+  }
+}
+
+.control-label {
+  display: block;
+  margin: rem(0 0 $nds-spacing-x-small);
+}
+
+// Inputs
+
+.input-mini {
+  width: 60px;
+}
+
+.input-small {
+  width: 90px;
+}
+
+.input-medium {
+  width: 150px;
+}
+
+.input-large {
+  width: 210px;
+}
+
+.input-xlarge {
+  width: 270px;
+}
+
+.input-xxlarge {
+  width: 530px;
+}
+
+select,
+textarea,
+input:not([type='reset']):not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']):not(#global-nav-header > *), // 'Text' inputs
+.uneditable-input {
+  background-color: $nds-colour-true-white;
+  border: rem($nds-spacing-xx-small) solid $nds-colour-border;
+  color: $nds-colour-text;
+  display: inline-block;
+  font-size: inherit;
+  margin: 0 0 1rem;
+  max-width: 66ch;
+  padding: rem($nds-spacing-small);
+  transition: border linear 0.2s;
+  vertical-align: middle;
+  width: 100%;
+
+  &::placeholder {
+    color: $nds-colour-nice-grey-1;
+  }
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin-right: rem($nds-spacing-small);
+}
+
+input,
+textarea,
+select {
+  &:focus {
+    @include nds-default-focus-style;
+
+    &:invalid {
+      border-color: $nds-colour-error;
+      outline-color: $nds-colour-error;
+    }
+  }
+
+  &::placeholder {
+    color: $nds-colour-nice-dark-grey;
+  }
+
+  .warning & {
+    border-color: $nds-colour-caution !important;
+    color: $nds-colour-caution;
+  }
+
+  .error & {
+    border-color: $nds-colour-error !important;
+    color: $nds-colour-error;
+  }
+
+  .info & {
+    border-color: $nds-colour-info !important;
+    color: $nds-colour-info;
+  }
+
+  .success & {
+    border-color: $nds-colour-success !important;
+    color: $nds-colour-success;
+  }
+}
+
+// Validation
+
+.field-validation-error,
+.alert-required {
+  color: $nds-colour-error;
+}
+
+// Help/hints
+
+.help-block,
+.help-inline,
+label {
+  color: $nds-colour-nice-dark-grey;
+  display: block;
+
+  .warning & {
+    color: $nds-colour-caution;
+  }
+
+  .error & {
+    color: $nds-colour-error;
+  }
+
+  .info & {
+    color: $nds-colour-info;
+  }
+
+  .success & {
+    color: $nds-colour-success;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+
+  &.checkbox {
+    padding-left: 0;
+  }
+}
+
+.checkbox {
+  &.inline {
+    display: inline-block;
+    margin-right: rem($nds-spacing-large);
+  }
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  background-color: #fafafb;
+  cursor: not-allowed;
+}

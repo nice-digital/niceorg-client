@@ -1,0 +1,9 @@
+// Key links used to use NICE.Glyphs. Now use nice-icons instead
+.key-link:before {
+  @include nice-icon(chevron-right);
+  @include nds-font-size(-2);
+  color: inherit;
+  font-weight: normal;
+  margin: em(0 $nds-spacing-small 0 0);
+  text-decoration: none;
+}

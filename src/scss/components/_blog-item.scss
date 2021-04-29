@@ -1,0 +1,29 @@
+// Single blog items listed on news / blog page
+
+.blog-item {
+  margin-bottom: em($nds-spacing-medium) !important;
+
+  h4 {
+    @include nds-font-size(h5);
+    margin-top: 0;
+  }
+
+  .text-block {
+    p:first-child {
+      @include nds-font-size(-1);
+      color: $nds-colour-nice-dark-grey;
+      margin: rem($nds-spacing-small 0 $nds-spacing-x-small 0);
+    }
+
+    small {
+      @include nds-font-size(-1);
+      color: $nds-colour-nice-dark-grey;
+      display: block;
+      margin: rem($nds-spacing-x-small 0 $nds-spacing-x-small 0);
+    }
+
+    .abstract {
+      margin: rem($nds-spacing-small 0 $nds-spacing-x-small 0);
+    }
+  }
+}

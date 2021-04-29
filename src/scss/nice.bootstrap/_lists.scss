@@ -1,0 +1,73 @@
+// NICE.Boostrap overrides for lists
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#lists
+
+// NICE Design System uses list--unstyled rather than just unstyled
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.inline,
+ol.inline {
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    display: inline-block;
+    padding-left: rem($nds-spacing-small);
+    padding-right: rem($nds-spacing-small);
+  }
+}
+
+ol.alt {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+
+  > li {
+    list-style: none;
+    margin-bottom: rem($nds-spacing-small);
+    margin-left: rem($nds-spacing-large + $nds-spacing-small);
+    min-height: rem($nds-spacing-large);
+    position: relative;
+
+    &:before {
+      background: $nds-colour-icons;
+      border-radius: 50%;
+      color: $nds-colour-text-inverse;
+      content: counter(li);
+      counter-increment: li;
+      font-weight: bold;
+      height: em($nds-spacing-large);
+      left: -em($nds-spacing-large + $nds-spacing-small);
+      line-height: em($nds-spacing-large);
+      margin-top: -em($nds-spacing-x-small);
+      position: absolute;
+      text-align: center;
+      text-indent: 0;
+      width: em($nds-spacing-large);
+    }
+  }
+}
+
+ul.alt {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  > li {
+    list-style: none;
+    margin-left: rem($nds-spacing-medium);
+    min-height: rem($nds-spacing-small);
+    position: relative;
+
+    &:before {
+      color: $nds-colour-icons;
+      content: nds-get-glyph(bullet);
+      font-size: 125%;
+      left: -rem($nds-spacing-medium);
+      position: absolute;
+    }
+  }
+}

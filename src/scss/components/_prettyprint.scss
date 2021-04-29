@@ -1,0 +1,8 @@
+// Prettyprint styles conflict with tags from the Design System, so reset them here
+.prettyprint .tag {
+  background: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
+  padding: 0;
+}

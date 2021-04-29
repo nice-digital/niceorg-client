@@ -1,0 +1,65 @@
+/// Accordion- used on NICE field team page
+/// Overrides
+/// See https://www.nice.org.uk/about/what-we-do/into-practice/nice-field-team for example
+
+.accordion {
+  .accordion-group {
+    background: $nds-colour-panel-default-background;
+    margin-bottom: rem($nds-spacing-small);
+  }
+
+  .accordion-heading {
+    margin: 0;
+
+    a {
+      @include nds-font-size(h5);
+      display: block;
+      padding: rem($nds-spacing-small);
+      text-decoration: none;
+    }
+  }
+
+  .accordion-inner {
+    padding: rem($nds-spacing-medium) rem($nds-spacing-large)
+      rem($nds-spacing-medium) rem($nds-spacing-medium);
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.accordion-toggle {
+  @include nds-font-size(h5);
+  display: block;
+  padding: rem($nds-spacing-small);
+  text-decoration: none;
+
+  &:before {
+    // Sometimes accordion toggles can be key-links so avoid the extra chevron
+    display: none !important;
+  }
+
+  &:after {
+    @include nice-icon(chevron-down);
+    float: right;
+  }
+}
+
+.accordion-body {
+  &.collapse {
+    @media (prefers-reduced-motion: reduce) {
+      transition-timing-function: step-start; // BS seems to rely on a transition to happen to trigger the close state so transition: none; won't cut it
+    }
+
+    &:not(.in) > * {
+      display: none;
+    }
+  }
+}

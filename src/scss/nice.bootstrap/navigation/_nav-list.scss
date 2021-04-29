@@ -1,0 +1,49 @@
+// Old NICE.Bootstrap nav list for backwards compatability
+/// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
+.nav-list {
+  background: $nds-colour-true-white;
+
+  // .nav-header {
+
+  // }
+
+  .divider {
+    background-color: $nds-colour-border;
+    height: 1px;
+    margin: rem($nds-spacing-small 0);
+    overflow: hidden;
+  }
+
+  a {
+    color: $nds-colour-text;
+    text-decoration: none;
+
+    &:hover {
+      background: $nds-colour-nice-grey-3;
+    }
+  }
+
+  > li > a {
+    background: $nds-colour-true-white;
+    display: block;
+    padding: rem($nds-spacing-x-small $nds-spacing-small);
+    position: relative;
+  }
+
+  .active > a {
+    background: $nds-colour-nice-teal;
+    color: $nds-colour-text-inverse;
+
+    &:after {
+      border: em($nds-spacing-small) solid transparent;
+      border-left-color: $nds-colour-nice-teal;
+      content: '';
+      height: 0;
+      left: 100%;
+      margin-top: -em($nds-spacing-small);
+      position: absolute;
+      top: 50%;
+      width: 0;
+    }
+  }
+}

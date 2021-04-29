@@ -1,0 +1,100 @@
+// 'Corporate' within a page-header
+.navbar-corporate {
+  margin: em($nds-spacing-medium 0 0);
+
+  // 'Explore' button for toggling the nav on mobile
+  .navbar-toggle {
+    @include nds-font-size(1);
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    &:after {
+      @include nice-icon(minus);
+      display: inline-block;
+      line-height: 0;
+      margin: rem(0 0 0 $nds-spacing-small);
+      vertical-align: middle;
+    }
+
+    &.collapsed:after {
+      @include nice-icon(plus);
+    }
+  }
+
+  // List of nav elements
+  .nav {
+    //background: $nds-colour-panel-default-background;
+    border-bottom: 1px solid $nds-colour-border;
+    float: none;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: em($nds-spacing-x-small);
+    position: relative;
+
+    &.collapse {
+      border-bottom: 0;
+      height: 0;
+
+      &.in {
+        border-bottom: 1px solid $nds-colour-border;
+      }
+    }
+
+    li {
+      &:first-child {
+        margin-top: em($nds-spacing-medium);
+      }
+
+      &:last-child {
+        margin-bottom: em($nds-spacing-medium);
+      }
+    }
+
+    a {
+      @include nds-font-size(1);
+      display: block;
+      padding: rem($nds-spacing-x-small 0);
+      position: relative;
+      text-decoration: none;
+
+      &:focus {
+        z-index: 1;
+      }
+    }
+  }
+
+  @include mq($from: xs) {
+    .navbar-toggle {
+      min-width: 50%;
+    }
+  }
+
+  @include mq($from: sm) {
+    .navbar-toggle {
+      display: none;
+    }
+
+    .nav {
+      // Important to override style set on the element via JS
+      border-bottom: 1px solid $nds-colour-border !important;
+      height: auto !important;
+
+      li {
+        float: left;
+        width: percentage(1 / 3);
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

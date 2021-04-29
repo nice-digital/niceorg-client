@@ -1,0 +1,2 @@
+# See https://github.com/browserslist/browserslist#browserslistrc
+extends @nice-digital/browserslist-config

@@ -1,0 +1,93 @@
+/// Navigation bar, taken from NICE.Bootstrap
+/// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navbar
+.navbar {
+  list-style: none;
+  margin-left: 0;
+  overflow: visible;
+
+  .container {
+    width: auto;
+  }
+
+  .brand {
+    @include nds-font-size(4);
+    color: $nds-colour-text;
+    display: block;
+    float: left;
+    font-weight: bolder;
+    padding: rem($nds-spacing-small $nds-spacing-medium);
+    text-decoration: none;
+  }
+
+  .nav {
+    display: block;
+    float: left;
+    margin: 0;
+
+    &.pull-right {
+      float: right;
+    }
+
+    > li {
+      width: 100%;
+
+      > a {
+        color: $nds-colour-text;
+        display: block;
+        padding: rem($nds-spacing-small $nds-spacing-medium);
+        text-decoration: none;
+
+        &:hover {
+          background: $nds-colour-nice-grey-2;
+        }
+      }
+
+      &.active {
+        > a {
+          background: $nds-colour-nice-teal;
+          color: $nds-colour-text-inverse;
+        }
+      }
+    }
+  }
+
+  .navbar-inner {
+    @include nds-clearfix;
+    background: $nds-colour-nice-grey-3;
+  }
+
+  &.navbar-inverse {
+    // stylelint-disable max-nesting-depth
+    .nav {
+      > li {
+        > a {
+          color: $nds-colour-text-inverse;
+
+          &:hover {
+            background: $nds-colour-nice-teal-2;
+          }
+        }
+
+        &.active {
+          > a {
+            background: $nds-colour-body;
+            color: $nds-colour-text;
+          }
+        }
+      }
+    }
+
+    .navbar-inner {
+      background: $nds-colour-nice-teal;
+    }
+  }
+
+  @include mq($from: md) {
+    .nav {
+      > li {
+        float: left;
+        width: auto;
+      }
+    }
+  }
+}

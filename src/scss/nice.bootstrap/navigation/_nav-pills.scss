@@ -1,0 +1,34 @@
+// Old NICE.Bootstrap nav pills backwards compatability
+// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
+
+.nav-pills {
+  @include nds-clearfix;
+  @include nds-hide-print;
+
+  > li {
+    float: left;
+
+    > a {
+      color: $nds-colour-text;
+      display: block;
+      margin: 0;
+      padding: rem($nds-spacing-small $nds-spacing-medium);
+      text-decoration: none;
+
+      &:hover {
+        background: $nds-colour-nice-grey-3;
+      }
+    }
+
+    &.active > a {
+      background: $nds-colour-nice-teal;
+      color: $nds-colour-text-inverse;
+    }
+  }
+
+  &.nav-stacked {
+    > li {
+      float: none;
+    }
+  }
+}

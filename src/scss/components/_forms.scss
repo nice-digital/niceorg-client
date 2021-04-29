@@ -1,0 +1,15 @@
+// Copied from /Modules/oforms/Styles/cmxform.css
+
+form.cmxform label.error {
+  color: $nds-colour-error;
+  font-style: italic;
+}
+
+input.plsnobots {
+  display: none !important;
+}
+
+// Ensure minimum height for textareas that don't have a rows attribute
+textarea {
+  min-height: 10rem;
+}

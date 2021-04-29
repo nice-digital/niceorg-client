@@ -1,0 +1,17 @@
+// stylelint-disable scss/at-extend-no-missing-placeholder
+blockquote {
+  @extend .quote;
+  margin-top: 0;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  small {
+    display: block;
+  }
+
+  @media print {
+    border: none none none inherit !important; // keep the left border for blockquote styling
+  }
+}

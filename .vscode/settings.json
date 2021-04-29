@@ -1,8 +1,27 @@
 {
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.prettierPath": "./node_modules/prettier",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"editor.rulers": [80, 120],
+	"files.eol": "\n",
 	"workbench.colorCustomizations": {
-    "activityBar.foreground": "#fff",
+		"activityBar.foreground": "#fff",
 		"activityBar.background": "#636e8f",
 		"titleBar.activeBackground": "#636e8f",
 		"titleBar.activeForeground": "#fff"
-	}
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"dist": true
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"sasslint.enable": false,
+	"markdown.extension.toc.levels": "2..6"
 }
