@@ -40,9 +40,9 @@ ol.alt {
       counter-increment: li;
       font-weight: bold;
       height: em($nds-spacing-large);
-      left: -em($nds-spacing-large + $nds-spacing-small);
+      left: -(em($nds-spacing-large + $nds-spacing-small));
       line-height: em($nds-spacing-large);
-      margin-top: -em($nds-spacing-x-small);
+      margin-top: -(em($nds-spacing-x-small));
       position: absolute;
       text-align: center;
       text-indent: 0;

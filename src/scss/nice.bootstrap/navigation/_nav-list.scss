@@ -3,10 +3,6 @@
 .nav-list {
   background: $nds-colour-true-white;
 
-  // .nav-header {
-
-  // }
-
   .divider {
     background-color: $nds-colour-border;
     height: 1px;
@@ -40,7 +36,7 @@
       content: '';
       height: 0;
       left: 100%;
-      margin-top: -em($nds-spacing-small);
+      margin-top: -(em($nds-spacing-small));
       position: absolute;
       top: 50%;
       width: 0;
