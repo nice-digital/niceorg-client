@@ -46,6 +46,8 @@
     background: $nds-colour-panel-default-background;
     color: $nds-colour-link;
     display: inline-block;
+    margin-left: em($nds-spacing-x-small);
+    margin-right: em($nds-spacing-x-small);
     padding: em($nds-spacing-small $nds-spacing-medium);
     position: relative;
     text-decoration: none;
