@@ -44,6 +44,7 @@
 .timeline {
   list-style: none;
   position: relative;
+  max-width: 100% !important;
 
   &--flat {
     @include flat-style-timeline;
