@@ -2,34 +2,33 @@ const needle = require("needle"),
 	querystring = require("needle/lib/querystring"),
 	cheerio = require("cheerio");
 
-const nocProxyMiddlewareFactory = (niceorgBaseUrl) => async (
-	req,
-	res,
-	next
-) => {
-	// Assume any URL with a dot is a file (not a page) so we don't want to proxy these to niceorg
-	if (req.path.includes(".")) return next();
+const nocProxyMiddlewareFactory =
+	(niceorgBaseUrl) => async (req, res, next) => {
+		// Assume any URL with a dot is a file (not a page) so we don't want to proxy these to niceorg
+		if (req.path.includes(".")) return next();
 
-	const niceorgUrl =
-		niceorgBaseUrl + req.path + "?" + querystring.build(req.query);
+		const niceorgUrl =
+			niceorgBaseUrl + req.path + "?" + querystring.build(req.query);
 
-	let niceorgResponse;
-	try {
-		niceorgResponse = await needle("get", niceorgUrl);
-	} catch {
-		console.error(`Error getting page ${niceorgUrl}`);
-		return next();
-	}
+		let niceorgResponse;
+		try {
+			niceorgResponse = await needle("get", niceorgUrl);
+		} catch {
+			console.error(`Error getting page ${niceorgUrl}`);
+			return next();
+		}
 
-	if (niceorgResponse.statusCode != 200) {
-		console.warn(`Got ${niceorgResponse.statusCode} status from ${niceorgUrl}`);
-		return next();
-	}
+		if (niceorgResponse.statusCode != 200) {
+			console.warn(
+				`Got ${niceorgResponse.statusCode} status from ${niceorgUrl}`
+			);
+			return next();
+		}
 
-	if (typeof niceorgResponse.body === "string")
-		res.send(prepareResponse(niceorgResponse.body, niceorgBaseUrl));
-	else res.json(niceorgResponse.body);
-};
+		if (typeof niceorgResponse.body === "string")
+			res.send(prepareResponse(niceorgResponse.body, niceorgBaseUrl));
+		else res.json(niceorgResponse.body);
+	};
 
 const prepareResponse = (body, niceorgBaseUrl) => {
 	// Make absolute links relative. Some are hardcoded to live:
