@@ -2,6 +2,7 @@
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#labels-badges
 .label,
 .badge {
+  /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
   @extend .tag;
 
   &.label-success,
