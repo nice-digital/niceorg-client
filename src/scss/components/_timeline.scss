@@ -43,6 +43,7 @@
 
 .timeline {
   list-style: none;
+  max-width: 100% !important;
   position: relative;
 
   &--flat {
