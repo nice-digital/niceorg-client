@@ -27,9 +27,9 @@ module.exports = (env) => {
 		resolve: {
 			alias: {
 				// Use preact in place of React because it's smaller and faster
-				react: "preact/compat",
-				"react-dom/test-utils": "preact/test-utils",
-				"react-dom": "preact/compat"
+				// react: "preact/compat",
+				// "react-dom/test-utils": "preact/test-utils",
+				// "react-dom": "preact/compat"
 			}
 		},
 		optimization: {
