@@ -1,3 +1,7 @@
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
 /// Thumbnail component used for displaying news items in a grid
 /// e.g. https://www.nice.org.uk/news
 /// Adapted from NICE.Bootstrap
@@ -23,8 +27,8 @@
     h4,
     h5,
     h6 {
-      @include nds-font(h6);
-      margin-top: rem($nds-spacing-medium);
+      @include typography.font(h6);
+      margin-top: utils.rem(spacing.$medium);
     }
 
     > :last-child {

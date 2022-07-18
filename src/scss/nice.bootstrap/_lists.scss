@@ -1,3 +1,8 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/glyphs';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 // NICE.Boostrap overrides for lists
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#lists
 
@@ -15,8 +20,8 @@ ol.inline {
 
   > li {
     display: inline-block;
-    padding-left: rem($nds-spacing-small);
-    padding-right: rem($nds-spacing-small);
+    padding-left: utils.rem(spacing.$small);
+    padding-right: utils.rem(spacing.$small);
   }
 }
 
@@ -27,26 +32,26 @@ ol.alt {
 
   > li {
     list-style: none;
-    margin-bottom: rem($nds-spacing-small);
-    margin-left: rem($nds-spacing-large + $nds-spacing-small);
-    min-height: rem($nds-spacing-large);
+    margin-bottom: utils.rem(spacing.$small);
+    margin-left: utils.rem(spacing.$large + spacing.$small);
+    min-height: utils.rem(spacing.$large);
     position: relative;
 
     &:before {
-      background: $nds-colour-icons;
+      background: colours.$icons;
       border-radius: 50%;
-      color: $nds-colour-text-inverse;
+      color: colours.$text-inverse;
       content: counter(li);
       counter-increment: li;
       font-weight: bold;
-      height: em($nds-spacing-large);
-      left: -(em($nds-spacing-large + $nds-spacing-small));
-      line-height: em($nds-spacing-large);
-      margin-top: -(em($nds-spacing-x-small));
+      height: utils.rem(spacing.$large);
+      left: -(utils.rem(spacing.$large + spacing.$small));
+      line-height: utils.rem(spacing.$large);
+      margin-top: -(utils.rem(spacing.$x-small));
       position: absolute;
       text-align: center;
       text-indent: 0;
-      width: em($nds-spacing-large);
+      width: utils.rem(spacing.$large);
     }
   }
 }
@@ -58,15 +63,15 @@ ul.alt {
 
   > li {
     list-style: none;
-    margin-left: rem($nds-spacing-medium);
-    min-height: rem($nds-spacing-small);
+    margin-left: utils.rem(spacing.$medium);
+    min-height: utils.rem(spacing.$small);
     position: relative;
 
     &:before {
-      color: $nds-colour-icons;
-      content: nds-get-glyph(bullet);
+      color: colours.$icons;
+      content: glyphs.get-glyph(bullet);
       font-size: 125%;
-      left: -rem($nds-spacing-medium);
+      left: -(utils.rem(spacing.$medium));
       position: absolute;
     }
   }

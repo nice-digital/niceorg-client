@@ -1,10 +1,15 @@
+@use 'sass:math';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 // Bootstrap's embed responsive component from https://getbootstrap.com/docs/4.0/utilities/embed/.
 // Ported from https://github.com/nice-digital/niceorg/blob/master/src/Orchard.Web/Themes/NICE.Bootstrap/Styles/nice/temporary-bootstrap-fixes.less#L552-L588
 
 .embed-responsive {
   display: block;
   height: 0;
-  margin-bottom: em($nds-spacing-large);
+  margin-bottom: utils.rem(spacing.$large);
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -24,11 +29,11 @@
   }
 
   &.embed-responsive-21by9 {
-    padding-bottom: percentage(9 / 21);
+    padding-bottom: math.percentage(math.div(9, 21));
   }
 
   &.embed-responsive-16by9 {
-    padding-bottom: percentage(9 / 16);
+    padding-bottom: math.percentage(math.div(9, 16));
   }
 
   &.embed-responsive-4by3 {
@@ -41,11 +46,11 @@
 
   &.wrap {
     float: left;
-    margin-right: em($nds-spacing-medium);
+    margin-right: utils.rem(spacing.$medium);
   }
 
-  //styles copied from bootstrap 3 then put inside a media query.
-  @include mq($from: sm) {
+  // styles copied from bootstrap 3 then put inside a media query.
+  @include media-queries.mq($from: sm) {
     &.wrap {
       float: none;
       margin-right: initial;

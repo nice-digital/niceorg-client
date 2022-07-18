@@ -1,9 +1,13 @@
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
 // Key links used to use NICE.Glyphs. Now use nice-icons instead
 .key-link:before {
   @include nice-icon(chevron-right);
-  @include nds-font-size(-2);
+  @include typography.font-size(-2);
   color: inherit;
   font-weight: normal;
-  margin: em(0 $nds-spacing-small 0 0);
+  margin: utils.rem(0 spacing.$small 0 0);
   text-decoration: none;
 }

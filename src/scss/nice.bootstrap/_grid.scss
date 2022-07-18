@@ -1,8 +1,13 @@
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+
+// stylelint-disable number-max-precision
+
 // Copy of the old Bootstrap grid from v2
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#gridSystem
 .row,
 .row-fluid {
-  @include nds-clearfix;
+  @include layout.clearfix;
   margin: 0;
   max-width: 100%; // To override the 66ch max-width on lists
   width: 100%;
@@ -15,7 +20,7 @@
     width: 100%;
   }
 
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     [class*='span'] {
       float: left;
       margin-left: 2.12765957%;
@@ -173,7 +178,7 @@
     }
   }
 
-  @include mq($from: md) {
+  @include media-queries.mq($from: md) {
     [class*='span'] {
       margin-left: 2.76243094%;
 
@@ -329,7 +334,7 @@
     }
   }
 
-  @include mq($from: lg) {
+  @include media-queries.mq($from: lg) {
     [class*='span'] {
       margin-left: 2.56410256%;
 
@@ -485,7 +490,7 @@
     }
   }
 
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     // Using flex box for grid rows means we always have equal heights
     // Which is useful for horizontal list of blocks
     @supports (display: flex) {

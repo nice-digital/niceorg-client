@@ -1,3 +1,6 @@
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 // Remove the top margin for the first lead paragraph
 // on a page so it sits closer to the page header.
 .page-content .lead:first-child {
@@ -23,5 +26,5 @@ abbr {
 address {
   display: block;
   font-style: normal;
-  margin-bottom: rem($nds-spacing-medium);
+  margin-bottom: utils.rem(spacing.$medium);
 }

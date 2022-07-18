@@ -1,9 +1,7 @@
 // Old Bootstrap use a mixture of NICE.Glyphs and FontAwesome.
 // These have been replaced with, and consolidated into, nice-icons.
-//
 // Below we map the FontAwesome icons to the corresponding
 // icon in NICE Icons.
-//
 // See https://github.com/nice-digital/nice-icons
 .fa {
   @include nice-icons-base;

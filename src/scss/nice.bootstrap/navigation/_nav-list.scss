@@ -1,42 +1,47 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 // Old NICE.Bootstrap nav list for backwards compatability
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
 .nav-list {
-  background: $nds-colour-true-white;
+  background: colours.$true-white;
 
   .divider {
-    background-color: $nds-colour-border;
+    background-color: colours.$border;
     height: 1px;
-    margin: rem($nds-spacing-small 0);
+    margin: utils.rem(spacing.$small 0);
     overflow: hidden;
   }
 
   a {
-    color: $nds-colour-text;
+    color: colours.$text;
     text-decoration: none;
 
     &:hover {
-      background: $nds-colour-nice-grey-3;
+      background: colours.$nice-grey-3;
     }
   }
 
   > li > a {
-    background: $nds-colour-true-white;
+    background: colours.$true-white;
     display: block;
-    padding: rem($nds-spacing-x-small $nds-spacing-small);
+    padding: utils.rem(spacing.$x-small spacing.$small);
     position: relative;
   }
 
   .active > a {
-    background: $nds-colour-nice-teal;
-    color: $nds-colour-text-inverse;
+    background: colours.$nice-teal;
+    color: colours.$text-inverse;
 
     &:after {
-      border: em($nds-spacing-small) solid transparent;
-      border-left-color: $nds-colour-nice-teal;
+      border: utils.rem(spacing.$small) solid transparent;
+      border-left-color: colours.$nice-teal;
       content: '';
       height: 0;
       left: 100%;
-      margin-top: -(em($nds-spacing-small));
+      margin-top: -(utils.rem(spacing.$small));
       position: absolute;
       top: 50%;
       width: 0;

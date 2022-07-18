@@ -1,3 +1,9 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 // Private mixin to set the width of the image and calculated
 // width of the text elements
 @mixin hero-unit-width($hero-image-width-percentage) {
@@ -9,9 +15,7 @@
   h2,
   p {
     margin-left: $hero-image-width-percentage + 5%; // Fallback for non-calc
-    margin-left: calc(
-      #{$hero-image-width-percentage} + #{rem($nds-spacing-large)}
-    );
+    margin-left: calc(#{$hero-image-width-percentage} + #{rem(spacing.$large)});
   }
 }
 
@@ -20,17 +24,17 @@
 /// Adapted from an old NICE.Bootstrap component.
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#typographic-headers
 .hero-unit {
-  @include nds-links-inverse;
-  background: $nds-colour-nice-cool-teal;
-  color: $nds-colour-text-inverse;
-  margin: 0 auto em($nds-spacing-large);
+  @include typography.links-inverse;
+  background: colours.$nice-cool-teal;
+  color: colours.$text-inverse;
+  margin: 0 auto utils.rem(spacing.$large);
   overflow: hidden;
-  padding: em($nds-spacing-large);
+  padding: utils.rem(spacing.$large);
   position: relative;
   width: 100%;
 
   &:hover {
-    background: darken($nds-colour-nice-cool-teal, 3%);
+    background: darken(colours.$nice-cool-teal, 3%);
   }
 
   // Use pseudo element so we can click anywhere in the hero unit,
@@ -55,7 +59,7 @@
 
   h1,
   h2 {
-    @include nds-font-size(h3);
+    @include typography.font-size(h3);
     max-width: 44ch;
   }
 
@@ -63,7 +67,7 @@
     margin-bottom: 0;
   }
 
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     @include hero-unit-width(33%);
 
     .hero-image {
@@ -77,7 +81,7 @@
     }
   }
 
-  @include mq($from: md) {
+  @include media-queries.mq($from: md) {
     @include hero-unit-width(16%);
   }
 }

@@ -1,3 +1,7 @@
+@use 'sass:math';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+
 /// 3 column navigation on desktop
 /// 2 columns on tablet
 /// 1 column on mobile
@@ -5,7 +9,7 @@
 /// Note: this is used at the top of find guidance page or the guidance 'pills'.
 /// See components/_guidance-pills.scss
 .nav-grid3 {
-  @include nds-clearfix;
+  @include layout.clearfix;
   list-style: none;
   margin: 0;
   max-width: 100%; // To override the 66ch max-width on lists
@@ -17,7 +21,7 @@
     width: 100%;
   }
 
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     margin-right: -2%;
 
     > li {
@@ -30,12 +34,12 @@
     }
   }
 
-  @include mq($from: md) {
+  @include media-queries.mq($from: md) {
     margin-right: -2%;
 
     > li {
       margin-right: 2%;
-      width: percentage(1 / 3) - 2%;
+      width: math.percentage(math.div(1, 3)) - 2%;
 
       &:nth-child(2n + 1) {
         clear: none;

@@ -1,3 +1,10 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 /// Media object - used for displaying news etc.
 /// Taken from NICE.Bootstrap
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#media
@@ -5,10 +12,10 @@
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: rem($nds-spacing-small 0);
+  padding: utils.rem(spacing.$small 0);
   position: relative;
 
-  // Use nds-font-size 0 to get rid of &nbsp; characters
+  // Use font-size 0 to get rid of &nbsp; characters
   .media-heading {
     font-size: 0;
     margin: 0;
@@ -16,7 +23,7 @@
     padding-top: 3px; // Make room for focus ring
 
     a {
-      @include nds-font-size(0);
+      @include typography.font-size(0);
       display: inline-block;
       max-width: 66ch;
 
@@ -38,7 +45,7 @@
   }
 
   h4.media-heading {
-    @include nds-font-size(h4);
+    @include typography.font-size(h4);
   }
 
   .media-body {
@@ -46,13 +53,13 @@
     padding: 0 3px; // Make room for the focus ring
 
     p {
-      margin: rem($nds-spacing-x-small 0 0);
+      margin: utils.rem(spacing.$x-small 0 0);
     }
   }
 
   .media-date {
-    @include nds-font-size(-1);
-    color: $nds-colour-nice-dark-grey;
+    @include typography.font-size(-1);
+    color: colours.$nice-dark-grey;
     position: relative;
     z-index: 1;
   }
@@ -61,7 +68,7 @@
   > .pull-right {
     display: block;
     float: none;
-    margin-bottom: rem($nds-spacing-medium);
+    margin-bottom: utils.rem(spacing.$medium);
     width: 150px;
   }
 
@@ -70,7 +77,7 @@
   &.media-resource {
     .panel-resources & {
       margin-bottom: 0;
-      padding: rem($nds-spacing-small $nds-spacing-medium);
+      padding: utils.rem(spacing.$small spacing.$medium);
 
       &:last-child {
         border-bottom: 0;
@@ -84,9 +91,9 @@
   }
 
   .media-list & {
-    border-bottom: 1px solid $nds-colour-border;
-    padding-bottom: rem($nds-spacing-medium);
-    padding-top: rem($nds-spacing-medium);
+    border-bottom: 1px solid colours.$border;
+    padding-bottom: utils.rem(spacing.$medium);
+    padding-top: utils.rem(spacing.$medium);
 
     &:first-child {
       padding-top: 0;
@@ -100,22 +107,22 @@
 
   // Some media items are in a plain list so break out of the default margin
   ul:not(.media-list) & {
-    margin-left: -rem($nds-spacing-medium);
+    margin-left: -(utils.rem(spacing.$medium));
   }
 
-  @include mq($from: sm) {
-    @include nds-clearfix;
+  @include media-queries.mq($from: sm) {
+    @include layout.clearfix;
 
     > .pull-left {
       float: left;
       margin-bottom: 0;
-      margin-right: em($nds-spacing-medium);
+      margin-right: utils.rem(spacing.$medium);
     }
 
     > .pull-right {
       float: right;
       margin-bottom: 0;
-      margin-left: em($nds-spacing-medium);
+      margin-left: utils.rem(spacing.$medium);
     }
   }
 }

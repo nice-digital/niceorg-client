@@ -1,13 +1,16 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/typography';
+
 .stats {
-  @include nds-font-size(-1);
-  color: $nds-colour-nice-dark-grey;
+  @include typography.font-size(-1);
+  color: colours.$nice-dark-grey;
   display: block;
   font-weight: normal;
   margin: 0;
 
   .data-size {
-    @include nds-font-size(-1);
-    color: $nds-colour-nice-dark-grey;
+    @include typography.font-size(-1);
+    color: colours.$nice-dark-grey;
   }
 
   .media & {

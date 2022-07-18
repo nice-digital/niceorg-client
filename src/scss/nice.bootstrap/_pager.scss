@@ -1,7 +1,14 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-panel/scss/panel';
+
 // NICE.Bootstrap pager for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
 .pager {
-  margin: em($nds-spacing-medium 0 $nds-spacing-large);
+  margin: utils.rem(spacing.$medium 0 spacing.$large);
   text-align: center;
 
   // Elements
@@ -17,8 +24,8 @@
     &.disabled {
       a,
       span {
-        background: $nds-colour-nice-grey-3;
-        color: $nds-colour-nice-grey-1;
+        background: colours.$nice-grey-3;
+        color: colours.$nice-grey-1;
         cursor: text;
         pointer-events: none;
       }
@@ -27,8 +34,8 @@
     &.active {
       a,
       span {
-        background: $nds-colour-nice-teal;
-        color: $nds-colour-text-inverse;
+        background: colours.$nice-teal;
+        color: colours.$text-inverse;
       }
     }
 
@@ -43,38 +50,38 @@
 
   a,
   span {
-    background: $nds-colour-panel-default-background;
-    color: $nds-colour-link;
+    background: panel.$colour-panel-default-background;
+    color: colours.$link;
     display: inline-block;
-    margin-left: em($nds-spacing-x-small);
-    margin-right: em($nds-spacing-x-small);
-    padding: em($nds-spacing-small $nds-spacing-medium);
+    margin-left: utils.rem(spacing.$x-small);
+    margin-right: utils.rem(spacing.$x-small);
+    padding: utils.rem(spacing.$small spacing.$medium);
     position: relative;
     text-decoration: none;
   }
 
   a {
     &:hover {
-      background: $nds-colour-nice-grey-2;
+      background: colours.$nice-grey-2;
     }
 
     &:active {
-      top: em($nds-spacing-xx-small);
+      top: utils.rem(spacing.$xx-small);
     }
   }
 
   // Modifiers
 
   &.pager-large {
-    @include nds-font-size(1);
+    @include typography.font-size(1);
   }
 
   &.pager-small {
-    @include nds-font-size(-1);
+    @include typography.font-size(-1);
   }
 
   &.pager-mini {
-    @include nds-font-size(-2);
+    @include typography.font-size(-2);
   }
 
   .pager-centered {
@@ -85,7 +92,7 @@
     text-align: right;
   }
 
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     li {
       display: inline;
     }

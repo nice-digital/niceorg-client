@@ -1,6 +1,10 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 @keyframes progress-bar-stripes {
   from {
-    background-position: rem($nds-spacing-medium) 0;
+    background-position: utils.rem(spacing.$medium) 0;
   }
 
   to {
@@ -11,14 +15,14 @@
 // NICE.Bootstrap progress for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#progress
 .progress {
-  height: rem($nds-spacing-medium);
-  margin: rem(0 0 $nds-spacing-medium);
+  height: utils.rem(spacing.$medium);
+  margin: utils.rem(0 0 spacing.$medium);
   overflow: hidden;
 
   // Elements
 
   .bar {
-    background: $nds-colour-icons;
+    background: colours.$icons;
     float: left;
     height: 100%;
     transition: width 0.6s ease;
@@ -26,22 +30,22 @@
 
   &.progress-info .bar,
   .bar-info {
-    background: $nds-colour-info;
+    background: colours.$info;
   }
 
   &.progress-success .bar,
   .bar-success {
-    background: $nds-colour-success;
+    background: colours.$success;
   }
 
   &.progress-warning .bar,
   .bar-warning {
-    background: $nds-colour-caution-background;
+    background: colours.$caution-background;
   }
 
   &.progress-danger .bar,
   .bar-danger {
-    background: $nds-colour-error-background;
+    background: colours.$error-background;
   }
 
   // Modifiers
@@ -58,7 +62,7 @@
         transparent 75%,
         transparent
       );
-      background-size: rem($nds-spacing-medium $nds-spacing-medium);
+      background-size: utils.rem(spacing.$medium spacing.$medium);
     }
   }
 

@@ -102,7 +102,7 @@ module.exports = (env) => {
 				},
 				{
 					// Allow copying nice-icons font files into the output directory
-					test: /@nice-digital[\\/]icons[\\/]dist[\\/].*\.(ttf|woff|woff2|eot|svg)$/,
+					test: /@nice-digital[\\/]icons[\\/]dist[\\/].*\.(woff|woff2)$/,
 					type: "asset/resource",
 					generator: {
 						// Using webpack hashed filenames instead of the cache buster querystrings in nice-icons would be nice...

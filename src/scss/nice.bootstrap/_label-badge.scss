@@ -1,3 +1,7 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 // NICE.Bootstrap pager for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#labels-badges
 .label,
@@ -7,40 +11,40 @@
 
   &.label-success,
   &.badge-success {
-    background: $nds-colour-success-background;
-    border: 1px solid $nds-colour-success;
-    color: $nds-colour-success;
+    background: colours.$success-background;
+    border: 1px solid colours.$success;
+    color: colours.$success;
   }
 
   &.label-warning,
   &.badge-warning {
-    background: $nds-colour-caution-background;
-    border: 1px solid $nds-colour-caution;
-    color: $nds-colour-caution;
+    background: colours.$caution-background;
+    border: 1px solid colours.$caution;
+    color: colours.$caution;
   }
 
   &.label-important,
   &.badge-important {
-    background: $nds-colour-error-background;
-    border: 1px solid $nds-colour-error;
-    color: $nds-colour-error;
+    background: colours.$error-background;
+    border: 1px solid colours.$error;
+    color: colours.$error;
   }
 
   &.label-info,
   &.badge-info {
-    background: $nds-colour-info-background;
-    border: 1px solid $nds-colour-info;
-    color: $nds-colour-info;
+    background: colours.$info-background;
+    border: 1px solid colours.$info;
+    color: colours.$info;
   }
 
   &.label-inverse,
   &.badge-inverse {
-    background: $nds-colour-nice-grey-3;
-    color: $nds-colour-nice-dark-grey;
+    background: colours.$nice-grey-3;
+    color: colours.$nice-dark-grey;
   }
 }
 
 .badge {
-  padding-left: rem($nds-spacing-small);
-  padding-right: rem($nds-spacing-small);
+  padding-left: utils.rem(spacing.$small);
+  padding-right: utils.rem(spacing.$small);
 }

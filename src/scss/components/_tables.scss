@@ -1,5 +1,10 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
 %sorting-base {
-  margin-right: rem($nds-spacing-small);
+  margin-right: utils.rem(spacing.$small);
 }
 
 table {
@@ -19,7 +24,7 @@ table {
         &::before {
           @extend %sorting-base;
           @include nice-icon('sorting-asc');
-          color: $nds-colour-nice-grey-1;
+          color: colours.$nice-grey-1;
         }
       }
     }
@@ -34,7 +39,7 @@ table {
         &::before {
           @extend %sorting-base;
           @include nice-icon('sorting-desc');
-          color: $nds-colour-nice-grey-1;
+          color: colours.$nice-grey-1;
         }
       }
     }

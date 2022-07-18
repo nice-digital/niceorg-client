@@ -1,11 +1,18 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/glyphs';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/visibility';
+
 // Old NICE.Bootstrap breadcrumbs for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#breadcrumbs
 // Note: these are different markup to the new, Design System breadcrumbs,
 // see https://nice-digital.github.io/nice-design-system/components/breadcrumbs/#usage
 .breadcrumb {
-  @include nds-hide-print;
+  @include visibility.hide-print;
   list-style: none;
-  margin: em($nds-spacing-small 0 $nds-spacing-large);
+  margin: utils.rem(spacing.$small 0 spacing.$large);
   max-width: 100%;
   padding: 0;
 
@@ -15,7 +22,7 @@
   }
 
   a {
-    color: $nds-colour-nice-rich-black;
+    color: colours.$nice-rich-black;
     text-decoration: underline;
 
     &:hover {
@@ -27,12 +34,12 @@
   // a "greater than" symbol rather than a web font
   .divider {
     color: #004650;
-    font-family: font-family(sans);
+    font-family: typography.get-font-family(sans);
     font-size: 80%;
-    margin: em(0 $nds-spacing-x-small);
+    margin: utils.rem(0 spacing.$x-small);
 
     &:before {
-      content: nds-get-glyph(greater-than);
+      content: glyphs.get-glyph(greater-than);
     }
   }
 }
