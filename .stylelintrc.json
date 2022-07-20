@@ -33,6 +33,11 @@
 				"name": "include",
 				"hasBlock": true
 			}
-		]
+		],
+		"no-descending-specificity": null,
+		"selector-id-pattern": null,
+		"color-function-notation": null,
+		"alpha-value-notation": null,
+		"selector-not-notation": null
 	}
 }

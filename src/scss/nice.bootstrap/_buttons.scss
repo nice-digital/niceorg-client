@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/typography';
 
@@ -20,7 +21,7 @@
   color: colours.$info !important;
 
   &:hover {
-    background: darken(colours.$info-background, 5%);
+    background: color.adjust(colours.$info-background, $lightness: -5%);
   }
 
   &:focus {
@@ -34,7 +35,7 @@
   color: colours.$success !important;
 
   &:hover {
-    background: darken(colours.$success-background, 5%);
+    background: color.adjust(colours.$success-background, $lightness: -5%);
   }
 
   &:focus {
@@ -48,7 +49,7 @@
   color: colours.$caution !important;
 
   &:hover {
-    background: darken(colours.$caution-background, 5%);
+    background: color.adjust(colours.$caution-background, $lightness: -5%);
   }
 
   &:focus {
@@ -62,7 +63,7 @@
   color: colours.$error !important;
 
   &:hover {
-    background: darken(colours.$error-background, 5%);
+    background: color.adjust(colours.$error-background, $lightness: -5%);
   }
 
   &:focus {

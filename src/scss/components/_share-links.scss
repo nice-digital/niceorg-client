@@ -39,7 +39,6 @@
 
     a {
       color: colours.$text;
-      // Override default margin from addthis
       margin: 0 !important;
       padding: utils.rem(spacing.$x-small spacing.$medium);
       text-decoration: none;

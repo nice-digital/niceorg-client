@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/media-queries';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -34,7 +35,7 @@
   width: 100%;
 
   &:hover {
-    background: darken(colours.$nice-cool-teal, 3%);
+    background: color.adjust(colours.$nice-cool-teal, $lightness: -3%);
   }
 
   // Use pseudo element so we can click anywhere in the hero unit,
