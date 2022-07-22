@@ -4,6 +4,7 @@
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/typography';
 @use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/icons/scss/nice-icons';
 
 // 'Corporate' within a page-header
 .navbar-corporate {
@@ -19,7 +20,7 @@
     z-index: 1;
 
     &:after {
-      @include nice-icon(minus);
+      @include nice-icons.nice-icon(minus);
       display: inline-block;
       line-height: 0;
       margin: utils.rem(0 0 0 spacing.$small);
@@ -27,7 +28,7 @@
     }
 
     &.collapsed:after {
-      @include nice-icon(plus);
+      @include nice-icons.nice-icon(plus);
     }
   }
 

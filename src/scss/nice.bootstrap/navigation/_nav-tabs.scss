@@ -3,7 +3,6 @@
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/typography';
 @use '@nice-digital/nds-core/scss/utils';
-@use '@nice-digital/nds-panel/scss/panel';
 
 // Tabs navigation.
 // E.g. https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools
@@ -25,7 +24,7 @@
 
     &.active {
       a {
-        background: panel.$colour-panel-default-background;
+        background: colours.$panel-default-background;
         border-left: 1px solid colours.$border;
         border-right: 1px solid colours.$border;
         color: colours.$text;
@@ -75,7 +74,7 @@
     }
 
     &.dropdown-toggle {
-      background: panel.$colour-panel-default-background;
+      background: colours.$panel-default-background;
       border: 1px solid colours.$border;
       padding: utils.rem(spacing.$small spacing.$medium);
 
@@ -101,7 +100,7 @@
 }
 
 .tab-content {
-  background: panel.$colour-panel-default-background;
+  background: colours.$panel-default-background;
   border: 1px solid colours.$border;
   clear: both;
   margin-bottom: utils.rem(spacing.$large);

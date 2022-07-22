@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/media-queries';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -23,7 +24,7 @@
 // - addthis share menu (e.g. https://www.nice.org.uk/news/blog/having-a-nice-endorsement-ensures-patients-and-commissioners-trust-our-mental-health-services)
 // - tabs (e.g. https://www.nice.org.uk/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools)
 .dropdown-menu {
-  background: colours.$nice-white;
+  background: noc-colours.$bootstrap-dropdown-menu-background;
   border: 1px solid colours.$border;
   box-shadow: 0 utils.rem(spacing.$x-small) utils.rem(spacing.$small)
     rgba(0, 0, 0, 0.2);

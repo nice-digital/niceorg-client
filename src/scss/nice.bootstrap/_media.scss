@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/layout';
 @use '@nice-digital/nds-core/scss/media-queries';
@@ -59,7 +60,7 @@
 
   .media-date {
     @include typography.font-size(-1);
-    color: colours.$nice-dark-grey;
+    color: noc-colours.$bootstrap-media-date-text;
     position: relative;
     z-index: 1;
   }

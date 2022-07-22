@@ -1,3 +1,5 @@
+@use 'sass:color';
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/media-queries';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -9,11 +11,11 @@
 #toTop {
   @include visibility.hide-print;
   @include typography.font-size(4);
-  background-color: #fff;
-  border: 1px solid colours.$border;
+  background-color: noc-colours.$back-to-top-background;
+  border: 1px solid noc-colours.$back-to-top-border;
   border-radius: 0 0 999px 999px;
   border-width: 0 1px 1px;
-  color: colours.$icons;
+  color: noc-colours.$back-to-top-text;
   cursor: pointer;
   display: none;
   height: auto;
@@ -22,7 +24,6 @@
   margin: 0;
   padding: utils.rem(0 spacing.$small spacing.$x-small spacing.$small);
   position: fixed;
-  -webkit-tap-highlight-color: rgba(colours.$nice-teal, 0.5);
   text-align: center;
   top: 0;
   transform: translate(-50%, 0);

@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/typography';
@@ -20,8 +21,8 @@
 
   .media-icon {
     @include typography.font-size(4);
-    background: colours.$nice-dark-grey;
-    color: colours.$text-inverse;
+    background: noc-colours.$bootstrap-media-stack-icon-background;
+    color: noc-colours.$bootstrap-media-stack-icon-text;
     left: 50%;
     opacity: 0.7;
     padding: utils.rem(spacing.$small spacing.$medium);
@@ -33,7 +34,7 @@
 
   &:hover {
     .media-icon {
-      background: colours.$nice-black;
+      background: noc-colours.$bootstrap-media-stack-hover-icon-background;
     }
   }
 

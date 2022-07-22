@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/layout';
 @use '@nice-digital/nds-core/scss/media-queries';
@@ -59,7 +60,7 @@
 
   // this is the line that goes down the centre of the timeline badges
   &:before {
-    background-color: colours.$nice-grey-2;
+    background-color: noc-colours.$timeline-separator;
     bottom: 0;
     content: '';
     left: 50%;
@@ -100,8 +101,8 @@
 }
 
 .timeline-panel {
-  background: colours.$nice-white;
-  border: 1px solid colours.$nice-grey-2;
+  background: noc-colours.$timeline-panel-background;
+  border: 1px solid noc-colours.$timeline-panel-border;
   border-radius: 2px;
   box-shadow: none !important;
   float: left;
@@ -111,8 +112,8 @@
 
   &:before {
     border-bottom: 15px solid transparent;
-    border-left: 15px solid colours.$nice-grey-2;
-    border-right: 0 solid colours.$nice-grey-2;
+    border-left: 15px solid noc-colours.$timeline-panel-border;
+    border-right: 0 solid noc-colours.$timeline-panel-border;
     border-top: 15px solid transparent;
     content: '';
     display: inline-block;
@@ -123,8 +124,8 @@
 
   &:after {
     border-bottom: 14px solid transparent;
-    border-left: 14px solid colours.$nice-white;
-    border-right: 0 solid colours.$nice-white;
+    border-left: 14px solid noc-colours.$timeline-panel-background;
+    border-right: 0 solid noc-colours.$timeline-panel-background;
     border-top: 14px solid transparent;
     content: '';
     display: inline-block;
@@ -139,9 +140,9 @@
 }
 
 .timeline-badge {
-  background-color: colours.$nice-grey-1;
+  background-color: noc-colours.$timeline-badge-background;
   border-radius: 50%;
-  color: colours.$nice-white;
+  color: noc-colours.$timeline-badge-color;
   height: 50px;
   left: 50%;
   line-height: 50px;

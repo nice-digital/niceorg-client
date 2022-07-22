@@ -1,7 +1,9 @@
+@use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/utils';
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/typography';
-@use '@nice-digital/nds-panel/scss/panel';
+
+@use '@nice-digital/icons/scss/nice-icons';
 
 /// Accordion- used on NICE field team page
 /// Overrides
@@ -9,7 +11,7 @@
 
 .accordion {
   .accordion-group {
-    background: panel.$colour-panel-default-background;
+    background: colours.$panel-default-background;
     margin-bottom: utils.rem(spacing.$small);
   }
 
@@ -52,7 +54,7 @@
   }
 
   &:after {
-    @include nice-icon(chevron-down);
+    @include nice-icons.nice-icon(chevron-down);
     float: right;
   }
 }

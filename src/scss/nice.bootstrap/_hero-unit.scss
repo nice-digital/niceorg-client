@@ -1,4 +1,5 @@
 @use 'sass:color';
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/media-queries';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -26,7 +27,7 @@
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.BasicElements.html#typographic-headers
 .hero-unit {
   @include typography.links-inverse;
-  background: colours.$nice-cool-teal;
+  background: noc-colours.$bootstrap-hero-background;
   color: colours.$text-inverse;
   margin: 0 auto utils.rem(spacing.$large);
   overflow: hidden;
@@ -35,7 +36,10 @@
   width: 100%;
 
   &:hover {
-    background: color.adjust(colours.$nice-cool-teal, $lightness: -3%);
+    background: color.adjust(
+      noc-colours.$bootstrap-hero-background,
+      $lightness: -3%
+    );
   }
 
   // Use pseudo element so we can click anywhere in the hero unit,

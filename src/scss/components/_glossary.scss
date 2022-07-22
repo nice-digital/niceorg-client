@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/utils';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -17,14 +18,14 @@
     width: 23%;
 
     &.active > a {
-      background-color: colours.$nice-teal;
-      color: colours.$nice-white;
+      background-color: noc-colours.$glossary-link-active-background;
+      color: noc-colours.$glossary-link-active-text;
     }
 
     > a {
       @include typography.font-size(4);
-      background-color: colours.$nice-grey-3;
-      color: colours.$nice-black;
+      background-color: noc-colours.$glossary-link-background;
+      color: noc-colours.$glossary-link-text;
       display: block;
       font-weight: bold;
       line-height: 1.5em;
@@ -32,8 +33,8 @@
       text-decoration: none;
 
       &:hover {
-        background-color: colours.$nice-teal;
-        color: colours.$nice-white;
+        background-color: noc-colours.$glossary-link-hover-background;
+        color: noc-colours.$glossary-link-hover-text;
       }
     }
   }

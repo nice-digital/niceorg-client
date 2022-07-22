@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/focus';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -22,7 +23,7 @@
 .caret {
   border-left: utils.rem(spacing.$small) solid transparent;
   border-right: utils.rem(spacing.$small) solid transparent;
-  border-top: utils.rem(spacing.$small) solid colours.$nice-white;
+  border-top: utils.rem(spacing.$small) solid noc-colours.$caret-fill;
   content: '';
   display: inline-block;
   height: 0;
@@ -38,7 +39,7 @@ input.close {
   appearance: none;
   background: 0;
   border: 0;
-  color: colours.$nice-grey-1;
+  color: noc-colours.$bootstrap-close-text;
   cursor: pointer;
   float: right;
   line-height: 1;
@@ -50,12 +51,12 @@ input.close {
   }
 
   &:hover {
-    color: colours.$nice-dark-grey;
+    color: noc-colours.$bootstrap-close-hover-text;
   }
 }
 
 .muted {
-  color: colours.$text-subtle;
+  color: noc-colours.$text-subtle;
 }
 
 .text-warning {

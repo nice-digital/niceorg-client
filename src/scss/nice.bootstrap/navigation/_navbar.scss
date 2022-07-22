@@ -1,3 +1,4 @@
+@use '../../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/layout';
 @use '@nice-digital/nds-core/scss/media-queries';
@@ -45,13 +46,13 @@
         text-decoration: none;
 
         &:hover {
-          background: colours.$nice-grey-2;
+          background: noc-colours.$bootstrap-navbar-link-hover-background;
         }
       }
 
       &.active {
         > a {
-          background: colours.$nice-teal;
+          background: noc-colours.$bootstrap-navbar-active-background;
           color: colours.$text-inverse;
         }
       }
@@ -60,7 +61,7 @@
 
   .navbar-inner {
     @include layout.clearfix;
-    background: colours.$nice-grey-3;
+    background: noc-colours.$bootstrap-navbar-inner-background;
   }
 
   &.navbar-inverse {
@@ -71,13 +72,13 @@
           color: colours.$text-inverse;
 
           &:hover {
-            background: colours.$nice-teal-2;
+            background: noc-colours.$bootstrap-navbar-inverse-link-hover-background;
           }
         }
 
         &.active {
           > a {
-            background: colours.$body;
+            background: noc-colours.$bootstrap-navbar-inverse-active-background;
             color: colours.$text;
           }
         }
@@ -85,7 +86,7 @@
     }
 
     .navbar-inner {
-      background: colours.$nice-teal;
+      background: noc-colours.$bootstrap-navbar-inverse-inner-background;
     }
   }
 

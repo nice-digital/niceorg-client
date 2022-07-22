@@ -1,11 +1,12 @@
 @charset 'utf-8';
 
-// NICE Design System overrides
-$nice-icons-base-path: '../../node_modules/@nice-digital/icons/dist/';
+@forward '@nice-digital/design-system/scss/nice-design-system' with (
+  $nice-icons-base-path: '../../node_modules/@nice-digital/icons/dist/'
+);
 
-@import '@nice-digital/design-system/scss/nice-design-system';
-
-@import 'layout/_layout', 'nice.bootstrap/_bootstrap', 'components/_components';
+@forward 'layout';
+@forward 'nice.bootstrap';
+@forward 'components';
 
 // Helper to fill height for in page nav JS implementation. Allows position sticky to work.
 [data-in-page-nav] {

@@ -1,3 +1,4 @@
+@use '../../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/typography';
@@ -6,7 +7,7 @@
 // Old NICE.Bootstrap nav list for backwards compatability
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
 .nav-list {
-  background: colours.$true-white;
+  background: noc-colours.$bootstrap-navlist-background;
 
   .divider {
     background-color: colours.$border;
@@ -20,24 +21,24 @@
     text-decoration: none;
 
     &:hover {
-      background: colours.$nice-grey-3;
+      background: noc-colours.$bootstrap-navlist-link-hover-background;
     }
   }
 
   > li > a {
-    background: colours.$true-white;
+    background: noc-colours.$bootstrap-navlist-link-background;
     display: block;
     padding: utils.rem(spacing.$x-small spacing.$small);
     position: relative;
   }
 
   .active > a {
-    background: colours.$nice-teal;
+    background: noc-colours.$bootstrap-navlist-link-active-background;
     color: colours.$text-inverse;
 
     &:after {
       border: utils.rem(spacing.$small) solid transparent;
-      border-left-color: colours.$nice-teal;
+      border-left-color: noc-colours.$bootstrap-navlist-link-active-background;
       content: '';
       height: 0;
       left: 100%;

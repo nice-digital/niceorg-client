@@ -1,0 +1,93 @@
+@use '@nice-digital/nds-core/scss/colours/tokens/global' as *;
+
+$text-subtle: $custom-grey-3;
+$caret-fill: $white;
+
+// Bootstrap close button
+$bootstrap-close-text: $custom-grey-1;
+$bootstrap-close-hover-text: $black-tint-1;
+
+// Bootrap nav list
+$bootstrap-navlist-background: $white;
+$bootstrap-navlist-link-background: $white;
+$bootstrap-navlist-link-hover-background: $nice-cream-3;
+$bootstrap-navlist-link-active-background: $nice-teal;
+
+// Boostrap nav pills
+$bootstrap-navpills-link-hover-background: $nice-cream-3;
+$bootstrap-navpills-link-active-background: $nice-teal;
+
+// Bootstrap nav bar
+$bootstrap-navbar-link-hover-background: $custom-grey-2;
+$bootstrap-navbar-active-background: $nice-teal;
+$bootstrap-navbar-inner-background: $nice-cream-3;
+
+// Bootstrap nav bar inverse
+$bootstrap-navbar-inverse-link-hover-background: $nice-teal-tint-2;
+$bootstrap-navbar-inverse-active-background: $nice-cream-tint-1;
+$bootstrap-navbar-inverse-inner-background: $nice-teal;
+
+// Bootstrap buttons
+$bootstrap-btn-active-background: $nice-black;
+$bootstrap-btn-active-text: $white;
+
+// Bootstrap dropdown
+$bootstrap-dropdown-menu-background: $white;
+
+// Bootstrap inputs
+$bootstrap-input-background: $white;
+$bootstrap-input-placeholder: $black-tint-1;
+$bootstrap-input-help: $black-tint-1;
+$bootstrap-input-disabled-background: $nice-cream-3;
+
+// Bootstrap hero unit
+$bootstrap-hero-background: $nice-teal;
+
+// Bootstrap badge
+$bootstrap-badge-inverse-background: $nice-cream-3;
+$bootstrap-badge-inverse-text: $black-tint-1;
+
+// Bootstrap media
+$bootstrap-media-date-text: $black-tint-1;
+
+// Bootstrap media stack
+$bootstrap-media-stack-icon-background: $black-tint-1;
+$bootstrap-media-stack-icon-text: $white;
+$bootstrap-media-stack-hover-icon-background: $nice-black;
+
+// Boostrap pager
+$bootstrap-pager-disabled-background: $nice-cream-3;
+$bootstrap-pager-disabled-text: $custom-grey-1;
+$bootstrap-pager-active-background: $nice-teal;
+$bootstrap-pager-active-text: $white;
+$bootstrap-pager-link-hover-background: $custom-grey-2;
+
+// Bootstrap pagination
+$bootstrap-pagination-link-background: $black-tint-1;
+$bootstrap-pagination-link-text: $white;
+$bootstrap-pagination-link-hover-background: $nice-black;
+$bootstrap-pagination-link-disabled-background: $nice-cream-3;
+$bootstrap-pagination-link-disabled-text: $custom-grey-1;
+
+// Glossary
+$glossary-link-background: $custom-grey-3;
+$glossary-link-text: $nice-black;
+$glossary-link-active-background: $nice-teal;
+$glossary-link-active-text: $white;
+$glossary-link-hover-background: $nice-teal;
+$glossary-link-hover-text: $white;
+
+// Tables
+$table-sorting-disabled: $custom-grey-1;
+
+// Back to top
+$back-to-top-background: $white;
+$back-to-top-border: $custom-grey-1;
+$back-to-top-text: $nice-teal;
+
+// Timeline
+$timeline-separator: $custom-grey-2;
+$timeline-panel-background: $white;
+$timeline-panel-border: $custom-grey-2;
+$timeline-badge-background: $custom-grey-1;
+$timeline-badge-color: $white;

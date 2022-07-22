@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/media-queries';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -24,8 +25,8 @@
     &.disabled {
       a,
       span {
-        background: colours.$nice-grey-3;
-        color: colours.$nice-grey-1;
+        background: noc-colours.$bootstrap-pager-disabled-background;
+        color: noc-colours.$bootstrap-pager-disabled-text;
         cursor: text;
         pointer-events: none;
       }
@@ -34,8 +35,8 @@
     &.active {
       a,
       span {
-        background: colours.$nice-teal;
-        color: colours.$text-inverse;
+        background: noc-colours.$bootstrap-pager-active-background;
+        color: noc-colours.$bootstrap-pager-active-text;
       }
     }
 
@@ -50,7 +51,7 @@
 
   a,
   span {
-    background: panel.$colour-panel-default-background;
+    background: colours.$panel-default-background;
     color: colours.$link;
     display: inline-block;
     margin-left: utils.rem(spacing.$x-small);
@@ -62,7 +63,7 @@
 
   a {
     &:hover {
-      background: colours.$nice-grey-2;
+      background: noc-colours.$bootstrap-pager-link-hover-background;
     }
 
     &:active {

@@ -1,4 +1,5 @@
 @use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/colours/tokens/global';
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/utils';
 
@@ -8,7 +9,7 @@
   max-width: 100%; // To override the 66ch max-width on lists
 
   > .disabled > a {
-    color: colours.$text-subtle;
+    color: global.$custom-grey-1;
     cursor: text;
     pointer-events: none;
   }

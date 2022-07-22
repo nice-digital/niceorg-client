@@ -1,4 +1,6 @@
 @use 'sass:color';
+@use '../noc-colours';
+@use '@nice-digital/nds-button/scss/button';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/typography';
 
@@ -6,8 +8,8 @@
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.FormElements.html#buttons
 
 .btn.active {
-  background: colours.$nice-rich-black;
-  color: colours.$text-inverse;
+  background: noc-colours.$bootstrap-btn-active-background;
+  color: noc-colours.$bootstrap-btn-active-text;
 }
 
 .btn-primary {

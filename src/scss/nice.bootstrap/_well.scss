@@ -3,16 +3,14 @@
 @use '@nice-digital/nds-core/scss/spacing';
 @use '@nice-digital/nds-core/scss/utils';
 
-@use '@nice-digital/nds-panel/scss/panel';
-
 // Support for old NICE.Bootstrap 'well' component, originally from Twitter's bootstrap.
 // Essentially a panel, but without the option of a title or footer.
 // Used to visuallt group elements in a grey container.
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#wells
 .well {
   @include layout.clearfix;
-  background: panel.$colour-panel-default-background;
-  border: 1px solid panel.$colour-panel-default-border; // To match panels
+  background: colours.$panel-default-background;
+  border: 1px solid colours.$panel-default-border;
   margin: utils.rem(spacing.$medium 0);
   min-height: utils.rem(spacing.$large);
   padding: utils.rem(spacing.$medium);
@@ -21,7 +19,7 @@
   // Support nested wells
   .well,
   .panel & {
-    background: colours.$nice-grey-2;
+    background: colours.$panel-default-background;
   }
 
   &.well-large {

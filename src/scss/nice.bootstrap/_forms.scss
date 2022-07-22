@@ -1,3 +1,4 @@
+@use '../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/focus';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -74,7 +75,7 @@ select,
 textarea,
 input:not([type='reset']):not([type='submit']):not([type='file']):not([type='checkbox']):not([type='radio']):not(#global-nav-header > *), // 'Text' inputs
 .uneditable-input {
-  background-color: colours.$true-white;
+  background-color: noc-colours.$bootstrap-input-background;
   border: utils.rem(spacing.$xx-small) solid colours.$border;
   color: colours.$text;
   display: inline-block;
@@ -87,7 +88,7 @@ input:not([type='reset']):not([type='submit']):not([type='file']):not([type='che
   width: 100%;
 
   &::placeholder {
-    color: colours.$nice-grey-1;
+    color: noc-colours.$bootstrap-input-placeholder;
   }
 }
 
@@ -109,7 +110,7 @@ select {
   }
 
   &::placeholder {
-    color: colours.$nice-dark-grey;
+    color: noc-colours.$bootstrap-input-placeholder;
   }
 
   .warning & {
@@ -145,7 +146,7 @@ select {
 .help-block,
 .help-inline,
 label {
-  color: colours.$nice-dark-grey;
+  color: noc-colours.$bootstrap-input-help;
   display: block;
 
   .warning & {
@@ -187,6 +188,6 @@ textarea[disabled],
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  background-color: #fafafb;
+  background-color: noc-colours.$bootstrap-input-disabled-background;
   cursor: not-allowed;
 }

@@ -6,14 +6,14 @@
 .news-content {
   .blog-author {
     @include typography.font-size(h5);
-    color: colours.$nice-dark-grey;
+    color: colours.$text;
     display: block;
     font-weight: normal;
     margin-top: utils.rem(spacing.$small);
   }
 
   .date {
-    color: colours.$nice-dark-grey;
+    color: colours.$text;
     margin-bottom: utils.rem(spacing.$small);
     margin-top: 0;
   }

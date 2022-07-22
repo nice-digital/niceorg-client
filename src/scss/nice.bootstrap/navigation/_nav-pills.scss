@@ -1,3 +1,4 @@
+@use '../../noc-colours';
 @use '@nice-digital/nds-core/scss/colours';
 @use '@nice-digital/nds-core/scss/layout';
 @use '@nice-digital/nds-core/scss/spacing';
@@ -22,12 +23,12 @@
       text-decoration: none;
 
       &:hover {
-        background: colours.$nice-grey-3;
+        background: noc-colours.$bootstrap-navpills-link-hover-background;
       }
     }
 
     &.active > a {
-      background: colours.$nice-teal;
+      background: noc-colours.$bootstrap-navpills-link-active-background;
       color: colours.$text-inverse;
     }
   }

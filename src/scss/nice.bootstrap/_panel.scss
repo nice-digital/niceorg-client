@@ -84,56 +84,49 @@
 
   // Contextual panel alternatives
   // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Scaffolding.html#panels-alternatives
-  &.panel-default {
-    background: panel.$colour-panel-default-background;
-  }
-
+  &.panel-default,
   &.panel-outline {
-    background: colours.$nice-white;
+    background: colours.$panel-default-background;
     border: 1px solid colours.$border;
   }
 
   &.panel-success {
-    background: colours.$nice-white;
+    background: colours.$success-background;
     border: 1px solid colours.$success;
 
     .panel-heading {
       background: colours.$success-background;
       border-color: colours.$success;
-      color: colours.$success;
     }
   }
 
   &.panel-info {
-    background: colours.$nice-white;
+    background: colours.$info-background;
     border: 1px solid colours.$info;
 
     .panel-heading {
       background: colours.$info-background;
       border-color: colours.$info;
-      color: colours.$info;
     }
   }
 
   &.panel-warning {
-    background: colours.$nice-white;
+    background: colours.$caution-background;
     border: 1px solid colours.$caution;
 
     .panel-heading {
       background: colours.$caution-background;
       border-color: colours.$caution;
-      color: colours.$caution;
     }
   }
 
   &.panel-danger {
-    background: colours.$nice-white;
+    background: colours.$error-background;
     border: 1px solid colours.$error;
 
     .panel-heading {
       background: colours.$error-background;
       border-color: colours.$error;
-      color: colours.$error;
     }
   }
 

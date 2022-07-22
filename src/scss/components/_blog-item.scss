@@ -16,13 +16,13 @@
   .text-block {
     p:first-child {
       @include typography.font-size(-1);
-      color: colours.$nice-dark-grey;
+      color: colours.$text;
       margin: utils.rem(spacing.$small 0 spacing.$x-small 0);
     }
 
     small {
       @include typography.font-size(-1);
-      color: colours.$nice-dark-grey;
+      color: colours.$text;
       display: block;
       margin: utils.rem(spacing.$x-small 0 spacing.$x-small 0);
     }

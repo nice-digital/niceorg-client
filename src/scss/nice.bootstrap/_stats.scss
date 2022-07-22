@@ -3,14 +3,14 @@
 
 .stats {
   @include typography.font-size(-1);
-  color: colours.$nice-dark-grey;
+  color: colours.$text;
   display: block;
   font-weight: normal;
   margin: 0;
 
   .data-size {
     @include typography.font-size(-1);
-    color: colours.$nice-dark-grey;
+    color: colours.$text;
   }
 
   .media & {
