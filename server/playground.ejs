@@ -1,117 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title><%= title %></title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,600;1,600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>
-		<%= title %>
-	</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-		rel="stylesheet" />
-</head>
+	<body>
+		<div class="container">
+			<h3>Tabs</h3>
 
-<body>
-
-	<div class="container">
-		<h3>Tabs</h3>
-
-
-
-		<div data-tabs>
-			<div data-tab-title="Quality standards">
-				<h4>A tab</h4>
-				<p>Tab 1 content</p>
-				<div class="grid">
-					<div data-g="12 md:7">
-						<p class="lead mt--0">
-							Quality standards set out the priority areas for quality
-							improvement in health and social care.
-						</p>
-						<p>
-							They cover areas where there is variation in care. Each standard
-							gives you:
-						</p>
+			<div data-tabs>
+				<div data-tab-title="Quality standards">
+					<h4>A tab</h4>
+					<p>Tab 1 content</p>
+					<div class="grid">
+						<div data-g="12 md:7">
+							<p class="lead mt--0">
+								Quality standards set out the priority areas for quality
+								improvement in health and social care.
+							</p>
+							<p>
+								They cover areas where there is variation in care. Each standard
+								gives you:
+							</p>
+						</div>
+						<div data-g="12 md:5">Some more grid content</div>
 					</div>
-					<div data-g="12 md:5">Some more grid content</div>
 				</div>
-			</div>
-			<div data-tab-title="Indicators">
-				<h4>Another tab</h4>
-				<p>Tab 2 content</p>
-			</div>
-			<div data-tab-title="Another tab (3rd)">
-				<h4>Another tab (3rd)</h4>
-				<p>Tab 3 content</p>
-			</div>
-		</div>
-	</div>
-
-	<main class="container">
-		<h1>
-			<%= title %>
-		</h1>
-
-		<h2>Useful links/pages</h2>
-
-		<ul>
-			<li><a href="/">Homepage</a></li>
-			<li><a href="/niceorg">List JS/CSS assets</a></li>
-		</ul>
-
-		<h2>NDS components</h2>
-
-		<h3>In page nav</h3>
-		<div class="grid grid--rev">
-			<div data-g="12 md:4">
-				<div data-in-page-nav data-in-page-nav-headings-container-selector=".js-in-page-nav-target"
-					data-in-page-nav-headings-selector="h4, h5"></div>
-			</div>
-			<div data-g="12 md:8" class="js-in-page-nav-target">
-				<h4>A heading</h4>
-				<p>Some text</p>
-				<h5 id="an-id">A heading with an id</h5>
-				<p>Some more text</p>
-				<h4>Another heading</h4>
-				<p>Even more text</p>
-				<h4>Yet another heading</h4>
-				<p>Even more text</p>
-				<h5>Last heading</h5>
-				<p>And finally some more text</p>
+				<div data-tab-title="Indicators">
+					<h4>Another tab</h4>
+					<p>Tab 2 content</p>
+				</div>
+				<div data-tab-title="Another tab (3rd)">
+					<h4>Another tab (3rd)</h4>
+					<p>Tab 3 content</p>
+				</div>
 			</div>
 		</div>
 
-		<article class="card" aria-labelledby="result-1881314-title" aria-describedby="result-1881314-description">
-			<header class="card__header">
-				<h3 class="card__heading">
-					<a href="/guidance/conditions-and-diseases/musculoskeletal-conditions/fractures"
-						id="result-1881314-title">
-						<b>Fractures</b>
-					</a>
-				</h3>
-			</header>
+		<main class="container">
+			<h1><%= title %></h1>
 
-			<p class="card__summary" id="result-1881314-description">
-				All NICE products on <mark>fractures.</mark> Includes any guidance,
-				advice, NICE Pathways and quality standards.
-			</p>
+			<h2>Useful links/pages</h2>
 
-			<dl class="card__metadata">
-				<div class="card__metadatum">
-					<dt class="visually-hidden">Type</dt>
-					<dd>Topic page</dd>
+			<ul>
+				<li><a href="/">Homepage</a></li>
+				<li><a href="/niceorg">List JS/CSS assets</a></li>
+			</ul>
+
+			<h2>NDS components</h2>
+
+			<h3>In page nav</h3>
+			<div class="grid grid--rev">
+				<div data-g="12 md:4">
+					<div
+						data-in-page-nav
+						data-in-page-nav-headings-container-selector=".js-in-page-nav-target"
+						data-in-page-nav-headings-selector="h4, h5"
+					></div>
 				</div>
-			</dl>
-		</article>
+				<div data-g="12 md:8" class="js-in-page-nav-target">
+					<h4>A heading</h4>
+					<p>Some text</p>
+					<h5 id="an-id">A heading with an id</h5>
+					<p>Some more text</p>
+					<h4>Another heading</h4>
+					<p>Even more text</p>
+					<h4>Yet another heading</h4>
+					<p>Even more text</p>
+					<h5>Last heading</h5>
+					<p>And finally some more text</p>
+				</div>
+			</div>
 
-	</main>
+			<article
+				class="card"
+				aria-labelledby="result-1881314-title"
+				aria-describedby="result-1881314-description"
+			>
+				<header class="card__header">
+					<h3 class="card__heading">
+						<a
+							href="/guidance/conditions-and-diseases/musculoskeletal-conditions/fractures"
+							id="result-1881314-title"
+						>
+							<b>Fractures</b>
+						</a>
+					</h3>
+				</header>
 
-	<script>
-		niceorgClientBaseUrl = "http://localhost:8087/niceorg/";
-	</script>
-	<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-</body>
+				<p class="card__summary" id="result-1881314-description">
+					All NICE products on <mark>fractures.</mark> Includes any guidance,
+					advice, NICE Pathways and quality standards.
+				</p>
 
+				<dl class="card__metadata">
+					<div class="card__metadatum">
+						<dt class="visually-hidden">Type</dt>
+						<dd>Topic page</dd>
+					</div>
+				</dl>
+			</article>
+		</main>
+
+		<script>
+			niceorgClientBaseUrl = "http://localhost:8087/niceorg/";
+		</script>
+		<script
+			crossorigin="anonymous"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			type="text/javascript"
+		></script>
+	</body>
 </html>
