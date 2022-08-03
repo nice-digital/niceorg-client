@@ -17,7 +17,9 @@
   h2,
   p {
     margin-left: $hero-image-width-percentage + 5%; // Fallback for non-calc
-    margin-left: calc(#{$hero-image-width-percentage} + #{rem(spacing.$large)});
+    margin-left: calc(
+      #{$hero-image-width-percentage} + #{utils.rem(spacing.$large)}
+    );
   }
 }
 
