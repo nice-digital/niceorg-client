@@ -12,3 +12,9 @@
   margin: utils.rem(0 spacing.$small 0 0);
   text-decoration: none;
 }
+
+// Temporary fix for duplicate close icons in guidance page filter summary
+/* stylelint-disable-next-line selector-class-pattern */
+a.tag__remove span.icon--remove {
+  display: none;
+}
