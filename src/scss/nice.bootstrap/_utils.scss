@@ -1,3 +1,10 @@
+@use '../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/focus';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 /// Utility classes, adapted from NICE.Bootstrap
 
 /// Float an element left
@@ -14,9 +21,9 @@
 
 // CSS triangle, often used within dropdowns
 .caret {
-  border-left: rem($nds-spacing-small) solid transparent;
-  border-right: rem($nds-spacing-small) solid transparent;
-  border-top: rem($nds-spacing-small) solid $nds-colour-nice-white;
+  border-left: utils.rem(spacing.$small) solid transparent;
+  border-right: utils.rem(spacing.$small) solid transparent;
+  border-top: utils.rem(spacing.$small) solid noc-colours.$caret-fill;
   content: '';
   display: inline-block;
   height: 0;
@@ -28,11 +35,11 @@
 a.close,
 button.close,
 input.close {
-  @include nds-font-size(3);
+  @include typography.font-size(3);
   appearance: none;
   background: 0;
   border: 0;
-  color: $nds-colour-nice-grey-1;
+  color: noc-colours.$bootstrap-close-text;
   cursor: pointer;
   float: right;
   line-height: 1;
@@ -40,30 +47,30 @@ input.close {
   text-decoration: none;
 
   &:focus {
-    @include nds-default-focus-style;
+    @include focus.default-focus-style;
   }
 
   &:hover {
-    color: $nds-colour-nice-dark-grey;
+    color: noc-colours.$bootstrap-close-hover-text;
   }
 }
 
 .muted {
-  color: $nds-colour-text-subtle;
+  color: noc-colours.$text-subtle;
 }
 
 .text-warning {
-  color: $nds-colour-caution;
+  color: colours.$caution;
 }
 
 .text-error {
-  color: $nds-colour-error;
+  color: colours.$error;
 }
 
 .text-info {
-  color: $nds-colour-info;
+  color: colours.$info;
 }
 
 .text-success {
-  color: $nds-colour-success;
+  color: colours.$success;
 }

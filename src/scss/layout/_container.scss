@@ -1,9 +1,17 @@
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
+.container {
+  @include layout.clearfix;
+}
+
 // Various containers wrapping content from old Bootstrap.
 // The specific selectors are needed to override existing styles
 body > .layout,
 .restrict-width,
 body .container {
-  @include nds-container;
+  @include layout.container;
 }
 
 // Some pages (e.g. http://localhost:8087/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools/)
@@ -14,12 +22,8 @@ body > .layout .layout.container,
   width: auto;
 }
 
-.container {
-  @include nds-clearfix;
-}
-
 header.container {
-  margin: 0 auto em($nds-spacing-large);
+  margin: 0 auto utils.rem(spacing.$large);
 
   .author {
     clear: both;

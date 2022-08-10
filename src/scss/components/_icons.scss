@@ -1,34 +1,34 @@
+@use '@nice-digital/icons/scss/nice-icons';
+
 // Old Bootstrap use a mixture of NICE.Glyphs and FontAwesome.
 // These have been replaced with, and consolidated into, nice-icons.
-//
 // Below we map the FontAwesome icons to the corresponding
 // icon in NICE Icons.
-//
 // See https://github.com/nice-digital/nice-icons
 .fa {
-  @include nice-icons-base;
+  @include nice-icons.nice-icons-base;
 
   &.icon-android:before {
-    content: nice-icon(android);
+    content: nice-icons.nice-icon(android);
   }
 
   &.icon-apple:before {
-    content: nice-icon(apple);
+    content: nice-icons.nice-icon(apple);
   }
 
   &.icon-youtube-play:before {
-    content: nice-icon(youtube-play);
+    content: nice-icons.nice-icon(youtube-play);
   }
 
   &.icon-linkedin-sign:before {
-    content: nice-icon(linkedin-sign);
+    content: nice-icons.nice-icon(linkedin-sign);
   }
 }
 
 // Old icons from NICE-Glyphs are all prefixed with "nice-"
 [class*='icon-nice'],
 [class*='icon-'] {
-  @include nice-icons-base;
+  @include nice-icons.nice-icons-base;
 
   &:before {
     display: block;
@@ -36,18 +36,18 @@
 }
 
 // Support old icons from NICE-Glyphs with the corresponding icon in nice-icons
-@each $icon, $code in $nice-icons {
+@each $icon, $code in nice-icons.$nice-icons {
   .icon-nice-#{ $icon }:before,
   .icon-#{ $icon }:before {
-    content: nice-icon($icon);
+    content: nice-icons.nice-icon($icon);
   }
 }
 
 // Custom icons that don't follow the normal conventions and may or may not still be used / needed
 .icon-question-sign:before {
-  content: nice-icon(question-circle);
+  content: nice-icons.nice-icon(question-circle);
 }
 
 .icon-volume-up:before {
-  content: nice-icon(podcast);
+  content: nice-icons.nice-icon(podcast);
 }

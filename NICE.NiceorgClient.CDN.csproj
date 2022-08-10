@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<Title>Niceorg client CDN</Title>
+		<Description>CSS and JavaScript for nice.org.uk using the NICE Design System</Description>
+		<RepositoryUrl>https://github.com/nice-digital/niceorg-client</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="dist\**" Exclude="dist/*.html">
+			<Pack>true</Pack>
+			<PackagePath>niceorg</PackagePath>
+		</Content>
+		<!-- Deprecated, minified CSS URL for backwards compat -->
+		<Content Include="dist\css\app.css">
+			<Pack>true</Pack>
+			<PackagePath>niceorg/css/app.min.css</PackagePath>
+		</Content>
+	</ItemGroup>
+</Project>

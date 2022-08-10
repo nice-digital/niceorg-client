@@ -1,10 +1,17 @@
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
+// stylelint-disable number-max-precision
+
 .layout {
-  @include nds-clearfix;
+  @include layout.clearfix;
   display: block;
   margin: auto;
 
   body & {
-    margin-bottom: rem($nds-spacing-large);
+    margin-bottom: utils.rem(spacing.$large);
   }
 
   // Some Orchard pages have nested layouts so we don't want double margins
@@ -18,7 +25,7 @@
   }
 
   > .content-primary {
-    margin-bottom: rem($nds-spacing-large);
+    margin-bottom: utils.rem(spacing.$large);
   }
 
   > .content {
@@ -27,7 +34,7 @@
     min-height: 1px;
   }
 
-  @include mq($from: md) {
+  @include media-queries.mq($from: md) {
     > .content-primary {
       margin-bottom: 0;
       width: 74.46808511%;
@@ -57,7 +64,7 @@
   }
 }
 
-@include mq($from: md) {
+@include media-queries.mq($from: md) {
   .layout-secondary-wide {
     > .content-primary {
       width: 65.95744681%;

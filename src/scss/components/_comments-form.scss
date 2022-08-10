@@ -1,16 +1,19 @@
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+
 // Migrated from https://github.com/nice-digital/niceorg/blob/master/src/Orchard.Web/Themes/NICE.Bootstrap/Styles/nice/NICE.comments.less
 // See example at https://www.nice.org.uk/news/blog/a-life-changing-operation
 
 .comment-count {
-  margin-top: rem($nds-spacing-large);
+  margin-top: utils.rem(spacing.$large);
 }
 
 // List of the comments
 .comments {
-  margin-bottom: rem($nds-spacing-large);
+  margin-bottom: utils.rem(spacing.$large);
 
   > li {
-    margin: rem(0 0 $nds-spacing-medium);
+    margin: utils.rem(0 0 spacing.$medium);
 
     &.last,
     &:last-child {
@@ -34,7 +37,7 @@
 
 #comment-form-container {
   .comment-text {
-    height: rem($nds-spacing-x-large);
+    height: utils.rem(spacing.$x-large);
     width: 100%;
   }
 
@@ -44,7 +47,7 @@
   }
 
   .growbox {
-    margin-bottom: rem($nds-spacing-medium);
+    margin-bottom: utils.rem(spacing.$medium);
     overflow: hidden;
 
     &.notshown {

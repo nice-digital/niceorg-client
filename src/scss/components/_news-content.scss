@@ -1,15 +1,20 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
 .news-content {
   .blog-author {
-    @include nds-font-size(h5);
-    color: $nds-colour-nice-dark-grey;
+    @include typography.font-size(h5);
+    color: colours.$text;
     display: block;
     font-weight: normal;
-    margin-top: rem($nds-spacing-small);
+    margin-top: utils.rem(spacing.$small);
   }
 
   .date {
-    color: $nds-colour-nice-dark-grey;
-    margin-bottom: rem($nds-spacing-small);
+    color: colours.$text;
+    margin-bottom: utils.rem(spacing.$small);
     margin-top: 0;
   }
 
@@ -21,7 +26,7 @@
 
   img {
     height: auto; // Some CMS images have inline height/width attributes
-    padding-right: em($nds-spacing-medium);
+    padding-right: utils.rem(spacing.$medium);
   }
 
   p:first-child {

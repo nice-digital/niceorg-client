@@ -1,10 +1,15 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/colours/tokens/global';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 .nav {
   list-style: none;
-  margin: rem(0 0 $nds-spacing-medium);
+  margin: utils.rem(0 0 spacing.$medium);
   max-width: 100%; // To override the 66ch max-width on lists
 
   > .disabled > a {
-    color: $nds-colour-text-subtle;
+    color: global.$custom-grey-1;
     cursor: text;
     pointer-events: none;
   }

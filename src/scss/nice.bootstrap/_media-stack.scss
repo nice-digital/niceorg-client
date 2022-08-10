@@ -1,10 +1,16 @@
+@use '../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 .media-stack {
-  height: rem(120px);
+  height: utils.rem(120px);
   position: relative;
 
   .media-clip {
     display: block;
-    height: rem(120px);
+    height: utils.rem(120px);
   }
 
   .media-object {
@@ -14,12 +20,12 @@
   }
 
   .media-icon {
-    @include nds-font-size(4);
-    background: $nds-colour-nice-dark-grey;
-    color: $nds-colour-text-inverse;
+    @include typography.font-size(4);
+    background: noc-colours.$bootstrap-media-stack-icon-background;
+    color: noc-colours.$bootstrap-media-stack-icon-text;
     left: 50%;
     opacity: 0.7;
-    padding: rem($nds-spacing-small $nds-spacing-medium);
+    padding: utils.rem(spacing.$small spacing.$medium);
     position: absolute;
     text-decoration: none;
     top: 50%;
@@ -28,46 +34,46 @@
 
   &:hover {
     .media-icon {
-      background: $nds-colour-nice-black;
+      background: noc-colours.$bootstrap-media-stack-hover-icon-background;
     }
   }
 
   // Modifiers
 
   &.media-stack-2x {
-    height: rem(140px);
+    height: utils.rem(140px);
 
     .media-clip {
-      height: rem(140px);
+      height: utils.rem(140px);
     }
 
     .media-icon {
-      @include nds-font-size(4);
+      @include typography.font-size(4);
     }
   }
 
   &.media-stack-3x {
-    height: rem(150px);
+    height: utils.rem(150px);
 
     .media-clip {
-      height: rem(150px);
+      height: utils.rem(150px);
     }
 
     .media-icon {
-      @include nds-font-size(5);
+      @include typography.font-size(5);
     }
   }
 
   &.media-stack-4x,
   &.media-stack-5x {
-    height: rem(160px);
+    height: utils.rem(160px);
 
     .media-clip {
-      height: rem(160px);
+      height: utils.rem(160px);
     }
 
     .media-icon {
-      @include nds-font-size(5);
+      @include typography.font-size(5);
     }
   }
 }

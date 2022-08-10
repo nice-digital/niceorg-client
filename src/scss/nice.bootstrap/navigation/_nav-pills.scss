@@ -1,28 +1,35 @@
+@use '../../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/visibility';
+
 // Old NICE.Bootstrap nav pills backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navs
 
 .nav-pills {
-  @include nds-clearfix;
-  @include nds-hide-print;
+  @include layout.clearfix;
+  @include visibility.hide-print;
 
   > li {
     float: left;
 
     > a {
-      color: $nds-colour-text;
+      color: colours.$text;
       display: block;
       margin: 0;
-      padding: rem($nds-spacing-small $nds-spacing-medium);
+      padding: utils.rem(spacing.$small spacing.$medium);
       text-decoration: none;
 
       &:hover {
-        background: $nds-colour-nice-grey-3;
+        background: noc-colours.$bootstrap-navpills-link-hover-background;
       }
     }
 
     &.active > a {
-      background: $nds-colour-nice-teal;
-      color: $nds-colour-text-inverse;
+      background: noc-colours.$bootstrap-navpills-link-active-background;
+      color: colours.$text-inverse;
     }
   }
 

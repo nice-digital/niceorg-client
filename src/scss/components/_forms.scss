@@ -1,7 +1,9 @@
+@use '@nice-digital/nds-core/scss/colours';
+
 // Copied from /Modules/oforms/Styles/cmxform.css
 
 form.cmxform label.error {
-  color: $nds-colour-error;
+  color: colours.$error;
   font-style: italic;
 }
 

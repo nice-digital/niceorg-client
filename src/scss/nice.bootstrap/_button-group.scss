@@ -1,3 +1,6 @@
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
 // NICE.Bootstrap button groups for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.FormElements.html#buttonGroups
 .btn-group {
@@ -31,9 +34,9 @@
 
 .btn-toolbar {
   font-size: 0;
-  margin: rem($nds-spacing-medium);
+  margin: utils.rem(spacing.$medium);
 
   > .btn-group + .btn-group {
-    margin-left: rem($nds-spacing-small);
+    margin-left: utils.rem(spacing.$small);
   }
 }

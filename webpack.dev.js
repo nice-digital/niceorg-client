@@ -28,16 +28,18 @@ module.exports = (env) => {
 			})
 		],
 		devServer: {
-			contentBase: path.join(__dirname, "dist"),
-			// Replicate the CDN sub folder:
-			contentBasePublicPath: "/niceorg",
+			static: {
+				directory: path.join(__dirname, "dist"),
+				// Replicate the CDN sub folder:
+				publicPath: "/niceorg"
+			},
 			port: 8087,
-			open: true,
-			openPage: "niceorg/playground.html",
+			open: ["niceorg/playground.html"],
 			hot: true,
-			before: function (app) {
+
+			setupMiddlewares: (middlewares, devServer) => {
 				// Allow cross origin requests for font files
-				app.use(function (req, res, next) {
+				devServer.app.use(function (req, res, next) {
 					res.header("Access-Control-Allow-Origin", "*");
 					res.header(
 						"Access-Control-Allow-Headers",
@@ -48,7 +50,9 @@ module.exports = (env) => {
 
 				console.info(`Proxying requests to ${niceorgBaseUrl}`);
 
-				app.use(nocProxyMiddlewareFactory(niceorgBaseUrl));
+				devServer.app.use(nocProxyMiddlewareFactory(niceorgBaseUrl));
+
+				return middlewares;
 			}
 		}
 	});

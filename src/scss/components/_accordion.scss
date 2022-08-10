@@ -1,27 +1,34 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
+@use '@nice-digital/icons/scss/nice-icons';
+
 /// Accordion- used on NICE field team page
 /// Overrides
 /// See https://www.nice.org.uk/about/what-we-do/into-practice/nice-field-team for example
 
 .accordion {
   .accordion-group {
-    background: $nds-colour-panel-default-background;
-    margin-bottom: rem($nds-spacing-small);
+    background: colours.$panel-default-background;
+    margin-bottom: utils.rem(spacing.$small);
   }
 
   .accordion-heading {
     margin: 0;
 
     a {
-      @include nds-font-size(h5);
+      @include typography.font-size(h5);
       display: block;
-      padding: rem($nds-spacing-small);
+      padding: utils.rem(spacing.$small);
       text-decoration: none;
     }
   }
 
   .accordion-inner {
-    padding: rem($nds-spacing-medium) rem($nds-spacing-large)
-      rem($nds-spacing-medium) rem($nds-spacing-medium);
+    padding: utils.rem(spacing.$medium) utils.rem(spacing.$large)
+      utils.rem(spacing.$medium) utils.rem(spacing.$medium);
 
     p {
       &:first-child {
@@ -36,9 +43,9 @@
 }
 
 .accordion-toggle {
-  @include nds-font-size(h5);
+  @include typography.font-size(h5);
   display: block;
-  padding: rem($nds-spacing-small);
+  padding: utils.rem(spacing.$small);
   text-decoration: none;
 
   &:before {
@@ -47,7 +54,7 @@
   }
 
   &:after {
-    @include nice-icon(chevron-down);
+    @include nice-icons.nice-icon(chevron-down);
     float: right;
   }
 }

@@ -1,3 +1,7 @@
+@use '@nice-digital/nds-core/scss/media-queries';
+
+// stylelint-disable number-max-precision
+
 // Custom grid integration from NICE.bootstrap
 %grid-base-styling {
   list-style: none;
@@ -29,7 +33,7 @@
 
 .grid2 {
   @extend %grid-base-styling;
-  @include mq($from: xs) {
+  @include media-queries.mq($from: xs) {
     > * {
       width: 48%;
 
@@ -38,7 +42,7 @@
       }
     }
   }
-  @include mq($until: xs) {
+  @include media-queries.mq($until: xs) {
     > * {
       float: none;
       margin-right: 0;
@@ -53,7 +57,7 @@
 
 .grid3 {
   @extend %grid-base-styling;
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     > * {
       width: 31.333333%;
 
@@ -66,7 +70,7 @@
       width: 64.666666%;
     }
   }
-  @include mq($until: sm) {
+  @include media-queries.mq($until: sm) {
     text-align: center;
 
     > * {
@@ -91,7 +95,7 @@
       width: 97.1%;
     }
   }
-  @include mq($until: xs) {
+  @include media-queries.mq($until: xs) {
     > *,
     > .over2,
     > .over-fill {
@@ -108,7 +112,7 @@
 
 .grid4 {
   @extend %grid-base-styling;
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     > * {
       width: 23%;
     }
@@ -126,7 +130,7 @@
     }
   }
 
-  @include mq($until: sm) {
+  @include media-queries.mq($until: sm) {
     text-align: center;
 
     > * {
@@ -153,7 +157,7 @@
       width: 97.1%;
     }
   }
-  @include mq($until: xs) {
+  @include media-queries.mq($until: xs) {
     > *:nth-child(3n + 4) {
       clear: none;
     }
@@ -175,7 +179,7 @@
 
 .grid5 {
   @extend %grid-base-styling;
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     > * {
       width: 18%;
     }
@@ -192,7 +196,7 @@
       width: 78%;
     }
   }
-  @include mq($until: sm) {
+  @include media-queries.mq($until: sm) {
     > * {
       display: inline-block;
       float: none;
@@ -213,7 +217,7 @@
       width: auto;
     }
   }
-  @include mq($until: xs) {
+  @include media-queries.mq($until: xs) {
     > *,
     > .over2,
     > .over3,
@@ -228,7 +232,7 @@
 
 .grid6 {
   @extend %grid-base-styling;
-  @include mq($from: sm) {
+  @include media-queries.mq($from: sm) {
     > * {
       width: 14.666666%;
     }
@@ -249,7 +253,7 @@
       width: 81.333333%;
     }
   }
-  @include mq($until: sm) {
+  @include media-queries.mq($until: sm) {
     text-align: center;
 
     > * {
@@ -273,7 +277,7 @@
       width: auto;
     }
   }
-  @include mq($until: xs) {
+  @include media-queries.mq($until: xs) {
     > *,
     > .over2,
     > .over3,

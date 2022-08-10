@@ -1,25 +1,32 @@
+@use '../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/icons/scss/nice-icons';
+
 %sorting-base {
-  margin-right: rem($nds-spacing-small);
+  margin-right: utils.rem(spacing.$small);
 }
 
 table {
   .sorting {
     &::before {
       @extend %sorting-base;
-      @include nice-icon('sorting');
+      @include nice-icons.nice-icon(sorting);
     }
 
     &_asc {
       &::before {
         @extend %sorting-base;
-        @include nice-icon('sorting-asc');
+        @include nice-icons.nice-icon(sorting-asc);
       }
 
       &_disabled {
         &::before {
           @extend %sorting-base;
-          @include nice-icon('sorting-asc');
-          color: $nds-colour-nice-grey-1;
+          @include nice-icons.nice-icon(sorting-asc);
+          color: noc-colours.$table-sorting-disabled;
         }
       }
     }
@@ -27,14 +34,14 @@ table {
     &_desc {
       &::before {
         @extend %sorting-base;
-        @include nice-icon('sorting-desc');
+        @include nice-icons.nice-icon(sorting-desc);
       }
 
       &_disabled {
         &::before {
           @extend %sorting-base;
-          @include nice-icon('sorting-desc');
-          color: $nds-colour-nice-grey-1;
+          @include nice-icons.nice-icon(sorting-desc);
+          color: noc-colours.$table-sorting-disabled;
         }
       }
     }

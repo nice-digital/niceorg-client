@@ -1,3 +1,11 @@
+@use '../../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
 /// Navigation bar, taken from NICE.Bootstrap
 /// See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#navbar
 .navbar {
@@ -10,12 +18,12 @@
   }
 
   .brand {
-    @include nds-font-size(4);
-    color: $nds-colour-text;
+    @include typography.font-size(4);
+    color: colours.$text;
     display: block;
     float: left;
     font-weight: bolder;
-    padding: rem($nds-spacing-small $nds-spacing-medium);
+    padding: utils.rem(spacing.$small spacing.$medium);
     text-decoration: none;
   }
 
@@ -32,28 +40,28 @@
       width: 100%;
 
       > a {
-        color: $nds-colour-text;
+        color: colours.$text;
         display: block;
-        padding: rem($nds-spacing-small $nds-spacing-medium);
+        padding: utils.rem(spacing.$small spacing.$medium);
         text-decoration: none;
 
         &:hover {
-          background: $nds-colour-nice-grey-2;
+          background: noc-colours.$bootstrap-navbar-link-hover-background;
         }
       }
 
       &.active {
         > a {
-          background: $nds-colour-nice-teal;
-          color: $nds-colour-text-inverse;
+          background: noc-colours.$bootstrap-navbar-active-background;
+          color: colours.$text-inverse;
         }
       }
     }
   }
 
   .navbar-inner {
-    @include nds-clearfix;
-    background: $nds-colour-nice-grey-3;
+    @include layout.clearfix;
+    background: noc-colours.$bootstrap-navbar-inner-background;
   }
 
   &.navbar-inverse {
@@ -61,28 +69,28 @@
     .nav {
       > li {
         > a {
-          color: $nds-colour-text-inverse;
+          color: colours.$text-inverse;
 
           &:hover {
-            background: $nds-colour-nice-teal-2;
+            background: noc-colours.$bootstrap-navbar-inverse-link-hover-background;
           }
         }
 
         &.active {
           > a {
-            background: $nds-colour-body;
-            color: $nds-colour-text;
+            background: noc-colours.$bootstrap-navbar-inverse-active-background;
+            color: colours.$text;
           }
         }
       }
     }
 
     .navbar-inner {
-      background: $nds-colour-nice-teal;
+      background: noc-colours.$bootstrap-navbar-inverse-inner-background;
     }
   }
 
-  @include mq($from: md) {
+  @include media-queries.mq($from: md) {
     .nav {
       > li {
         float: left;

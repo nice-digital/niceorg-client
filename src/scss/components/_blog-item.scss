@@ -1,29 +1,34 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+
 // Single blog items listed on news / blog page
 
 .blog-item {
-  margin-bottom: em($nds-spacing-medium) !important;
+  margin-bottom: utils.rem(spacing.$medium) !important;
 
   h4 {
-    @include nds-font-size(h5);
+    @include typography.font-size(h5);
     margin-top: 0;
   }
 
   .text-block {
     p:first-child {
-      @include nds-font-size(-1);
-      color: $nds-colour-nice-dark-grey;
-      margin: rem($nds-spacing-small 0 $nds-spacing-x-small 0);
+      @include typography.font-size(-1);
+      color: colours.$text;
+      margin: utils.rem(spacing.$small 0 spacing.$x-small 0);
     }
 
     small {
-      @include nds-font-size(-1);
-      color: $nds-colour-nice-dark-grey;
+      @include typography.font-size(-1);
+      color: colours.$text;
       display: block;
-      margin: rem($nds-spacing-x-small 0 $nds-spacing-x-small 0);
+      margin: utils.rem(spacing.$x-small 0 spacing.$x-small 0);
     }
 
     .abstract {
-      margin: rem($nds-spacing-small 0 $nds-spacing-x-small 0);
+      margin: utils.rem(spacing.$small 0 spacing.$x-small 0);
     }
   }
 }

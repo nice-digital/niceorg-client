@@ -1,3 +1,11 @@
+@use '../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/typography';
+
 /// Timeline
 /// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/process/mta-timeline
 /// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/technology-appraisal-guidance/process/sta-timeline
@@ -10,7 +18,7 @@
 /// See https://www.nice.org.uk/about/what-we-do/our-programmes/nice-guidance/nice-technology-appraisal-guidance/charging/timelines-ta
 
 // Defines styles for < md viewports, and for when a single column timeline is required (e.g. here - https://www.nice.org.uk/about/what-we-do/life-sciences/scientific-advice)
-@mixin flat-style-timeline {
+@mixin -flat-style-timeline {
   &:before {
     left: 40px !important; // required to override the margin below for desktop
   }
@@ -47,28 +55,28 @@
   position: relative;
 
   &--flat {
-    @include flat-style-timeline;
+    @include -flat-style-timeline;
   }
 
   // this is the line that goes down the centre of the timeline badges
   &:before {
-    background-color: $nds-colour-nice-grey-2;
+    background-color: noc-colours.$timeline-separator;
     bottom: 0;
     content: '';
     left: 50%;
-    margin-left: -(rem($nds-spacing-xx-small));
+    margin-left: -(rem(spacing.$xx-small));
     position: absolute;
     top: 0;
-    width: rem($nds-spacing-x-small);
+    width: utils.rem(spacing.$x-small);
   }
 
   > li {
-    @include nds-clearfix;
-    margin-bottom: rem($nds-spacing-medium);
+    @include layout.clearfix;
+    margin-bottom: utils.rem(spacing.$medium);
     position: relative;
   }
-  @include mq($until: md) {
-    @include flat-style-timeline;
+  @include media-queries.mq($until: md) {
+    @include -flat-style-timeline;
   }
 }
 
@@ -93,19 +101,19 @@
 }
 
 .timeline-panel {
-  background: $nds-colour-nice-white;
-  border: 1px solid $nds-colour-nice-grey-2;
+  background: noc-colours.$timeline-panel-background;
+  border: 1px solid noc-colours.$timeline-panel-border;
   border-radius: 2px;
   box-shadow: none !important;
   float: left;
-  padding: rem(20px);
+  padding: utils.rem(20px);
   position: relative;
   width: 42%;
 
   &:before {
     border-bottom: 15px solid transparent;
-    border-left: 15px solid $nds-colour-nice-grey-2;
-    border-right: 0 solid $nds-colour-nice-grey-2;
+    border-left: 15px solid noc-colours.$timeline-panel-border;
+    border-right: 0 solid noc-colours.$timeline-panel-border;
     border-top: 15px solid transparent;
     content: '';
     display: inline-block;
@@ -116,8 +124,8 @@
 
   &:after {
     border-bottom: 14px solid transparent;
-    border-left: 14px solid $nds-colour-nice-white;
-    border-right: 0 solid $nds-colour-nice-white;
+    border-left: 14px solid noc-colours.$timeline-panel-background;
+    border-right: 0 solid noc-colours.$timeline-panel-background;
     border-top: 14px solid transparent;
     content: '';
     display: inline-block;
@@ -132,9 +140,9 @@
 }
 
 .timeline-badge {
-  background-color: $nds-colour-nice-grey-1;
+  background-color: noc-colours.$timeline-badge-background;
   border-radius: 50%;
-  color: $nds-colour-nice-white;
+  color: noc-colours.$timeline-badge-color;
   height: 50px;
   left: 50%;
   line-height: 50px;
@@ -146,27 +154,27 @@
   z-index: 100;
 
   small {
-    @include nds-font-size(p);
+    @include typography.font-size(p);
   }
 
   &.primary {
-    background-color: $nds-colour-info !important;
+    background-color: colours.$info !important;
   }
 
   &.success {
-    background-color: $nds-colour-success !important;
+    background-color: colours.$success !important;
   }
 
   &.warning {
-    background-color: $nds-colour-caution !important;
+    background-color: colours.$caution !important;
   }
 
   &.danger {
-    background-color: $nds-colour-error !important;
+    background-color: colours.$error !important;
   }
 
   &.info {
-    background-color: $nds-colour-info !important;
+    background-color: colours.$info !important;
   }
 }
 

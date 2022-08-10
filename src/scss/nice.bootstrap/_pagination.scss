@@ -1,23 +1,29 @@
+@use '../noc-colours';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/spacing';
+
 // NICE.Bootstrap pager for backwards compatability
 // See http://nice-digital.github.io/NICE.Bootstrap/Guide.Navigation.html#pagination
 .pagination {
-  @include nds-clearfix;
+  @include layout.clearfix;
   list-style: none;
-  margin: em($nds-spacing-medium 0 $nds-spacing-large);
+  margin: utils.rem(spacing.$medium 0 spacing.$large);
   text-align: center;
 
   li {
     display: inline;
 
     a {
-      background: $nds-colour-nice-dark-grey;
-      color: $nds-colour-text-inverse;
+      background: noc-colours.$bootstrap-pagination-link-background;
+      color: noc-colours.$bootstrap-pagination-link-text;
       display: inline-block;
-      padding: rem($nds-spacing-small $nds-spacing-medium);
+      padding: utils.rem(spacing.$small spacing.$medium);
       text-decoration: none;
 
       &:hover {
-        background: $nds-colour-nice-rich-black;
+        background: noc-colours.$bootstrap-pagination-link-hover-background;
       }
     }
   }
@@ -38,8 +44,8 @@
 
   .disabled {
     a {
-      background: $nds-colour-nice-grey-3;
-      color: $nds-colour-nice-grey-1;
+      background: noc-colours.$bootstrap-pagination-link-disabled-background;
+      color: noc-colours.$bootstrap-pagination-link-disabled-text;
       cursor: text;
       pointer-events: none;
     }
