@@ -49,6 +49,10 @@
     @include typography.font-size(h4);
   }
 
+  h5.media-heading {
+    @include typography.font-size(h5);
+  }
+
   .media-body {
     overflow: hidden;
     padding: 0 3px; // Make room for the focus ring
