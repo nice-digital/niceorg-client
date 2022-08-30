@@ -24,7 +24,7 @@
     padding-top: 3px; // Make room for focus ring
 
     a {
-      @include typography.font-size(1);
+      @include typography.h5;
       display: inline-block;
       max-width: 66ch;
 
