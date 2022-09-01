@@ -27,7 +27,7 @@
     h4,
     h5,
     h6 {
-      @include typography.font(h6);
+      @include typography.font(h5);
       margin-top: utils.rem(spacing.$medium);
     }
 
