@@ -9,6 +9,7 @@
 	"files.eol": "\n",
 	"workbench.colorCustomizations": {
 		"activityBar.foreground": "#fff",
+		"activityBar.inactiveForeground": "#bbb",
 		"activityBar.background": "#636e8f",
 		"titleBar.activeBackground": "#636e8f",
 		"titleBar.activeForeground": "#fff"
