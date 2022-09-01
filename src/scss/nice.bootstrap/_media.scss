@@ -26,6 +26,7 @@
     a {
       @include typography.h5;
       display: inline-block;
+      margin-top: 0;
       max-width: 66ch;
 
       &:hover {
