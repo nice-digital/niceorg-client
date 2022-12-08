@@ -15,8 +15,32 @@
 	</head>
 
 	<body>
-		<div class="container">
-			<h3>Tabs</h3>
+		<main class="container">
+			<h1><%= title %></h1>
+
+			<div class="container" aria-live="polite">
+				<script>
+					(function () {
+						var script = document.createElement("script");
+						script.src = "https://feeds.trac.jobs/js/v13/EmbeddedJobsBoard.js";
+						script.setAttribute("id", "TracFeed");
+						script.setAttribute("data-JobsBoardID", "101893");
+						script.setAttribute("data-IncludeCSS", "false");
+						document.write(script.outerHTML);
+					})();
+				</script>
+			</div>
+
+			<h2>Useful links/pages</h2>
+
+			<ul>
+				<li><a href="/">Homepage</a></li>
+				<li><a href="/niceorg">List JS/CSS assets</a></li>
+			</ul>
+
+			<h2>NDS components</h2>
+
+			<h2>Tabs</h2>
 
 			<div data-tabs>
 				<div data-tab-title="Quality standards">
@@ -45,19 +69,6 @@
 					<p>Tab 3 content</p>
 				</div>
 			</div>
-		</div>
-
-		<main class="container">
-			<h1><%= title %></h1>
-
-			<h2>Useful links/pages</h2>
-
-			<ul>
-				<li><a href="/">Homepage</a></li>
-				<li><a href="/niceorg">List JS/CSS assets</a></li>
-			</ul>
-
-			<h2>NDS components</h2>
 
 			<h3>In page nav</h3>
 			<div class="grid grid--rev">

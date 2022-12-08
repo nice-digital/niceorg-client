@@ -1,0 +1,92 @@
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/media-queries';
+
+// Hide the 'my account button' with the assumption that comms can add this in manually into the page outside the Trac snippet
+#hj-account-menu {
+  display: none;
+}
+
+#hj-loading-section {
+  display: none;
+}
+
+.hj-sorter {
+  .form-group {
+    align-items: center;
+    border: 0;
+    display: flex;
+    padding: 0;
+  }
+
+  label {
+    margin-right: utils.rem(spacing.$medium);
+  }
+
+  select {
+    margin: 0;
+  }
+}
+
+.hj-job-list {
+  ol {
+    list-style: none;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+.hj-job {
+  border-bottom: 1px solid colours.$border;
+  margin-bottom: utils.rem(spacing.$medium);
+  padding-bottom: utils.rem(spacing.$medium);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.hj-jobtitle {
+  @include typography.link-default;
+  @include typography.font-size(1);
+  font-weight: 600;
+  margin-bottom: utils.rem(spacing.$small);
+}
+
+.hj-job-details {
+  @include typography.font-size(-1);
+  color: colours.$card-metadata;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .hj-job-detail,
+  .hj-warning {
+    display: flex;
+    margin: utils.rem(0 spacing.$medium spacing.$x-small 0);
+  }
+
+  .hj-locationtown,
+  .hj-salary {
+    display: none;
+  }
+
+  .hj-closingdate {
+    order: 0;
+  }
+
+  .hj-empjobref {
+    order: 5;
+  }
+
+  .hj-field-caption {
+    margin-right: utils.rem(spacing.$small);
+  }
+
+  @include media-queries.mq($from: md) {
+    flex-direction: row;
+  }
+}
