@@ -156,8 +156,7 @@
   @include media-queries.mq($from: md) {
     .row {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      flex-flow: row nowrap;
       gap: utils.rem(spacing.$large);
 
       &:before,
@@ -175,8 +174,7 @@
 .hj-dl-float {
   margin: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   max-width: utils.rem(650);
 
   dt,
