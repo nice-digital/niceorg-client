@@ -13,6 +13,41 @@
   display: none;
 }
 
+.hj-alert {
+  @include typography.font-size(p);
+  border: 1px solid;
+  font-weight: bold;
+  margin-bottom: utils.rem(spacing.$medium);
+  padding: utils.rem(spacing.$medium);
+
+  p {
+    font-weight: bold;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &.hj-alert-info {
+    background-color: colours.$info-background;
+    border-color: colours.$info;
+  }
+
+  &.hj-alert-warning {
+    background-color: colours.$caution-background;
+    border-color: colours.$caution;
+  }
+
+  &.hj-alert-danger {
+    background-color: colours.$error-background;
+    border-color: colours.$error;
+  }
+}
+
 .hj-sorter {
   .form-group {
     align-items: center;
