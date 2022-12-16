@@ -13,6 +13,22 @@
   display: none;
 }
 
+#hj-main-section {
+  .breadcrumbs {
+    a {
+      @include typography.link-default;
+
+      &:before {
+        content: 'View ';
+      }
+    }
+
+    .current {
+      display: none;
+    }
+  }
+}
+
 .hj-alert {
   @include typography.font-size(p);
   border: 1px solid;
@@ -49,6 +65,8 @@
 }
 
 .hj-sorter {
+  margin: utils.rem(spacing.$large 0);
+
   .form-group {
     align-items: center;
     border: 0;
@@ -122,5 +140,148 @@
 
   @include media-queries.mq($from: md) {
     flex-flow: row wrap;
+  }
+}
+
+#hj-job-summary {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-sm-6 {
+    width: 100%;
+  }
+
+  @include media-queries.mq($from: md) {
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: utils.rem(spacing.$large);
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    .col-sm-6 {
+      width: 50%;
+    }
+  }
+}
+
+.hj-dl-float {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: utils.rem(650);
+
+  dt,
+  dd {
+    margin: utils.rem(0 0 spacing.$small 0);
+  }
+
+  dt {
+    flex: 0 0 25%;
+    font-weight: bold;
+  }
+
+  dd {
+    flex: 0 0 75%;
+  }
+}
+
+.hj-employer-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    flex: 0 0 100%;
+  }
+
+  a {
+    margin-right: utils.rem(spacing.$large);
+    margin-bottom: utils.rem(spacing.$large);
+  }
+
+  @include media-queries.mq($from: md) {
+    a {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hj-standard-box {
+  margin: utils.rem(0 0 spacing.$large 0);
+}
+
+.hj-apply-online {
+  @include typography.font-size(0);
+  appearance: none;
+  background: colours.$btn-cta;
+  border: utils.rem(1px) solid colours.$btn-cta-border;
+  border-radius: utils.rem(3px);
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%);
+  color: colours.$btn-cta-text !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  margin: 0;
+  padding: utils.rem(spacing.$small spacing.$medium);
+  position: relative;
+  text-align: left;
+  text-decoration: none !important;
+  vertical-align: top;
+  white-space: nowrap;
+
+  &:visited {
+    color: colours.$btn-cta-text !important;
+  }
+
+  &:hover {
+    background: colours.$btn-cta-hover;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 20%);
+    color: colours.$btn-cta-text !important;
+  }
+
+  &:focus {
+    background: colours.$btn-cta-hover;
+    color: colours.$btn-cta-text !important;
+  }
+
+  &:active {
+    background: colours.$btn-cta-hover;
+    color: colours.$btn-cta-text !important;
+  }
+}
+
+.hj-job-pager {
+  .pagination {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .page-link {
+    display: none;
+  }
+
+  .ic-pager-next,
+  .ic-pager-previous {
+    @include typography.link-default;
+    background: none;
+    display: block;
+    font-family: typography.get-font-family(sans);
+    padding: utils.rem(spacing.$small 0);
+    text-align: left;
+
+    &:hover {
+      background: none;
+    }
   }
 }
