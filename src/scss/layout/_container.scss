@@ -17,8 +17,7 @@ body .container {
 // Some pages (e.g. http://localhost:8087/about/what-we-do/into-practice/audit-and-service-improvement/assessment-tools/)
 // weirdly have nested container so we reset the inner container
 body > .layout .layout.container,
-.container .container,
-main.layout .container {
+.container .container {
   max-width: 100%;
   width: auto;
 }
