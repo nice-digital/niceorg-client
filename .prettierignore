@@ -9,3 +9,6 @@ public
 dist
 
 temp/
+
+bin
+obj
